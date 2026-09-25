@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getListings, byTown } from '../../lib/listings';
+import { TOWNS, type TownKey } from '../../data/taxonomy';
+const listings = await getListings();
+const towns = (Object.keys(TOWNS) as TownKey[]).map((k) => ({ k, ...TOWNS[k], n: byTown(listings, k).length })).filter((t) => t.n > 0);
+---
+<Base title="Kids' activities by town" description="Browse children's activities by town across West Hertfordshire.">
+  <p class="breadcrumb"><a href="/">Home</a> › Towns</p>
+  <h1>Kids' activities by town</h1>
+  <div class="chip-grid">{towns.map((t) => <a class="tile" href={`/towns/${t.k}/`}>📍 {t.name}<span class="count">{t.n}</span></a>)}</div>
+</Base>
