@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import { render } from 'astro:content';
+import { getPosts, getListings, formatDate, type Post } from '../../lib/listings';
+import { SITE } from '../../site.config';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+interface Props { post: Post }
+const { post } = Astro.props;
+const { Content } = await render(post);
+const listings = await getListings();
+const related = listings.filter((l) => post.data.related.includes(l.id));
+const ld = {
+  '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description,
+  datePublished: post.data.date.toISOString(), publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+};
+---
+<Base title={post.data.title} description={post.data.description} jsonLd={ld}>
+  <p class="breadcrumb"><a href="/">Home</a> › <a href="/whats-on/">What's on</a></p>
+  <article class="prose" style="padding:12px 0 8px">
+    <p class="muted small">{formatDate(post.data.date)}</p>
+    <h1>{post.data.title}</h1>
+    <Content />
+  </article>
+  {related.length > 0 && (
+    <>
+      <h2>Activities in this article</h2>
+      <div class="grid">{related.map((l) => <ListingCard listing={l} />)}</div>
+    </>
+  )}
+  <section class="band">
+    <div><h2>Get this in your inbox</h2><p>The weekly "What's on for kids" email, every Thursday. Free.</p></div>
+    <a class="btn" href="/newsletter/">Sign up</a>
+  </section>
+</Base>

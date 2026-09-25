@@ -1,0 +1,20 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getPosts, formatDate } from '../../lib/listings';
+const posts = await getPosts();
+---
+<Base title="What's on for kids in West Herts" description="Weekly round-ups of what's on for children in Watford, Rickmansworth, Croxley Green and Chorleywood, plus local guides.">
+  <p class="breadcrumb"><a href="/">Home</a> › What's on</p>
+  <h1>What's on &amp; guides</h1>
+  <p class="muted">A weekly round-up of kids' events, plus guides to choosing classes and holiday camps locally.</p>
+  <div class="grid">
+    {posts.map((p) => (
+      <article class="card">
+        <span class="muted small">{formatDate(p.data.date)}</span>
+        <h3><a href={`/whats-on/${p.id}/`}>{p.data.title}</a></h3>
+        <p>{p.data.description}</p>
+      </article>
+    ))}
+  </div>
+  {posts.length === 0 && <p class="empty">The first round-up is coming soon.</p>}
+</Base>
