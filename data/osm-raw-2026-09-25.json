@@ -1,0 +1,1640 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-25T09:27:05Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 211161421,
+  "lat": 51.6419971,
+  "lon": -0.4166731,
+  "tags": {
+    "amenity": "community_centre",
+    "name": "Holywell Community Centre",
+    "operator": "Watford & Three Rivers Trust"
+  }
+},
+{
+  "type": "node",
+  "id": 382329994,
+  "lat": 51.6084242,
+  "lon": -0.3636930,
+  "tags": {
+    "amenity": "theatre",
+    "check_date": "2025-10-30",
+    "name": "Harrow Arts Centre",
+    "wikidata": "Q5666497"
+  }
+},
+{
+  "type": "node",
+  "id": 386230289,
+  "lat": 51.6455641,
+  "lon": -0.3651725,
+  "tags": {
+    "name": "Bushey Museum",
+    "tourism": "museum",
+    "website": "https://busheymuseum.org",
+    "wikidata": "Q5001498"
+  }
+},
+{
+  "type": "node",
+  "id": 1016122582,
+  "lat": 51.6622838,
+  "lon": -0.4237980,
+  "tags": {
+    "name": "Cassiobury Park Station",
+    "public_transport": "no",
+    "railway": "station",
+    "source": "Bing",
+    "tourism": "attraction",
+    "usage": "tourism"
+  }
+},
+{
+  "type": "node",
+  "id": 1265649653,
+  "lat": 51.6589220,
+  "lon": -0.4034534,
+  "tags": {
+    "addr:city": "Watford",
+    "addr:postcode": "WD17 3JN",
+    "alt_name": "Watford Town Hall",
+    "amenity": "theatre",
+    "name": "Watford Colosseum",
+    "website": "https://watfordcolosseum.co.uk/",
+    "wikidata": "Q65133902"
+  }
+},
+{
+  "type": "node",
+  "id": 1702525769,
+  "lat": 51.6575211,
+  "lon": -0.3994543,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Fitness4Less",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2318855777,
+  "lat": 51.6923019,
+  "lon": -0.3946173,
+  "tags": {
+    "addr:city": "Watford",
+    "addr:postcode": "WD25 7JZ",
+    "addr:street": "North Orbital Road",
+    "addr:substreet": "Woodside Leisure Park",
+    "addr:suburb": "Woodside",
+    "leisure": "indoor_play",
+    "name": "Ninja Warrior UK",
+    "old_name": "Gambado"
+  }
+},
+{
+  "type": "node",
+  "id": 2448373176,
+  "lat": 51.6963607,
+  "lon": -0.3989611,
+  "tags": {
+    "addr:city": "Watford",
+    "addr:postcode": "WD25 7ET",
+    "addr:street": "The Brow",
+    "addr:suburb": "Woodside",
+    "amenity": "community_centre",
+    "contact:phone": "+44 1923 673343",
+    "name": "Woodside Community Centre"
+  }
+},
+{
+  "type": "node",
+  "id": 2455741108,
+  "lat": 51.6264811,
+  "lon": -0.3333653,
+  "tags": {
+    "heritage": "2",
+    "museum": "aviation",
+    "museum_type": "military",
+    "name": "Bentley Priory Museum",
+    "operator_type": "charitable_trust",
+    "tourism": "museum",
+    "website": "https://bentleypriorymuseum.org.uk/"
+  }
+},
+{
+  "type": "node",
+  "id": 3834291058,
+  "lat": 51.6562870,
+  "lon": -0.3919738,
+  "tags": {
+    "amenity": "community_centre",
+    "name": "Newton Price Centre"
+  }
+},
+{
+  "type": "node",
+  "id": 3834339757,
+  "lat": 51.6771178,
+  "lon": -0.4392460,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Sequoia"
+  }
+},
+{
+  "type": "node",
+  "id": 3995832692,
+  "lat": 51.6593118,
+  "lon": -0.3883997,
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Radlett Road Multi Use Game Area",
+    "sport": "basketball",
+    "sport_1": "football",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4237368344,
+  "lat": 51.6850416,
+  "lon": -0.4055483,
+  "tags": {
+    "addr:city": "Watford",
+    "addr:postcode": "WD25 0BW",
+    "addr:street": "Clarke Way",
+    "amenity": "community_centre",
+    "name": "Leavesden Green Community Hub"
+  }
+},
+{
+  "type": "node",
+  "id": 5408763844,
+  "lat": 51.6959113,
+  "lon": -0.4047781,
+  "tags": {
+    "club": "scout",
+    "name": "9th Watford North Scout Group"
+  }
+},
+{
+  "type": "node",
+  "id": 5408763848,
+  "lat": 51.7065400,
+  "lon": -0.3605438,
+  "tags": {
+    "alt_name": "4th Watford North Scout Group",
+    "check_date": "2026-04-26",
+    "club": "scout",
+    "name": "1st Bricket Wood Scout Group"
+  }
+},
+{
+  "type": "node",
+  "id": 5852151429,
+  "lat": 51.6547165,
+  "lon": -0.5170076,
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:postcode": "WD3 5LN",
+    "addr:street": "Common Road",
+    "addr:suburb": "Chorleywood",
+    "amenity": "community_centre",
+    "name": "Chorleywood Common Room",
+    "website": "https://www.chorleywood-pc.gov.uk/chorleywood-common-room/"
+  }
+},
+{
+  "type": "node",
+  "id": 8010114660,
+  "lat": 51.6547901,
+  "lon": -0.5169730,
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:housename": "Chorleywood War Memorial Hall",
+    "addr:postcode": "WD3 5LN",
+    "addr:street": "Common Road",
+    "addr:suburb": "Chorleywood",
+    "amenity": "community_centre",
+    "name": "Chorleywood War Memorial Hall",
+    "operator": "Chorleywood Parish Council",
+    "website": "https://www.chorleywood-pc.gov.uk/chorleywood-war-memorial-hall/"
+  }
+},
+{
+  "type": "node",
+  "id": 8156230794,
+  "lat": 51.6905107,
+  "lon": -0.4177404,
+  "tags": {
+    "name": "Model Room",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 8156230795,
+  "lat": 51.6906635,
+  "lon": -0.4173953,
+  "tags": {
+    "name": "Diagon Alley",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 8156230796,
+  "lat": 51.6907597,
+  "lon": -0.4173131,
+  "tags": {
+    "name": "Creature Shop",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 8156230799,
+  "lat": 51.6913470,
+  "lon": -0.4182791,
+  "tags": {
+    "name": "Interior Sets",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 8156230800,
+  "lat": 51.6911015,
+  "lon": -0.4179011,
+  "tags": {
+    "name": "Great Hall",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 9534847099,
+  "lat": 51.6701533,
+  "lon": -0.4226772,
+  "tags": {
+    "club": "sport",
+    "name": "The Herts Bowling Club Ltd"
+  }
+},
+{
+  "type": "node",
+  "id": 9534847101,
+  "lat": 51.6688387,
+  "lon": -0.4252872,
+  "tags": {
+    "club": "sport",
+    "name": "West Herts Hockey Club"
+  }
+},
+{
+  "type": "node",
+  "id": 11658469783,
+  "lat": 51.6589932,
+  "lon": -0.3725629,
+  "tags": {
+    "contact:facebook": "https://www.facebook.com/1940sexperience",
+    "museum": "history",
+    "name": "1940's Experience",
+    "operator": "The Lincolnsfields Centre",
+    "operator:type": "private",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "node",
+  "id": 12211429045,
+  "lat": 51.6068779,
+  "lon": -0.4162657,
+  "tags": {
+    "amenity": "music_school",
+    "name": "Melodies Music Education"
+  }
+},
+{
+  "type": "node",
+  "id": 12211429060,
+  "lat": 51.6074735,
+  "lon": -0.4157958,
+  "tags": {
+    "amenity": "community_centre",
+    "community_centre": "community_hall",
+    "name": "Kate Fassnidge Community Hall"
+  }
+},
+{
+  "type": "node",
+  "id": 12750300524,
+  "lat": 51.6908206,
+  "lon": -0.4172107,
+  "tags": {
+    "name": "Ford Anglia",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 12750300525,
+  "lat": 51.6907773,
+  "lon": -0.4170431,
+  "tags": {
+    "name": "Hagrid's sidecar",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 12750300527,
+  "lat": 51.6915924,
+  "lon": -0.4177520,
+  "tags": {
+    "name": "Platform 9 ¾",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "way",
+  "id": 8903065,
+  "center": {
+    "lat": 51.6050478,
+    "lon": -0.3651272
+  },
+  "tags": {
+    "club": "sport",
+    "leisure": "sports_centre",
+    "name": "Harrow Saint Mary's Cricket Club",
+    "sport": "cricket",
+    "website": "https://www.harrowsaintmaryscricketclub.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 22475508,
+  "center": {
+    "lat": 51.6118259,
+    "lon": -0.3522683
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Bannister Outdoor Sports Centre",
+    "sport": "soccer;athletics;rugby_union;table_tennis",
+    "website": "https://www.everyoneactive.com/centre/bannister-outdoor-sports-centre/"
+  }
+},
+{
+  "type": "way",
+  "id": 26601048,
+  "center": {
+    "lat": 51.6484568,
+    "lon": -0.4171364
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Westfield Community College"
+  }
+},
+{
+  "type": "way",
+  "id": 28244207,
+  "center": {
+    "lat": 51.6272603,
+    "lon": -0.3922429
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "The Centre"
+  }
+},
+{
+  "type": "way",
+  "id": 33460093,
+  "center": {
+    "lat": 51.6126370,
+    "lon": -0.3634740
+  },
+  "tags": {
+    "club": "sport",
+    "leisure": "sports_centre",
+    "name": "Hatch End Lawn Tennis Club",
+    "sport": "tennis",
+    "website": "https://www.heltc.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 33616757,
+  "center": {
+    "lat": 51.6556230,
+    "lon": -0.3736247
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Bushey Grove Leisure Centre",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 46798454,
+  "center": {
+    "lat": 51.6397012,
+    "lon": -0.4821771
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:housenumber": "10",
+    "addr:postcode": "WD3 7NG",
+    "addr:street": "Meadow Way",
+    "email": "contactus@rltc.co.uk",
+    "leisure": "sports_centre",
+    "name": "Rickmansworth Lawn Tennis Club",
+    "phone": "+44 1923 774033",
+    "sport": "tennis",
+    "website": "https://www.rltc.co.uk/",
+    "website:booking": "https://clubspark.lta.org.uk/RickmansworthLawnTennisClub/Booking/"
+  }
+},
+{
+  "type": "way",
+  "id": 46984731,
+  "center": {
+    "lat": 51.6632491,
+    "lon": -0.4164962
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Cassiobury Tennis Club",
+    "sport": "tennis"
+  }
+},
+{
+  "type": "way",
+  "id": 47630729,
+  "center": {
+    "lat": 51.6125466,
+    "lon": -0.4435315
+  },
+  "tags": {
+    "brand": "David Lloyd Clubs",
+    "brand:wikidata": "Q5236716",
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "David Lloyd Clubs Northwood"
+  }
+},
+{
+  "type": "way",
+  "id": 97822370,
+  "center": {
+    "lat": 51.7035795,
+    "lon": -0.4924293
+  },
+  "tags": {
+    "amenity": "community_centre",
+    "building": "public",
+    "community_centre": "village_hall",
+    "name": "Chipperfield Village Hall"
+  }
+},
+{
+  "type": "way",
+  "id": 103050784,
+  "center": {
+    "lat": 51.6327484,
+    "lon": -0.4837851
+  },
+  "tags": {
+    "name": "The Causeway",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "way",
+  "id": 103127930,
+  "center": {
+    "lat": 51.7141516,
+    "lon": -0.4483527
+  },
+  "tags": {
+    "addr:city": "Kings Langley",
+    "addr:postcode": "WD4 8ET",
+    "addr:street": "The Nap",
+    "amenity": "community_centre",
+    "building": "yes",
+    "fhrs:id": "734524",
+    "name": "Kings Langley Community Centre",
+    "source:addr": "FHRS Open Data"
+  }
+},
+{
+  "type": "way",
+  "id": 145263151,
+  "center": {
+    "lat": 51.6571235,
+    "lon": -0.3971311
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:country": "GB",
+    "addr:postcode": "WD17 1JZ",
+    "amenity": "theatre",
+    "building": "yes",
+    "check_date": "2024-12-23",
+    "name": "Watford Palace Theatre",
+    "ref:GB:uprn": "100081282367",
+    "wikidata": "Q7974626",
+    "wikipedia": "en:Watford Palace Theatre"
+  }
+},
+{
+  "type": "way",
+  "id": 152411124,
+  "center": {
+    "lat": 51.6602455,
+    "lon": -0.4046845
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "building": "yes",
+    "description": "Run by EveryoneActive",
+    "fee": "yes",
+    "name": "Watford Leisure Centre",
+    "opening_hours": "Mo-We 06:00-22:30; Th, Fr 06:00-22:00; Sa, Su 08:00-18:00",
+    "operator:wikidata": "Q113562737",
+    "phone": "+44 1923 296 750",
+    "sport": "swimming;climbing",
+    "website": "https://www.everyoneactive.com/centre/watford-leisure-centre-central"
+  }
+},
+{
+  "type": "way",
+  "id": 154276446,
+  "center": {
+    "lat": 51.6907765,
+    "lon": -0.4439133
+  },
+  "tags": {
+    "name": "Langleybury Childrens' Farm",
+    "tourism": "zoo"
+  }
+},
+{
+  "type": "way",
+  "id": 159104734,
+  "center": {
+    "lat": 51.6557694,
+    "lon": -0.4180590
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:country": "GB",
+    "addr:postcode": "WD18 7AX",
+    "addr:street": "Linden Avenue",
+    "building": "yes",
+    "building:levels": "2",
+    "leisure": "sports_centre",
+    "ref:GB:uprn": "10008850387",
+    "sport": "swimming"
+  }
+},
+{
+  "type": "way",
+  "id": 194510046,
+  "center": {
+    "lat": 51.6500925,
+    "lon": -0.3889208
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "amenity": "theatre",
+    "building": "yes",
+    "name": "Pump House Theatre and Arts Centre",
+    "wikidata": "Q32676108"
+  }
+},
+{
+  "type": "way",
+  "id": 205151700,
+  "center": {
+    "lat": 51.6978031,
+    "lon": -0.4322634
+  },
+  "tags": {
+    "addr:city": "Kings Langley",
+    "addr:country": "GB",
+    "addr:postcode": "WD4 8PZ",
+    "building": "yes",
+    "club": "scout",
+    "name": "5th Watford North Scout Hut",
+    "ref:GB:uprn": "200000937774"
+  }
+},
+{
+  "type": "way",
+  "id": 205151752,
+  "center": {
+    "lat": 51.6978020,
+    "lon": -0.4322774
+  },
+  "tags": {
+    "addr:city": "Abbots Langley",
+    "addr:postcode": "WD5 0JF",
+    "addr:street": "Upper Highway",
+    "building": "yes",
+    "club": "scout",
+    "name": "5th Watford North Scout Group",
+    "old_name": "5th North Watford Scout Group",
+    "ref:GB:uprn": "200000937774"
+  }
+},
+{
+  "type": "way",
+  "id": 220068625,
+  "center": {
+    "lat": 51.6632149,
+    "lon": -0.3652784
+  },
+  "tags": {
+    "brand": "David Lloyd Clubs",
+    "brand:wikidata": "Q5236716",
+    "leisure": "sports_centre",
+    "name": "David Lloyd Leisure Centre",
+    "source": "Bing",
+    "website": "https://www.davidlloyd.co.uk/clubs/bushey/"
+  }
+},
+{
+  "type": "way",
+  "id": 222708408,
+  "center": {
+    "lat": 51.6958406,
+    "lon": -0.3919485
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:postcode": "WD25 7HH",
+    "addr:street": "Horseshoe Lane",
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Watford Leisure Centre Woodside",
+    "opening_hours": "Mo-Fr 06:30-22:00;Sa-Su 08:00-19:00",
+    "phone": "+44 1923 892710",
+    "ref:GB:uprn": "200000930104",
+    "website": "https://www.everyoneactive.com/Home/tabid/654/Default.aspx"
+  }
+},
+{
+  "type": "way",
+  "id": 223521099,
+  "center": {
+    "lat": 51.7047964,
+    "lon": -0.4161472
+  },
+  "tags": {
+    "addr:city": "Abbots Langley",
+    "addr:postcode": "WD5 0EH",
+    "addr:street": "Langley Road",
+    "alt_name": "3rd Watford North Scout Group",
+    "building": "scout_hut",
+    "club": "scout",
+    "email": "abbos@hotmail.co.uk",
+    "name": "1st Abbots Langley Scout Group",
+    "ref:GB:uprn": "200000941647",
+    "website": "http://www.abbotslangleyscouts.org.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 286966172,
+  "center": {
+    "lat": 51.6183638,
+    "lon": -0.3832373
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre"
+  }
+},
+{
+  "type": "way",
+  "id": 310872347,
+  "center": {
+    "lat": 51.6392735,
+    "lon": -0.4986109
+  },
+  "tags": {
+    "access": "yes",
+    "addr:city": "Rickmansworth",
+    "addr:housename": "William Penn Leisure Centre",
+    "addr:postcode": "WD3 8JN",
+    "addr:street": "Shepherd's Lane",
+    "addr:suburb": "Mill End",
+    "brand": "Everyone Active",
+    "brand:wikidata": "Q113562737",
+    "building": "yes",
+    "covered": "yes",
+    "fee": "yes",
+    "leisure": "sports_centre",
+    "name": "William Penn Leisure Centre",
+    "opening_hours": "06:30-22:00",
+    "ref:GB:uprn": "100081288906",
+    "sport": "swimming;fitness"
+  }
+},
+{
+  "type": "way",
+  "id": 491886636,
+  "center": {
+    "lat": 51.6222712,
+    "lon": -0.5125652
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:country": "GB",
+    "addr:postcode": "WD3 9TJ",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Maple Cross & West Hyde Community Centre",
+    "ref:GB:uprn": "200000938919"
+  }
+},
+{
+  "type": "way",
+  "id": 517736771,
+  "center": {
+    "lat": 51.6073810,
+    "lon": -0.3630954
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Hatch End Swimming Pool",
+    "sport": "swimming"
+  }
+},
+{
+  "type": "way",
+  "id": 517736773,
+  "center": {
+    "lat": 51.6076013,
+    "lon": -0.3633203
+  },
+  "tags": {
+    "amenity": "dancing_school",
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 519963691,
+  "center": {
+    "lat": 51.6149355,
+    "lon": -0.4406848
+  },
+  "tags": {
+    "club": "sport",
+    "leisure": "sports_centre",
+    "name": "Northwood Cricket Club",
+    "source": "OS Open Greenspace",
+    "sport": "cricket",
+    "website": "https://northwoodcc.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 531732271,
+  "center": {
+    "lat": 51.6060566,
+    "lon": -0.3381220
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Harrow Weald Lawn Tennis Club",
+    "sport": "tennis",
+    "website": "https://www.harrowwealdtennisclub.org.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 573723760,
+  "center": {
+    "lat": 51.6832605,
+    "lon": -0.3972588
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:country": "GB",
+    "addr:postcode": "WD25 0AH",
+    "building": "yes",
+    "club": "scout",
+    "name": "6th Watford North Scout Group",
+    "ref:GB:uprn": "200000931235"
+  }
+},
+{
+  "type": "way",
+  "id": 619265500,
+  "center": {
+    "lat": 51.6555977,
+    "lon": -0.5175527
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:postcode": "WD3 5LL",
+    "addr:street": "Colleyland",
+    "addr:suburb": "Chorleywood",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Chorleywood Art Centre",
+    "ref:GB:uprn": "200000939347",
+    "website": "https://chorleywoodcommunityartscentre.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 619265503,
+  "center": {
+    "lat": 51.6547767,
+    "lon": -0.5171655
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:country": "GB",
+    "addr:postcode": "WD3 5LN",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "The Chorleywood Memorial Hall",
+    "ref:GB:uprn": "100081289656",
+    "website": "https://www.chorleywood-pc.gov.uk/chorleywood-war-memorial-hall/"
+  }
+},
+{
+  "type": "way",
+  "id": 619265598,
+  "center": {
+    "lat": 51.6707011,
+    "lon": -0.5249921
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:housename": "Pavilion",
+    "addr:postcode": "WD3 6EB",
+    "addr:suburb": "Chenies",
+    "building": "pavilion",
+    "club": "sport",
+    "fhrs:id": "877149",
+    "fhrs:local_authority_id": "02150/2005/2/000",
+    "name": "Chenies and Latimer Cricket Club",
+    "source:addr": "FHRS Open Data",
+    "sport": "cricket",
+    "website": "https://www.chenies-cricket.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 621499971,
+  "center": {
+    "lat": 51.6350802,
+    "lon": -0.4679297
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:country": "GB",
+    "addr:postcode": "WD3 1FS",
+    "addr:street": "Riverside Drive",
+    "building": "yes",
+    "club": "scout",
+    "name": "Batchworth Sea Scouts HQ",
+    "ref:GB:uprn": "200000941005",
+    "website": "https://www.batchworth.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 623369104,
+  "center": {
+    "lat": 51.6343053,
+    "lon": -0.4774046
+  },
+  "tags": {
+    "leisure": "park",
+    "name": "Rickmansworth Aquadrome Local Nature Reserve",
+    "tourism": "attraction",
+    "website": "https://www.threerivers.gov.uk/egcl-page/rickmansworth-aquadrome",
+    "wikidata": "Q21061532"
+  }
+},
+{
+  "type": "way",
+  "id": 623435358,
+  "center": {
+    "lat": 51.6311195,
+    "lon": -0.4814911
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Nomad Kayak Club",
+    "sport": "canoe;canoe_polo"
+  }
+},
+{
+  "type": "way",
+  "id": 627721470,
+  "center": {
+    "lat": 51.6466675,
+    "lon": -0.3704964
+  },
+  "tags": {
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Bushey Arena"
+  }
+},
+{
+  "type": "way",
+  "id": 710692350,
+  "center": {
+    "lat": 51.6817423,
+    "lon": -0.4916572
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:postcode": "WD3 6AS",
+    "addr:street": "The Green",
+    "addr:suburb": "Sarratt",
+    "amenity": "community_centre",
+    "building": "public",
+    "community_centre": "village_hall",
+    "name": "Sarratt Village Hall",
+    "source": "Bing, observation"
+  }
+},
+{
+  "type": "way",
+  "id": 739588705,
+  "center": {
+    "lat": 51.6566048,
+    "lon": -0.3847819
+  },
+  "tags": {
+    "addr:city": "Bushey",
+    "addr:housenumber": "25",
+    "addr:postcode": "WD23 2NZ",
+    "addr:street": "Greatham Rd",
+    "alt_name": "TeamSport Go Karting Watford",
+    "brand": "TeamSport Go Karting",
+    "brand:wikidata": "Q7691413",
+    "building": "warehouse",
+    "club": "sport",
+    "fee": "yes",
+    "leisure": "sports_centre",
+    "name": "TeamSport Watford",
+    "ref:GB:uprn": "10093525263",
+    "reservation": "required",
+    "smoking": "no",
+    "sport": "karting",
+    "website": "https://www.team-sport.co.uk/go-kart-tracks/watford"
+  }
+},
+{
+  "type": "way",
+  "id": 776194500,
+  "center": {
+    "lat": 51.6440516,
+    "lon": -0.4549379
+  },
+  "tags": {
+    "access": "customers",
+    "leisure": "swimming_pool",
+    "length": "25",
+    "location": "indoor",
+    "name": "Rickmansworth School Swimming Pool",
+    "swimming_pool": "wading"
+  }
+},
+{
+  "type": "way",
+  "id": 785585131,
+  "center": {
+    "lat": 51.6010979,
+    "lon": -0.4020021
+  },
+  "tags": {
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "scout hut"
+  }
+},
+{
+  "type": "way",
+  "id": 792848423,
+  "center": {
+    "lat": 51.6520387,
+    "lon": -0.3911710
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:country": "GB",
+    "addr:postcode": "WD17 2DT",
+    "building": "yes",
+    "name": "Watford Museum",
+    "ref:GB:uprn": "100081282994",
+    "tourism": "museum",
+    "wikidata": "Q89578005",
+    "wikipedia": "en:Watford Museum"
+  }
+},
+{
+  "type": "way",
+  "id": 793248899,
+  "center": {
+    "lat": 51.6513245,
+    "lon": -0.5193904
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:housenumber": "37",
+    "addr:postcode": "WD3 5AE",
+    "addr:street": "Quickley Lane",
+    "addr:suburb": "Chorleywood",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "The Bridge",
+    "operator": "St Andrews Church"
+  }
+},
+{
+  "type": "way",
+  "id": 802220366,
+  "center": {
+    "lat": 51.6455816,
+    "lon": -0.5256524
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:country": "GB",
+    "addr:postcode": "WD3 5HW",
+    "addr:street": "Stag Lane",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "JK Club",
+    "ref:GB:uprn": "200000939672"
+  }
+},
+{
+  "type": "way",
+  "id": 806994178,
+  "center": {
+    "lat": 51.6330483,
+    "lon": -0.3948291
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:country": "GB",
+    "addr:postcode": "WD19 4LT",
+    "building": "yes",
+    "club": "scout",
+    "name": "Excaliber Explorer",
+    "ref:GB:uprn": "10001118394"
+  }
+},
+{
+  "type": "way",
+  "id": 824642543,
+  "center": {
+    "lat": 51.6119052,
+    "lon": -0.4213308
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "St Helen's School Sports Centre"
+  }
+},
+{
+  "type": "way",
+  "id": 856861594,
+  "center": {
+    "lat": 51.6119966,
+    "lon": -0.3352895
+  },
+  "tags": {
+    "addr:city": "Harrow",
+    "addr:housenumber": "90",
+    "addr:postcode": "HA3 6DQ",
+    "addr:street": "Uxbridge Road",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Blackwell Hall",
+    "ref:GB:uprn": "100023032481"
+  }
+},
+{
+  "type": "way",
+  "id": 862118248,
+  "center": {
+    "lat": 51.6391766,
+    "lon": -0.4680255
+  },
+  "tags": {
+    "amenity": "theatre",
+    "building": "yes",
+    "name": "Watersmeet"
+  }
+},
+{
+  "type": "way",
+  "id": 863558454,
+  "center": {
+    "lat": 51.6621967,
+    "lon": -0.5098784
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:housename": "Walled Garden",
+    "addr:postcode": "WD3 5SL",
+    "addr:street": "Chorleywood House Drive",
+    "addr:suburb": "Chorleywood",
+    "building": "yes",
+    "club": "sport",
+    "name": "Chorleywood Lawn Tennis Club",
+    "operator": "Chorleywood Lawn Tennis Club",
+    "phone": "+44 1923 284199",
+    "sport": "tennis",
+    "website": "https://www.chorleywoodtennis.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 865107698,
+  "center": {
+    "lat": 51.6582229,
+    "lon": -0.5039278
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:postcode": "WD3 5SG",
+    "addr:street": "Rickmansworth Road",
+    "addr:suburb": "Chorleywood",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "The Junction",
+    "phone": "+44 1923 282149",
+    "ref:GB:uprn": "10090788912",
+    "website": "https://cccw.org.uk/the-junction/"
+  }
+},
+{
+  "type": "way",
+  "id": 868760852,
+  "center": {
+    "lat": 51.6820290,
+    "lon": -0.4110393
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:country": "GB",
+    "addr:postcode": "WD24 6BH",
+    "amenity": "social_centre",
+    "building": "yes",
+    "club": "scout",
+    "name": "1st Watford North Scout Group",
+    "ref:GB:uprn": "10090228110"
+  }
+},
+{
+  "type": "way",
+  "id": 876334586,
+  "center": {
+    "lat": 51.6416262,
+    "lon": -0.5240084
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:postcode": "WD3 5DB",
+    "addr:street": "Nottingham Road",
+    "addr:suburb": "Herongate",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Heronsgate Hall",
+    "ref:GB:uprn": "100081289625"
+  }
+},
+{
+  "type": "way",
+  "id": 876363976,
+  "center": {
+    "lat": 51.6910551,
+    "lon": -0.4170686
+  },
+  "tags": {
+    "building": "yes",
+    "name": "Knight Bus",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "way",
+  "id": 883961784,
+  "center": {
+    "lat": 51.6146878,
+    "lon": -0.4196398
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Northwood Lawn Tennis Club",
+    "sport": "tennis"
+  }
+},
+{
+  "type": "way",
+  "id": 903367959,
+  "center": {
+    "lat": 51.6479958,
+    "lon": -0.4144902
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:country": "GB",
+    "addr:postcode": "WD18 6GT",
+    "addr:street": "Tolpits Lane",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Watford Muslim Youth Centre",
+    "ref:GB:uprn": "100081284838"
+  }
+},
+{
+  "type": "way",
+  "id": 903368157,
+  "center": {
+    "lat": 51.6480234,
+    "lon": -0.4155250
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:country": "GB",
+    "addr:postcode": "WD18 6NP",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Holyrood Social Centre",
+    "ref:GB:uprn": "100081284738"
+  }
+},
+{
+  "type": "way",
+  "id": 931603884,
+  "center": {
+    "lat": 51.6401144,
+    "lon": -0.5190039
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "sport": "swimming"
+  }
+},
+{
+  "type": "way",
+  "id": 931603885,
+  "center": {
+    "lat": 51.6400089,
+    "lon": -0.5188822
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "sport": "swimming"
+  }
+},
+{
+  "type": "way",
+  "id": 931920270,
+  "center": {
+    "lat": 51.6465052,
+    "lon": -0.5300784
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:housename": "Bullsland Hall",
+    "addr:postcode": "WD3 5BQ",
+    "addr:street": "Bullsland Lane",
+    "addr:suburb": "Chorleywood",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Bullsland Hall",
+    "operator": "Chorleywood Parish Council",
+    "operator:type": "government",
+    "phone": "+441923282568",
+    "ref:GB:uprn": "200000939307",
+    "website": "https://www.chorleywood-pc.gov.uk/bullsland-hall/"
+  }
+},
+{
+  "type": "way",
+  "id": 934332377,
+  "center": {
+    "lat": 51.6525700,
+    "lon": -0.3985739
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "sport": "swimming"
+  }
+},
+{
+  "type": "way",
+  "id": 957543020,
+  "center": {
+    "lat": 51.6570362,
+    "lon": -0.5186624
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:housename": "Scout Hut",
+    "addr:housenumber": "1",
+    "addr:postcode": "WD3 5QN",
+    "addr:street": "Orchard Drive",
+    "addr:suburb": "Chorleywood",
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Scout Hut",
+    "operator": "1st Chorleywood Scouts",
+    "operator:type": "community",
+    "ref:GB:uprn": "200000939591",
+    "website": "https://chorleywoodscouts.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 959577037,
+  "center": {
+    "lat": 51.6409243,
+    "lon": -0.4122916
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:country": "GB",
+    "addr:postcode": "WD18 9QA",
+    "building": "yes",
+    "club": "sport",
+    "name": "Watford and District Rifle Club",
+    "ref:GB:uprn": "200000932433",
+    "sport": "shooting"
+  }
+},
+{
+  "type": "way",
+  "id": 985775246,
+  "center": {
+    "lat": 51.6148969,
+    "lon": -0.4376611
+  },
+  "tags": {
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Holy Trinity Church Hall"
+  }
+},
+{
+  "type": "way",
+  "id": 989329642,
+  "center": {
+    "lat": 51.6622151,
+    "lon": -0.4224765
+  },
+  "tags": {
+    "barrier": "fence",
+    "leisure": "water_park"
+  }
+},
+{
+  "type": "way",
+  "id": 1061035401,
+  "center": {
+    "lat": 51.6928185,
+    "lon": -0.4375585
+  },
+  "tags": {
+    "addr:city": "Kings Langley",
+    "addr:country": "GB",
+    "addr:postcode": "WD4 8RJ",
+    "addr:street": "Langleybury Lane",
+    "building": "yes",
+    "check_date": "2025-06-23",
+    "club": "sport",
+    "name": "Langleybury Cricket Club",
+    "ref:GB:uprn": "10001115662"
+  }
+},
+{
+  "type": "way",
+  "id": 1073866279,
+  "center": {
+    "lat": 51.6779768,
+    "lon": -0.4048753
+  },
+  "tags": {
+    "building": "yes",
+    "club": "scout",
+    "name": "2nd Watford North Scout Group"
+  }
+},
+{
+  "type": "way",
+  "id": 1094723763,
+  "center": {
+    "lat": 51.6370627,
+    "lon": -0.4918369
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:postcode": "WD3 8HD",
+    "addr:street": "Church Lane",
+    "amenity": "community_centre",
+    "building": "yes",
+    "email": "info@millendcc.co.uk",
+    "name": "Mill End Comunnity Center",
+    "operator": "Milll End & District Community Association",
+    "operator:type": "charitable",
+    "phone": "+44 1923 493344",
+    "ref:GB:uprn": "10090788267",
+    "website": "https://www.millendcc.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 1254342590,
+  "center": {
+    "lat": 51.6558457,
+    "lon": -0.3851678
+  },
+  "tags": {
+    "addr:city": "Bushey",
+    "addr:country": "GB",
+    "addr:postcode": "WD23 2NZ",
+    "building": "yes",
+    "fee": "yes",
+    "indoor": "yes",
+    "leisure": "indoor_play",
+    "name": "Parents Paradise",
+    "ref:GB:uprn": "10034170863",
+    "reservation": "required",
+    "website": "https://parentsparadise.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 1318915061,
+  "center": {
+    "lat": 51.6371220,
+    "lon": -0.4013530
+  },
+  "tags": {
+    "amenity": "community_centre",
+    "building": "yes",
+    "name": "Oxhey Hall Community Association",
+    "website": "https://oxheyhall.co.uk/"
+  }
+},
+{
+  "type": "way",
+  "id": 1339141661,
+  "center": {
+    "lat": 51.6042587,
+    "lon": -0.3654306
+  },
+  "tags": {
+    "amenity": "community_centre",
+    "building": "pavilion",
+    "club": "sport",
+    "community_centre": "club_home",
+    "name": "Harrow St Mary's Cricket Club"
+  }
+},
+{
+  "type": "way",
+  "id": 1350893830,
+  "center": {
+    "lat": 51.6074127,
+    "lon": -0.4098030
+  },
+  "tags": {
+    "addr:city": "Northwood",
+    "addr:country": "GB",
+    "addr:postcode": "HA6 1RT",
+    "building": "yes",
+    "club": "scout",
+    "name": "1st Northwood Scout Group",
+    "ref:GB:uprn": "100023564106",
+    "source:addr:postcode": "ONSUD;OS Open UPRN"
+  }
+},
+{
+  "type": "way",
+  "id": 1390886493,
+  "center": {
+    "lat": 51.6034654,
+    "lon": -0.4819910
+  },
+  "tags": {
+    "addr:city": "Uxbridge",
+    "addr:postcode": "UB9 6BX",
+    "addr:street": "High Street",
+    "addr:village": "Harefield",
+    "amenity": "community_centre",
+    "building": "yes",
+    "community_centre": "church_hall",
+    "name": "St Mary's Church Hall",
+    "operator": "St Mary's Parish Church, Harefield",
+    "ref:GB:uprn": "100023423680",
+    "website": "https://stmarys-harefield.org.uk/about/church-hall.html"
+  }
+},
+{
+  "type": "way",
+  "id": 1418111292,
+  "center": {
+    "lat": 51.6047315,
+    "lon": -0.4988002
+  },
+  "tags": {
+    "addr:city": "Rickmansworth",
+    "addr:postcode": "WD3 9YB",
+    "addr:suburb": "West Harefield",
+    "club": "sport",
+    "name": "Rickmansworth Sailing Club",
+    "sport": "sailing",
+    "waterway": "boatyard",
+    "website": "https://www.rscsailing.org/"
+  }
+},
+{
+  "type": "way",
+  "id": 1429020947,
+  "center": {
+    "lat": 51.6009192,
+    "lon": -0.3763937
+  },
+  "tags": {
+    "club": "sport",
+    "leisure": "sports_centre",
+    "name": "Pinner Lawn Tennis Club",
+    "sport": "tennis",
+    "website": "https://www.pinnerltc.co.uk/"
+  }
+},
+{
+  "type": "relation",
+  "id": 12130066,
+  "center": {
+    "lat": 51.7046017,
+    "lon": -0.4211905
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "Multi Use Games Area",
+    "operator": "Abbots Langley Parish Council",
+    "type": "multipolygon",
+    "website": "https://www.abbotslangley-pc.gov.uk/multi-use-games-area/"
+  }
+},
+{
+  "type": "relation",
+  "id": 14898112,
+  "center": {
+    "lat": 51.6909433,
+    "lon": -0.4177943
+  },
+  "tags": {
+    "addr:city": "Watford",
+    "addr:housename": "Warner Bros. Studio Tour London",
+    "addr:postcode": "WD25 7LR",
+    "addr:street": "Studio Tour Drive",
+    "addr:suburb": "Leavesden",
+    "name": "Warner Bros. Studio Tour London",
+    "opening_hours": "Mo-Su 10:00-20:00",
+    "phone": "+44 20 3427 7777",
+    "tourism": "attraction",
+    "type": "multipolygon",
+    "website": "https://www.wbstudiotour.co.uk/",
+    "wheelchair": "yes",
+    "wikidata": "Q27924395",
+    "wikipedia": "en:Warner Bros. Studio Tour London – The Making of Harry Potter"
+  }
+}
+
+  ]
+}
