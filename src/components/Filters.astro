@@ -1,0 +1,86 @@
+---
+// Client-side filtering over the cards rendered in #results. No framework, no build step.
+import { TOWNS, CATEGORIES } from '../data/taxonomy';
+interface Props { hideTown?: boolean; hideCategory?: boolean }
+const { hideTown = false, hideCategory = false } = Astro.props;
+---
+<form class="filters" id="filters" role="search" onsubmit="return false">
+  <label>Search<input type="search" name="q" placeholder="e.g. ballet, swimming" /></label>
+  {!hideCategory && (
+    <label>Activity
+      <select name="cat"><option value="">All activities</option>
+        {Object.entries(CATEGORIES).map(([k, c]) => <option value={k}>{c.name}</option>)}
+      </select>
+    </label>
+  )}
+  {!hideTown && (
+    <label>Town
+      <select name="town"><option value="">All towns</option>
+        {Object.entries(TOWNS).map(([k, t]) => <option value={k}>{t.name}</option>)}
+      </select>
+    </label>
+  )}
+  <label>Child's age
+    <select name="age"><option value="">Any age</option>
+      <option value="0.5">Baby (under 1)</option>
+      {Array.from({ length: 16 }, (_, i) => i + 1).map((n) => <option value={n}>{n} {n === 1 ? 'year' : 'years'}</option>)}
+    </select>
+  </label>
+  <label>When
+    <select name="season"><option value="">Any time</option>
+      <option value="term-time">Term time</option>
+      <option value="holidays">School holidays</option>
+    </select>
+  </label>
+  <label class="check"><input type="checkbox" name="send" /> SEND-friendly only</label>
+</form>
+<p class="muted small" id="count" aria-live="polite"></p>
+
+<script>
+  const form = document.getElementById('filters') as HTMLFormElement | null;
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('#results .card'));
+  const count = document.getElementById('count');
+  const empty = document.getElementById('no-results');
+
+  function apply() {
+    if (!form) return;
+    const f = new FormData(form);
+    const q = String(f.get('q') ?? '').trim().toLowerCase();
+    const cat = String(f.get('cat') ?? '');
+    const town = String(f.get('town') ?? '');
+    const age = f.get('age') ? Number(f.get('age')) : null;
+    const season = String(f.get('season') ?? '');
+    const send = f.get('send') === 'on';
+    let shown = 0;
+    for (const c of cards) {
+      const d = c.dataset;
+      const ok =
+        (!q || (d.text ?? '').includes(q)) &&
+        (!cat || (d.cats ?? '').split(' ').includes(cat)) &&
+        (!town || (d.towns ?? '').split(' ').includes(town)) &&
+        (age === null || (Number(d.agemin) <= age && Number(d.agemax) >= Math.floor(age))) &&
+        (!season || (d.season ?? '').includes(season) || (d.season ?? '').includes('year-round')) &&
+        (!send || d.send === 'yes');
+      c.hidden = !ok;
+      if (ok) shown++;
+    }
+    if (count) count.textContent = `${shown} ${shown === 1 ? 'activity' : 'activities'}`;
+    if (empty) empty.hidden = shown !== 0;
+    const params = new URLSearchParams();
+    for (const [k, v] of f.entries()) if (v) params.set(k, String(v));
+    history.replaceState(null, '', params.toString() ? `?${params}` : location.pathname);
+  }
+
+  // Pre-fill from the URL so filtered views can be shared and linked (e.g. from the homepage search).
+  if (form) {
+    const params = new URLSearchParams(location.search);
+    for (const [k, v] of params) {
+      const el = form.elements.namedItem(k) as HTMLInputElement | HTMLSelectElement | null;
+      if (!el) continue;
+      if (el instanceof HTMLInputElement && el.type === 'checkbox') el.checked = v === 'on';
+      else el.value = v;
+    }
+    form.addEventListener('input', apply);
+    apply();
+  }
+</script>
