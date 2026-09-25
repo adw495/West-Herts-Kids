@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import Filters from '../../components/Filters.astro';
+import { getListings, byCategory, byTown, MIN_FOR_COMBO_PAGE, type Listing } from '../../lib/listings';
+import { CATEGORIES, TOWNS, type CategoryKey, type TownKey } from '../../data/taxonomy';
+
+export async function getStaticPaths() {
+  const listings = await getListings();
+  return (Object.keys(CATEGORIES) as CategoryKey[])
+    .map((cat) => ({ params: { cat }, props: { cat, items: byCategory(listings, cat) } }))
+    .filter((p) => p.props.items.length > 0);
+}
+interface Props { cat: CategoryKey; items: Listing[] }
+const { cat, items } = Astro.props;
+const c = CATEGORIES[cat];
+const townLinks = (Object.keys(TOWNS) as TownKey[]).filter((t) => byTown(items, t).length >= MIN_FOR_COMBO_PAGE);
+---
+<Base title={`${c.name} for kids in West Herts`} description={`${c.blurb} Find ${c.name.toLowerCase()} for children in Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley.`}>
+  <p class="breadcrumb"><a href="/">Home</a> › {c.name}</p>
+  <h1>{c.emoji} {c.name} for kids in West Herts</h1>
+  <p class="muted">{c.blurb}</p>
+  {townLinks.length > 0 && (
+    <p class="meta">{townLinks.map((t) => <a class="pill" href={`/towns/${t}/${cat}/`}>{TOWNS[t].name}</a>)}</p>
+  )}
+  <Filters hideCategory />
+  <div class="grid" id="results">{items.map((l) => <ListingCard listing={l} />)}</div>
+  <p class="empty" id="no-results" hidden>Nothing matches those filters. <a href="/list-your-activity/">Know one we've missed?</a></p>
+</Base>
