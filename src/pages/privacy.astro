@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site.config';
+---
+<Base title="Privacy notice and listing removals" description="How West Herts Kids handles personal data, and how to update or remove a listing.">
+  <p class="breadcrumb"><a href="/">Home</a> › Privacy</p>
+  <div class="prose">
+    <h1>Privacy notice</h1>
+    <p class="notice">Draft template. Review before launch, and register with the ICO if required.</p>
+    <h2>Who we are</h2>
+    <p>{SITE.name} ({SITE.domain}). Contact: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+    <h2>Business listings</h2>
+    <p>Listings contain business contact details that providers have already made public, for example on their own website. Where a provider is a sole trader, this may count as personal data. We rely on legitimate interests to help local families find activities. Any provider can ask us to correct or remove their listing at any time, and we'll do it within 7 days.</p>
+    <h2>Newsletter</h2>
+    <p>If you subscribe, we store your email address with our email provider only to send the newsletter. Every email has an unsubscribe link.</p>
+    <h2>Analytics</h2>
+    <p>We use privacy-friendly, cookie-free analytics that don't identify you.</p>
+    <h2>Your rights</h2>
+    <p>You can ask to see, correct or delete your data by emailing us. You can also complain to the Information Commissioner's Office (ico.org.uk).</p>
+  </div>
+</Base>

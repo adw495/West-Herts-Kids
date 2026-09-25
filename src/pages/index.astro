@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import ListingCard from '../components/ListingCard.astro';
+import { getListings, getPosts, byCategory, byTown, isFeaturedNow, formatDate } from '../lib/listings';
+import { TOWNS, CATEGORIES, type CategoryKey, type TownKey } from '../data/taxonomy';
+import { SITE } from '../site.config';
+
+const listings = await getListings();
+const posts = (await getPosts()).slice(0, 3);
+const featured = listings.filter(isFeaturedNow).slice(0, 6);
+const spotlight = featured.length ? featured : listings.slice(0, 6);
+const cats = (Object.keys(CATEGORIES) as CategoryKey[]).map((k) => ({ k, ...CATEGORIES[k], n: byCategory(listings, k).length })).filter((c) => c.n > 0);
+const towns = (Object.keys(TOWNS) as TownKey[]).map((k) => ({ k, ...TOWNS[k], n: byTown(listings, k).length })).filter((t) => t.n > 0);
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: SITE.url,
+  potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/activities/?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
+};
+---
+<Base title={SITE.name} description={SITE.tagline} jsonLd={jsonLd}>
+  <section class="hero">
+    <h1>Things to do for kids in West Herts</h1>
+    <p class="lead">Classes, clubs, holiday camps and days out across Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley, all in one place.</p>
+    <form class="search" action="/activities/" method="get" role="search">
+      <label class="sr-only" for="q">Search activities</label>
+      <input id="q" name="q" type="search" placeholder="Try 'swimming', 'ballet' or 'coding'" />
+      <button class="btn" type="submit">Search</button>
+    </form>
+  </section>
+
+  <h2>Browse by activity</h2>
+  <div class="chip-grid">
+    {cats.map((c) => <a class="tile" href={`/category/${c.k}/`}><span>{c.emoji}</span>{c.name}<span class="count">{c.n}</span></a>)}
+  </div>
+
+  <h2>{featured.length ? 'Featured activities' : 'Popular activities'}</h2>
+  <div class="grid" id="results">{spotlight.map((l) => <ListingCard listing={l} />)}</div>
+  <p><a href="/activities/">See all {listings.length} activities →</a></p>
+
+  <h2>Browse by town</h2>
+  <div class="chip-grid">
+    {towns.map((t) => <a class="tile" href={`/towns/${t.k}/`}>📍 {t.name}<span class="count">{t.n}</span></a>)}
+  </div>
+
+  {posts.length > 0 && (
+    <>
+      <h2>What's on &amp; guides</h2>
+      <div class="grid">
+        {posts.map((p) => (
+          <article class="card">
+            <span class="muted small">{formatDate(p.data.date)}</span>
+            <h3><a href={`/whats-on/${p.id}/`}>{p.data.title}</a></h3>
+            <p>{p.data.description}</p>
+          </article>
+        ))}
+      </div>
+    </>
+  )}
+
+  <section class="band">
+    <div>
+      <h2>Run a class or club locally?</h2>
+      <p>Listing is free. Add your activity, or claim your listing to update it.</p>
+    </div>
+    <a class="btn" href="/list-your-activity/">List your activity</a>
+  </section>
+</Base>

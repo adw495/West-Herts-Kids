@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site.config';
+import { TOWNS, CATEGORIES } from '../data/taxonomy';
+const action = SITE.forms.listingAction || `mailto:${SITE.email}?subject=Listing%20request`;
+const method = 'post';
+---
+<Base title="List or claim your kids' activity for free" description="Add your children's class, club or holiday camp in West Herts to the directory for free, or claim your existing listing to update it.">
+  <p class="breadcrumb"><a href="/">Home</a> › List your activity</p>
+  <h1>List or claim your activity</h1>
+  <p class="muted">Listing is <strong>free</strong>. Fill this in to add a new activity, or to claim and update an existing listing. We check every submission before it goes live.</p>
+  <form class="form" action={action} method={method} enctype={SITE.forms.listingAction ? undefined : 'text/plain'}>
+    <input type="hidden" name="claim" id="claim" />
+    <label>Your name<input name="contact_name" required autocomplete="name" /></label>
+    <label>Email<input name="contact_email" type="email" required autocomplete="email" /></label>
+    <label>Business or activity name<input name="business" required /></label>
+    <label>Website<input name="website" type="url" placeholder="https://" /></label>
+    <label>Activity type
+      <select name="category">{Object.entries(CATEGORIES).map(([k, c]) => <option value={k}>{c.name}</option>)}</select>
+    </label>
+    <label>Main town
+      <select name="town">{Object.entries(TOWNS).map(([k, t]) => <option value={k}>{t.name}</option>)}</select>
+    </label>
+    <label>Ages, days, times and prices<textarea name="details" rows="5" placeholder="e.g. Ages 4–7, Saturdays 9:30–10:15 at Croxley Community Centre, £9 per session, free trial"></textarea></label>
+    <label style="display:flex;gap:8px;align-items:flex-start;font-weight:500"><input type="checkbox" name="consent" required /> I confirm I'm authorised to list this business, and I'm happy for West Herts Kids to email me about this listing.</label>
+    <button class="btn" type="submit">Send</button>
+  </form>
+  <p class="small muted">Want more visibility? See <a href="/advertise/">featured listings</a>.</p>
+  <script>
+    const c = new URLSearchParams(location.search).get('claim');
+    const el = document.getElementById('claim') as HTMLInputElement | null;
+    if (c && el) el.value = c;
+  </script>
+</Base>

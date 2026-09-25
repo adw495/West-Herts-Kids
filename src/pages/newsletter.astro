@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site.config';
+const action = SITE.forms.newsletterAction;
+---
+<Base title="Free weekly 'What's on for kids' email" description="A short weekly email of what's on for children in West Herts: events, holiday camps and new classes. Free, unsubscribe any time.">
+  <p class="breadcrumb"><a href="/">Home</a> › Newsletter</p>
+  <h1>What's on for kids, every Thursday</h1>
+  <p class="muted">A short email of this weekend's events, upcoming holiday camps and new classes near you. Free, and you can unsubscribe any time.</p>
+  {action ? (
+    <form class="form" action={action} method="post">
+      <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+      <button class="btn" type="submit">Subscribe</button>
+    </form>
+  ) : (
+    <p><a class="btn" href={`mailto:${SITE.email}?subject=Subscribe`}>Subscribe by email</a></p>
+  )}
+  <p class="small muted">We'll only use your email to send the newsletter. See our <a href="/privacy/">privacy notice</a>.</p>
+</Base>
