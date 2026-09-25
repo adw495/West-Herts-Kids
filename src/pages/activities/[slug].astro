@@ -1,0 +1,107 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import { render } from 'astro:content';
+import { getListings, getPosts, ageLabel, priceLabel, dayName, formatDate, listingJsonLd, isFeaturedNow, type Listing } from '../../lib/listings';
+import { TOWNS, CATEGORIES } from '../../data/taxonomy';
+
+export async function getStaticPaths() {
+  const listings = await getListings();
+  return listings.map((listing) => ({ params: { slug: listing.id }, props: { listing, all: listings } }));
+}
+interface Props { listing: Listing; all: Listing[] }
+const { listing, all } = Astro.props;
+const d = listing.data;
+const { Content } = await render(listing);
+const price = priceLabel(d);
+const mainCat = d.categories[0];
+const mainTown = d.towns[0];
+const similar = all
+  .filter((l) => l.id !== listing.id && l.data.categories.some((c) => d.categories.includes(c)))
+  .sort((a, b) => Number(b.data.towns.includes(mainTown)) - Number(a.data.towns.includes(mainTown)))
+  .slice(0, 3);
+const posts = (await getPosts()).filter((p) => p.data.related.includes(listing.id)).slice(0, 3);
+const seasonText: Record<string, string> = { 'term-time': 'Term time', holidays: 'School holidays', 'year-round': 'All year' };
+const breadcrumbLd = {
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://westhertskids.co.uk/' },
+    { '@type': 'ListItem', position: 2, name: CATEGORIES[mainCat].name, item: `https://westhertskids.co.uk/category/${mainCat}/` },
+    { '@type': 'ListItem', position: 3, name: d.name },
+  ],
+};
+const title = `${d.name}: ${CATEGORIES[mainCat].name.toLowerCase()} in ${TOWNS[mainTown].name}`;
+---
+<Base title={title} description={d.summary} jsonLd={[listingJsonLd(listing), breadcrumbLd]}>
+  <p class="breadcrumb"><a href="/">Home</a> › <a href={`/category/${mainCat}/`}>{CATEGORIES[mainCat].name}</a> › <a href={`/towns/${mainTown}/`}>{TOWNS[mainTown].name}</a> › {d.name}</p>
+  <div class="detail">
+    <div>
+      <div class="meta">
+        {isFeaturedNow(listing) && <span class="pill gold">★ Featured</span>}
+        {d.categories.map((c) => <a class="pill" href={`/category/${c}/`}>{CATEGORIES[c].emoji} {CATEGORIES[c].name}</a>)}
+      </div>
+      <h1>{d.name}</h1>
+      <p class="lead muted">{d.summary}</p>
+      <div class="prose"><Content /></div>
+
+      {d.schedule.length > 0 && (
+        <>
+          <h2>Timetable</h2>
+          <table class="timetable">
+            <thead><tr><th>Day</th><th>Time</th><th>Notes</th></tr></thead>
+            <tbody>{d.schedule.map((s) => <tr><td>{dayName(s.day)}</td><td>{s.start}{s.end && `–${s.end}`}</td><td>{s.note}</td></tr>)}</tbody>
+          </table>
+        </>
+      )}
+
+      {d.send !== 'unknown' && (
+        <>
+          <h2>SEND and accessibility</h2>
+          <p>{d.send === 'yes' ? 'This provider says it welcomes children with special educational needs and disabilities.' : 'This provider has not said it offers specific SEND support.'} {d.sendNotes}</p>
+        </>
+      )}
+
+      {!d.claimed && (
+        <p class="notice">
+          {d.verified ? `Details last checked on ${formatDate(d.verified)} from public information.` : 'These details come from public information and have not yet been confirmed by the provider.'}
+          {' '}Is this your business? <a href={`/list-your-activity/?claim=${listing.id}`}>Claim this listing</a> to update it for free.
+        </p>
+      )}
+
+      {posts.length > 0 && (
+        <>
+          <h2>Mentioned in</h2>
+          <ul>{posts.map((p) => <li><a href={`/whats-on/${p.id}/`}>{p.data.title}</a></li>)}</ul>
+        </>
+      )}
+    </div>
+
+    <aside class="facts" aria-label="Key details">
+      <dl>
+        <div><dt>Ages</dt><dd>{ageLabel(d.ageMin, d.ageMax)}</dd></div>
+        {price && <div><dt>Price</dt><dd>{price}{d.priceNote && <span class="muted small"><br />{d.priceNote}</span>}</dd></div>}
+        {d.freeTrial && <div><dt>Trial</dt><dd>Free trial session available</dd></div>}
+        <div><dt>When</dt><dd>{d.season.map((s) => seasonText[s]).join(', ')}</dd></div>
+        <div><dt>Where</dt><dd>
+          {d.venue.name && <>{d.venue.name}<br /></>}
+          {d.venue.address && <>{d.venue.address}<br /></>}
+          {d.venue.postcode}
+          {!d.venue.name && !d.venue.address && d.towns.map((t) => TOWNS[t].name).join(', ')}
+        </dd></div>
+        {d.phone && <div><dt>Phone</dt><dd><a href={`tel:${d.phone.replace(/\s/g, '')}`}>{d.phone}</a></dd></div>}
+        {d.email && <div><dt>Email</dt><dd><a href={`mailto:${d.email}`}>{d.email}</a></dd></div>}
+      </dl>
+      <p style="display:grid;gap:8px;margin:16px 0 0">
+        {d.bookingUrl && <a class="btn accent" href={d.bookingUrl} rel="nofollow noopener" target="_blank">Book now</a>}
+        {d.website && <a class="btn secondary" href={d.website} rel="noopener" target="_blank">Visit website</a>}
+      </p>
+    </aside>
+  </div>
+
+  {similar.length > 0 && (
+    <>
+      <h2>Similar activities nearby</h2>
+      <div class="grid">{similar.map((l) => <ListingCard listing={l} />)}</div>
+    </>
+  )}
+</Base>

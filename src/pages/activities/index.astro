@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListingCard from '../../components/ListingCard.astro';
+import Filters from '../../components/Filters.astro';
+import { getListings } from '../../lib/listings';
+const listings = await getListings();
+---
+<Base title="All kids' activities in West Herts" description="Search and filter children's classes, clubs and holiday camps across Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley by age, town and activity.">
+  <p class="breadcrumb"><a href="/">Home</a> › All activities</p>
+  <h1>All kids' activities</h1>
+  <p class="muted">Filter by activity, town, age and whether it runs in term time or the school holidays.</p>
+  <Filters />
+  <div class="grid" id="results">{listings.map((l) => <ListingCard listing={l} />)}</div>
+  <p class="empty" id="no-results" hidden>Nothing matches those filters yet. Try widening the age or town, or <a href="/list-your-activity/">suggest an activity</a>.</p>
+</Base>
