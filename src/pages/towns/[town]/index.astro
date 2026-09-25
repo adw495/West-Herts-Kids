@@ -1,0 +1,29 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ListingCard from '../../../components/ListingCard.astro';
+import Filters from '../../../components/Filters.astro';
+import { getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, type Listing } from '../../../lib/listings';
+import { TOWNS, CATEGORIES, type TownKey, type CategoryKey } from '../../../data/taxonomy';
+
+export async function getStaticPaths() {
+  const listings = await getListings();
+  return (Object.keys(TOWNS) as TownKey[])
+    .map((town) => ({ params: { town }, props: { town, items: byTown(listings, town) } }))
+    .filter((p) => p.props.items.length > 0);
+}
+interface Props { town: TownKey; items: Listing[] }
+const { town, items } = Astro.props;
+const t = TOWNS[town];
+const catLinks = (Object.keys(CATEGORIES) as CategoryKey[]).filter((c) => byCategory(items, c).length >= MIN_FOR_COMBO_PAGE);
+---
+<Base title={`Things to do for kids in ${t.name}`} description={`${t.blurb} ${items.length} activities listed, with ages, prices and timetables.`}>
+  <p class="breadcrumb"><a href="/">Home</a> › <a href="/towns/">Towns</a> › {t.name}</p>
+  <h1>Kids' activities in {t.name}</h1>
+  <p class="muted">{t.blurb}</p>
+  {catLinks.length > 0 && (
+    <p class="meta">{catLinks.map((c) => <a class="pill" href={`/towns/${town}/${c}/`}>{CATEGORIES[c].emoji} {CATEGORIES[c].name}</a>)}</p>
+  )}
+  <Filters hideTown />
+  <div class="grid" id="results">{items.map((l) => <ListingCard listing={l} />)}</div>
+  <p class="empty" id="no-results" hidden>Nothing matches those filters. <a href="/list-your-activity/">Know one we've missed?</a></p>
+</Base>

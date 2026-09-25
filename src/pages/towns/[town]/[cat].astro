@@ -1,0 +1,36 @@
+---
+// Town x category landing pages, e.g. /towns/rickmansworth/swimming/ ("swimming lessons Rickmansworth").
+// Only generated when there are enough listings, to avoid thin pages.
+import Base from '../../../layouts/Base.astro';
+import ListingCard from '../../../components/ListingCard.astro';
+import { getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, type Listing } from '../../../lib/listings';
+import { TOWNS, CATEGORIES, type TownKey, type CategoryKey } from '../../../data/taxonomy';
+
+export async function getStaticPaths() {
+  const listings = await getListings();
+  const paths = [];
+  for (const town of Object.keys(TOWNS) as TownKey[]) {
+    for (const cat of Object.keys(CATEGORIES) as CategoryKey[]) {
+      const items = byCategory(byTown(listings, town), cat);
+      if (items.length >= MIN_FOR_COMBO_PAGE) paths.push({ params: { town, cat }, props: { town, cat, items } });
+    }
+  }
+  return paths;
+}
+interface Props { town: TownKey; cat: CategoryKey; items: Listing[] }
+const { town, cat, items } = Astro.props;
+const t = TOWNS[town];
+const c = CATEGORIES[cat];
+const itemList = {
+  '@context': 'https://schema.org', '@type': 'ItemList',
+  name: `${c.name} for kids in ${t.name}`,
+  itemListElement: items.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `https://westhertskids.co.uk/activities/${l.id}/`, name: l.data.name })),
+};
+---
+<Base title={`${c.name} for kids in ${t.name}`} description={`${items.length} ${c.name.toLowerCase()} options for children in ${t.name}, with ages, prices and timetables.`} jsonLd={itemList}>
+  <p class="breadcrumb"><a href="/">Home</a> › <a href={`/towns/${town}/`}>{t.name}</a> › {c.name}</p>
+  <h1>{c.emoji} {c.name} for kids in {t.name}</h1>
+  <p class="muted">{c.blurb} Here are {items.length} options in and around {t.name}.</p>
+  <div class="grid" id="results">{items.map((l) => <ListingCard listing={l} />)}</div>
+  <p class="small muted" style="margin-top:20px">Also see all <a href={`/category/${cat}/`}>{c.name.toLowerCase()} across West Herts</a> or <a href={`/towns/${town}/`}>everything in {t.name}</a>.</p>
+</Base>
