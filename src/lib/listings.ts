@@ -6,7 +6,7 @@ export type Listing = CollectionEntry<'listings'>;
 export type Post = CollectionEntry<'posts'>;
 
 const isFeaturedNow = (l: Listing) =>
-  l.data.featured && (!l.data.featuredUntil || l.data.featuredUntil >= new Date());
+  SITE.mode !== 'community' && l.data.featured && (!l.data.featuredUntil || l.data.featuredUntil >= new Date());
 
 /** Published listings, featured first, then alphabetical. */
 export async function getListings(): Promise<Listing[]> {
