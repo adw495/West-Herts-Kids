@@ -11,7 +11,7 @@ export const SITE = {
   // Site-wide alert bar (email capture, as recommended in the video). Set enabled: false to hide.
   alertBar: {
     enabled: true,
-    text: "Get the free weekly 'What's on for kids' email every Thursday",
+    text: "Get the free 'What's on for kids' email, most Thursdays in term time",
     linkText: 'Sign me up',
     href: '/newsletter/',
   },
