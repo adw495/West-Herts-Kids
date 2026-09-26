@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import ListingCard from '../../components/ListingCard.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
+import Postmark from '../../components/art/Postmark.astro';
 import { render } from 'astro:content';
 import { getPosts, getListings, formatDate, type Post } from '../../lib/listings';
 import { SITE } from '../../site.config';
@@ -15,26 +16,39 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const listings = await getListings();
 const related = listings.filter((l) => post.data.related.includes(l.id));
+const typeLabel: Record<string, string> = { 'whats-on': 'What’s on', guide: 'Guide', comparison: 'Comparison', news: 'News' };
 const ld = {
   '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description,
   datePublished: post.data.date.toISOString(), publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
 };
 ---
 <Base title={post.data.title} description={post.data.description} jsonLd={ld}>
-  <p class="breadcrumb"><a href="/">Home</a> › <a href="/whats-on/">What's on</a></p>
-  <article class="prose" style="padding:12px 0 8px">
-    <p class="muted small">{formatDate(post.data.date)}</p>
-    <h1>{post.data.title}</h1>
-    <Content />
-  </article>
-  {related.length > 0 && (
-    <>
-      <h2>Activities in this article</h2>
-      <div class="grid">{related.map((l) => <ListingCard listing={l} />)}</div>
-    </>
-  )}
-  <section class="band">
-    <div><h2>Get this in your inbox</h2><p>The weekly "What's on for kids" email, every Thursday. Free.</p></div>
-    <NewsletterForm source="article-band" compact />
+  <div class="container">
+    <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/whats-on/">What’s on</a></li><li aria-hidden="true">/</li><li aria-current="page">{typeLabel[post.data.type]}</li></ol>
+    <article style="padding:16px 0 64px">
+      <p class="kicker" style="margin-top:0">{typeLabel[post.data.type]} · {formatDate(post.data.date)}</p>
+      <h1 style="max-width:18em">{post.data.title}</h1>
+      <p class="lead" style="margin-top:16px">{post.data.description}</p>
+      <div class="prose" style="margin-top:32px"><Content /></div>
+    </article>
+    {related.length > 0 && (
+      <section style="padding-bottom:88px">
+        <p class="plate">In this article</p>
+        <h2 style="margin-bottom:32px">The <em>activities</em></h2>
+        <div class="cards">{related.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
+      </section>
+    )}
+  </div>
+  <section class="news on-dark" aria-labelledby="news-title">
+    <div class="container">
+      <Postmark />
+      <div style="max-width:720px">
+        <p class="eyebrow">The newsletter</p>
+        <h2 id="news-title">Get this in <em>your inbox</em></h2>
+        <p class="lead" style="margin:18px 0 26px">The free “What’s on for kids” email, every Thursday.</p>
+        <NewsletterForm source="article-band" />
+        <p class="fine">Unsubscribe any time. See our <a href="/privacy/">privacy notice</a>.</p>
+      </div>
+    </div>
   </section>
 </Base>
