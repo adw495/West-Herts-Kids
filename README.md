@@ -30,6 +30,9 @@ Once it's on GitHub, Claude Code and scheduled tasks can open pull requests, and
 
 ## 2. Go live on Cloudflare Pages
 
+We host on Cloudflare Pages rather than Vercel. Vercel's free Hobby plan is for personal, non-commercial use only, and this site may take a little income from featured listings later, which would mean Vercel's $20/month Pro plan. Cloudflare's free plan covers our needs, including the `/functions` newsletter endpoint.
+
+
 1. Register `westhertskids.co.uk` and `.com` (Cloudflare Registrar sells at cost).
 2. In Cloudflare, go to **Workers & Pages → Create → Pages → Connect to Git** and pick the repo.
 3. Build settings: framework **Astro**, build command `npm run build`, output directory `dist`.
@@ -41,7 +44,7 @@ Once it's on GitHub, Claude Code and scheduled tasks can open pull requests, and
 | Task | How |
 |---|---|
 | Add a listing | `npm run new:listing -- "Provider Name"`, fill it in, set `draft: false` |
-| Mark a paid featured listing | `featured: true` and `featuredUntil: 2027-01-31` in the listing |
+| Mark a paid featured listing (pocket-money mode only) | `featured: true` and `featuredUntil: 2027-01-31` in the listing |
 | Provider claims a listing | Update the details, then set `claimed: true` and today's `verified` date |
 | Removal request | Delete the file (and reply within 7 days, as the privacy notice promises) |
 | New article / what's on | Add a Markdown file to `src/content/posts/`, and link listings via `related:` |
@@ -53,11 +56,12 @@ Town-and-category pages (e.g. `/towns/rickmansworth/swimming/`) only generate on
 
 ## 4. Settings to fill in (`src/site.config.ts`)
 
-- `forms.newsletterAction`: the newsletter provider's form endpoint (Buttondown and MailerLite both have free tiers)
+- `forms.newsletterAction`: already set to `/api/subscribe`, our Cloudflare Pages Function that forwards to **beehiiv**. Setup steps: `docs/newsletter.md`
 - `forms.listingAction`: a Tally or Formspree endpoint for the "List your activity" form
-- `pricing`: featured listing prices shown on `/advertise/`
+- `mode`: `community` (no paid features, the current setting) or `pocket-money` (capped featured listings). See the low-stress rules in `CLAUDE.md`
+- `pricing`: featured listing prices, shown on `/advertise/` in pocket-money mode only
 
-Until the form endpoints are set, the forms fall back to `mailto:` links, so nothing breaks.
+Until the beehiiv keys are set in Cloudflare, the newsletter form shows a polite "not switched on yet" message. Until the listing form endpoint is set, that form falls back to a `mailto:` link.
 
 ## 5. Compliance checklist before launch
 
@@ -77,6 +81,7 @@ src/
   lib/listings.ts         helpers: sorting, labels, schema.org JSON-LD
   pages/                  routes (activities, category, towns, whats-on, ...)
   site.config.ts          name, forms, pricing, alert bar
+functions/api/subscribe.js  newsletter sign-up endpoint (Cloudflare Pages Function → beehiiv API)
 scripts/                  new-listing, collect-osm
 data/seed.py              the original 39 seeded listings (source of truth for the first batch)
 docs/                     automation prompts, verification queue
