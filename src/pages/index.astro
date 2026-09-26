@@ -9,12 +9,11 @@ import HeroArtMobile from '../components/art/HeroArtMobile.astro';
 import Wave from '../components/art/Wave.astro';
 import Postmark from '../components/art/Postmark.astro';
 import IndexCard from '../components/art/IndexCard.astro';
-import PhotoIcon from '../components/art/PhotoIcon.astro';
 import KeyMain from '../components/art/KeyMain.astro';
 import KeyBranch from '../components/art/KeyBranch.astro';
 import KeyRiver from '../components/art/KeyRiver.astro';
 import KeyCanal from '../components/art/KeyCanal.astro';
-import { getListings, getPosts, byCategory, byTown, isFeaturedNow, formatDate, ageShort, type Listing } from '../lib/listings';
+import { lc, getListings, getPosts, byCategory, byTown, isFeaturedNow, formatDate, ageShort, type Listing } from '../lib/listings';
 import { TOWNS, CATEGORIES, type CategoryKey, type TownKey } from '../data/taxonomy';
 import { SITE } from '../site.config';
 
@@ -174,16 +173,15 @@ const jsonLd = {
           {whatsOn && (
             <article>
               <figure class="photo-spot">
-                <PhotoIcon />
-                <figcaption>Photo spot: your own seasonal shot, such as conker hunting in Cassiobury Park</figcaption>
                 <span class="flag">What’s on</span>
+                <HeroArtMobile />
               </figure>
               <p class="kicker">What’s on · {formatDate(whatsOn.data.date)}</p>
               <h3 class="ed-title"><a href={`/whats-on/${whatsOn.id}/`}>{whatsOn.data.title}</a></h3>
               <p class="lead" style="margin:14px 0 24px">{whatsOn.data.description}</p>
               {woRows.length > 0 && (
                 <ul class="town-rows">
-                  {woRows.map((l) => <li><span>{TOWNS[l.data.towns[0]].name}</span><span><a href={`/activities/${l.id}/`}>{l.data.name}</a>: {CATEGORIES[l.data.categories[0]].name.toLowerCase()}, ages {ageShort(l.data.ageMin, l.data.ageMax)}</span></li>)}
+                  {woRows.map((l) => <li><span>{TOWNS[l.data.towns[0]].name}</span><span><a href={`/activities/${l.id}/`}>{l.data.name}</a>: {lc(CATEGORIES[l.data.categories[0]].name)}, ages {ageShort(l.data.ageMin, l.data.ageMax)}</span></li>)}
                 </ul>
               )}
               <a class="btn brick" href={`/whats-on/${whatsOn.id}/`} style="margin-top:20px">Read the guide <span aria-hidden="true">→</span></a>
