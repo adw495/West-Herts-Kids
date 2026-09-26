@@ -15,7 +15,7 @@ interface Props {
   noindex?: boolean;
 }
 const { title, description = SITE.tagline, jsonLd, noindex = false } = Astro.props;
-const fullTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
+const fullTitle = title.includes(SITE.name) || title.length + SITE.name.length + 3 > 62 ? title : `${title} | ${SITE.name}`;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const path = Astro.url.pathname;
 const nav = [
@@ -123,6 +123,14 @@ const footTowns = ['watford', 'rickmansworth', 'croxley-green', 'chorleywood', '
         const open = nav?.classList.toggle('open') ?? false;
         btn.setAttribute('aria-expanded', String(open));
         btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && nav?.classList.contains('open')) {
+          nav.classList.remove('open');
+          btn?.setAttribute('aria-expanded', 'false');
+          btn?.setAttribute('aria-label', 'Open menu');
+          btn?.focus();
+        }
       });
     </script>
   </body>
