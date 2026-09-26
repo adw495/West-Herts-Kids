@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import ListingCard from '../../components/ListingCard.astro';
 import Filters from '../../components/Filters.astro';
 import CategoryIcon from '../../components/CategoryIcon.astro';
-import { getListings, byCategory, byTown, MIN_FOR_COMBO_PAGE, type Listing } from '../../lib/listings';
+import { lc, getListings, byCategory, byTown, MIN_FOR_COMBO_PAGE, type Listing } from '../../lib/listings';
 import { CATEGORIES, TOWNS, CATEGORY_KEYS, type CategoryKey, type TownKey } from '../../data/taxonomy';
 
 export async function getStaticPaths() {
@@ -18,7 +18,7 @@ const c = CATEGORIES[cat];
 const figNo = String(CATEGORY_KEYS.indexOf(cat) + 1).padStart(2, '0');
 const townLinks = (Object.keys(TOWNS) as TownKey[]).filter((t) => byTown(items, t).length >= MIN_FOR_COMBO_PAGE);
 ---
-<Base title={`${c.name} for kids in West Herts`} description={`${c.blurb} Find ${c.name.toLowerCase()} for children in Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley.`}>
+<Base title={`${c.name} for kids in West Herts`} description={`${c.blurb} Find ${lc(c.name)} for children in Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley.`}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/activities/">All activities</a></li><li aria-hidden="true">/</li><li aria-current="page">{c.name}</li></ol>
     <header class="page-head" style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
@@ -30,9 +30,10 @@ const townLinks = (Object.keys(TOWNS) as TownKey[]).filter((t) => byTown(items, 
       </div>
     </header>
     {townLinks.length > 0 && (
-      <div class="pills" aria-label="By town">{townLinks.map((t) => <a class="chip" href={`/towns/${t}/${cat}/`}>{TOWNS[t].name}</a>)}</div>
+      <nav class="pills" aria-label="By town">{townLinks.map((t) => <a class="chip" href={`/towns/${t}/${cat}/`}>{TOWNS[t].name}</a>)}</nav>
     )}
     <Filters hideCategory />
+    <h2 class="sr-only">Listings</h2>
     <div class="cards" id="results">{items.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
     <p class="empty" id="no-results" hidden>Nothing matches those filters. <a href="/list-your-activity/">Know one we’ve missed?</a></p>
     <div style="height:96px"></div>
