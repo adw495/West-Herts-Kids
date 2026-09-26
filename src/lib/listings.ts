@@ -83,8 +83,11 @@ export function whenLabel(d: Listing['data']): string {
 }
 
 /** Short age range for big figures on cards, e.g. "5–12", "4+", "0–4". */
+/** Lower-case the first letter for mid-sentence use, keeping acronyms like STEM intact. */
+export const lc = (s: string) => s.replace(/^[A-Z](?![A-Z])/, (c) => c.toLowerCase());
+
 export function ageShort(min: number, max: number): string {
-  const f = (n: number) => (n < 1 ? `${Math.round(n * 12)}m` : `${n}`);
+  const f = (n: number) => (n > 0 && n < 1 ? `${Math.round(n * 12)}m` : `${n}`);
   if (max >= 18) return `${f(min)}+`;
   return `${f(min)}–${max}`;
 }
