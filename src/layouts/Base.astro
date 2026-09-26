@@ -75,7 +75,7 @@ const footerCats = Object.entries(CATEGORIES).slice(0, 8);
           <h4>For providers</h4>
           <ul>
             <li><a href="/list-your-activity/">Add or claim a listing</a></li>
-            <li><a href="/advertise/">Featured listings</a></li>
+            {SITE.mode !== 'community' && <li><a href="/advertise/">Featured listings</a></li>}
             <li><a href="/about/">About</a></li>
             <li><a href="/privacy/">Privacy &amp; removals</a></li>
           </ul>
