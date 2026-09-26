@@ -51,7 +51,7 @@ export async function onRequestPost({ request, env }) {
     email,
     reactivate_existing: false,
     send_welcome_email: true,
-    utm_source: 'westhertskids.co.uk',
+    utm_source: new URL(origin).hostname,
     utm_medium: 'website',
     utm_campaign: source,
     referring_site: origin,
