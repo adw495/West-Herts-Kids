@@ -18,7 +18,7 @@ export async function onRequestPost({ request, env }) {
   const reply = (ok, code, message) => {
     if (wantsJson) {
       return new Response(JSON.stringify({ ok, code, message }), {
-        status: ok ? 200 : code === 'invalid' ? 400 : 502,
+        status: ok ? 200 : code === 'invalid' ? 400 : code === 'unavailable' ? 503 : 502,
         headers: { 'content-type': 'application/json', 'cache-control': 'no-store' },
       });
     }
