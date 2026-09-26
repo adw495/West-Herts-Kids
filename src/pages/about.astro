@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { SITE } from '../site.config';
 ---
 <Base title="About West Herts Kids" description="An independent local guide to children's activities in West Hertfordshire, run from Croxley Green.">
   <p class="breadcrumb"><a href="/">Home</a> › About</p>
@@ -11,7 +12,9 @@ import Base from '../layouts/Base.astro';
     <ul>
       <li>Listings are free for every provider.</li>
       <li>We build listings from public information and check them regularly. Providers can claim a listing to update it.</li>
-      <li>Featured listings are paid and always clearly labelled.</li>
+      {SITE.mode === 'community'
+        ? <li>There are no paid placements: the order is alphabetical, and nobody can pay to be higher up.</li>
+        : <li>Featured listings are paid and always clearly labelled.</li>}
     </ul>
     <p>Spotted something wrong or missing? <a href="/list-your-activity/">Let us know</a>.</p>
   </div>

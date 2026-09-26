@@ -25,7 +25,7 @@ const method = 'post';
     <label style="display:flex;gap:8px;align-items:flex-start;font-weight:500"><input type="checkbox" name="consent" required /> I confirm I'm authorised to list this business, and I'm happy for West Herts Kids to email me about this listing.</label>
     <button class="btn" type="submit">Send</button>
   </form>
-  <p class="small muted">Want more visibility? See <a href="/advertise/">featured listings</a>.</p>
+  {SITE.mode !== 'community' && <p class="small muted">Want more visibility? See <a href="/advertise/">featured listings</a>.</p>}
   <script>
     const c = new URLSearchParams(location.search).get('claim');
     const el = document.getElementById('claim') as HTMLInputElement | null;

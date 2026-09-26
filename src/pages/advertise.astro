@@ -3,6 +3,14 @@ import Base from '../layouts/Base.astro';
 import { SITE } from '../site.config';
 const p = SITE.pricing;
 ---
+{SITE.mode === 'community' ? (
+<Base title="Listing your activity is free" description="Every listing on West Herts Kids is free. There are no paid placements." noindex>
+  <p class="breadcrumb"><a href="/">Home</a> › For providers</p>
+  <h1>Listing is free</h1>
+  <p class="muted">West Herts Kids doesn't sell placements at the moment. Every activity is listed free, in alphabetical order, and nobody can pay to be higher up.</p>
+  <p><a class="btn" href="/list-your-activity/">Add or claim your listing</a></p>
+</Base>
+) : (
 <Base title="Featured listings for kids' activity providers" description="Get your class, club or camp seen by more local parents in Watford, Rickmansworth, Croxley and Chorleywood.">
   <p class="breadcrumb"><a href="/">Home</a> › Featured listings</p>
   <h1>Get seen by more local parents</h1>
@@ -14,3 +22,4 @@ const p = SITE.pricing;
   </div>
   <p style="margin-top:24px"><a class="btn" href={`mailto:${SITE.email}?subject=Featured%20listing`}>Ask about featuring</a></p>
 </Base>
+)}
