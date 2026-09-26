@@ -1,0 +1,18 @@
+---
+// "Checked" rubber stamp. Shows the date a listing was last checked.
+interface Props { date: Date; size?: number; tilt?: number; class?: string }
+const { date, size = 78, tilt = -8, class: cls } = Astro.props;
+const day = date.getDate();
+const mon = date.toLocaleDateString('en-GB', { month: 'short' }).toUpperCase().slice(0, 3);
+const year = date.getFullYear();
+const label = `Checked ${date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}`;
+---
+<svg width={size} height={size} viewBox="0 0 104 104" role="img" aria-label={label} class:list={['stamp', cls]} style={`transform: rotate(${tilt}deg)`}>
+  <g filter="url(#stampInk)">
+    <circle cx="52" cy="52" r="48" fill="#FBF8F1" fill-opacity="0.6" stroke="#A8432A" stroke-width="2.8"></circle>
+    <circle cx="52" cy="52" r="33" fill="none" stroke="#A8432A" stroke-width="1.2"></circle>
+    <text font-family="Figtree, sans-serif" font-size="9" font-weight="700" letter-spacing="1.9" fill="#A8432A"><textPath href="#stampArc">CHECKED · WEST HERTS KIDS ·</textPath></text>
+    <text x="52" y="50" text-anchor="middle" font-family="Fraunces Variable, serif" font-size="14" font-weight="700" fill="#A8432A">{day} {mon}</text>
+    <text x="52" y="65" text-anchor="middle" font-family="Fraunces Variable, serif" font-size="14" font-weight="700" fill="#A8432A">{year}</text>
+  </g>
+</svg>

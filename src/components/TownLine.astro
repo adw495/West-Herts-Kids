@@ -1,0 +1,48 @@
+---
+// "Pick your stop": the towns drawn as stops on one line (design C).
+// Wide screens get the full hand-drawn map; narrower screens get the vertical line list.
+import LineMapArt from './art/LineMapArt.astro';
+import LineVerticalArt from './art/LineVerticalArt.astro';
+import Chevron from './art/Chevron.astro';
+import { TOWNS, type TownKey } from '../data/taxonomy';
+interface Props { counts: Record<string, number> }
+const { counts } = Astro.props;
+const n = (k: TownKey) => counts[k] ?? 0;
+const lbl = (k: TownKey) => `${n(k)} ${n(k) === 1 ? 'listing' : 'listings'}`;
+const href = (k: TownKey) => `/towns/${k}/`;
+// Only link stops that have a page (towns with at least one listing).
+const live = (k: TownKey) => n(k) > 0;
+type Row = { k: TownKey; note?: string; big?: boolean } | { label: string };
+const rows: Row[] = [
+  { k: 'chorleywood' }, { label: 'River Chess' }, { k: 'rickmansworth' }, { k: 'croxley-green' },
+  { label: 'River Gade & Grand Union Canal' }, { k: 'watford', note: 'Change here for the Langleys', big: true },
+  { k: 'abbots-langley' }, { k: 'kings-langley' }, { label: 'River Colne' }, { k: 'south-oxhey' }, { k: 'bushey' },
+];
+---
+<div class="line-wide">
+  <nav aria-label="Towns on the line" class="linemap">
+    <LineMapArt />
+    <a class="stop stop-col" href={href('chorleywood')} style="left:70px;top:196px;width:180px" aria-label={`Chorleywood, ${lbl('chorleywood')}`}><span class="dot" aria-hidden="true"><i></i></span><span class="tag"><b>Chorleywood</b><small>{lbl('chorleywood')}</small></span></a>
+    <a class="stop stop-col" href={href('rickmansworth')} style="left:270px;top:316px;width:180px" aria-label={`Rickmansworth, ${lbl('rickmansworth')}`}><span class="dot" aria-hidden="true"><i></i></span><span class="tag"><b class="lg">Rickmansworth</b><small>{lbl('rickmansworth')}</small></span></a>
+    <a class="stop stop-col" href={href('croxley-green')} style="left:490px;bottom:256px;width:180px" aria-label={`Croxley Green, ${lbl('croxley-green')}`}><span class="tag"><b class="lg">Croxley Green</b><small>{lbl('croxley-green')}</small></span><span class="dot" aria-hidden="true"><i></i></span></a>
+    <a class="stop stop-interchange" href={href('watford')} style="left:785px;top:246px" aria-label={`Watford, ${lbl('watford')}. Change here for Abbots Langley, Kings Langley and South Oxhey`}><span class="pill-stop" aria-hidden="true"></span><span class="tag"><b class="xl">Watford</b><small>{lbl('watford')} · change here</small></span></a>
+    <a class="stop" href={href('abbots-langley')} style="left:786px;top:179px" aria-label={`Abbots Langley, ${lbl('abbots-langley')}`}><span class="dot" aria-hidden="true"><i class="teal"></i></span><span class="tag"><b>Abbots Langley</b><small>{lbl('abbots-langley')}</small></span></a>
+    <a class="stop" href={href('kings-langley')} style="left:786px;top:59px" aria-label={`Kings Langley, ${lbl('kings-langley')}`}><span class="dot" aria-hidden="true"><i class="teal"></i></span><span class="tag"><b>Kings Langley</b><small>{lbl('kings-langley')}</small></span></a>
+    <a class="stop stop-col" href={href('bushey')} style="left:1000px;top:402px;width:160px" aria-label={`Bushey, ${lbl('bushey')}`}><span class="dot" aria-hidden="true"><i></i></span><span class="tag"><b>Bushey</b><small>{lbl('bushey')}</small></span></a>
+    <a class="stop" href={href('south-oxhey')} style="left:842px;top:486px" aria-label={`South Oxhey and Carpenders Park, ${lbl('south-oxhey')}`}><span class="dot dot-sm" aria-hidden="true"></span><span class="tag"><b class="sm">South Oxhey</b><small>{lbl('south-oxhey')}</small></span></a>
+  </nav>
+</div>
+
+<div class="line-narrow">
+  <nav aria-label="Towns on the line" class="linev">
+    <LineVerticalArt />
+    <ol>
+      {rows.map((r, i) => 'label' in r
+        ? <li aria-hidden="true" class="linev-label">{r.label}</li>
+        : <li><a href={href(r.k)} class:list={['linev-stop', { big: r.big, ruled: i > 0 && !('label' in rows[i - 1]) }]}>
+            <span class="linev-text"><b>{r.k === 'south-oxhey' ? 'South Oxhey & Carpenders Park' : TOWNS[r.k].name}</b><small>{lbl(r.k)}</small>{r.note && <span class="linev-note">{r.note}</span>}</span>
+            <Chevron />
+          </a></li>)}
+    </ol>
+  </nav>
+</div>
