@@ -1,66 +1,241 @@
 ---
 import Base from '../layouts/Base.astro';
 import ListingCard from '../components/ListingCard.astro';
-import { getListings, getPosts, byCategory, byTown, isFeaturedNow, formatDate } from '../lib/listings';
+import CategoryIcon from '../components/CategoryIcon.astro';
+import TownLine from '../components/TownLine.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import HeroArt from '../components/art/HeroArt.astro';
+import HeroArtMobile from '../components/art/HeroArtMobile.astro';
+import Wave from '../components/art/Wave.astro';
+import Postmark from '../components/art/Postmark.astro';
+import IndexCard from '../components/art/IndexCard.astro';
+import PhotoIcon from '../components/art/PhotoIcon.astro';
+import KeyMain from '../components/art/KeyMain.astro';
+import KeyBranch from '../components/art/KeyBranch.astro';
+import KeyRiver from '../components/art/KeyRiver.astro';
+import KeyCanal from '../components/art/KeyCanal.astro';
+import { getListings, getPosts, byCategory, byTown, isFeaturedNow, formatDate, ageShort, type Listing } from '../lib/listings';
 import { TOWNS, CATEGORIES, type CategoryKey, type TownKey } from '../data/taxonomy';
 import { SITE } from '../site.config';
 
 const listings = await getListings();
-const posts = (await getPosts()).slice(0, 3);
-const featured = listings.filter(isFeaturedNow).slice(0, 6);
-const spotlight = featured.length ? featured : listings.slice(0, 6);
-const cats = (Object.keys(CATEGORIES) as CategoryKey[]).map((k) => ({ k, ...CATEGORIES[k], n: byCategory(listings, k).length })).filter((c) => c.n > 0);
-const towns = (Object.keys(TOWNS) as TownKey[]).map((k) => ({ k, ...TOWNS[k], n: byTown(listings, k).length })).filter((t) => t.n > 0);
+const posts = await getPosts();
+const total = listings.length;
+
+const townCounts = Object.fromEntries((Object.keys(TOWNS) as TownKey[]).map((k) => [k, byTown(listings, k).length]));
+const cats = (Object.keys(CATEGORIES) as CategoryKey[]).map((k, i) => ({ k, i: i + 1, ...CATEGORIES[k], n: byCategory(listings, k).length }));
+
+// "Recently checked": featured first (pocket-money mode), then the most recently checked, one per main activity.
+const byChecked = [...listings].sort((a, b) => (b.data.verified?.getTime() ?? 0) - (a.data.verified?.getTime() ?? 0));
+const fresh: Listing[] = [];
+const seen = new Set<string>();
+for (const l of [...listings.filter(isFeaturedNow), ...byChecked]) {
+  if (fresh.length === 4) break;
+  if (fresh.includes(l) || seen.has(l.data.categories[0])) continue;
+  seen.add(l.data.categories[0]);
+  fresh.push(l);
+}
+
+const whatsOn = posts.find((p) => p.data.type === 'whats-on');
+const guide = posts.find((p) => p.data.type !== 'whats-on');
+const relatedOf = (ids: string[]) => ids.map((id) => listings.find((l) => l.id === id)).filter(Boolean) as Listing[];
+const woRows = whatsOn ? relatedOf(whatsOn.data.related).slice(0, 4) : [];
+const guideRows = guide ? relatedOf(guide.data.related).slice(0, 3) : [];
+const plural = (n: number, w: string) => `${n} ${w}${n === 1 ? '' : 's'}`;
+
 const jsonLd = {
   '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: SITE.url,
   potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/activities/?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
 };
 ---
 <Base title={SITE.name} description={SITE.tagline} jsonLd={jsonLd}>
-  <section class="hero">
-    <h1>Things to do for kids in West Herts</h1>
-    <p class="lead">Classes, clubs, holiday camps and days out across Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley, all in one place.</p>
-    <form class="search" action="/activities/" method="get" role="search">
-      <label class="sr-only" for="q">Search activities</label>
-      <input id="q" name="q" type="search" placeholder="Try 'swimming', 'ballet' or 'coding'" />
-      <button class="btn" type="submit">Search</button>
-    </form>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-copy">
+        <HeroArtMobile />
+        <p class="eyebrow">Watford &amp; Three Rivers, Hertfordshire</p>
+        <h1 id="hero-title">Classes, clubs and muddy days out, <em>close to home.</em></h1>
+        <p class="lead">{total} local classes, clubs, holiday camps and days out, from Chorleywood to Bushey. Every listing is checked against the provider’s own details.</p>
+
+        <form class="search-card" role="search" action="/activities/">
+          <div class="field">
+            <label for="hero-q">What are you looking for?</label>
+            <input class="input" id="hero-q" name="q" type="search" placeholder="Try ‘swimming’, ‘ballet’ or ‘half term’" />
+          </div>
+          <div class="search-row">
+            <div class="field">
+              <label for="hero-town">Town</label>
+              <select class="select" id="hero-town" name="town">
+                <option value="">Any town</option>
+                {(Object.keys(TOWNS) as TownKey[]).filter((k) => townCounts[k] > 0).map((k) => <option value={k}>{TOWNS[k].name}</option>)}
+              </select>
+            </div>
+            <div class="field">
+              <label for="hero-age">Age</label>
+              <select class="select" id="hero-age" name="age">
+                <option value="">Any age</option>
+                <option value="0-4">Under 5s</option>
+                <option value="5-11">5 to 11</option>
+                <option value="12-18">12 to 18</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Search</button>
+          </div>
+        </form>
+
+        <div class="popular">
+          <span>Popular:</span>
+          <a class="chip" href="/activities/?trial=on">Free tasters</a>
+          <a class="chip" href="/activities/?send=on">SEND-friendly</a>
+          <a class="chip" href="/activities/?age=0-4">Under 5s</a>
+          <a class="chip" href="/category/holiday-camps/">Holiday camps</a>
+        </div>
+      </div>
+      <HeroArt />
+    </div>
   </section>
 
-  <h2>Browse by activity</h2>
-  <div class="chip-grid">
-    {cats.map((c) => <a class="tile" href={`/category/${c.k}/`}><span>{c.emoji}</span>{c.name}<span class="count">{c.n}</span></a>)}
-  </div>
-
-  <h2>{featured.length ? 'Featured activities' : 'Popular activities'}</h2>
-  <div class="grid" id="results">{spotlight.map((l) => <ListingCard listing={l} />)}</div>
-  <p><a href="/activities/">See all {listings.length} activities →</a></p>
-
-  <h2>Browse by town</h2>
-  <div class="chip-grid">
-    {towns.map((t) => <a class="tile" href={`/towns/${t.k}/`}>📍 {t.name}<span class="count">{t.n}</span></a>)}
-  </div>
-
-  {posts.length > 0 && (
-    <>
-      <h2>What's on &amp; guides</h2>
-      <div class="grid">
-        {posts.map((p) => (
-          <article class="card">
-            <span class="muted small">{formatDate(p.data.date)}</span>
-            <h3><a href={`/whats-on/${p.id}/`}>{p.data.title}</a></h3>
-            <p>{p.data.description}</p>
-          </article>
-        ))}
+  <!-- THE LINE -->
+  <section class="line-sec band-paper2" aria-labelledby="line-title">
+    <Wave fill="#F6F1E6" />
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <p class="plate">Plate I — the line</p>
+          <h2 id="line-title">Pick your <em>stop</em></h2>
+          <p class="lead" style="margin-top:18px">Our towns, drawn as stops on one line, with the rivers and the canal running through. Tap a stop to see everything listed there. Many clubs cover more than one town, so they show up at each stop.</p>
+        </div>
+        <div class="line-side">
+          <ul class="line-key" aria-label="Key">
+            <li><KeyMain />Main line</li>
+            <li><KeyBranch />Langleys branch</li>
+            <li><KeyRiver />Rivers</li>
+            <li><KeyCanal />Canal</li>
+          </ul>
+          <a class="btn ghost" href="/towns/">All towns as a list <span aria-hidden="true">→</span></a>
+        </div>
       </div>
-    </>
+      <TownLine counts={townCounts} />
+    </div>
+  </section>
+
+  <!-- BROWSE BY ACTIVITY -->
+  <section class="section" aria-labelledby="cat-title" style="padding-top:96px;padding-bottom:0">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <p class="plate">Plate II — by activity</p>
+          <h2 id="cat-title">What are they <em>into</em> this term?</h2>
+        </div>
+        <p class="muted">Fourteen kinds of activity, from baby sensory to Saturday youth theatre. Numbers show how many local listings we have today.</p>
+      </div>
+      <ul class="figs">
+        {cats.map((c) => (
+          <li><a href={c.n > 0 ? `/category/${c.k}/` : '/list-your-activity/'}>
+            <span class="fig-no"><span>fig. {String(c.i).padStart(2, '0')}</span><span>{c.n}</span></span>
+            <CategoryIcon cat={c.k} />
+            <span class="fig-name">{c.name}</span>
+            <span class="fig-count">{c.n > 0 ? plural(c.n, 'listing') : 'Add yours'}</span>
+          </a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- RECENTLY CHECKED -->
+  <section class="section" aria-labelledby="fresh-title" style="padding-top:104px;padding-bottom:112px">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <p class="plate">Plate III — recently checked</p>
+          <h2 id="fresh-title">Fresh from the <em>notebook</em></h2>
+        </div>
+        <a class="btn" href="/activities/">Browse all {total} activities <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="cards">{fresh.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
+    </div>
+  </section>
+
+  <!-- WHAT'S ON -->
+  {(whatsOn || guide) && (
+    <section class="section band-paper3" aria-labelledby="whatson-title" style="padding-top:96px;padding-bottom:104px">
+      <Wave fill="#F6F1E6" />
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="plate">From the notebook</p>
+            <h2 id="whatson-title">What’s on <em>this season</em></h2>
+          </div>
+          <a class="btn ghost" href="/whats-on/">All guides and what’s on <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="editorial">
+          {whatsOn && (
+            <article>
+              <figure class="photo-spot">
+                <PhotoIcon />
+                <figcaption>Photo spot: your own seasonal shot, such as conker hunting in Cassiobury Park</figcaption>
+                <span class="flag">What’s on</span>
+              </figure>
+              <p class="kicker">What’s on · {formatDate(whatsOn.data.date)}</p>
+              <h3 class="ed-title"><a href={`/whats-on/${whatsOn.id}/`}>{whatsOn.data.title}</a></h3>
+              <p class="lead" style="margin:14px 0 24px">{whatsOn.data.description}</p>
+              {woRows.length > 0 && (
+                <ul class="town-rows">
+                  {woRows.map((l) => <li><span>{TOWNS[l.data.towns[0]].name}</span><span><a href={`/activities/${l.id}/`}>{l.data.name}</a>: {CATEGORIES[l.data.categories[0]].name.toLowerCase()}, ages {ageShort(l.data.ageMin, l.data.ageMax)}</span></li>)}
+                </ul>
+              )}
+              <a class="btn brick" href={`/whats-on/${whatsOn.id}/`} style="margin-top:20px">Read the guide <span aria-hidden="true">→</span></a>
+            </article>
+          )}
+          {guide && (
+            <article class="side-card">
+              <p class="kicker" style="margin-top:0">Guide · {formatDate(guide.data.date)}</p>
+              <h3 class="side-title"><a href={`/whats-on/${guide.id}/`}>{guide.data.title}</a></h3>
+              <p class="muted" style="margin:14px 0 20px;font-size:16px">{guide.data.description}</p>
+              {guideRows.length > 0 && (
+                <ol class="numlist">
+                  {guideRows.map((l, i) => <li><span class="n">{i + 1}</span><span><strong><a href={`/activities/${l.id}/`} style="color:inherit">{l.data.name}</a></strong>: {l.data.summary}</span></li>)}
+                </ol>
+              )}
+              <a class="btn link" href={`/whats-on/${guide.id}/`} style="margin-top:12px">Read the full guide <span aria-hidden="true">→</span></a>
+            </article>
+          )}
+        </div>
+      </div>
+    </section>
   )}
 
-  <section class="band">
-    <div>
-      <h2>Run a class or club locally?</h2>
-      <p>Listing is free. Add your activity, or claim your listing to update it.</p>
+  <!-- NEWSLETTER -->
+  <section class="news on-dark" aria-labelledby="news-title">
+    <div class="container">
+      <Postmark />
+      <div style="max-width:720px">
+        <p class="eyebrow">The newsletter</p>
+        <div style="position:relative;display:inline-block">
+          <h2 id="news-title">What’s on for kids, <em>in your inbox</em></h2>
+          <span class="hand news-hand" aria-hidden="true">every Thursday</span>
+        </div>
+        <p class="lead" style="margin:18px 0 26px">One short, free email every Thursday with the week’s classes, camps and days out around Watford and Three Rivers.</p>
+        <NewsletterForm source="home-band" dark />
+        <p class="fine">Free. One email a week. Unsubscribe any time. See our <a href="/privacy/">privacy notice</a>.</p>
+      </div>
     </div>
-    <a class="btn" href="/list-your-activity/">List your activity</a>
+  </section>
+
+  <!-- LIST YOUR ACTIVITY -->
+  <section class="listband" aria-labelledby="list-title">
+    <div class="container">
+      <h2 id="list-title">Run a class? <em>Listing is free.</em></h2>
+      <div>
+        <p class="muted" style="font-size:17px;line-height:1.6;margin-bottom:24px">If you run a class, club, camp or baby group anywhere in West Herts, send us the details. We check them against your website and add you at no cost. Already listed? Claim your page to keep times and prices up to date.</p>
+        <div class="btn-row">
+          <a class="btn" href="/list-your-activity/">List your activity</a>
+          <a class="btn ghost" href="/list-your-activity/">Claim a listing</a>
+        </div>
+      </div>
+      <IndexCard />
+    </div>
   </section>
 </Base>

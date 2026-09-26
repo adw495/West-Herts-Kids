@@ -5,21 +5,24 @@ const p = SITE.pricing;
 ---
 {SITE.mode === 'community' ? (
 <Base title="Listing your activity is free" description="Every listing on West Herts Kids is free. There are no paid placements." noindex>
-  <p class="breadcrumb"><a href="/">Home</a> › For providers</p>
-  <h1>Listing is free</h1>
-  <p class="muted">West Herts Kids doesn't sell placements at the moment. Every activity is listed free, in alphabetical order, and nobody can pay to be higher up.</p>
-  <p><a class="btn" href="/list-your-activity/">Add or claim your listing</a></p>
+  <section class="container hero-404">
+    <p class="plate">For providers</p>
+    <h1>Listing is <em>free</em></h1>
+    <p class="lead" style="margin-top:16px">West Herts Kids doesn’t sell placements at the moment. Every activity is listed free, in alphabetical order, and nobody can pay to be higher up.</p>
+    <div class="btn-row" style="margin-top:28px"><a class="btn" href="/list-your-activity/">Add or claim your listing</a></div>
+  </section>
 </Base>
 ) : (
 <Base title="Featured listings for kids' activity providers" description="Get your class, club or camp seen by more local parents in Watford, Rickmansworth, Croxley and Chorleywood.">
-  <p class="breadcrumb"><a href="/">Home</a> › Featured listings</p>
+  <div class="container" style="padding-bottom:96px">
   <h1>Get seen by more local parents</h1>
   <p class="muted">Every listing is free. Featured listings go to the top of the category and town pages parents are browsing.</p>
-  <div class="grid" style="margin-top:20px">
-    <article class="card"><span class="pill">Free</span><h3>Standard listing</h3><p>Your details, timetable, prices and a link to your website. Claim it any time to keep it up to date.</p></article>
-    <article class="card featured"><span class="pill gold">★ Featured</span><h3>£{p.featuredMonthly}/month or £{p.featuredYearly}/year</h3><p>Top of your category and town pages, a highlighted card and a spot on the homepage. Cancel any time.</p></article>
-    <article class="card"><span class="pill age">Newsletter</span><h3>£{p.newsletterSponsor} per issue</h3><p>Sponsor the weekly "What's on for kids" email sent to local families.</p></article>
+  <div class="cards" style="margin-top:20px">
+    <article class="fcard"><span class="fcard-cat">Free</span><h3>Standard listing</h3><p>Your details, timetable, prices and a link to your website. Claim it any time to keep it up to date.</p></article>
+    <article class="fcard featured"><span class="fcard-cat">★ Featured</span><h3>£{p.featuredMonthly}/month or £{p.featuredYearly}/year</h3><p>Top of your category and town pages, a highlighted card and a spot on the homepage. Cancel any time.</p></article>
+    <article class="fcard"><span class="fcard-cat">Newsletter</span><h3>£{p.newsletterSponsor} per issue</h3><p>Sponsor the weekly "What's on for kids" email sent to local families.</p></article>
   </div>
   <p style="margin-top:24px"><a class="btn" href={`mailto:${SITE.email}?subject=Featured%20listing`}>Ask about featuring</a></p>
+  </div>
 </Base>
 )}

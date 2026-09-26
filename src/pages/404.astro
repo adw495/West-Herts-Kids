@@ -2,5 +2,10 @@
 import Base from '../layouts/Base.astro';
 ---
 <Base title="Page not found" noindex>
-  <section class="hero"><h1>That page has wandered off</h1><p class="lead">Try <a href="/activities/">all activities</a> or the <a href="/">homepage</a>.</p></section>
+  <section class="container hero-404">
+    <p class="plate">Off the line</p>
+    <h1>That page has <em>wandered off</em></h1>
+    <p class="lead" style="margin-top:16px">It might have moved, or the link might be out of date.</p>
+    <div class="btn-row" style="margin-top:28px"><a class="btn" href="/activities/">All activities</a> <a class="btn ghost" href="/">Back to the homepage</a></div>
+  </section>
 </Base>

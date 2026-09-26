@@ -6,9 +6,13 @@ const action = SITE.forms.listingAction || `mailto:${SITE.email}?subject=Listing
 const method = 'post';
 ---
 <Base title="List or claim your kids' activity for free" description="Add your children's class, club or holiday camp in West Herts to the directory for free, or claim your existing listing to update it.">
-  <p class="breadcrumb"><a href="/">Home</a> › List your activity</p>
-  <h1>List or claim your activity</h1>
-  <p class="muted">Listing is <strong>free</strong>. Fill this in to add a new activity, or to claim and update an existing listing. We check every submission before it goes live.</p>
+  <div class="container" style="padding-bottom:96px">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">List your activity</li></ol>
+  <header class="page-head" style="margin-bottom:32px">
+    <p class="plate">For providers</p>
+    <h1>Run a class? <em>Listing is free.</em></h1>
+    <p class="lead">Fill this in to add a new activity, or to claim and update an existing listing. We check every submission against your own website before it goes live.</p>
+  </header>
   <form class="form" action={action} method={method} enctype={SITE.forms.listingAction ? undefined : 'text/plain'}>
     <input type="hidden" name="claim" id="claim" />
     <label>Your name<input name="contact_name" required autocomplete="name" /></label>
@@ -22,7 +26,7 @@ const method = 'post';
       <select name="town">{Object.entries(TOWNS).map(([k, t]) => <option value={k}>{t.name}</option>)}</select>
     </label>
     <label>Ages, days, times and prices<textarea name="details" rows="5" placeholder="e.g. Ages 4–7, Saturdays 9:30–10:15 at Croxley Community Centre, £9 per session, free trial"></textarea></label>
-    <label style="display:flex;gap:8px;align-items:flex-start;font-weight:500"><input type="checkbox" name="consent" required /> I confirm I'm authorised to list this business, and I'm happy for West Herts Kids to email me about this listing.</label>
+    <label class="consent"><input type="checkbox" name="consent" required /> I confirm I'm authorised to list this business, and I'm happy for West Herts Kids to email me about this listing.</label>
     <button class="btn" type="submit">Send</button>
   </form>
   {SITE.mode !== 'community' && <p class="small muted">Want more visibility? See <a href="/advertise/">featured listings</a>.</p>}
@@ -31,4 +35,5 @@ const method = 'post';
     const el = document.getElementById('claim') as HTMLInputElement | null;
     if (c && el) el.value = c;
   </script>
+  </div>
 </Base>

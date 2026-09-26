@@ -1,15 +1,27 @@
 ---
 import Base from '../layouts/Base.astro';
 import NewsletterForm from '../components/NewsletterForm.astro';
+import Postmark from '../components/art/Postmark.astro';
 ---
 <Base title="Free weekly 'What's on for kids' email" description="A short weekly email of what's on for children in West Herts: events, holiday camps and new classes. Free, unsubscribe any time.">
-  <p class="breadcrumb"><a href="/">Home</a> › Newsletter</p>
-  <h1>What's on for kids, every Thursday</h1>
-  <p class="muted">A short email of this weekend's events, upcoming holiday camps and new classes near you, across Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley.</p>
-  <p class="notice" id="nl-error" hidden></p>
-  <NewsletterForm source="newsletter-page" />
+  <section class="news on-dark" aria-labelledby="news-title" style="margin-top:24px">
+    <div class="container">
+      <Postmark />
+      <div style="max-width:720px">
+        <p class="eyebrow">The newsletter</p>
+        <div style="position:relative;display:inline-block">
+          <h1 id="news-title" style="color:var(--paper)">What’s on for kids, <em style="color:var(--brick-soft)">in your inbox</em></h1>
+          <span class="hand news-hand" aria-hidden="true">every Thursday</span>
+        </div>
+        <p class="lead" style="margin:18px 0 26px">One short, free email every Thursday: this weekend’s events, upcoming holiday camps and new classes across Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley.</p>
+        <p class="notice" id="nl-error" hidden style="color:var(--ink)"></p>
+        <NewsletterForm source="newsletter-page" />
+        <p class="fine">Free. Unsubscribe any time. We only use your email to send the newsletter. See our <a href="/privacy/">privacy notice</a>.</p>
+      </div>
+    </div>
+  </section>
+  <div style="height:72px"></div>
   <script>
-    // Shown when a no-JavaScript form post comes back with an error.
     const code = new URLSearchParams(location.search).get('error');
     const box = document.getElementById('nl-error');
     const text: Record<string, string> = {

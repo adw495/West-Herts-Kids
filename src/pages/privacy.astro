@@ -3,9 +3,11 @@ import Base from '../layouts/Base.astro';
 import { SITE } from '../site.config';
 ---
 <Base title="Privacy notice and listing removals" description="How West Herts Kids handles personal data, and how to update or remove a listing.">
-  <p class="breadcrumb"><a href="/">Home</a> › Privacy</p>
-  <div class="prose">
-    <h1>Privacy notice</h1>
+  <div class="container" style="padding-bottom:96px">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">Privacy</li></ol>
+  <header class="page-head"><p class="plate">The small print</p><h1>Privacy <em>notice</em></h1></header>
+  <div class="prose" style="margin-top:24px">
+    
     <p class="notice">Draft template. Review before launch, and register with the ICO if required.</p>
     <h2>Who we are</h2>
     <p>{SITE.name} ({SITE.domain}). Contact: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
@@ -17,5 +19,6 @@ import { SITE } from '../site.config';
     <p>We use privacy-friendly, cookie-free analytics that don't identify you.</p>
     <h2>Your rights</h2>
     <p>You can ask to see, correct or delete your data by emailing us. You can also complain to the Information Commissioner's Office (ico.org.uk).</p>
+  </div>
   </div>
 </Base>
