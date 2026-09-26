@@ -1,8 +1,10 @@
 // Central settings. Change things here, not in the templates.
 export const SITE = {
   name: 'West Herts Kids',
-  domain: 'westhertskids.co.uk',
-  url: 'https://westhertskids.co.uk',
+  // The domain isn't registered yet, so the site lives at westhertskids.pages.dev.
+  // When the .co.uk is bought: change these two lines, astro.config.mjs `site` and public/robots.txt.
+  domain: 'westhertskids.pages.dev',
+  url: 'https://westhertskids.pages.dev',
   tagline: "Classes, clubs and things to do for kids across Watford, Rickmansworth, Croxley, Chorleywood and Abbots Langley",
   email: 'hello@westhertskids.co.uk',
 
