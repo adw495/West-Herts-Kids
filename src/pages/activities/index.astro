@@ -6,10 +6,16 @@ import { getListings } from '../../lib/listings';
 const listings = await getListings();
 ---
 <Base title="All kids' activities in West Herts" description="Search and filter children's classes, clubs and holiday camps across Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley by age, town and activity.">
-  <p class="breadcrumb"><a href="/">Home</a> › All activities</p>
-  <h1>All kids' activities</h1>
-  <p class="muted">Filter by activity, town, age and whether it runs in term time or the school holidays.</p>
-  <Filters />
-  <div class="grid" id="results">{listings.map((l) => <ListingCard listing={l} />)}</div>
-  <p class="empty" id="no-results" hidden>Nothing matches those filters yet. Try widening the age or town, or <a href="/list-your-activity/">suggest an activity</a>.</p>
+  <div class="container">
+    <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">All activities</li></ol>
+    <header class="page-head">
+      <p class="plate">The whole notebook</p>
+      <h1>All kids’ <em>activities</em></h1>
+      <p class="lead">Filter by activity, town, age, and whether it runs in term time or the school holidays. Every listing shows when it was last checked.</p>
+    </header>
+    <Filters />
+    <div class="cards" id="results">{listings.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
+    <p class="empty" id="no-results" hidden>Nothing matches those filters yet. Try a wider age or another town, or <a href="/list-your-activity/">suggest an activity</a>.</p>
+    <div style="height:96px"></div>
+  </div>
 </Base>
