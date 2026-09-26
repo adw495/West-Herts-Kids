@@ -260,8 +260,8 @@ p { margin: 0 0 1em; }
 /* ---------- What's on / editorial ---------- */
 .editorial { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 64px; }
 @media (max-width: 960px) { .editorial { grid-template-columns: 1fr; gap: 40px; } }
-.photo-spot { position: relative; margin: 0; min-height: 260px; border-radius: 8px; background: #E2D8C2; background-image: repeating-linear-gradient(45deg, rgba(35,38,42,0.05) 0 2px, transparent 2px 14px); border: 1px dashed var(--line-2); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 24px; text-align: center; }
-.photo-spot figcaption { font-size: 15px; font-weight: 600; color: var(--ink-2); max-width: 380px; line-height: 1.45; }
+.photo-spot { position: relative; margin: 0; border-radius: 8px; background: var(--paper-2); border: 1px solid var(--line); overflow: hidden; padding: 56px 16px 8px; }
+.photo-spot .hero-art-m { display: block; width: 100%; max-width: 100%; height: auto; margin: 0; }
 .photo-spot .flag { position: absolute; left: 20px; top: 20px; display: inline-flex; align-items: center; height: 34px; padding: 0 14px; border-radius: 6px; background: var(--brick); color: #FBF8F1; font-size: 14px; font-weight: 700; }
 .photo-icon { width: 52px; height: 52px; }
 .kicker { margin: 28px 0 10px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--moss); }
