@@ -131,3 +131,7 @@ h3 { font-size: 1.1rem; margin: 0 0 0.35rem; }
   .nav a { white-space: nowrap; font-size: 0.9rem; }
   .site-header { position: static; }
 }
+
+/* Newsletter form inside the teal CTA band */
+.band .nl-form { flex: 1 1 320px; max-width: 460px; }
+.band .nl-msg, .band .nl-msg.ok, .band .nl-msg.err { color: #fff; }
