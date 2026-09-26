@@ -1,12 +1,25 @@
 ---
 import Base from '../../layouts/Base.astro';
+import TownLine from '../../components/TownLine.astro';
 import { getListings, byTown } from '../../lib/listings';
 import { TOWNS, type TownKey } from '../../data/taxonomy';
 const listings = await getListings();
-const towns = (Object.keys(TOWNS) as TownKey[]).map((k) => ({ k, ...TOWNS[k], n: byTown(listings, k).length })).filter((t) => t.n > 0);
+const counts = Object.fromEntries((Object.keys(TOWNS) as TownKey[]).map((k) => [k, byTown(listings, k).length]));
+const towns = (Object.keys(TOWNS) as TownKey[]).filter((k) => counts[k] > 0);
 ---
-<Base title="Kids' activities by town" description="Browse children's activities by town across West Hertfordshire.">
-  <p class="breadcrumb"><a href="/">Home</a> › Towns</p>
-  <h1>Kids' activities by town</h1>
-  <div class="chip-grid">{towns.map((t) => <a class="tile" href={`/towns/${t.k}/`}>📍 {t.name}<span class="count">{t.n}</span></a>)}</div>
+<Base title="Kids' activities by town" description="Browse children's activities by town across West Hertfordshire: Watford, Rickmansworth, Croxley Green, Chorleywood, Abbots Langley and more.">
+  <div class="container">
+    <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">Towns</li></ol>
+    <header class="page-head">
+      <p class="plate">Plate I — the line</p>
+      <h1>Pick your <em>stop</em></h1>
+      <p class="lead">Every town we cover, with the number of activities listed at each. Many clubs cover more than one town, so they appear at each stop.</p>
+    </header>
+    <div style="margin:32px 0 48px"><TownLine counts={counts} /></div>
+    <h2 style="font-size:1.9rem;margin-bottom:20px">All towns as a list</h2>
+    <div class="stops-grid">
+      {towns.map((k) => <a class="stop-tile" href={`/towns/${k}/`}><span class="dot" aria-hidden="true"><i></i></span><span><b>{TOWNS[k].name}</b><small>{counts[k]} {counts[k] === 1 ? 'listing' : 'listings'}</small></span></a>)}
+    </div>
+    <div style="height:96px"></div>
+  </div>
 </Base>
