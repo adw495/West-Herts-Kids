@@ -6,7 +6,7 @@ import Stamp from '../../components/Stamp.astro';
 import Wave from '../../components/art/Wave.astro';
 import SendIcon from '../../components/art/SendIcon.astro';
 import { render } from 'astro:content';
-import { getListings, getPosts, ageLabel, ageShort, priceLabel, priceFact, whenLabel, dayName, formatDate, listingJsonLd, isFeaturedNow, byTown, type Listing } from '../../lib/listings';
+import { lc, getListings, getPosts, ageLabel, ageShort, priceLabel, priceFact, whenLabel, dayName, formatDate, listingJsonLd, isFeaturedNow, byTown, type Listing } from '../../lib/listings';
 import { TOWNS, CATEGORIES } from '../../data/taxonomy';
 import { SITE } from '../../site.config';
 
@@ -39,7 +39,7 @@ const breadcrumbLd = {
     { '@type': 'ListItem', position: 3, name: d.name },
   ],
 };
-const title = `${d.name}: ${CATEGORIES[mainCat].name.toLowerCase()} in ${TOWNS[mainTown].name}`;
+const title = `${d.name}: ${lc(CATEGORIES[mainCat].name)} in ${TOWNS[mainTown].name}`;
 const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
 ---
 <Base title={title} description={d.summary} jsonLd={[listingJsonLd(listing), breadcrumbLd]}>
@@ -168,7 +168,7 @@ const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
             <p class="plate">Same family, different branch</p>
             <h2 id="similar-title">Similar <em>nearby</em></h2>
           </div>
-          <a class="btn ghost" href={`/category/${mainCat}/`}>All {CATEGORIES[mainCat].name.toLowerCase()} <span aria-hidden="true">→</span></a>
+          <a class="btn ghost" href={`/category/${mainCat}/`}>All {lc(CATEGORIES[mainCat].name)} <span aria-hidden="true">→</span></a>
         </div>
         <div class="cards">{similar.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
       </div>
