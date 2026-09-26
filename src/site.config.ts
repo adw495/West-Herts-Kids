@@ -14,14 +14,19 @@ export const SITE = {
     href: '/newsletter/',
   },
 
-  // Paste the form endpoints once the accounts exist (Tally, Formspree, MailerLite, Buttondown, etc.).
-  // Until they're set, the forms fall back to a mailto: link.
+  // newsletterAction: our own Cloudflare Pages Function (functions/api/subscribe.js), which forwards to beehiiv.
+  // listingAction: paste a Tally/Formspree endpoint once it exists; until then that form falls back to mailto:.
   forms: {
-    newsletterAction: '', // e.g. https://buttondown.com/api/emails/embed-subscribe/westhertskids
+    newsletterAction: '/api/subscribe',
     listingAction: '',    // e.g. https://tally.so/r/xxxx or https://formspree.io/f/xxxx
   },
 
-  // Featured listing pricing, shown on /advertise/
+  // Money mode (see CLAUDE.md, "Low-stress rules"):
+  //   'community'     – no paid features at all; /advertise/ just says listings are free. (current)
+  //   'pocket-money'  – featured listings on sale, but total side income capped under £1,000 a tax year.
+  mode: 'community' as 'community' | 'pocket-money',
+
+  // Featured listing pricing, shown on /advertise/ in pocket-money mode only
   pricing: {
     featuredMonthly: 25,
     featuredYearly: 240,
