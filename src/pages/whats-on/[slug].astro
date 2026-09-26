@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ListingCard from '../../components/ListingCard.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
 import { render } from 'astro:content';
 import { getPosts, getListings, formatDate, type Post } from '../../lib/listings';
 import { SITE } from '../../site.config';
@@ -34,6 +35,6 @@ const ld = {
   )}
   <section class="band">
     <div><h2>Get this in your inbox</h2><p>The weekly "What's on for kids" email, every Thursday. Free.</p></div>
-    <a class="btn" href="/newsletter/">Sign up</a>
+    <NewsletterForm source="article-band" compact />
   </section>
 </Base>
