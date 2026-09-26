@@ -2,8 +2,9 @@
 import Base from '../../layouts/Base.astro';
 import ListingCard from '../../components/ListingCard.astro';
 import Filters from '../../components/Filters.astro';
+import CategoryIcon from '../../components/CategoryIcon.astro';
 import { getListings, byCategory, byTown, MIN_FOR_COMBO_PAGE, type Listing } from '../../lib/listings';
-import { CATEGORIES, TOWNS, type CategoryKey, type TownKey } from '../../data/taxonomy';
+import { CATEGORIES, TOWNS, CATEGORY_KEYS, type CategoryKey, type TownKey } from '../../data/taxonomy';
 
 export async function getStaticPaths() {
   const listings = await getListings();
@@ -14,16 +15,26 @@ export async function getStaticPaths() {
 interface Props { cat: CategoryKey; items: Listing[] }
 const { cat, items } = Astro.props;
 const c = CATEGORIES[cat];
+const figNo = String(CATEGORY_KEYS.indexOf(cat) + 1).padStart(2, '0');
 const townLinks = (Object.keys(TOWNS) as TownKey[]).filter((t) => byTown(items, t).length >= MIN_FOR_COMBO_PAGE);
 ---
 <Base title={`${c.name} for kids in West Herts`} description={`${c.blurb} Find ${c.name.toLowerCase()} for children in Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley.`}>
-  <p class="breadcrumb"><a href="/">Home</a> › {c.name}</p>
-  <h1>{c.emoji} {c.name} for kids in West Herts</h1>
-  <p class="muted">{c.blurb}</p>
-  {townLinks.length > 0 && (
-    <p class="meta">{townLinks.map((t) => <a class="pill" href={`/towns/${t}/${cat}/`}>{TOWNS[t].name}</a>)}</p>
-  )}
-  <Filters hideCategory />
-  <div class="grid" id="results">{items.map((l) => <ListingCard listing={l} />)}</div>
-  <p class="empty" id="no-results" hidden>Nothing matches those filters. <a href="/list-your-activity/">Know one we've missed?</a></p>
+  <div class="container">
+    <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/activities/">All activities</a></li><li aria-hidden="true">/</li><li aria-current="page">{c.name}</li></ol>
+    <header class="page-head" style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
+      <CategoryIcon cat={cat} size={112} />
+      <div style="flex:1;min-width:260px">
+        <p class="plate">fig. {figNo} — {items.length} {items.length === 1 ? 'listing' : 'listings'}</p>
+        <h1>{c.name} <em>for kids</em></h1>
+        <p class="lead">{c.blurb}</p>
+      </div>
+    </header>
+    {townLinks.length > 0 && (
+      <div class="pills" aria-label="By town">{townLinks.map((t) => <a class="chip" href={`/towns/${t}/${cat}/`}>{TOWNS[t].name}</a>)}</div>
+    )}
+    <Filters hideCategory />
+    <div class="cards" id="results">{items.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
+    <p class="empty" id="no-results" hidden>Nothing matches those filters. <a href="/list-your-activity/">Know one we’ve missed?</a></p>
+    <div style="height:96px"></div>
+  </div>
 </Base>
