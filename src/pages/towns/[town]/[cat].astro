@@ -1,9 +1,10 @@
 ---
+import { SITE } from '../../../site.config';
 // Town x category landing pages, e.g. /towns/rickmansworth/swimming/. Only generated with enough listings.
 import Base from '../../../layouts/Base.astro';
 import ListingCard from '../../../components/ListingCard.astro';
 import CategoryIcon from '../../../components/CategoryIcon.astro';
-import { getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, type Listing } from '../../../lib/listings';
+import { lc, getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, type Listing } from '../../../lib/listings';
 import { TOWNS, CATEGORIES, type TownKey, type CategoryKey } from '../../../data/taxonomy';
 
 export async function getStaticPaths() {
@@ -24,10 +25,10 @@ const c = CATEGORIES[cat];
 const itemList = {
   '@context': 'https://schema.org', '@type': 'ItemList',
   name: `${c.name} for kids in ${t.name}`,
-  itemListElement: items.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `https://westhertskids.co.uk/activities/${l.id}/`, name: l.data.name })),
+  itemListElement: items.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/activities/${l.id}/`, name: l.data.name })),
 };
 ---
-<Base title={`${c.name} for kids in ${t.name}`} description={`${items.length} ${c.name.toLowerCase()} options for children in ${t.name}, with ages, prices and timetables.`} jsonLd={itemList}>
+<Base title={`${c.name} for kids in ${t.name}`} description={`${items.length} ${lc(c.name)} options for children in ${t.name}, with ages, prices and timetables.`} jsonLd={itemList}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href={`/towns/${town}/`}>{t.name}</a></li><li aria-hidden="true">/</li><li aria-current="page">{c.name}</li></ol>
     <header class="page-head" style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
@@ -38,7 +39,8 @@ const itemList = {
         <p class="lead">{c.blurb} Here are {items.length} options in and around {t.name}.</p>
       </div>
     </header>
+    <h2 class="sr-only">Listings</h2>
     <div class="cards" id="results" style="margin-top:32px">{items.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
-    <p class="muted" style="margin:32px 0 96px">Also see all <a href={`/category/${cat}/`}>{c.name.toLowerCase()} across West Herts</a>, or <a href={`/towns/${town}/`}>everything in {t.name}</a>.</p>
+    <p class="muted" style="margin:32px 0 96px">Also see all <a href={`/category/${cat}/`}>{lc(c.name)} across West Herts</a>, or <a href={`/towns/${town}/`}>everything in {t.name}</a>.</p>
   </div>
 </Base>

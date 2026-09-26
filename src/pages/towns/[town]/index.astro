@@ -24,8 +24,9 @@ const catLinks = (Object.keys(CATEGORIES) as CategoryKey[]).filter((c) => byCate
       <h1>Kids’ activities in <em>{t.name}</em></h1>
       <p class="lead">{t.blurb}</p>
     </header>
-    {catLinks.length > 0 && <div class="pills" aria-label="By activity">{catLinks.map((c) => <a class="chip" href={`/towns/${town}/${c}/`}>{CATEGORIES[c].name}</a>)}</div>}
+    {catLinks.length > 0 && <nav class="pills" aria-label="By activity">{catLinks.map((c) => <a class="chip" href={`/towns/${town}/${c}/`}>{CATEGORIES[c].name}</a>)}</nav>}
     <Filters hideTown />
+    <h2 class="sr-only">Listings</h2>
     <div class="cards" id="results">{items.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
     <p class="empty" id="no-results" hidden>Nothing matches those filters. <a href="/list-your-activity/">Know one we’ve missed?</a></p>
     <div style="height:96px"></div>
