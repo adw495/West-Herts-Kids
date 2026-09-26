@@ -1,22 +1,36 @@
 # Verification queue
 
-Providers found during the first collection (25 Sep 2026) that were **not published**, and why. Work through these to reach 50–80 listings.
+Last worked through: **27 Sep 2026**. Everything below was checked against providers' own websites or official class finders.
+
+## Done on 27 Sep 2026
+
+| Provider | Outcome |
+|---|---|
+| Ninja Warrior UK Watford | **Published** (ninjawarrioruk.co.uk/watford) |
+| ZKS Martial Arts Watford | **Published** (Nascot Wood Junior School) |
+| Rickmansworth Lawn Tennis Club (juniors) | **Published** (no times/prices online) |
+| Chorleywood Lawn Tennis Club (juniors) | **Published** (no times/prices online) |
+| Scout groups | **Published 9:** 1st Abbots Langley (3rd NW), 1st Chorleywood, 1st/2nd/5th/6th/7th/8th/9th North Watford |
+| Rugbytots | **Published** (Watford, Bushey, Croxley Green venues) |
+| Kumon | **Published** (7 local centres in one listing) |
+| Watford Gymnastics Club | **Corrected:** ages 0–16 (not 0–18), single venue at Watford Business Park (Croxley/South Oxhey venues no longer run), full timetable, SEND sessions |
+| Gambado Watford | **Closed permanently in 2020.** Left as a draft marked CLOSED; never publish |
+| SwimXcelerate | **Dropped:** its only venue is Merchant Taylors', Northwood (outside our area) |
+| Moo Music | **Dropped:** no Watford/Bushey/Rickmansworth franchise on the official site any more |
+| Berry Lane Art | **Dropped:** adults only |
+| Tumble Tots | **Dropped:** nearest groups are Borehamwood and Chalfont St Peter |
+| Puddle Ducks | **Dropped:** no pools in our towns |
+| 4th North Watford (1st Bricket Wood) Scouts | **Dropped:** meets in Bricket Wood (AL2), outside our towns |
+| Chorleywood Community Arts Centre | **Resolved:** its current site (chorleywoodcommunityartscentre.co.uk) is legitimate. The only children's class there is Cygnets Art School, which is already listed. The casino site was a different, older domain; still never link any old/unknown CCAC URL without checking it |
+
+## Still open
 
 | Provider | Why it's held back | Next step |
 |---|---|---|
-| Gambado Watford (Woodside Leisure Park) | In as `draft: true`. Only a TripAdvisor page mentions it; gambado.com no longer lists Watford, so it may have closed | Check it's open, then publish |
-| SwimXcelerate "Rickmansworth" / "Watford" | Both pages point to a Northwood venue (HA6 2HT) | Confirm the venues. Consider adding Northwood as a town |
-| Leon Taekwondo Watford (Woodside Community Centre, WD25 7ET) | Children's age range not published | Email or check the timetable |
-| ZKS Martial Arts Watford | Timetable page blocked the fetch | Check manually |
-| Moo Music Watford, Bushey & Rickmansworth | Nothing currently scheduled on Happity | Check moo-music.co.uk/areas/watford |
-| Berry Lane Art (Croxley Green) | £10 per 2-hour class, but no age range, and it may be for adults | Check |
-| Ninja Warrior UK Watford (WD25 7JZ) | Page returned no usable content | Check minimum ages and toddler sessions |
-| Rickmansworth / Chorleywood lawn tennis clubs | Behind a Cloudflare bot check | Check junior coaching pages manually |
-| Rickmansworth Sailing Club | Fetch failed | Check junior and youth sailing |
-| 1st Abbots Langley Scouts, Chorleywood Scouts, Watford North Scout groups | Site region-blocked or not fetched | Check sections, ages and meeting nights |
-| Rugbytots, Water Babies, Tumble Tots, Puddle Ducks, Kumon | Didn't check local classes | Use each brand's class finder for WD3, WD17–19, WD24–25 |
-| Watford Gymnastics Club | Published, but the age range is broad (0–18) | Confirm the real class ages |
-| Chorleywood Community Arts Centre | The venue is real, but **its old domain now serves a casino site**. Never link it | Find its current website, if it has one |
+| Leon Taekwondo Watford | Kids' class is "ages 5+", upper age not stated. Draft with placeholder ageMax 12 | Confirm the upper age on leontaekwondo.co.uk, then publish |
+| Water Babies (Meadow Wood School pool, Bushey WD23 4NN) | Days, times and prices only load via the site's JavaScript class search | Open the pool page in a browser, confirm details, then publish |
+| Rickmansworth Sailing Club | Site blocks automated checks. It's an RYA training centre (youth stages 1–4) at **Troy Lake, West Hyde, WD3 9YB**, not Batchworth Lake | Check junior/youth sailing ages and dates in a browser |
+| Bury Lake Young Mariners (Aquadrome) | New lead: youth water sports at the Aquadrome | Check and add |
 
 ## Useful aggregators to mine for more providers (don't copy their text)
 - Happity (baby and toddler): happity.co.uk/watford-rickmansworth
