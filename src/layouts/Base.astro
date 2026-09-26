@@ -1,7 +1,12 @@
 ---
 import '../styles/global.css';
 import { SITE } from '../site.config';
-import { TOWNS, CATEGORIES } from '../data/taxonomy';
+import { TOWNS } from '../data/taxonomy';
+import Defs from '../components/art/Defs.astro';
+import Logo from '../components/art/Logo.astro';
+import Hamburger from '../components/art/Hamburger.astro';
+import Wave from '../components/art/Wave.astro';
+import FooterLeaf from '../components/art/FooterLeaf.astro';
 
 interface Props {
   title: string;
@@ -16,10 +21,9 @@ const path = Astro.url.pathname;
 const nav = [
   { href: '/activities/', label: 'All activities' },
   { href: '/towns/', label: 'Towns' },
-  { href: '/whats-on/', label: "What's on" },
-  { href: '/list-your-activity/', label: 'List your activity' },
+  { href: '/whats-on/', label: 'What’s on' },
 ];
-const footerCats = Object.entries(CATEGORIES).slice(0, 8);
+const footTowns = ['watford', 'rickmansworth', 'croxley-green', 'chorleywood', 'abbots-langley', 'kings-langley', 'bushey'] as const;
 ---
 <!doctype html>
 <html lang="en-GB">
@@ -30,6 +34,7 @@ const footerCats = Object.entries(CATEGORIES).slice(0, 8);
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#F6F1E6" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:type" content="website" />
@@ -41,49 +46,84 @@ const footerCats = Object.entries(CATEGORIES).slice(0, 8);
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
-    {SITE.alertBar.enabled && (
-      <div class="alert-bar">
-        {SITE.alertBar.text}<a href={SITE.alertBar.href}>{SITE.alertBar.linkText} →</a>
-      </div>
-    )}
+    <Defs />
+    <a class="sr-only" href="#main">Skip to content</a>
+
     <header class="site-header">
       <div class="container">
-        <a class="logo" href="/">🌳 West Herts <span>Kids</span></a>
-        <nav class="nav" aria-label="Main">
-          {nav.map((n) => <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>)}
+        <a class="brand" href="/" aria-label="West Herts Kids, home">
+          <Logo />
+          <span>
+            <span class="brand-name">West Herts <em>Kids</em></span>
+            <span class="brand-sub">A local field guide to children’s activities</span>
+          </span>
+        </a>
+        <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><Hamburger /></button>
+        <nav class="nav" id="main-nav" aria-label="Main">
+          <ul>
+            {nav.map((n) => <li><a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
+            <li><a class="nav-cta" href="/list-your-activity/">List your activity</a></li>
+          </ul>
         </nav>
+        <svg class="rule" viewBox="0 0 1200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 5 C 120 3 260 7 400 5 S 700 3 820 6 S 1080 4 1200 5" fill="none" stroke="#23262A" stroke-opacity="0.3" stroke-width="1.2" filter="url(#rough)"></path></svg>
       </div>
     </header>
-    <main class="container">
+
+    <main id="main">
       <slot />
     </main>
+
     <footer class="site-footer">
-      <div class="container cols">
-        <div>
-          <h4>{SITE.name}</h4>
-          <p class="muted small">An independent local guide to children's activities in West Hertfordshire. Listings are free.</p>
+      <Wave fill="#F6F1E6" />
+      <div class="container">
+        <FooterLeaf />
+        <div class="foot-cols">
+          <div>
+            <p class="foot-brand">West Herts <em>Kids</em></p>
+            <p class="muted small" style="margin-top:12px">An independent guide to children’s activities in Watford and Three Rivers, run from Croxley Green. We’re not affiliated with any provider we list, and every listing is free.</p>
+          </div>
+          <nav aria-label="Towns">
+            <p class="foot-head">Towns</p>
+            <ul>{footTowns.map((k) => <li><a href={`/towns/${k}/`}>{TOWNS[k].name}</a></li>)}</ul>
+          </nav>
+          <nav aria-label="Activities">
+            <p class="foot-head">Activities</p>
+            <ul>
+              <li><a href="/activities/">All activities</a></li>
+              <li><a href="/category/holiday-camps/">Holiday camps</a></li>
+              <li><a href="/category/swimming/">Swimming</a></li>
+              <li><a href="/category/baby-toddler/">Baby &amp; toddler</a></li>
+              <li><a href="/whats-on/">What’s on</a></li>
+            </ul>
+          </nav>
+          <nav aria-label="About">
+            <p class="foot-head">About</p>
+            <ul>
+              <li><a href="/about/">About us</a></li>
+              <li><a href="/list-your-activity/">Add or claim a listing</a></li>
+              {SITE.mode !== 'community' && <li><a href="/advertise/">Featured listings</a></li>}
+              <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="/privacy/">Privacy &amp; removals</a></li>
+            </ul>
+          </nav>
         </div>
-        <div>
-          <h4>Towns</h4>
-          <ul>{Object.entries(TOWNS).slice(0, 6).map(([k, t]) => <li><a href={`/towns/${k}/`}>{t.name}</a></li>)}</ul>
+        <div class="foot-base">
+          <p>© {new Date().getFullYear()} {SITE.name}. Details can change, so check with the provider before you go.</p>
+          <p>Some location data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></p>
         </div>
-        <div>
-          <h4>Activities</h4>
-          <ul>{footerCats.map(([k, c]) => <li><a href={`/category/${k}/`}>{c.name}</a></li>)}</ul>
-        </div>
-        <div>
-          <h4>For providers</h4>
-          <ul>
-            <li><a href="/list-your-activity/">Add or claim a listing</a></li>
-            {SITE.mode !== 'community' && <li><a href="/advertise/">Featured listings</a></li>}
-            <li><a href="/about/">About</a></li>
-            <li><a href="/privacy/">Privacy &amp; removals</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="container muted small" style="margin-top:20px">
-        © {new Date().getFullYear()} {SITE.name}. Details can change, so please check with the provider before you go. Some location data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.
       </div>
     </footer>
+
+    <svg class="grain" aria-hidden="true" focusable="false"><rect width="100%" height="100%" filter="url(#grain)"></rect><rect width="100%" height="100%" filter="url(#fibre)"></rect></svg>
+
+    <script>
+      const btn = document.querySelector<HTMLButtonElement>('.menu-btn');
+      const nav = document.getElementById('main-nav');
+      btn?.addEventListener('click', () => {
+        const open = nav?.classList.toggle('open') ?? false;
+        btn.setAttribute('aria-expanded', String(open));
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    </script>
   </body>
 </html>
