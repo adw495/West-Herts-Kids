@@ -1,34 +1,43 @@
 ---
-import { ageLabel, priceLabel, townNames, isFeaturedNow, type Listing } from '../lib/listings';
-import { CATEGORIES } from '../data/taxonomy';
+// Field-guide card (design C): category line, name, summary, ticket perforation, key facts, stops and "Checked" stamp.
+import Stamp from './Stamp.astro';
+import { ageShort, priceFact, whenLabel, isFeaturedNow, type Listing } from '../lib/listings';
+import { CATEGORIES, TOWNS } from '../data/taxonomy';
 
-interface Props { listing: Listing }
-const { listing } = Astro.props;
+interface Props { listing: Listing; index?: number; compact?: boolean }
+const { listing, index = 0 } = Astro.props;
 const d = listing.data;
 const featured = isFeaturedNow(listing);
-const price = priceLabel(d);
+const price = priceFact(d);
+const cats = d.categories.slice(0, 2).map((c) => CATEGORIES[c].name).join(' · ');
+const tilt = [-10, 8, -4, 11][index % 4];
 ---
 <article
-  class:list={['card', { featured }]}
+  class:list={['fcard', { featured }]}
   data-towns={d.towns.join(' ')}
   data-cats={d.categories.join(' ')}
   data-agemin={d.ageMin}
   data-agemax={d.ageMax}
   data-season={d.season.join(' ')}
   data-send={d.send}
-  data-text={`${d.name} ${d.summary} ${d.venue.name ?? ''}`.toLowerCase()}
+  data-trial={d.freeTrial ? '1' : '0'}
+  data-text={`${d.name} ${d.summary} ${d.venue.name ?? ''} ${d.categories.map((c) => CATEGORIES[c].name).join(' ')}`.toLowerCase()}
 >
-  <div class="meta">
-    {featured && <span class="pill gold">★ Featured</span>}
-    <span class="pill">{CATEGORIES[d.categories[0]].emoji} {CATEGORIES[d.categories[0]].name}</span>
-    <span class="pill age">Ages {ageLabel(d.ageMin, d.ageMax)}</span>
+  <p class="fcard-cat">{featured && <span class="fcard-featured">Featured · </span>}{cats}</p>
+  <h3 class="fcard-name"><a href={`/activities/${listing.id}/`}>{d.name}</a></h3>
+  <p class="fcard-sum">{d.summary}</p>
+  <div class="fcard-foot">
+    <div class="perf" aria-hidden="true"><span></span><span></span></div>
+    <dl class="fcard-facts">
+      <div><dt>Ages</dt><dd><span class="fig">{ageShort(d.ageMin, d.ageMax)}</span></dd></div>
+      {price && <div><dt>{price.label}</dt><dd><span class="fig">{price.value}</span>{price.sub && <span class="fsub">{price.sub}</span>}</dd></div>}
+      <div class="wide"><dt>When</dt><dd><span class="fwhen">{whenLabel(d)}</span></dd></div>
+      <div class="wide"><dt>{d.towns.length > 1 ? 'Stops' : 'Stop'}</dt><dd>
+        {d.towns.slice(0, 3).map((t) => <a class="stoplink" href={`/towns/${t}/`}><span class="mini-dot" aria-hidden="true"></span>{TOWNS[t].name}</a>)}
+        {d.towns.length > 3 && <span class="fsub">+{d.towns.length - 3} more</span>}
+      </dd></div>
+      {d.send === 'yes' && <div class="wide"><dt>SEND</dt><dd><span class="fwhen">SEND-friendly sessions</span></dd></div>}
+    </dl>
   </div>
-  <h3><a href={`/activities/${listing.id}/`}>{d.name}</a></h3>
-  <p>{d.summary}</p>
-  <div class="meta small">
-    <span class="muted">📍 {townNames(d.towns).join(', ')}</span>
-    {price && <span class="muted">· {price}</span>}
-    {d.send === 'yes' && <span class="pill grey">SEND-friendly</span>}
-    {d.season.includes('holidays') && <span class="pill grey">Holidays</span>}
-  </div>
+  {d.verified && <Stamp date={d.verified} tilt={tilt} class="fcard-stamp" />}
 </article>

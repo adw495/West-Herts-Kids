@@ -18,7 +18,7 @@ export async function onRequestPost({ request, env }) {
   const reply = (ok, code, message) => {
     if (wantsJson) {
       return new Response(JSON.stringify({ ok, code, message }), {
-        status: ok ? 200 : code === 'invalid' ? 400 : 502,
+        status: ok ? 200 : code === 'invalid' ? 400 : code === 'unavailable' ? 503 : 502,
         headers: { 'content-type': 'application/json', 'cache-control': 'no-store' },
       });
     }
@@ -51,7 +51,7 @@ export async function onRequestPost({ request, env }) {
     email,
     reactivate_existing: false,
     send_welcome_email: true,
-    utm_source: 'westhertskids.co.uk',
+    utm_source: new URL(origin).hostname,
     utm_medium: 'website',
     utm_campaign: source,
     referring_site: origin,

@@ -6,8 +6,8 @@ The API key lives only in Cloudflare's encrypted settings and never reaches the 
 ## One-off setup (about 20 minutes)
 
 ### In beehiiv
-1. Sign up at beehiiv.com on the free **Launch** plan (up to 2,500 subscribers). Publication name: **West Herts Kids**.
-2. **Settings → Publication:** add the logo, and set the sender name to "West Herts Kids" and the reply-to address to hello@westhertskids.co.uk.
+1. Sign up at beehiiv.com on the free **Launch** plan (up to 2,500 subscribers). Done 27 Sep 2026 (publication `pub_8e8fc659-f444-4938-b253-319cdcc101c9`, web `westhertskids.beehiiv.com`). Creating an API key needs a one-off Stripe Identity check, which only the owner can do. Publication name: **West Herts Kids**.
+2. **Settings → Publication:** add the logo, and set the sender name to "West Herts Kids". Reply-to: hello@westhertskids.co.uk (forwarded to the owner's inbox by Cloudflare Email Routing). Set the timezone to London. Leave the postal address empty unless beehiiv insists; don't use a home address.
 3. **Settings → Subscribe forms / Audience:** turn **double opt-in ON** (best practice under UK GDPR, and it keeps the list clean).
 4. **Settings → Emails → Welcome email:** paste the draft below.
 5. Optional: **Settings → Domains:** point `news.westhertskids.co.uk` at the web archive (via Cloudflare DNS).
@@ -36,28 +36,35 @@ Until those two values are set, the form shows "Sign-ups are not switched on yet
 
 ## Draft: welcome email
 
-**Subject:** You're in: here's how West Herts Kids works
+Paste into beehiiv → Settings → Emails → Welcome email (switch it on). 
+
+**Subject:** You're in: what's on for kids around West Herts
+**Preview text:** Classes, clubs and days out near you, checked against the providers' own details.
 
 Hi there,
 
-Thanks for signing up to **What's on for kids**, the free weekly email for families around Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley.
+Thanks for signing up to **What's on for kids**, a short, free email for families around Watford, Rickmansworth, Croxley Green, Chorleywood and Abbots Langley.
 
-Every **Thursday** you'll get:
+It lands **most Thursdays in term time**, and it's always short:
 - **This weekend:** family events, workshops and days out nearby
 - **Coming up:** holiday camps and courses worth booking early
 - **New on the site:** classes and clubs we've just added
 
-Everything on westhertskids.co.uk is checked against the provider's own information, and every listing shows when it was last checked. If you spot something out of date, just reply to this email.
+Everything on West Herts Kids is checked against the provider's own information, and every listing shows when it was last checked. Details do change, though, so it's worth a quick check with the provider before you go.
 
 **Start here:**
-- [Browse all activities by age and town](https://westhertskids.co.uk/activities/)
+- [Find activities by age and town](https://westhertskids.co.uk/activities/)
+- [October half term: holiday camps and activities](https://westhertskids.co.uk/whats-on/october-half-term-2026-holiday-camps/)
 - [Swimming lessons: your local options](https://westhertskids.co.uk/whats-on/swimming-lessons-watford-rickmansworth/)
-- [Run a class? Listing is free](https://westhertskids.co.uk/list-your-activity/)
 
-Speak soon,
+Know a great class or club we've missed? Just reply and tell us. And if you run one, [listing it is free](https://westhertskids.co.uk/list-your-activity/).
+
+See you on Thursday,
 West Herts Kids
 
-*You're getting this because you signed up at westhertskids.co.uk. Unsubscribe any time using the link below.*
+*You're getting this because you signed up at West Herts Kids. You can unsubscribe any time using the link below.*
+
+*Keep the half-term link current: after 30 October, swap it for the latest what's-on post or remove it.*
 
 ---
 
@@ -69,7 +76,6 @@ West Herts Kids
 2. **This weekend** (3–5 items): **Name**, venue, town, day and time, price if known, one line on what it is, and a link.
 3. **Book now** (1–3 items): camps or courses that fill up.
 4. **New on West Herts Kids** (1–2 listings), linked to the site.
-5. **Sponsor slot** (later): "This week's issue is supported by [local provider]". Always clearly labelled.
-6. **Footer:** "Know something we've missed? Reply and tell us."
+5. **Footer:** "Know something we've missed? Reply and tell us."
 
 The weekly scheduled task already drafts the items; paste them into this template in beehiiv.

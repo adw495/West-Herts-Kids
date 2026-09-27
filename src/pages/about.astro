@@ -3,9 +3,11 @@ import Base from '../layouts/Base.astro';
 import { SITE } from '../site.config';
 ---
 <Base title="About West Herts Kids" description="An independent local guide to children's activities in West Hertfordshire, run from Croxley Green.">
-  <p class="breadcrumb"><a href="/">Home</a> › About</p>
-  <div class="prose">
-    <h1>About West Herts Kids</h1>
+  <div class="container" style="padding-bottom:96px">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">About</li></ol>
+  <header class="page-head"><p class="plate">About the guide</p><h1>About West Herts <em>Kids</em></h1></header>
+  <div class="prose" style="margin-top:24px">
+    
     <p>West Herts Kids is an independent guide to children's classes, clubs, holiday camps and days out in Watford, Rickmansworth, Croxley Green, Chorleywood, Abbots Langley and nearby.</p>
     <p>Finding what's on for kids locally usually means digging through Facebook groups, franchise websites and out-of-date listings. This site brings it together in one place, with ages, prices and timetables you can actually filter.</p>
     <h2>How listings work</h2>
@@ -17,5 +19,6 @@ import { SITE } from '../site.config';
         : <li>Featured listings are paid and always clearly labelled.</li>}
     </ul>
     <p>Spotted something wrong or missing? <a href="/list-your-activity/">Let us know</a>.</p>
+  </div>
   </div>
 </Base>

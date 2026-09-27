@@ -1,37 +1,24 @@
 ---
 // Newsletter sign-up form. Posts to the Cloudflare Pages Function at /api/subscribe (functions/api/subscribe.js),
 // which forwards the email to beehiiv. Works without JavaScript; with JavaScript it submits in place.
+// Styles live in global.css (.nl-*). Put it inside an element with class "on-dark" on dark backgrounds.
 import { SITE } from '../site.config';
-interface Props { source?: string; compact?: boolean }
+interface Props { source?: string; compact?: boolean; dark?: boolean }
 const { source = 'newsletter-page', compact = false } = Astro.props;
 const id = `nl-${source}`;
 ---
-<form class:list={['nl-form', { compact }]} action={SITE.forms.newsletterAction} method="post" data-newsletter>
+<form class="nl-form" action={SITE.forms.newsletterAction} method="post" data-newsletter>
   <input type="hidden" name="source" value={source} />
   <div class="nl-hp" aria-hidden="true">
     <label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
   </div>
-  <label for={id} class={compact ? 'sr-only' : 'nl-label'}>Your email</label>
+  <label for={id} class={compact ? 'sr-only' : 'nl-label'}>Your email address</label>
   <div class="nl-row">
-    <input id={id} type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+    <input id={id} type="email" name="email" required autocomplete="email" placeholder="you@example.co.uk" />
     <button class="btn" type="submit">Sign me up</button>
   </div>
-  <p class="nl-msg small" role="status" aria-live="polite"></p>
-  {!compact && (
-    <p class="small muted">Free, every Thursday. Unsubscribe any time. We only use your email to send the newsletter. See our <a href="/privacy/">privacy notice</a>.</p>
-  )}
+  <p class="nl-msg" role="status" aria-live="polite"></p>
 </form>
-
-<style>
-  .nl-form { display: grid; gap: 8px; max-width: 520px; }
-  .nl-label { font-weight: 700; font-size: 0.9rem; }
-  .nl-row { display: flex; gap: 8px; flex-wrap: wrap; }
-  .nl-row input { flex: 1 1 220px; min-width: 0; font: inherit; padding: 11px 14px; border-radius: 999px; border: 1px solid var(--line); background: #fff; }
-  .nl-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
-  .nl-msg:empty { display: none; }
-  .nl-msg.ok { color: var(--brand); font-weight: 700; }
-  .nl-msg.err { color: #9a3412; font-weight: 700; }
-</style>
 
 <script>
   for (const form of document.querySelectorAll<HTMLFormElement>('form[data-newsletter]')) {
@@ -43,10 +30,10 @@ const id = `nl-${source}`;
       try {
         const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { accept: 'application/json' } });
         const data = await res.json().catch(() => ({ ok: false, message: 'Something went wrong. Please try again.' }));
-        if (msg) { msg.textContent = data.message; msg.className = `nl-msg small ${data.ok ? 'ok' : 'err'}`; }
+        if (msg) { msg.textContent = data.message; msg.className = `nl-msg ${data.ok ? 'ok' : 'err'}`; }
         if (data.ok) form.reset();
       } catch {
-        if (msg) { msg.textContent = 'Could not connect. Please check your internet and try again.'; msg.className = 'nl-msg small err'; }
+        if (msg) { msg.textContent = 'Could not connect. Please check your internet and try again.'; msg.className = 'nl-msg err'; }
       } finally {
         if (btn) btn.disabled = false;
       }

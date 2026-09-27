@@ -1,0 +1,9 @@
+---
+// Hand-drawn category icons from design C ("fig. 01–14"). Inline SVG, decorative.
+import icons from './art/category-icons.json';
+import type { CategoryKey } from '../data/taxonomy';
+interface Props { cat: CategoryKey; size?: number; class?: string }
+const { cat, size = 72, class: cls } = Astro.props;
+const body = (icons as Record<string, string>)[cat] ?? '';
+---
+<svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true" class={cls} set:html={body} />

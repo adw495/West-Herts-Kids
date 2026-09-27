@@ -16,9 +16,9 @@ venue:
   address: North Orbital Road, Watford
   postcode: WD25 7JZ
 website: https://www.gambado.com/
-source: TripAdvisor listing (to verify with provider)
+source: "CLOSED: Gambado Watford closed permanently in 2020 (operator statement via Hertfordshire Mercury; gambado.com/watford 404). Never publish."
 draft: true
-verified: '2026-09-25'
+verified: '2026-09-27'
 claimed: false
 ---
 
