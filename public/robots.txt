@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://westhertskids.pages.dev/sitemap-index.xml
+Sitemap: https://westhertskids.co.uk/sitemap-index.xml
