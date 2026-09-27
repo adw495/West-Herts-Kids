@@ -1,10 +1,10 @@
 // Central settings. Change things here, not in the templates.
 export const SITE = {
   name: 'West Herts Kids',
-  // The domain isn't registered yet, so the site lives at westhertskids.pages.dev.
-  // When the .co.uk is bought: change these two lines, astro.config.mjs `site` and public/robots.txt.
-  domain: 'westhertskids.pages.dev',
-  url: 'https://westhertskids.pages.dev',
+  // Registered 27 Sep 2026 (Cloudflare Registrar, auto-renew). westhertskids.pages.dev and www. redirect here
+  // via functions/_middleware.js. If this ever changes, also update astro.config.mjs `site` and public/robots.txt.
+  domain: 'westhertskids.co.uk',
+  url: 'https://westhertskids.co.uk',
   tagline: "Classes, clubs and things to do for kids across Watford, Rickmansworth, Croxley, Chorleywood and Abbots Langley",
   email: 'hello@westhertskids.co.uk',
 
