@@ -30,6 +30,14 @@ const method = 'post';
     <button class="btn" type="submit">Send</button>
   </form>
   {SITE.mode !== 'community' && <p class="small muted">Want more visibility? See <a href="/advertise/">featured listings</a>.</p>}
+
+  <section class="badge-box" aria-labelledby="badge-title">
+    <h2 id="badge-title">Already listed? Add our free badge</h2>
+    <p>If you'd like to, pop this badge on your own website so parents can see your listing. It's entirely optional and always free.</p>
+    <p><img src="/badge.svg" width="200" height="56" alt="Listed on West Herts Kids" /></p>
+    <label for="badge-code">Copy this code into your website (replace <code>your-listing</code> with the end of your listing's web address):</label>
+    <textarea id="badge-code" class="badge-code" rows="3" readonly>{`<a href="${SITE.url}/activities/your-listing/"><img src="${SITE.url}/badge.svg" width="200" height="56" alt="Listed on West Herts Kids"></a>`}</textarea>
+  </section>
   <script>
     const c = new URLSearchParams(location.search).get('claim');
     const el = document.getElementById('claim') as HTMLInputElement | null;
