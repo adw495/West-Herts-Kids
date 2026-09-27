@@ -7,7 +7,7 @@ The API key lives only in Cloudflare's encrypted settings and never reaches the 
 
 ### In beehiiv
 1. Sign up at beehiiv.com on the free **Launch** plan (up to 2,500 subscribers). Done 27 Sep 2026 (publication `pub_8e8fc659-f444-4938-b253-319cdcc101c9`, web `westhertskids.beehiiv.com`). Creating an API key needs a one-off Stripe Identity check, which only the owner can do. Publication name: **West Herts Kids**.
-2. **Settings → Publication:** add the logo, and set the sender name to "West Herts Kids". Reply-to: your own inbox for now (switch to hello@westhertskids.co.uk once the domain and email forwarding exist). Set the timezone to London. Leave the postal address empty unless beehiiv insists; don't use a home address.
+2. **Settings → Publication:** add the logo, and set the sender name to "West Herts Kids". Reply-to: hello@westhertskids.co.uk (forwarded to the owner's inbox by Cloudflare Email Routing). Set the timezone to London. Leave the postal address empty unless beehiiv insists; don't use a home address.
 3. **Settings → Subscribe forms / Audience:** turn **double opt-in ON** (best practice under UK GDPR, and it keeps the list clean).
 4. **Settings → Emails → Welcome email:** paste the draft below.
 5. Optional: **Settings → Domains:** point `news.westhertskids.co.uk` at the web archive (via Cloudflare DNS).
@@ -36,7 +36,7 @@ Until those two values are set, the form shows "Sign-ups are not switched on yet
 
 ## Draft: welcome email
 
-Paste into beehiiv → Settings → Emails → Welcome email (switch it on). Links use the current address; swap `westhertskids.pages.dev` for the .co.uk if the domain is registered.
+Paste into beehiiv → Settings → Emails → Welcome email (switch it on). 
 
 **Subject:** You're in: what's on for kids around West Herts
 **Preview text:** Classes, clubs and days out near you, checked against the providers' own details.
@@ -53,11 +53,11 @@ It lands **most Thursdays in term time**, and it's always short:
 Everything on West Herts Kids is checked against the provider's own information, and every listing shows when it was last checked. Details do change, though, so it's worth a quick check with the provider before you go.
 
 **Start here:**
-- [Find activities by age and town](https://westhertskids.pages.dev/activities/)
-- [October half term: holiday camps and activities](https://westhertskids.pages.dev/whats-on/october-half-term-2026-holiday-camps/)
-- [Swimming lessons: your local options](https://westhertskids.pages.dev/whats-on/swimming-lessons-watford-rickmansworth/)
+- [Find activities by age and town](https://westhertskids.co.uk/activities/)
+- [October half term: holiday camps and activities](https://westhertskids.co.uk/whats-on/october-half-term-2026-holiday-camps/)
+- [Swimming lessons: your local options](https://westhertskids.co.uk/whats-on/swimming-lessons-watford-rickmansworth/)
 
-Know a great class or club we've missed? Just reply and tell us. And if you run one, [listing it is free](https://westhertskids.pages.dev/list-your-activity/).
+Know a great class or club we've missed? Just reply and tell us. And if you run one, [listing it is free](https://westhertskids.co.uk/list-your-activity/).
 
 See you on Thursday,
 West Herts Kids
