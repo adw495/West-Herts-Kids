@@ -41,7 +41,7 @@ schedule:
   note: Tumbling Tigers, then general gymnastics from 10am
 priceNote: One-off £25 joining fee plus British Gymnastics membership. Trials are paid. Holiday sessions £35 a day (ages 5+) or £25 a day (Reception).
 send: 'yes'
-sendNotes: Runs SEND gymnastics sessions (waiting list when checked). The club asks families to phone before booking.
+sendNotes: Runs SEND gymnastics classes, which had a waiting list when checked. Contact the club to ask about places.
 venue:
   name: Watford Gymnastics Club
   address: Unit F, Gate 3, Greenhill Crescent, Watford Business Park, Watford
