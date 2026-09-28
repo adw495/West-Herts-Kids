@@ -27,6 +27,54 @@ export { isFeaturedNow };
 // Minimum listings before a town or category landing page is generated, to avoid thin pages.
 export const MIN_FOR_COMBO_PAGE = 2;
 
+// Town pages with fewer listings than this are kept out of search engines (noindex + left out of the sitemap).
+export const MIN_TO_INDEX_TOWN = 2;
+
+// Which towns are next to which, used to suggest "nearby" options on small town/activity pages.
+export const NEAR: Record<TownKey, TownKey[]> = {
+  'watford': ['bushey', 'abbots-langley', 'croxley-green', 'south-oxhey', 'kings-langley', 'rickmansworth'],
+  'rickmansworth': ['croxley-green', 'chorleywood', 'south-oxhey', 'watford'],
+  'croxley-green': ['rickmansworth', 'watford', 'chorleywood', 'south-oxhey'],
+  'chorleywood': ['rickmansworth', 'croxley-green'],
+  'abbots-langley': ['kings-langley', 'watford'],
+  'kings-langley': ['abbots-langley', 'watford'],
+  'bushey': ['watford', 'south-oxhey'],
+  'south-oxhey': ['watford', 'bushey', 'rickmansworth', 'croxley-green'],
+};
+
+/** Up to n listings in the same category from neighbouring towns, nearest towns first. */
+export function nearbyInCategory(all: Listing[], cat: CategoryKey, town: TownKey, n = 4): Listing[] {
+  const out: Listing[] = [];
+  for (const t of NEAR[town]) {
+    for (const l of all) {
+      if (out.length >= n) return out;
+      if (l.data.categories.includes(cat) && l.data.towns.includes(t) && !l.data.towns.includes(town) && !out.includes(l)) out.push(l);
+    }
+  }
+  return out;
+}
+
+/** Overall age span of a set of listings, e.g. "ages 4 to 16", "ages 5+", "from birth to 12" or "all ages". */
+export function ageSpan(ls: Listing[]): string {
+  const min = Math.min(...ls.map((l) => l.data.ageMin));
+  const max = Math.max(...ls.map((l) => l.data.ageMax));
+  const f = (n: number) => (n < 1 ? `${Math.round(n * 12)} months` : `${n}`);
+  if (max >= 18) return min === 0 ? 'all ages' : `ages ${f(min)}+`;
+  return min === 0 ? `from birth to ${max}` : `ages ${f(min)} to ${max}`;
+}
+
+/** schema.org BreadcrumbList from [name, path] pairs. */
+export const breadcrumbLd = (crumbs: [string, string][]) => ({
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${SITE.url}${path}` })),
+});
+
+/** schema.org ItemList of listing pages. */
+export const itemListLd = (name: string, ls: Listing[]) => ({
+  '@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: ls.length,
+  itemListElement: ls.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/activities/${l.id}/`, name: l.data.name })),
+});
+
 export const byCategory = (ls: Listing[], c: CategoryKey) => ls.filter((l) => l.data.categories.includes(c));
 export const byTown = (ls: Listing[], t: TownKey) => ls.filter((l) => l.data.towns.includes(t));
 
