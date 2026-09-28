@@ -2,7 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import ListingCard from '../../../components/ListingCard.astro';
 import Filters from '../../../components/Filters.astro';
-import { getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, type Listing } from '../../../lib/listings';
+import { getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, MIN_TO_INDEX_TOWN, breadcrumbLd, itemListLd, type Listing } from '../../../lib/listings';
 import { TOWNS, CATEGORIES, type TownKey, type CategoryKey } from '../../../data/taxonomy';
 
 export async function getStaticPaths() {
@@ -14,9 +14,13 @@ export async function getStaticPaths() {
 interface Props { town: TownKey; items: Listing[] }
 const { town, items } = Astro.props;
 const t = TOWNS[town];
+const jsonLd = [
+  itemListLd(`Kids' activities in ${t.name}`, items),
+  breadcrumbLd([['Home', '/'], ['Towns', '/towns/'], [t.name, `/towns/${town}/`]]),
+];
 const catLinks = (Object.keys(CATEGORIES) as CategoryKey[]).filter((c) => byCategory(items, c).length >= MIN_FOR_COMBO_PAGE);
 ---
-<Base title={`Things to do for kids in ${t.name}`} description={`${t.blurb} ${items.length} activities listed, with ages, prices and timetables.`}>
+<Base title={`Things to do for kids in ${t.name}`} description={`${t.blurb} ${items.length} activities listed, with ages, prices and timetables.`} jsonLd={jsonLd} noindex={items.length < MIN_TO_INDEX_TOWN}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/towns/">Towns</a></li><li aria-hidden="true">/</li><li aria-current="page">{t.name}</li></ol>
     <header class="page-head">
