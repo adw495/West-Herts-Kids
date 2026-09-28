@@ -1,6 +1,6 @@
 # Verification queue
 
-Last worked through: **27 Sep 2026**. Everything below was checked against providers' own websites or official class finders.
+Last worked through: **28 Sep 2026**. Everything below was checked against providers' own websites or official class finders.
 
 ## Done on 27 Sep 2026
 
@@ -23,14 +23,18 @@ Last worked through: **27 Sep 2026**. Everything below was checked against provi
 | 4th North Watford (1st Bricket Wood) Scouts | **Dropped:** meets in Bricket Wood (AL2), outside our towns |
 | Chorleywood Community Arts Centre | **Resolved:** its current site (chorleywoodcommunityartscentre.co.uk) is legitimate. The only children's class there is Cygnets Art School, which is already listed. The casino site was a different, older domain; still never link any old/unknown CCAC URL without checking it |
 
+## Done on 28 Sep 2026
+
+| Provider | Outcome |
+|---|---|
+| Leon Taekwondo Watford | **Published.** Provider states kids' classes are "ages 5+" (no upper age; teens and adults also taught), so listed as 5+ (ageMax 18). Monday 6–7pm at Woodside Community Centre, £40/month confirmed |
+| Water Babies (Meadow Wood School pool, Bushey WD23 4NN) | **Published** as ages 0–4. Days, times and prices only show after entering a child's date of birth, so they're left out and parents are pointed to the class finder |
+| Rickmansworth Sailing Club | **Published.** Correct site is rscsailing.org/ng/ (rscsailing.org/RSCtraining.php is a stale 2020 page). Trojans 4–8, RYA OnBoard 8–18, junior membership £55/yr, Troy Lake WD3 9YB |
+| Bury Lake Young Mariners | **Published.** blym.org.uk: Junior Days 7–9, RYA youth courses 9–16 (hard minimum 9), General Sailing Sat 9:30–4:30 (Mar–Nov), Splash Club Wed 4:30–7:30 (summer), Frogmoor Lane WD3 1NB |
+
 ## Still open
 
-| Provider | Why it's held back | Next step |
-|---|---|---|
-| Leon Taekwondo Watford | Kids' class is "ages 5+", upper age not stated. Draft with placeholder ageMax 12 | Confirm the upper age on leontaekwondo.co.uk, then publish |
-| Water Babies (Meadow Wood School pool, Bushey WD23 4NN) | Days, times and prices only load via the site's JavaScript class search | Open the pool page in a browser, confirm details, then publish |
-| Rickmansworth Sailing Club | Site blocks automated checks. It's an RYA training centre (youth stages 1–4) at **Troy Lake, West Hyde, WD3 9YB**, not Batchworth Lake | Check junior/youth sailing ages and dates in a browser |
-| Bury Lake Young Mariners (Aquadrome) | New lead: youth water sports at the Aquadrome | Check and add |
+Nothing. Add new leads here as they come in.
 
 ## Useful aggregators to mine for more providers (don't copy their text)
 - Happity (baby and toddler): happity.co.uk/watford-rickmansworth
