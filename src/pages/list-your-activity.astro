@@ -2,8 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { SITE } from '../site.config';
 import { TOWNS, CATEGORIES } from '../data/taxonomy';
-const action = SITE.forms.listingAction || `mailto:${SITE.email}?subject=Listing%20request`;
-const method = 'post';
+const action = SITE.forms.listingAction;
 ---
 <Base title="List or claim your kids' activity for free" description="Add your children's class, club or holiday camp in West Herts to the directory for free, or claim your existing listing to update it.">
   <div class="container" style="padding-bottom:96px">
@@ -13,8 +12,10 @@ const method = 'post';
     <h1>Run a class? <em>Listing is free.</em></h1>
     <p class="lead">Fill this in to add a new activity, or to claim and update an existing listing. We check every submission against your own website before it goes live.</p>
   </header>
-  <form class="form" action={action} method={method} enctype={SITE.forms.listingAction ? undefined : 'text/plain'}>
+  <p class="notice" id="list-error" data-email={SITE.email} role="alert" hidden style="color:var(--ink)"></p>
+  <form class="form" action={action} method="post">
     <input type="hidden" name="claim" id="claim" />
+    <div class="nl-hp" aria-hidden="true"><label>Leave this empty<input name="fax_number" tabindex="-1" autocomplete="off" /></label></div>
     <label>Your name<input name="contact_name" required autocomplete="name" /></label>
     <label>Email<input name="contact_email" type="email" required autocomplete="email" /></label>
     <label>Business or activity name<input name="business" required /></label>
@@ -39,9 +40,19 @@ const method = 'post';
     <textarea id="badge-code" class="badge-code" rows="3" readonly>{`<a href="${SITE.url}/activities/your-listing/"><img src="${SITE.url}/badge.svg" width="200" height="56" alt="Listed on West Herts Kids"></a>`}</textarea>
   </section>
   <script>
-    const c = new URLSearchParams(location.search).get('claim');
+    const q = new URLSearchParams(location.search);
+    const c = q.get('claim');
     const el = document.getElementById('claim') as HTMLInputElement | null;
     if (c && el) el.value = c;
+    const box = document.getElementById('list-error');
+    const email = box?.dataset.email ?? '';
+    const text: Record<string, string> = {
+      invalid: 'Please fill in your name, a valid email address and the activity name, and tick the box.',
+      unavailable: `The form isn't switched on yet. Please email the details to ${email} instead.`,
+      failed: `Something went wrong sending the form. Please try again, or email the details to ${email}.`,
+    };
+    const code = q.get('error');
+    if (code && box && text[code]) { box.textContent = text[code]; box.hidden = false; box.scrollIntoView({ block: 'center' }); }
   </script>
   </div>
 </Base>

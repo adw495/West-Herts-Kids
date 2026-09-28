@@ -17,10 +17,11 @@ export const SITE = {
   },
 
   // newsletterAction: our own Cloudflare Pages Function (functions/api/subscribe.js), which forwards to beehiiv.
-  // listingAction: paste a Tally/Formspree endpoint once it exists; until then that form falls back to mailto:.
+  // listingAction: our own Pages Function (functions/api/list.js), which emails submissions via the
+  //   whk-listing-mailer Worker (workers/listing-mailer/).
   forms: {
     newsletterAction: '/api/subscribe',
-    listingAction: '',    // e.g. https://tally.so/r/xxxx or https://formspree.io/f/xxxx
+    listingAction: '/api/list',
   },
 
   // Money mode (see CLAUDE.md, "Low-stress rules"):
