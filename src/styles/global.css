@@ -437,6 +437,7 @@ main, .site-footer { overflow-x: clip; }
 .on-line .dot i { width: 6px; height: 6px; }
 .on-line small { margin-left: auto; font-weight: 600; color: var(--teal); }
 .claim-note { font-size: 15px; color: var(--ink-2); }
+.stale-note { margin: 0 0 12px; padding: 10px 12px; border-left: 3px solid var(--brick); background: var(--paper-2); color: var(--ink); border-radius: 4px; }
 
 /* Forms (list your activity) */
 .form { display: grid; gap: 16px; max-width: 620px; background: var(--card); border: 1.5px solid var(--ink); border-radius: 12px; padding: 24px; }

@@ -6,7 +6,7 @@ import Stamp from '../../components/Stamp.astro';
 import Wave from '../../components/art/Wave.astro';
 import SendIcon from '../../components/art/SendIcon.astro';
 import { render } from 'astro:content';
-import { lc, getListings, getPosts, ageLabel, ageShort, priceLabel, priceFact, whenLabel, dayName, formatDate, listingJsonLd, isFeaturedNow, byTown, type Listing } from '../../lib/listings';
+import { lc, getListings, getPosts, ageLabel, ageShort, priceLabel, priceFact, whenLabel, dayName, formatDate, isOverdue, listingJsonLd, isFeaturedNow, byTown, type Listing } from '../../lib/listings';
 import { TOWNS, CATEGORIES } from '../../data/taxonomy';
 import { SITE } from '../../site.config';
 
@@ -153,6 +153,7 @@ const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
         </section>
 
         <div class="claim-note">
+          {isOverdue(d) && d.verified && <p class="stale-note" role="note">These details were last checked on {formatDate(d.verified)}, so they may have changed. Please confirm times and prices with the provider before you go.</p>}
           {!d.claimed && <p style="margin:0 0 8px">{d.verified ? `Details last checked on ${formatDate(d.verified)} from public information.` : 'These details come from public information and haven’t been confirmed by the provider yet.'} Is this your business? <a href={`/list-your-activity/?claim=${listing.id}`}>Claim this listing</a> to update it for free.</p>}
           <p style="margin:0">Spotted something out of date? <a href={`/list-your-activity/?claim=${listing.id}`}>Let us know</a>.</p>
         </div>
