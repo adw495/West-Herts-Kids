@@ -9,7 +9,9 @@
     "preview": "astro preview",
     "check": "astro check",
     "collect:osm": "node scripts/collect-osm.mjs",
-    "new:listing": "node scripts/new-listing.mjs"
+    "new:listing": "node scripts/new-listing.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:due": "node scripts/due-report.mjs"
   },
   "engines": {
     "node": ">=22.12.0"

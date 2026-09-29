@@ -33,3 +33,6 @@ This is a **passive, low-stress side project. The owner does NOT want to registe
 - Site settings, money mode, forms and pricing: `src/site.config.ts`
 - Weekly what's-on prompt: `docs/weekly-whats-on.md`
 - Providers still to verify: `docs/verification-queue.md`
+- Accuracy and growth rules (weekly re-check, self-learning schedule, finding new activities): `docs/verification-process.md`
+- What each re-check changed: `docs/verification-log.md`
+- `npm run check:links` (dead/hijacked links) and `npm run check:due` (listings due a re-check)
