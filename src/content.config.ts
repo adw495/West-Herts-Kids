@@ -53,6 +53,9 @@ const listings = defineCollection({
     featuredUntil: z.coerce.date().optional(),
     claimed: z.boolean().default(false),     // provider has confirmed/claimed the listing
     verified: z.coerce.date().optional(),    // date details were last checked by us or the provider
+    // Self-learning re-check schedule (see docs/verification-process.md). Days between checks; default 90.
+    checkEvery: z.number().int().min(14).max(365).optional(),
+    lastChanged: z.coerce.date().optional(), // date a re-check last found (and fixed) a difference
     source: z.string().optional(),           // where the data came from (e.g. "osm", "provider website")
     draft: z.boolean().default(false),       // drafts are not published
     updated: z.coerce.date().optional(),
