@@ -75,6 +75,14 @@ export const itemListLd = (name: string, ls: Listing[]) => ({
   itemListElement: ls.map((l, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/activities/${l.id}/`, name: l.data.name })),
 });
 
+// A listing is overdue when its last check is older than its own interval plus a 30-day grace period.
+export const DEFAULT_CHECK_DAYS = 90;
+export function isOverdue(d: Listing['data'], now = new Date()): boolean {
+  if (!d.verified) return true;
+  const days = (now.getTime() - d.verified.getTime()) / 864e5;
+  return days > (d.checkEvery ?? DEFAULT_CHECK_DAYS) + 30;
+}
+
 export const byCategory = (ls: Listing[], c: CategoryKey) => ls.filter((l) => l.data.categories.includes(c));
 export const byTown = (ls: Listing[], t: TownKey) => ls.filter((l) => l.data.towns.includes(t));
 
