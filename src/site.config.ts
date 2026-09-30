@@ -24,15 +24,16 @@ export const SITE = {
     listingAction: '/api/list',
   },
 
-  // Money mode (see CLAUDE.md, "Low-stress rules"):
+  // Money mode (see CLAUDE.md, "Low-stress and money rules"):
   //   'community'     – no paid features at all; /advertise/ just says listings are free. (current)
-  //   'pocket-money'  – featured listings on sale, but total side income capped under £1,000 a tax year.
+  //   'pocket-money'  – Phase 1: inbound featured listings and labelled affiliate links. Switch only when
+  //                     the traffic trigger in CLAUDE.md is met and the owner says yes.
   mode: 'community' as 'community' | 'pocket-money',
 
   // Featured listing pricing, shown on /advertise/ in pocket-money mode only
   pricing: {
-    featuredMonthly: 25,
-    featuredYearly: 240,
+    featuredMonthly: 8,
+    featuredYearly: 80,
     newsletterSponsor: 40,
   },
 };
