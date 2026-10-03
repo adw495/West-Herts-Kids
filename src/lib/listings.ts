@@ -199,3 +199,60 @@ export function listingJsonLd(l: Listing) {
   if (sameAs.length) ld.sameAs = sameAs;
   return ld;
 }
+
+// ---- Landing-page facts and FAQs (SEO) --------------------------------------------------------------
+// Everything here is derived from the listings' own verified fields, so the text is never invented.
+
+const DAY_ORDER = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'] as const;
+const DAY_FULL: Record<string, string> = { mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday', fri: 'Friday', sat: 'Saturday', sun: 'Sunday' };
+const PER: Record<string, string> = { session: 'a session', week: 'a week', term: 'a term', month: 'a month', day: 'a day', year: 'a year', entry: 'per entry' };
+const startAge = (n: number) => (n === 0 ? 'birth' : n < 1 ? `${Math.round(n * 12)} months` : n % 1 ? `${Math.floor(n)}½ years` : `${n} ${n === 1 ? 'year' : 'years'}`);
+const money = (n: number) => (n === 0 ? 'free' : Number.isInteger(n) ? `£${n}` : `£${n.toFixed(2)}`);
+const joinAnd = (xs: string[]) => (xs.length <= 1 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+
+function dayRange(days: string[]): string {
+  const idx = DAY_ORDER.map((d) => days.includes(d));
+  const on = DAY_ORDER.filter((_, i) => idx[i]);
+  if (on.length === 0) return '';
+  const first = DAY_ORDER.indexOf(on[0]), last = DAY_ORDER.indexOf(on[on.length - 1]);
+  if (on.length >= 3 && last - first + 1 === on.length) return `${DAY_FULL[on[0]]} to ${DAY_FULL[on[on.length - 1]]}`;
+  return joinAnd(on.map((d) => DAY_FULL[d]));
+}
+
+export interface Glance { count: number; youngest: string; priceFrom: string | null; days: string; trials: number; send: number; checked: Date | null }
+
+export function glance(items: Listing[]): Glance {
+  const priced = items.filter((l) => l.data.priceFrom !== undefined).sort((a, b) => a.data.priceFrom! - b.data.priceFrom!);
+  const cheapest = priced[0]?.data;
+  const days = [...new Set(items.flatMap((l) => l.data.schedule.map((s) => s.day)))];
+  const checked = items.map((l) => l.data.verified).filter(Boolean).sort((a, b) => b!.getTime() - a!.getTime())[0] ?? null;
+  return {
+    count: items.length,
+    youngest: startAge(Math.min(...items.map((l) => l.data.ageMin))),
+    priceFrom: cheapest ? `${money(cheapest.priceFrom!)}${cheapest.priceUnit && cheapest.priceFrom! > 0 ? ' ' + PER[cheapest.priceUnit] : ''}` : null,
+    days: dayRange(days),
+    trials: items.filter((l) => l.data.freeTrial).length,
+    send: items.filter((l) => l.data.send === 'yes').length,
+    checked,
+  };
+}
+
+export function faqs(items: Listing[], q: string, place: string): { q: string; a: string }[] {
+  const out: { q: string; a: string }[] = [];
+  const priced = items.filter((l) => l.data.priceFrom !== undefined).sort((a, b) => a.data.priceFrom! - b.data.priceFrom!);
+  if (priced.length) {
+    const eg = priced.slice(0, 3).map((l) => `${money(l.data.priceFrom!)}${l.data.priceUnit && l.data.priceFrom! > 0 ? ' ' + PER[l.data.priceUnit] : ''} at ${l.data.name}`);
+    const unpriced = items.length - priced.length;
+    out.push({ q: `How much do ${q} cost in ${place}?`, a: `Prices we've found on providers' own websites start from ${joinAnd(eg)}.${unpriced ? ` ${unpriced === 1 ? 'One option doesn’t' : `${unpriced} options don’t`} publish prices online, so ask them directly.` : ''} Many charge by the term, so compare the cost per session.` });
+  }
+  const minAge = Math.min(...items.map((l) => l.data.ageMin));
+  const youngest = items.filter((l) => l.data.ageMin === minAge).map((l) => l.data.name);
+  out.push({ q: `What age can children start ${q} in ${place}?`, a: `From ${startAge(minAge)} at ${joinAnd(youngest.slice(0, 3))}. Age ranges are shown on each listing, and most providers group children by age or ability.` });
+  const days = dayRange([...new Set(items.flatMap((l) => l.data.schedule.map((s) => s.day)))]);
+  if (days) out.push({ q: `Which days do ${q} run in ${place}?`, a: `Between them, the providers listed here run sessions on ${days}. Times vary by age group, so check each listing for the exact timetable.` });
+  const trials = items.filter((l) => l.data.freeTrial).map((l) => l.data.name);
+  if (trials.length) out.push({ q: `Can we try ${q} for free first?`, a: `${joinAnd(trials)} ${trials.length === 1 ? 'offers' : 'offer'} a free trial or taster session, according to their websites.` });
+  const send = items.filter((l) => l.data.send === 'yes').map((l) => l.data.name);
+  if (send.length) out.push({ q: `Are there SEND-friendly ${q} in ${place}?`, a: `${joinAnd(send)} ${send.length === 1 ? 'says it welcomes' : 'say they welcome'} children with special educational needs and disabilities. Each listing has notes on what support is available.` });
+  return out;
+}
