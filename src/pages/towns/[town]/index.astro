@@ -20,7 +20,7 @@ const jsonLd = [
 ];
 const catLinks = (Object.keys(CATEGORIES) as CategoryKey[]).filter((c) => byCategory(items, c).length >= MIN_FOR_COMBO_PAGE);
 ---
-<Base title={`Things to do for kids in ${t.name}`} description={`${t.blurb} ${items.length} activities listed, with ages, prices and timetables.`} jsonLd={jsonLd} noindex={items.length < MIN_TO_INDEX_TOWN}>
+<Base title={`Things to do with kids in ${t.name}: ${items.length} activities & classes`} description={`Kids' activities in ${t.name}: ${items.length} local classes, clubs, holiday camps and days out, with ages, prices and timetables checked against each provider's own website.`} jsonLd={jsonLd} noindex={items.length < MIN_TO_INDEX_TOWN}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/towns/">Towns</a></li><li aria-hidden="true">/</li><li aria-current="page">{t.name}</li></ol>
     <header class="page-head">

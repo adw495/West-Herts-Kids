@@ -452,3 +452,13 @@ main, .site-footer { overflow-x: clip; }
 .form .consent input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--teal); }
 
 .hero-404 { padding: 72px 0 96px; }
+
+/* Landing-page "at a glance" facts and FAQ */
+.glance, .faq { margin-top: 48px; }
+.glance-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 16px 0 8px; }
+.glance-grid div { background: var(--card); border: 1px solid var(--paper-3); border-radius: 10px; padding: 12px 14px; }
+.glance-grid dt { font-size: 13px; color: var(--ink-3); }
+.glance-grid dd { margin: 2px 0 0; font-family: var(--display); font-size: 21px; font-weight: 600; color: var(--ink); }
+.faq details { border-bottom: 1px solid var(--paper-3); padding: 14px 0; }
+.faq summary { cursor: pointer; font-weight: 600; }
+.faq details p { margin: 10px 0 0; max-width: 70ch; }

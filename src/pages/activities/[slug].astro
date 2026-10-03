@@ -6,7 +6,7 @@ import Stamp from '../../components/Stamp.astro';
 import Wave from '../../components/art/Wave.astro';
 import SendIcon from '../../components/art/SendIcon.astro';
 import { render } from 'astro:content';
-import { lc, getListings, getPosts, ageLabel, ageShort, priceLabel, priceFact, whenLabel, dayName, formatDate, isOverdue, listingJsonLd, isFeaturedNow, byTown, type Listing } from '../../lib/listings';
+import { lc, getListings, getPosts, ageLabel, ageShort, priceLabel, priceFact, whenLabel, dayName, formatDate, isOverdue, listingJsonLd, isFeaturedNow, byTown, MIN_FOR_COMBO_PAGE, type Listing } from '../../lib/listings';
 import { TOWNS, CATEGORIES } from '../../data/taxonomy';
 import { SITE } from '../../site.config';
 
@@ -25,6 +25,9 @@ const similar = all
   .filter((l) => l.id !== listing.id && l.data.categories.some((c) => d.categories.includes(c)))
   .sort((a, b) => Number(b.data.towns.some((t) => d.towns.includes(t))) - Number(a.data.towns.some((t) => d.towns.includes(t))))
   .slice(0, 3);
+// Internal links up to the town + activity landing pages this listing appears on (only pages that exist).
+const comboLinks = d.categories.flatMap((c) => d.towns.map((t) => ({ c, t, n: all.filter((l) => l.data.categories.includes(c) && l.data.towns.includes(t)).length })))
+  .filter((x) => x.n >= MIN_FOR_COMBO_PAGE).slice(0, 6);
 const posts = (await getPosts()).filter((p) => p.data.related.includes(listing.id)).slice(0, 3);
 const seasonText: Record<string, string> = { 'term-time': 'Term time', holidays: 'School holidays', 'year-round': 'All year' };
 const when = d.season.map((s) => seasonText[s]).join(', ');
@@ -160,6 +163,13 @@ const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
       </aside>
     </div>
   </section>
+
+  {comboLinks.length > 0 && (
+    <nav class="container pills" aria-label="Compare nearby options" style="margin-top:8px">
+      <span class="muted small" style="margin-right:6px">Compare:</span>
+      {comboLinks.map((x) => <a class="chip" href={`/towns/${x.t}/${x.c}/`}>{CATEGORIES[x.c].search} in {TOWNS[x.t].name} ({x.n})</a>)}
+    </nav>
+  )}
 
   {similar.length > 0 && (
     <section class="section" aria-labelledby="similar-title" style="padding-top:88px;padding-bottom:104px">

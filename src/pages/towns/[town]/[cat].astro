@@ -4,7 +4,8 @@ import { SITE } from '../../../site.config';
 import Base from '../../../layouts/Base.astro';
 import ListingCard from '../../../components/ListingCard.astro';
 import CategoryIcon from '../../../components/CategoryIcon.astro';
-import { lc, getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, nearbyInCategory, ageSpan, breadcrumbLd, itemListLd, type Listing } from '../../../lib/listings';
+import Glance from '../../../components/Glance.astro';
+import { lc, getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, nearbyInCategory, ageSpan, breadcrumbLd, itemListLd, glance, type Listing } from '../../../lib/listings';
 import { TOWNS, CATEGORIES, type TownKey, type CategoryKey } from '../../../data/taxonomy';
 
 export async function getStaticPaths() {
@@ -26,16 +27,20 @@ const jsonLd = [
   itemListLd(`${c.name} for kids in ${t.name}`, items),
   breadcrumbLd([['Home', '/'], [t.name, `/towns/${town}/`], [c.name, `/towns/${town}/${cat}/`]]),
 ];
+const g = glance(items);
+// Title and description use the phrase parents search for ("swimming lessons", not "swimming").
+const title = `${c.search} for kids in ${t.name}${items.length >= 3 ? ` (${items.length} options)` : ''}`;
+const description = [`Compare ${items.length} options for ${c.q} in ${t.name}`, `ages from ${g.youngest}`, g.priceFrom ? `prices from ${g.priceFrom}` : '', g.trials ? `${g.trials} with free trials` : ''].filter(Boolean).join(', ') + '. Checked against each provider’s own website.';
 const nearbyTowns = [...new Set(nearby.flatMap((l) => l.data.towns.filter((x) => x !== town)))].slice(0, 3).map((x) => TOWNS[x].name);
 ---
-<Base title={`${c.name} for kids in ${t.name}`} description={`${items.length} ${lc(c.name)} options for children in ${t.name}, with ages, prices and timetables.`} jsonLd={jsonLd}>
+<Base title={title} description={description} jsonLd={jsonLd}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href={`/towns/${town}/`}>{t.name}</a></li><li aria-hidden="true">/</li><li aria-current="page">{c.name}</li></ol>
     <header class="page-head" style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
       <CategoryIcon cat={cat} size={104} />
       <div style="flex:1;min-width:260px">
         <p class="plate">Stop: {t.name} — {items.length} options</p>
-        <h1>{c.name} for kids in <em>{t.name}</em></h1>
+        <h1>{c.search} for kids in <em>{t.name}</em></h1>
         <p class="lead">{c.blurb} Here are {items.length} options in and around {t.name}{ageSpan(items) === 'all ages' ? '' : ` (${ageSpan(items)})`}.</p>
       </div>
     </header>
@@ -48,6 +53,7 @@ const nearbyTowns = [...new Set(nearby.flatMap((l) => l.data.towns.filter((x) =>
         <div class="cards" style="margin-top:20px">{nearby.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
       </section>
     )}
+    <Glance items={items} q={c.q} place={t.name} />
     <p class="muted" style="margin:32px 0 96px">Also see all <a href={`/category/${cat}/`}>{lc(c.name)} across West Herts</a>, or <a href={`/towns/${town}/`}>everything in {t.name}</a>.</p>
   </div>
 </Base>
