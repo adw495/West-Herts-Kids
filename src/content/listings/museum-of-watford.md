@@ -16,9 +16,13 @@ venue:
   postcode: WD17 2DT
 website: https://www.watfordmuseum.org.uk/
 source: provider website; OpenStreetMap
-verified: '2026-09-25'
+verified: '2026-10-03'
 claimed: false
+draft: true
+lastChanged: '2026-10-03'
 ---
+
+**Hidden 3 Oct 2026: the museum's own site (museumofwatford.co.uk) says the current building is closed while it moves to Watford Town Hall in 2027. Re-publish when the new museum opens.**
 
 The Museum of Watford celebrates the town's history, art and culture, with changing exhibitions and community projects.
 

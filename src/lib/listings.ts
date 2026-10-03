@@ -8,12 +8,16 @@ export type Post = CollectionEntry<'posts'>;
 const isFeaturedNow = (l: Listing) =>
   SITE.mode !== 'community' && l.data.featured && (!l.data.featuredUntil || l.data.featuredUntil >= new Date());
 
-/** Published listings, featured first, then alphabetical. */
+/** Published listings, featured first, then alphabetical. Names starting with a number (e.g. the nine
+ *  "1st/2nd… Scouts" groups) go after lettered names, so they don't crowd the top of every town page. */
 export async function getListings(): Promise<Listing[]> {
   const all = await getCollection('listings', ({ data }) => !data.draft);
+  const numbered = (l: Listing) => Number(/^\d/.test(l.data.name));
   return all.sort((a, b) => {
     const f = Number(isFeaturedNow(b)) - Number(isFeaturedNow(a));
-    return f !== 0 ? f : a.data.name.localeCompare(b.data.name, 'en-GB');
+    if (f !== 0) return f;
+    const n = numbered(a) - numbered(b);
+    return n !== 0 ? n : a.data.name.localeCompare(b.data.name, 'en-GB');
   });
 }
 
