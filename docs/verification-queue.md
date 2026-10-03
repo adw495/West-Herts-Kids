@@ -2,6 +2,20 @@
 
 Last worked through: **28 Sep 2026**. Everything below was checked against providers' own websites or official class finders.
 
+## Flagged 3 Oct 2026 (re-check in the next weekly run, in Chrome)
+
+Spotted while researching guides. Not changed yet because the pages need a browser to confirm.
+
+| Listing | What was seen | Source to check |
+|---|---|---|
+| flip-out-watford | Stay & Play may now start at £3.95 (we say £3.50); venue is inside atria Watford, lower mall; £21.99 party price not found | https://www.flipout.co.uk/locations/watford |
+| langleybury-childrens-farm | Tickets £6.25 per person over 1, booked by session (we say price not published) | https://langleyburychildrensfarm.org.uk/ |
+| watford-miniature-railway | Watford council's Cassiobury page says £3 a ride; we say £2 (Abbey Line page) | https://www.watford.gov.uk/directory-record/345/cassiobury-park-and-whippendell-wood |
+| parents-paradise-bushey | Site says "up to 11" in one place and "up to 12 years" in another; we say 0–11 | https://parentsparadise.co.uk/ |
+| ninja-warrior-uk-watford | £15.95 "Ninja Warriors" price not found on current pages (toddler £6.95 + £2 adult is right) | https://ninjawarrioruk.co.uk/watford/ |
+| watford-leisure-centre-central | Climbing wall is on the council page but not the operator's page | https://www.everyoneactive.com/centre/watford-leisure-centre-central/ |
+| museum-of-watford | **Hidden 3 Oct:** building closed until the move to the Town Hall in 2027 | https://www.museumofwatford.co.uk/ |
+
 ## Done on 27 Sep 2026
 
 | Provider | Outcome |
