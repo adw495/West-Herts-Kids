@@ -1,0 +1,24 @@
+---
+// "At a glance" facts and an FAQ for landing pages. All text comes from verified listing fields (see lib/listings.ts).
+import { glance, faqs, formatDate, type Listing } from '../lib/listings';
+interface Props { items: Listing[]; q: string; place: string }
+const { items, q, place } = Astro.props;
+const g = glance(items);
+const qa = faqs(items, q, place);
+---
+<section class="glance" aria-labelledby="glance-title">
+  <h2 id="glance-title">At a glance</h2>
+  <dl class="glance-grid">
+    <div><dt>Options</dt><dd>{g.count}</dd></div>
+    <div><dt>Youngest start</dt><dd>{g.youngest}</dd></div>
+    {g.priceFrom && <div><dt>Prices from</dt><dd>{g.priceFrom}</dd></div>}
+    {g.days && <div><dt>Days</dt><dd>{g.days}</dd></div>}
+    {g.trials > 0 && <div><dt>Free trials</dt><dd>{g.trials}</dd></div>}
+    {g.send > 0 && <div><dt>SEND-friendly</dt><dd>{g.send}</dd></div>}
+  </dl>
+  {g.checked && <p class="small muted">Details last checked {formatDate(g.checked)}, against each provider’s own website.</p>}
+</section>
+<section class="faq" aria-labelledby="faq-title">
+  <h2 id="faq-title">Questions parents ask about {q} in {place}</h2>
+  {qa.map((x) => (<details><summary>{x.q}</summary><p>{x.a}</p></details>))}
+</section>
