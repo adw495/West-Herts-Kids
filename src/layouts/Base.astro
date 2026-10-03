@@ -1,4 +1,7 @@
 ---
+import frauncesNormal from '@fontsource-variable/fraunces/files/fraunces-latin-full-normal.woff2?url';
+import frauncesItalic from '@fontsource-variable/fraunces/files/fraunces-latin-full-italic.woff2?url';
+import figtree400 from '@fontsource/figtree/files/figtree-latin-400-normal.woff2?url';
 import '../styles/global.css';
 import { SITE } from '../site.config';
 import { TOWNS } from '../data/taxonomy';
@@ -35,6 +38,10 @@ const footTowns = ['watford', 'rickmansworth', 'croxley-green', 'chorleywood', '
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex" />}
     <meta name="theme-color" content="#F6F1E6" />
+    <!-- Preload the fonts used above the fold so the headline doesn't wait for, or jump on, a late font swap. -->
+    <link rel="preload" href={frauncesNormal} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={frauncesItalic} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={figtree400} as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:type" content="website" />
