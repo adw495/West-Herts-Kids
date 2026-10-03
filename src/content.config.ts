@@ -72,6 +72,7 @@ const posts = defineCollection({
     towns: z.array(z.enum(TOWN_KEYS)).default([]),
     categories: z.array(z.enum(CATEGORY_KEYS)).default([]),
     related: z.array(z.string()).default([]), // listing ids to link to
+    updated: z.coerce.date().optional(),      // set when a guide is refreshed; shown to readers and to Google
     draft: z.boolean().default(false),
   }),
 });
