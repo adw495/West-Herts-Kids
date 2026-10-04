@@ -42,10 +42,14 @@ const woRows = whatsOn ? relatedOf(whatsOn.data.related).slice(0, 4) : [];
 const guideRows = guide ? relatedOf(guide.data.related).slice(0, 3) : [];
 const plural = (n: number, w: string) => `${n} ${w}${n === 1 ? '' : 's'}`;
 
-const jsonLd = {
-  '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: SITE.url,
-  potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/activities/?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
-};
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: SITE.url,
+    potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/activities/?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
+  },
+  // Tells Google the Facebook Page and the site are the same organisation.
+  { '@context': 'https://schema.org', '@type': 'Organization', name: SITE.name, url: SITE.url, logo: `${SITE.url}/og.png`, sameAs: [SITE.facebook] },
+];
 ---
 <Base title={`Kids’ activities in Watford & Rickmansworth | ${SITE.name}`} description={SITE.tagline} jsonLd={jsonLd}>
 
