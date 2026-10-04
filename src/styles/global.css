@@ -471,3 +471,6 @@ main, .site-footer { overflow-x: clip; }
 .compare th, .compare td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--paper-3); vertical-align: top; }
 .compare thead th { font-size: 13px; color: var(--ink-3); font-weight: 600; background: var(--paper-2); }
 .compare tbody tr:last-child th, .compare tbody tr:last-child td { border-bottom: 0; }
+
+/* "Follow us on Facebook" note at the end of guides */
+.follow-note { margin-top: 32px; padding: 14px 16px; border-left: 3px solid var(--teal-deep); background: var(--paper-2); border-radius: 4px; max-width: 70ch; }
