@@ -50,6 +50,11 @@ const footTowns = ['watford', 'rickmansworth', 'croxley-green', 'chorleywood', '
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="en_GB" />
+    <meta property="og:image" content={`${SITE.url}/og.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="West Herts Kids: a local field guide to children's activities in Watford, Rickmansworth and West Herts" />
+    <meta name="twitter:card" content="summary_large_image" />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
@@ -110,6 +115,7 @@ const footTowns = ['watford', 'rickmansworth', 'croxley-green', 'chorleywood', '
               <li><a href="/list-your-activity/">Add or claim a listing</a></li>
               {SITE.mode !== 'community' && <li><a href="/advertise/">Featured listings</a></li>}
               <li><a href="/newsletter/">Newsletter</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61594792004406" rel="me noopener">Facebook</a></li>
               <li><a href="/privacy/">Privacy &amp; removals</a></li>
             </ul>
           </nav>
