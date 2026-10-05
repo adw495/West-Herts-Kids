@@ -1,20 +1,23 @@
 # Verification queue
 
-Last worked through: **28 Sep 2026**. Everything below was checked against providers' own websites or official class finders.
+Last worked through: **5 Oct 2026**. Everything below was checked against providers' own websites or official class finders.
 
-## Flagged 3 Oct 2026 (re-check in the next weekly run, in Chrome)
+## Flagged
 
-Spotted while researching guides. Not changed yet because the pages need a browser to confirm.
+Nothing flagged. (The 3 Oct flags were all resolved in the 5 Oct weekly check — see below.)
 
-| Listing | What was seen | Source to check |
-|---|---|---|
-| flip-out-watford | Stay & Play may now start at £3.95 (we say £3.50); venue is inside atria Watford, lower mall; £21.99 party price not found | https://www.flipout.co.uk/locations/watford |
-| langleybury-childrens-farm | Tickets £6.25 per person over 1, booked by session (we say price not published) | https://langleyburychildrensfarm.org.uk/ |
-| watford-miniature-railway | Watford council's Cassiobury page says £3 a ride; we say £2 (Abbey Line page) | https://www.watford.gov.uk/directory-record/345/cassiobury-park-and-whippendell-wood |
-| parents-paradise-bushey | Site says "up to 11" in one place and "up to 12 years" in another; we say 0–11 | https://parentsparadise.co.uk/ |
-| ninja-warrior-uk-watford | £15.95 "Ninja Warriors" price not found on current pages (toddler £6.95 + £2 adult is right) | https://ninjawarrioruk.co.uk/watford/ |
-| watford-leisure-centre-central | Climbing wall is on the council page but not the operator's page | https://www.everyoneactive.com/centre/watford-leisure-centre-central/ |
-| museum-of-watford | **Hidden 3 Oct:** building closed until the move to the Town Hall in 2027 | https://www.museumofwatford.co.uk/ |
+## Done on 5 Oct 2026 (weekly check)
+
+| Listing | Outcome |
+|---|---|
+| flip-out-watford | **Updated:** from £3.95 (Stay & Play); £3.50 was the spectator ticket; atria Watford lower level |
+| langleybury-childrens-farm | **Updated:** £6.25 per person over 1, session booking |
+| watford-miniature-railway | **Updated:** £3 a ride (railway's own site) |
+| parents-paradise-bushey | **Updated:** ages up to 12 (site is now consistent) |
+| ninja-warrior-uk-watford | **Confirmed:** £15.95 Ninja Warriors price is on /watford/ninja-warriors/ |
+| watford-leisure-centre-central | **Updated:** climbing wall removed (operator doesn't mention it); new opening hours |
+| museum-of-watford | **Still hidden** (closed until 2027) |
+| Junior Adventures Group, South Oxhey Leisure Centre | **Dropped lead:** venue page now 404s |
 
 ## Done on 27 Sep 2026
 
@@ -48,7 +51,7 @@ Spotted while researching guides. Not changed yet because the pages need a brows
 
 ## Still open
 
-Nothing. Add new leads here as they come in.
+- **Oxhey Library (South Oxhey) Rhymetime:** Happity lists a Tuesday Baby Rhyme Time but shows nothing scheduled, and the county library page lists no children's sessions. Re-check the Herts libraries events page before listing.
 
 ## Useful aggregators to mine for more providers (don't copy their text)
 - Happity (baby and toddler): happity.co.uk/watford-rickmansworth
