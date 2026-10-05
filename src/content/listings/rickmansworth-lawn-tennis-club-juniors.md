@@ -11,9 +11,12 @@ venue:
   name: Rickmansworth Lawn Tennis Club
   address: 10 Meadow Way, Rickmansworth
   postcode: WD3 7NG
-website: https://clubspark.lta.org.uk/RickmansworthLawnTennisClub/Coaching/JuniorCoaching
+website: https://www.rltc.co.uk/Coaching/Junior
+email: coaching@rltc.co.uk
 source: provider website
-verified: '2026-09-27'
+verified: '2026-10-05'
+lastChanged: '2026-10-05'
+checkEvery: 30
 claimed: false
 ---
 
@@ -21,4 +24,4 @@ Rickmansworth Lawn Tennis Club runs a **junior coaching programme for ages 3 to 
 
 Older juniors can join development and performance squads, the club championships and, if selected, the club's Herts league teams. The club also runs **holiday tennis camps open to non-members**.
 
-The club doesn't publish session times or prices online, so contact the coaching team for current groups and costs.
+The club doesn't publish session times or prices online, so contact the coaching team (coaching@rltc.co.uk) for current groups and costs.

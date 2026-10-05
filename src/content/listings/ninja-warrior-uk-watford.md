@@ -33,7 +33,8 @@ venue:
   postcode: WD25 7JZ
 website: https://ninjawarrioruk.co.uk/watford/
 source: provider website
-verified: '2026-09-27'
+verified: '2026-10-05'
+checkEvery: 135
 claimed: false
 ---
 
