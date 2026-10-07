@@ -1,0 +1,54 @@
+---
+title: "Things to do with toddlers in Watford & West Herts (2026)"
+description: "Toddler classes, soft play mornings, free library rhyme times, parks, farms and toddler cinema around Watford, Rickmansworth, Croxley Green, Abbots Langley and Bushey."
+date: 2026-10-07
+type: guide
+towns: [watford, rickmansworth, croxley-green, chorleywood, abbots-langley, kings-langley, bushey, south-oxhey]
+categories: [baby-toddler, play-parties, days-out, outdoor-nature]
+related: [airies-gymnastics-abbots-langley, watford-gymnastics-club, hartbeeps-rickmansworth-chorleywood-croxley, monkey-music-rickmansworth-kings-langley, colours-in-music-watford, little-kickers-watford-rickmansworth, rugbytots-watford-bushey-croxley, water-babies-bushey-meadow-wood, baby-sensory-rickmansworth, flip-out-watford, ninja-warrior-uk-watford, rock-up-watford, cassiobury-park, rickmansworth-aquadrome, langleybury-childrens-farm, watford-miniature-railway]
+---
+
+Toddlers need somewhere to burn off energy, and West Herts has plenty of it: music and movement classes, soft play mornings, free rhyme times at the library and big parks with playgrounds. We've checked every entry below against the provider's, venue's or council's own website, so you can plan the week with confidence.
+
+## Classes
+
+- **Monkey Music**, Mill End Community Centre, Rickmansworth, and Kings Langley Methodist Church, Kings Langley. Music classes grouped by age, including Heigh-Ho (12 months+), Jiggety-Jig (2–3 years) and Ding-Dong (3–4 years). Rickmansworth classes are on Friday mornings from 10.15am; Kings Langley has Monday and Wednesday mornings from 10am. Your first class is free. [Details](https://www.monkeymusic.co.uk/area/berkhamsted-chesham-hemel-hempstead-kings-langley-rickmansworth) · [Our listing](/activities/monkey-music-rickmansworth-kings-langley/)
+- **Hartbeeps**, Chorleywood, Rickmansworth, Croxley Green, Abbots Langley and Kings Langley. 45-minute sessions of rhymes, lullabies, dress-up and sensory adventures. Happy House classes are for toddlers and pre-schoolers. Classes run on Mondays in Chorleywood, Tuesdays in Abbots Langley, Thursdays in Rickmansworth and Fridays in Kings Langley and Croxley Green. [Details](https://www.hartbeeps.com/rickmansworth-northwood-chorleywood-croxley) · [Our listing](/activities/hartbeeps-rickmansworth-chorleywood-croxley/)
+- **Colours in Music Kindergarten**, Watford. A music programme for children from 17 months to 6 years that develops pitch and rhythm. The first lesson is a free trial. [Details](https://www.coloursinmusic.co.uk/) · [Our listing](/activities/colours-in-music-watford/)
+- **Airies Gymnastics**, One YMCA Woodlands Community Hub, Leavesden Country Park, Abbots Langley. Stay & Play for 0 to 4-year-olds on Friday mornings, 9.30am to 10.30am, at £3.90 per child with adults free, plus pre-school gymnastics for 2½ to 4-year-olds. You can book a free taster. [Details](https://www.airiesgymnastics.co.uk/) · [Our listing](/activities/airies-gymnastics-abbots-langley/)
+- **Watford Gymnastics Club**, Watford. Pre-school gymnastics classes and a parent and toddler soft play session on Tuesdays, 10.30am to 12pm, in term time, for children up until they start Reception. [Details](https://www.watfordgymnastics.co.uk/watford-site) · [Our listing](/activities/watford-gymnastics-club/)
+- **Little Kickers**, William Penn Leisure Centre, Rickmansworth. Pre-school football with Little Kicks (18 months to 2½), Junior Kickers (2½ to 3½) and Mighty Kickers (3½ to 5). You can ask for one free trial session, subject to availability. [Details](https://www.littlekickers.co.uk/en-gb/locations/harrow-pinner-watford-rickmansworth/) · [Our listing](/activities/little-kickers-watford-rickmansworth/)
+- **Rugbytots**, Watford, Bushey and Croxley Green. Rugby-based play sessions for ages 2 to 7. Use the class finder for local venues and times. [Details](https://www.rugbytots.co.uk/Class/Find) · [Our listing](/activities/rugbytots-watford-bushey-croxley/)
+- **Water Babies**, Meadow Wood School pool, Coldharbour Lane, Bushey. 30-minute swimming lessons grouped by age, including toddler (1–2), 2–3 and 3–4 classes. Times and prices show up when you search with your child's date of birth. [Details](https://www.waterbabies.co.uk/baby-swimming/hertfordshire/meadow-wood-school-pool/) · [Our listing](/activities/water-babies-bushey-meadow-wood/)
+- **Baby Sensory**, Rickmansworth and Bushey. For younger siblings: classes for babies from birth to 13 months, plus Hello Baby for 0 to 3 months. Book through the site to see venues and times. [Details](https://www.babysensory.com/north-harrow/) · [Our listing](/activities/baby-sensory-rickmansworth/)
+
+## Play sessions
+
+- **Ninja Toddlers at Ninja Warrior UK**, Woodside Leisure Park, Garston, Watford. Ninja fun for 1 to 4-year-olds on Monday, Tuesday, Wednesday and Friday mornings, 9.30am to 11.30am, in term time. £6.95 per toddler and £2 per adult, with up to two toddlers per adult. Everyone wears the venue's safety socks (£2.95, reusable). [Details](https://ninjawarrioruk.co.uk/watford/ninja-toddlers/) · [Our listing](/activities/ninja-warrior-uk-watford/)
+- **Flip Out Watford Stay & Play**, atria Watford, Watford town centre. For ages 5 and under on term-time Fridays, playing as long as you like until 3pm, with soft play, trampolines, an inflatable and more. £7.95, or £3.95 for babies aged 6 to 12 months. [Details](https://www.flipout.co.uk/locations/watford/prices) · [Our listing](/activities/flip-out-watford/)
+- **Rock Up Toddler Climb and soft play**, atria Watford, Watford town centre. Toddler Climb for under-5s combines climbing and soft play in the mornings at £13.95, with accompanying adults free. The multi-storey soft play on its own is £8.95 for ages 8 and under, and under-1s go free. [Details](https://www.rock-up.co.uk/products?center=watford) · [Our listing](/activities/rock-up-watford/)
+- **Parents Paradise**, Greatham Road, Bushey. A soft play centre with separate baby and toddler areas, open Tuesday to Sunday from 9.30am for 2-hour sessions. Booked online, it's £4 for 1-year-olds and £8 for 2–4s, with adults from £1. Book ahead. [Details](https://parentsparadise.co.uk/booking/) · [Our listing](/activities/parents-paradise-bushey/)
+
+For a side-by-side look at prices and times, see our [soft play comparison](/whats-on/soft-play-watford/).
+
+## Free: libraries and parks
+
+- **Hertfordshire Libraries Baby Rhyme Time and Storytime**, Watford, Rickmansworth, Croxley Green, Chorleywood, Abbots Langley and South Oxhey. Baby Rhyme Time is a free half-hour of songs and rhymes for babies and toddlers, and Storytime is an interactive picture-book session for pre-schoolers. Donations are welcome. Storytime doesn't need booking, but some libraries use Eventbrite for Rhyme Time, so check the events listing for your branch's days and times before you go. [Details](https://www.hertfordshire.gov.uk/services/libraries-and-archives/events-and-things-to-do/library-events.aspx) · [Watford](https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/watford-library.aspx) · [Rickmansworth](https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/rickmansworth-library.aspx) · [Croxley Green](https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/croxley-green-library.aspx) · [Chorleywood](https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/chorleywood-community-library.aspx) · [Abbots Langley](https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/abbots-langley-library.aspx) · [Oxhey](https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/oxhey-library.aspx)
+- **Cassiobury Park**, Watford. Two children's playgrounds, a café and snack kiosk, woodland and nature trails, and the miniature railway. The Cassiobury Park car park is free for up to 2 hours, then from £3.10 for up to 3 hours. The paddling pools are closed for the season and are due to reopen in spring 2027. [Details](https://www.watford.gov.uk/directory-record/345/cassiobury-park-and-whippendell-wood) · [Parking](https://www.watford.gov.uk/directory-record/25/cassiobury-park-car-park) · [Our listing](/activities/cassiobury-park/)
+- **Rickmansworth Aquadrome**, Frogmore Lane, Rickmansworth. Two play areas, including the recently refurbished Ebury Play Area, a café and toilets, and two lakeside circular walks that are largely solid, level and wide. The car park is free and is open 8am to 6pm from October to March. [Details](https://www.threerivers.gov.uk/services/leisure-parks-culture/parks-open-spaces/rickmansworth-aquadrome) · [Our listing](/activities/rickmansworth-aquadrome/)
+
+Our [free things to do guide](/whats-on/free-things-to-do-kids-watford/) has more parks and playgrounds across the area.
+
+## Days out
+
+- **Watford Miniature Railway**, Cassiobury Park, Watford. Rides are £3 for adults and children, and under-2s travel free. Under-10s must ride with an adult. Trains run on colour-coded days from 11am, weather permitting, so check the calendar. [Details](https://watfordrailway.co.uk/pages/opening-times-and-prices) · [Our listing](/activities/watford-miniature-railway/)
+- **Langleybury Children's Farm**, Langleybury Lane, Kings Langley. A small farm with goats, pigs, sheep, calves and donkeys to feed, a play area for under-5s and over-5s, a farm shop and a picnic garden. Tickets are £6.25 per person for everyone over 1, booked online for a morning (11am to 1.30pm) or afternoon (2.30pm to 5pm) session. Check the website for open dates. No dogs. [Details](https://www.langleyburychildrensfarm.org.uk/copy-of-about-1) · [Our listing](/activities/langleybury-childrens-farm/)
+- **Big Shorts at Vue Watford**, Woodside Leisure Park, Garston, Watford. Morning screenings of toddler-friendly short films and TV episodes, aimed at ages 1 to 4 and no longer than 60 minutes, where children are allowed to sing, dance and run about. Tickets are from £3.99 online, and under-2s on a lap go free. [Details](https://www.myvue.com/family/big-shorts) · [Vue Watford](https://www.myvue.com/cinema/watford/whats-on)
+
+## Good to know
+
+- Lots of toddler sessions are term time only, including Ninja Toddlers, Flip Out Stay & Play and the Watford Gymnastics soft play, so check before you go in the school holidays.
+- Many classes offer a free first session or taster: Monkey Music, Colours in Music, Airies and Little Kickers all say so on their websites.
+- For more groups and classes for little ones, see our guide to [baby and toddler groups in Watford](/whats-on/baby-toddler-groups-watford/).
+
+*Know something we've missed, or run something local? [Tell us, it's free to list](/list-your-activity/).*

@@ -13,8 +13,8 @@ When the rain sets in and the park's a washout, there's more to do indoors aroun
 
 ## Soft play and trampolines
 
-- **Parents Paradise**, Greatham Road, Bushey. Soft play for children up to 11, open Tuesday to Sunday from 9.30am, with two-hour play sessions. A soft play centre with climbing frames, slides and a baby area, and you must book your visit in advance. [Details](https://parentsparadise.co.uk/) · [Our listing](/activities/parents-paradise-bushey/)
-- **Flip Out Watford**, atria Watford (lower mall). Stay & Play for ages 5 and under from £3.95 (weekday term time); 1-hour sessions from £12.45 at weekends and in the holidays. An indoor adventure park with 13 attractions for one entry price, including trampolines, dodgems, laser quest and drift trikes. [Details](https://www.flipout.co.uk/locations/watford) · [Our listing](/activities/flip-out-watford/)
+- **Parents Paradise**, Greatham Road, Bushey. Soft play for children up to 12, open Tuesday to Sunday from 9.30am, with two-hour play sessions. A soft play centre with climbing frames, slides and a baby area, and you must book your visit in advance. [Details](https://parentsparadise.co.uk/) · [Our listing](/activities/parents-paradise-bushey/)
+- **Flip Out Watford**, atria Watford (lower mall). Stay & Play for ages 5 and under from £3.95 (Fridays in term time), plus timed sessions for older children every day it's open. An indoor adventure park with 13 attractions for one entry price, including trampolines, dodgems, laser quest and drift trikes. [Details](https://www.flipout.co.uk/locations/watford) · [Our listing](/activities/flip-out-watford/)
 
 ## Active and adventurous
 

@@ -1,5 +1,5 @@
 ---
-title: "Swimming lessons for kids in Watford and Rickmansworth: your options"
+title: "Swimming lessons for kids in Watford & Rickmansworth (2026)"
 description: "Leisure centre lessons, independent swim schools or one-to-one at home? A local guide to children's swimming lessons around Watford, Rickmansworth and Croxley."
 date: 2026-09-24
 type: guide
