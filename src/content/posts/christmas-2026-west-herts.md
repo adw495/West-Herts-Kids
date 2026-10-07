@@ -25,7 +25,7 @@ Christmas in West Herts can be as big or as small as you like, from a proper pan
 
 - **Rickmansworth Winter Fair**, Rickmansworth town centre. The Rickmansworth Town Team says 2026 will be its 13th Winter Fair, but hasn't published the date yet. In past years it has been a family evening with a funfair, festive food and gift stalls, local performers and Father Christmas. [Details](https://www.rickmansworthtown.co.uk/)
 - **Watford Town Centre Winterfest and Christmas lights switch-on**, The Parade and High Street, Watford. A free event funded by Watford Town Centre BID and held every year, but the 2026 date hasn't been announced. Last year it was on a Saturday in mid-November, with free funfair rides, a market, a parade with Santa on his sleigh and the lights switch-on. [Details](https://www.watford.gov.uk/news/article/878/watford-town-centre-christmas-lights-switched-on-at-spectacular-winterfest-event)
-- **Croxley Green Christmas lights switch-on and carols**, Croxley Green Library forecourt, Barton Way, Croxley Green. A regular parish council evening of carols and lights in late November. The 2026 date hasn't been listed yet. [Details](https://croxleygreen-pc.gov.uk/events/2025-11-26/)
+- **Croxley Green Christmas lights switch-on and carols**, Croxley Green Library forecourt, Barton Way, Croxley Green. A regular parish council evening of carols and lights in late November. The 2026 date hasn't been listed yet. [Details](https://croxleygreen-pc.gov.uk/events/)
 
 ## A little further afield
 
