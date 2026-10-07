@@ -16,7 +16,7 @@ venue:
   name: Rickmansworth Aquadrome
   address: Frogmore Lane, Rickmansworth
   postcode: WD3 1RL
-website: https://www.threerivers.gov.uk/egcl-page/rickmansworth-aquadrome
+website: https://www.threerivers.gov.uk/services/leisure-parks-culture/parks-open-spaces/rickmansworth-aquadrome
 source: Three Rivers District Council; OpenStreetMap
 verified: '2026-09-25'
 claimed: false
