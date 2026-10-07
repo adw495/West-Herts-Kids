@@ -12,7 +12,11 @@ export async function getStaticPaths() {
     .filter((p) => p.props.items.length > 0);
 }
 interface Props { town: TownKey; items: Listing[] }
-const { town, items } = Astro.props;
+const { town, items: raw } = Astro.props;
+// "Things to do" intent: days out, play and swimming first; clubs and Scout groups further down.
+const RANK: CategoryKey[] = ['days-out', 'play-parties', 'swimming', 'holiday-camps', 'baby-toddler', 'gymnastics-trampolining', 'football-sport', 'dance-drama', 'arts-crafts', 'music', 'martial-arts', 'stem-coding', 'tuition', 'outdoor-nature'];
+const rank = (l: Listing) => Math.min(...l.data.categories.map((c) => { const i = RANK.indexOf(c); return i < 0 ? 99 : i; })) + (/^\d/.test(l.data.name) ? 100 : 0);
+const items = [...raw].sort((a, b) => rank(a) - rank(b));
 const t = TOWNS[town];
 const jsonLd = [
   itemListLd(`Kids' activities in ${t.name}`, items),
