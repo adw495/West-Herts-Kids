@@ -9,7 +9,8 @@ const listings = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/listings' }),
   schema: z.object({
     name: z.string(),
-    summary: z.string().max(200),           // one-line summary used on cards and in meta descriptions
+    summary: z.string().max(200),
+    seoTitle: z.string().max(70).optional(), // hand-tuned <title> for pages close to page 1 (matches what people search)           // one-line summary used on cards and in meta descriptions
     categories: z.array(z.enum(CATEGORY_KEYS)).min(1),
     towns: z.array(z.enum(TOWN_KEYS)).min(1),
 
@@ -23,6 +24,27 @@ const listings = defineCollection({
       start: z.string().optional(),  // "16:30"
       end: z.string().optional(),
       note: z.string().optional(),   // "Ages 4–6"
+      price: z.string().optional(),  // "£8.50" — only when the provider states a per-session price
+    })).default([]),
+
+    // Practical visit info for venues, parks and days out. Only fields the provider (or council) states.
+    visit: z.object({
+      hours: z.string().optional(),        // "Mon–Fri 9am–6pm; Sat–Sun 9am–5pm"
+      parking: z.string().optional(),      // "Free car park on site"
+      station: z.string().optional(),      // "Watford Junction (10 min walk)"
+      cafe: z.boolean().optional(),
+      toilets: z.boolean().optional(),
+      babyChange: z.boolean().optional(),
+      buggy: z.string().optional(),        // "Buggy-friendly paths"
+      visitLength: z.string().optional(),  // "Allow 2–3 hours"
+      source: z.string().optional(),       // where the visit info came from
+    }).default({}),
+
+    // First-party tips from parents, sent in through the site and approved by the owner. Never copied from elsewhere.
+    tips: z.array(z.object({
+      text: z.string().max(400),
+      name: z.string(),                    // first name and town, e.g. "Sarah, Croxley Green"
+      date: z.coerce.date(),
     })).default([]),
 
     priceFrom: z.number().optional(),       // pounds
