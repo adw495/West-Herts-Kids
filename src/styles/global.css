@@ -474,3 +474,15 @@ main, .site-footer { overflow-x: clip; }
 
 /* "Follow us on Facebook" note at the end of guides */
 .follow-note { margin-top: 32px; padding: 14px 16px; border-left: 3px solid var(--teal-deep); background: var(--paper-2); border-radius: 4px; max-width: 70ch; }
+
+/* Plan your visit + parent tips (listing pages) */
+.visit-list { margin: 12px 0 0; padding: 20px 22px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); display: grid; gap: 12px; }
+.visit-list div { display: grid; grid-template-columns: minmax(120px, 32%) 1fr; gap: 12px; }
+.visit-list dt { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--moss); padding-top: 4px; }
+.visit-list dd { margin: 0; }
+@media (max-width: 560px) { .visit-list div { grid-template-columns: 1fr; gap: 2px; } }
+.tip-list { list-style: none; padding: 0; margin: 12px 0 16px; display: grid; gap: 14px; }
+.tip-list li { padding: 16px 20px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--leaf); border-radius: var(--radius); }
+.tip-list blockquote { margin: 0; }
+.tip-list blockquote p { margin: 0; font-size: 17px; }
+.tip-list .small { margin: 6px 0 0; }
