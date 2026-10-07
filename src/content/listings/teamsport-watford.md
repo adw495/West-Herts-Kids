@@ -16,6 +16,11 @@ source: provider website
 verified: '2026-10-05'
 checkEvery: 90
 claimed: false
+visit:
+  parking: On-site parking, including accessible spaces
+  station: Watford High Street, about 25 minutes' walk
+  cafe: true
+  source: https://www.team-sport.co.uk/go-kart-tracks/watford
 ---
 
 TeamSport Watford is an indoor **electric go-karting** track with a 500m circuit across two levels. **Go-karting is for ages 8 and up**, and first-timers are welcome, with the track team on hand to help.

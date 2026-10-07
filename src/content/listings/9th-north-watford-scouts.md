@@ -15,6 +15,13 @@ website: https://www.9thnorthwatford.co.uk/
 source: provider website
 verified: '2026-09-27'
 claimed: false
+schedule:
+- day: mon
+  note: Beavers, ages 6–8, evenings
+- day: mon
+  note: Cubs, ages 8–10½, evenings
+- day: thu
+  note: Scouts, ages 10½–14, evenings
 ---
 9th North Watford serves Woodside and North Watford from its HQ on Hope Green. According to the district, **Squirrels (4–6)** meet on Fridays, **Beavers (6–8)** and **Cubs (8–10½)** on Mondays, and **Scouts (10½–14)** on Thursdays.
 

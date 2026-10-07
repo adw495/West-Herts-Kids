@@ -27,6 +27,21 @@ verified: '2026-10-05'
 lastChanged: '2026-10-05'
 checkEvery: 30
 claimed: false
+visit:
+  hours: 'Term time: Mon–Tue closed; Wed–Thu 3pm–7pm; Fri–Sat 10am–8pm; Sun 10am–6pm. Holidays: Mon–Thu 10am–7pm; Fri–Sat 10am–8pm; Sun 10am–6pm'
+  parking: Harlequin Shopping Centre car parks (Kings and Queens car parks are closest)
+  station: Watford High Street, a short walk
+  cafe: true
+  toilets: true
+  babyChange: true
+  buggy: Buggy-friendly, with a lift inside the venue
+  source: https://www.flipout.co.uk/locations/watford ; https://www.flipout.co.uk/locations/watford/frequently-asked-questions
+schedule:
+- day: fri
+  start: '10:00'
+  end: '15:00'
+  note: Stay & Play, ages 5 and under, term time
+  price: From £3.95
 ---
 
 Flip Out is an indoor adventure park on the lower level of atria Watford, with 13 attractions including trampolines, dodgems, laser quest, a roller rink and toddler soft play.

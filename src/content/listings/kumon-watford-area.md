@@ -1,5 +1,6 @@
 ---
 name: Kumon Maths & English (local study centres)
+seoTitle: 'Kumon Watford, Croxley, Bushey & Chorleywood: maths and English'
 summary: Individual maths and English study programmes from age 2 at Kumon centres in Croxley Green, Chorleywood, Bushey, Watford, Garston and Carpenders Park.
 categories: [tuition]
 towns: [croxley-green, chorleywood, bushey, watford, south-oxhey]

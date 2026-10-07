@@ -15,6 +15,19 @@ website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/3rd-north-watfo
 source: provider website
 verified: '2026-09-27'
 claimed: false
+schedule:
+- day: mon
+  note: Cubs (Jungle), ages 8–10½
+- day: tue
+  note: Beavers (River), ages 6–8
+- day: tue
+  note: Explorers (district unit), ages 14–18
+- day: wed
+  note: Cubs (Rainforest), ages 8–10½
+- day: thu
+  note: Scouts, ages 10½–14
+- day: sat
+  note: Beavers (Lake), ages 6–8
 ---
 3rd North Watford, also known as **1st Abbots Langley**, meets at its HQ on Langley Road.
 

@@ -20,6 +20,13 @@ website: https://www.6thnorthwatfordscouts.org.uk/
 source: provider website
 verified: '2026-09-27'
 claimed: false
+schedule:
+- day: mon
+  note: Scouts, ages 10–14, evenings
+- day: wed
+  note: Beavers, ages 6–8, evenings
+- day: thu
+  note: Cubs, ages 8–10, evenings
 ---
 6th North Watford runs **Beavers (6–8) on Wednesday evenings**, **Cubs (8–10) on Thursday evenings** and **Scouts (10–14) on Monday evenings**, at the bottom of East Drive by the children's play area.
 

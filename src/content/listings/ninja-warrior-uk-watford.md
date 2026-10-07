@@ -36,6 +36,13 @@ source: provider website
 verified: '2026-10-05'
 checkEvery: 135
 claimed: false
+visit:
+  hours: 'Term time: Mon–Thu 12pm–7pm; Fri 12pm–8pm; Sat–Sun 9.30am–8pm. Last admission one hour before closing'
+  parking: Free on-site parking at Woodside Leisure Park (725 spaces)
+  station: Garston, 1.2 miles (Watford Junction and North Watford also close)
+  cafe: true
+  toilets: true
+  source: https://ninjawarrioruk.co.uk/watford/ ; https://ninjawarrioruk.co.uk/watford/frequently-asked-questions/ ; https://ninjawarrioruk.co.uk/watford/ninja-toddlers/
 ---
 
 Ninja Warrior UK Watford is an indoor adventure park at Woodside Leisure Park with **fixed ninja runs and an inflatable course**. Main sessions are for **ages 5 to adult**. Under-8s must be accompanied on the activities, under-12s need a parent or guardian on site, and most of the fixed ninja runs need climbers to be at least 140cm tall.

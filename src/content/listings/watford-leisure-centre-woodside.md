@@ -16,6 +16,10 @@ source: provider website (Everyone Active centre page)
 verified: '2026-10-05'
 checkEvery: 90
 claimed: false
+visit:
+  hours: Mon–Fri 6am–10pm; Sat–Sun 8am–10pm (centre hours)
+  parking: 4 hours free for leisure centre users (take a ticket from the pay and display machine)
+  source: https://www.watford.gov.uk/sports/watford-gyms-leisure-centres/2
 ---
 
 Watford Woodside (Everyone Active) in Garston has **two pools**, home to its **children's swimming lessons** and swim sessions for all ages and abilities.

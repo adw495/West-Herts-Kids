@@ -32,6 +32,12 @@ source: provider website
 verified: '2026-10-05'
 checkEvery: 90
 claimed: false
+visit:
+  hours: Thu–Sun 11am–4pm
+  parking: Kemp Place car park, off the High Street opposite Rudolph Road; one Blue Badge space at the rear of the museum
+  station: Bushey station about 1 mile; Watford Junction 3 miles
+  toilets: true
+  source: https://busheymuseum.org/visit-us/ ; https://busheymuseum.org/accessibility/
 ---
 
 Bushey Museum & Art Gallery tells the story of Bushey and its unusual artistic history, including the Herkomer art school, with changing exhibitions through the year. It was named a VisitEngland "Hidden Gem" in 2026.

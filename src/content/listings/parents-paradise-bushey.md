@@ -28,7 +28,7 @@ schedule:
   start: 09:30
 priceFrom: 2
 priceUnit: entry
-priceNote: 'Booked online for 2 hours: off-peak (Tue–Thu term time) from £2 for under-1s, £8 for 2–4s and £12.50 for 5–12s; adults £2. Peak prices are higher. £1.50 booking fee'
+priceNote: 'Booked online for 2 hours: under-1s £2, 1-year-olds £4, 2–4s £8, 5–12s £12. First adult £1 on weekdays or £2 at weekends and peak times; extra adults £2 or £4. £1 booking fee; paying on the door is £1 more per person.'
 venue:
   name: Parents Paradise
   address: Unit C, Greatham Road Industrial Estate, Greatham Road, Bushey
@@ -36,10 +36,16 @@ venue:
 phone: 01923 248747
 website: https://parentsparadise.co.uk/
 source: provider website
-verified: '2026-10-05'
-lastChanged: '2026-10-05'
+verified: '2026-10-07'
+lastChanged: '2026-10-07'
 checkEvery: 30
 claimed: false
+visit:
+  hours: Tue–Sun from 9.30am
+  parking: Free parking on site
+  cafe: true
+  visitLength: Play sessions are 2 hours
+  source: https://parentsparadise.co.uk/ ; https://parentsparadise.co.uk/baby-and-toddler-classes/
 ---
 
 Parents Paradise is an indoor soft play centre with climbing frames, slides, tunnels, go-karts and a baby sensory area. Play sessions are two hours and **must be booked in advance** (it's cheaper online than on the door). It caters for babies up to 12-year-olds.

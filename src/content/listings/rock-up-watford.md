@@ -45,6 +45,13 @@ source: provider website (location page and FAQs)
 verified: '2026-10-05'
 checkEvery: 90
 claimed: false
+visit:
+  hours: 'Term time: Mon–Wed 10am–7.30pm; Thu closed; Fri 10am–7.30pm; Sat 9.30am–8pm; Sun 9.30am–7.30pm'
+  parking: Harlequin car parks; Kings Car Park is closest
+  station: Watford High Street (walking distance); Watford Junction then bus (e.g. W30 or 10)
+  cafe: true
+  visitLength: Climbing sessions last about 90 minutes, including a 30-minute safety briefing
+  source: https://www.rock-up.co.uk/locations/watford
 ---
 
 Rock Up Watford is an indoor adventure centre in atria Watford with **more than 25 auto-belay climbing walls**, a high ropes course above the shopping centre, a Leap of Faith (over 1.2m tall) and **multi-storey soft play** for younger children. Climbing sessions last 90 minutes, including a 30-minute safety briefing, and no experience is needed.
