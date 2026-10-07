@@ -181,14 +181,14 @@ const jsonLd = [
                 <HeroArtMobile />
               </figure>
               <p class="kicker">What’s on · {formatDate(whatsOn.data.date)}</p>
-              <h3 class="ed-title"><a href={`/whats-on/${whatsOn.id}/`}>{whatsOn.data.title}</a></h3>
+              <h3 class="ed-title"><a href="/whats-on/this-weekend/">{whatsOn.data.title}</a></h3>
               <p class="lead" style="margin:14px 0 24px">{whatsOn.data.description}</p>
               {woRows.length > 0 && (
                 <ul class="town-rows">
                   {woRows.map((l) => <li><span>{TOWNS[l.data.towns[0]].name}</span><span><a href={`/activities/${l.id}/`}>{l.data.name}</a>: {lc(CATEGORIES[l.data.categories[0]].name)}, ages {ageShort(l.data.ageMin, l.data.ageMax)}</span></li>)}
                 </ul>
               )}
-              <a class="btn brick" href={`/whats-on/${whatsOn.id}/`} style="margin-top:20px">Read the guide <span aria-hidden="true">→</span></a>
+              <a class="btn brick" href="/whats-on/this-weekend/" style="margin-top:20px">Read the guide <span aria-hidden="true">→</span></a>
             </article>
           )}
           {guide && (
