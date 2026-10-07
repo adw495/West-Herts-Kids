@@ -1,0 +1,33 @@
+---
+// Side-by-side comparison of listings. Every cell comes from verified listing fields; unknowns show "–" or "Ask".
+import { formatDate, ageShort, priceFact, whenLabel, type Listing } from '../lib/listings';
+import { TOWNS } from '../data/taxonomy';
+interface Props { items: Listing[]; heading: string; id?: string; showTown?: boolean }
+const { items, heading, id = 'compare-title', showTown = false } = Astro.props;
+const price = (l: Listing) => { const p = priceFact(l.data); return p && p.label === 'From' ? `${p.value}${p.sub ? ' ' + p.sub.replace(/,? ?free trial/, '') : ''}` : 'Ask'; };
+---
+<section class="compare" aria-labelledby={id}>
+  <h2 id={id}>{heading}</h2>
+  <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison table (scrolls sideways on small screens)">
+    <table>
+      <thead><tr>
+        <th scope="col">Provider</th>{showTown && <th scope="col">Town</th>}<th scope="col">Ages</th><th scope="col">From</th><th scope="col">When</th><th scope="col">Free trial</th><th scope="col">SEND-friendly</th><th scope="col">Last checked</th>
+      </tr></thead>
+      <tbody>
+        {items.map((l) => (
+          <tr>
+            <th scope="row"><a href={`/activities/${l.id}/`}>{l.data.name}</a></th>
+            {showTown && <td>{l.data.towns.slice(0, 2).map((t) => TOWNS[t].name).join(', ')}{l.data.towns.length > 2 ? ' +' : ''}</td>}
+            <td>{ageShort(l.data.ageMin, l.data.ageMax)}</td>
+            <td>{price(l)}</td>
+            <td>{whenLabel(l.data)}</td>
+            <td>{l.data.freeTrial ? 'Yes' : '–'}</td>
+            <td>{l.data.send === 'yes' ? 'Yes' : '–'}</td>
+            <td>{l.data.verified ? formatDate(l.data.verified) : '–'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="small muted" style="margin-top:8px">From each provider’s own website. Prices and times change, so check before you book.</p>
+</section>
