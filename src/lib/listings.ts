@@ -93,6 +93,7 @@ export const byTown = (ls: Listing[], t: TownKey) => ls.filter((l) => l.data.tow
 export function ageLabel(min: number, max: number): string {
   const fmt = (n: number) => (n < 1 ? `${Math.round(n * 12)} months` : `${n}`);
   if (min === 0 && max <= 5) return max < 1 ? `0–${fmt(max)}` : `0–${max} years`;
+  if (min === 0 && max >= 18) return 'All ages';
   if (max >= 18) return `${fmt(min)}+`;
   if (min < 1) return `${fmt(min)} to ${max} years`;
   return `${min}–${max} years`;
@@ -156,7 +157,7 @@ export function ageShort(min: number, max: number): string {
 export function priceFact(d: Listing['data']): { label: string; value: string; sub?: string } | null {
   if (d.priceFrom !== undefined) {
     const value = d.priceFrom === 0 ? 'Free' : Number.isInteger(d.priceFrom) ? `£${d.priceFrom}` : `£${d.priceFrom.toFixed(2)}`;
-    const unit = d.priceUnit ? { session: 'a session', week: 'a week', term: 'a term', month: 'a month', day: 'a day', year: 'a year', entry: 'per ride or entry' }[d.priceUnit] : undefined;
+    const unit = d.priceUnit ? { session: 'a session', week: 'a week', term: 'a term', month: 'a month', day: 'a day', year: 'a year', entry: 'per entry' }[d.priceUnit] : undefined;
     return { label: 'From', value, sub: d.freeTrial ? `${unit ?? ''}${unit ? ', ' : ''}free trial` : unit };
   }
   if (d.freeTrial) return { label: 'Try', value: 'Free', sub: 'taster session' };
