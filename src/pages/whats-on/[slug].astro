@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import ListingCard from '../../components/ListingCard.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 import Postmark from '../../components/art/Postmark.astro';
+import CompareTable from '../../components/CompareTable.astro';
 import { render } from 'astro:content';
 import { getPosts, getListings, formatDate, type Post } from '../../lib/listings';
 import { SITE } from '../../site.config';
@@ -16,6 +17,9 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const listings = await getListings();
 const related = listings.filter((l) => post.data.related.includes(l.id));
+// The newest weekly round-up is also shown at the stable /whats-on/this-weekend/ URL, which collects the links.
+const latestWeekly = (await getPosts()).find((p) => p.data.type === 'whats-on' && /^\d{4}-\d{2}-\d{2}-whats-on$/.test(p.id));
+const canonical = latestWeekly?.id === post.id ? '/whats-on/this-weekend/' : undefined;
 const typeLabel: Record<string, string> = { 'whats-on': 'What’s on', guide: 'Guide', comparison: 'Comparison', news: 'News' };
 const ld = {
   '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description,
@@ -24,7 +28,7 @@ const ld = {
   mainEntityOfPage: `${SITE.url}/whats-on/${post.id}/`,
 };
 ---
-<Base title={post.data.title} description={post.data.description} jsonLd={ld}>
+<Base title={post.data.title} description={post.data.description} jsonLd={ld} canonical={canonical}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/whats-on/">What’s on</a></li><li aria-hidden="true">/</li><li aria-current="page">{typeLabel[post.data.type]}</li></ol>
     <article style="padding:16px 0 64px">
@@ -32,6 +36,7 @@ const ld = {
       <h1 style="max-width:18em">{post.data.title}</h1>
       <p class="lead" style="margin-top:16px">{post.data.description}</p>
       <div class="prose" style="margin-top:32px"><Content /></div>
+      {related.length >= 3 && post.data.type !== 'whats-on' && <CompareTable items={related} heading="Our listings side by side" id="guide-compare" showTown />}
       <p class="follow-note">Like this? <a href={SITE.facebook} rel="noopener">Follow West Herts Kids on Facebook</a> for weekend picks and new guides, or get them by email below.</p>
     </article>
     {related.length > 0 && (
