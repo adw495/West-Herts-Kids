@@ -2,6 +2,7 @@
 title: "Indoor & rainy-day things to do with kids in Watford (2026)"
 description: "Soft play, trampolines, climbing, ninja courses, bowling, pools, cinema, theatre and libraries: indoor things to do with kids in Watford and West Herts when it rains."
 date: 2026-10-03
+updated: 2026-10-07
 type: guide
 towns: [watford, rickmansworth, croxley-green, abbots-langley, bushey, south-oxhey]
 categories: [play-parties, days-out, swimming, gymnastics-trampolining]
@@ -20,14 +21,14 @@ When the rain sets in and the park's a washout, there's more to do indoors aroun
 - **Rock Up Watford**, The Harlequin (atria), Watford town centre. Climbing walls for ages 4+; Leap of Faith for over 1.2m. Themed climbing walls in 90-minute sessions (including a 30-minute safety briefing), plus Toddler Climb & Play with soft play for younger children. [Details](https://www.rock-up.co.uk/locations/watford)
 - **Ninja Warrior UK Watford**, Woodside Leisure Park, Garston. Main sessions for ages 5+; Ninja Toddlers for ages 1–4 at £6.95 per toddler and £2 per adult (term time, Monday, Tuesday, Wednesday and Friday, 9.30–11.30am). Ninja obstacle runs, inflatables and the famous Warped Wall, with free parking on site. [Details](https://ninjawarrioruk.co.uk/watford/) · [Our listing](/activities/ninja-warrior-uk-watford/)
 - **Hollywood Bowl Watford Woodside**, Woodside Leisure Park, Garston. A big bowling centre with an arcade and pool tables, and kids' meals for little bowlers. [Details](https://hollywoodbowl.co.uk/watford-woodside/venue)
-- **Hollywood Bowl Watford Harlequin**, atria Watford, town centre. Town-centre bowling with an amusements area and pool tables, open from 9am every day. [Details](https://www.hollywoodbowl.co.uk/watford-atria)
+- **Hollywood Bowl Watford Harlequin**, atria Watford, town centre. Town-centre bowling with an amusements area and pool tables, open from 11am on weekdays and 9am at weekends (hours change in school holidays). [Details](https://www.hollywoodbowl.co.uk/watford-harlequin)
 
 ## Swimming and leisure centres
 
 - **Watford Leisure Centre Central**, Peace Prospect, Watford. Two pools with children's swimming lessons and family swims with inflatable toys, plus an indoor climbing wall. [Details](https://www.everyoneactive.com/centre/watford-leisure-centre-central/) · [Our listing](/activities/watford-leisure-centre-central/)
 - **Watford Leisure Centre Woodside**, Horseshoe Lane, Garston. Two pools hosting swimming lessons and other sessions for swimmers of all ages and abilities, plus a sports hall for badminton and table tennis. [Details](https://www.everyoneactive.com/centre/watford-leisure-centre-woodside/)
 - **William Penn Leisure Centre**, Mill End, Rickmansworth. The local pool for Rickmansworth and Croxley Green, with children's swimming lessons and public swim sessions. [Details](https://www.everyoneactive.com/centre/william-penn-leisure-centre/) · [Our listing](/activities/william-penn-leisure-centre/)
-- **South Oxhey Leisure Centre**, South Oxhey. A 25-metre, four-lane pool plus a separate teaching pool, handy for a splash on a grey weekend. [Details](https://everyoneactive.com/centre/the-centre-south-oxhey)
+- **South Oxhey Leisure Centre**, South Oxhey. A 25-metre, four-lane pool plus a separate teaching pool, handy for a splash on a grey weekend. [Details](https://www.everyoneactive.com/centre/south-oxhey-leisure-centre/)
 
 ## Cinema, shows and days out
 
