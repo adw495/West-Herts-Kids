@@ -25,7 +25,7 @@ When the rain sets in and the park's a washout, there's more to do indoors aroun
 
 ## Swimming and leisure centres
 
-- **Watford Leisure Centre Central**, Peace Prospect, Watford. Two pools with children's swimming lessons and family swims with inflatable toys, plus an indoor climbing wall. [Details](https://www.everyoneactive.com/centre/watford-leisure-centre-central/) · [Our listing](/activities/watford-leisure-centre-central/)
+- **Watford Leisure Centre Central**, Peace Prospect, Watford. Two pools with children's swimming lessons and family swims with inflatable toys. [Details](https://www.everyoneactive.com/centre/watford-leisure-centre-central/) · [Our listing](/activities/watford-leisure-centre-central/)
 - **Watford Leisure Centre Woodside**, Horseshoe Lane, Garston. Two pools hosting swimming lessons and other sessions for swimmers of all ages and abilities, plus a sports hall for badminton and table tennis. [Details](https://www.everyoneactive.com/centre/watford-leisure-centre-woodside/)
 - **William Penn Leisure Centre**, Mill End, Rickmansworth. The local pool for Rickmansworth and Croxley Green, with children's swimming lessons and public swim sessions. [Details](https://www.everyoneactive.com/centre/william-penn-leisure-centre/) · [Our listing](/activities/william-penn-leisure-centre/)
 - **South Oxhey Leisure Centre**, South Oxhey. A 25-metre, four-lane pool plus a separate teaching pool, handy for a splash on a grey weekend. [Details](https://www.everyoneactive.com/centre/south-oxhey-leisure-centre/)
