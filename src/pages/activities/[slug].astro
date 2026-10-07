@@ -42,10 +42,29 @@ const breadcrumbLd = {
     { '@type': 'ListItem', position: 3, name: d.name },
   ],
 };
-const title = `${d.name}: ${lc(CATEGORIES[mainCat].name)} in ${TOWNS[mainTown].name}`;
+// Title and description lead with the facts parents scan for in search results (ages, price, days, town).
+const autoTitle = `${d.name}, ${TOWNS[mainTown].name}: ${lc(CATEGORIES[mainCat].search)}${d.ageMax < 18 || d.ageMin > 0 ? ` (ages ${ageShort(d.ageMin, d.ageMax)})` : ''}`;
+const title = d.seoTitle ?? (autoTitle.length > 70 ? `${d.name}, ${TOWNS[mainTown].name}` : autoTitle);
+const descBits = [
+  ageLabel(d.ageMin, d.ageMax) === 'All ages' ? 'All ages' : `Ages ${ageLabel(d.ageMin, d.ageMax)}`,
+  priceLabel(d),
+  d.schedule.length ? whenLabel(d) : null,
+  d.freeTrial ? 'free taster' : null,
+].filter(Boolean).join(' · ');
+const description = `${d.summary.replace(/\.?$/, '.')} ${descBits}.${d.verified ? ` Checked ${formatDate(d.verified)}.` : ''}`.slice(0, 300);
+const hasPrice = d.schedule.some((x) => x.price);
+const v = d.visit;
+const visitRows = [
+  v.hours && ['Opening hours', v.hours],
+  v.parking && ['Parking', v.parking],
+  v.station && ['Nearest station', v.station],
+  v.visitLength && ['How long to allow', v.visitLength],
+  v.buggy && ['Buggies', v.buggy],
+  (v.cafe !== undefined || v.toilets !== undefined || v.babyChange !== undefined) && ['Facilities', [v.cafe === true && 'Café', v.cafe === false && 'No café', v.toilets === true && 'Toilets', v.toilets === false && 'No toilets', v.babyChange === true && 'Baby changing'].filter(Boolean).join(' · ')],
+].filter(Boolean) as [string, string][];
 const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
 ---
-<Base title={title} description={d.summary} jsonLd={[listingJsonLd(listing), breadcrumbLd]}>
+<Base title={title} description={description} jsonLd={[listingJsonLd(listing), breadcrumbLd]}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb">
       <li><a href="/">Home</a></li><li aria-hidden="true">/</li>
@@ -90,11 +109,30 @@ const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
           <>
             <h2 style="font-size:1.9rem;margin-top:40px">Timetable</h2>
             <table class="timetable">
-              <thead><tr><th scope="col">Day</th><th scope="col">Time</th><th scope="col">Notes</th></tr></thead>
-              <tbody>{d.schedule.map((s) => <tr><td>{dayName(s.day)}</td><td>{s.start}{s.end && `–${s.end}`}</td><td>{s.note}</td></tr>)}</tbody>
+              <thead><tr><th scope="col">Day</th><th scope="col">Time</th><th scope="col">Notes</th>{hasPrice && <th scope="col">Price</th>}</tr></thead>
+              <tbody>{d.schedule.map((s) => <tr><td>{dayName(s.day)}</td><td>{s.start ? <>{s.start}{s.end && `–${s.end}`}</> : 'See website'}</td><td>{s.note}</td>{hasPrice && <td>{s.price ?? '–'}</td>}</tr>)}</tbody>
             </table>
+            <p class="small muted" style="margin-top:8px">Times from the provider’s own website{d.verified && `, checked ${formatDate(d.verified)}`}. Sessions can change in the holidays, so check before you go.</p>
           </>
         )}
+
+        {visitRows.length > 0 && (
+          <div class="where">
+            <h2 style="font-size:1.9rem">Plan your visit</h2>
+            <dl class="visit-list">
+              {visitRows.map(([k, val]) => <div><dt>{k}</dt><dd>{val}</dd></div>)}
+            </dl>
+            <p class="small muted" style="margin-top:8px">From {domain ?? 'the venue’s own website'}. Hours change in the holidays, so it’s worth checking on the day.</p>
+          </div>
+        )}
+
+        <div class="where tips" id="tips">
+          <h2 style="font-size:1.9rem">Parent tips</h2>
+          {d.tips.length > 0 ? (
+            <ul class="tip-list">{d.tips.map((t) => <li><blockquote><p>“{t.text}”</p></blockquote><p class="small muted">{t.name}, {formatDate(t.date)}</p></li>)}</ul>
+          ) : <p class="muted" style="margin:0 0 8px">No tips yet. Been here with your kids? A line on parking, the best age or what to bring helps other parents.</p>}
+          <p style="margin:0"><a href={`/list-your-activity/?tip=${listing.id}`}>Share a tip for {d.name}</a> <span class="small muted">· we read every one before it goes up</span></p>
+        </div>
 
         {d.send !== 'unknown' && (
           <div class="send-box">
