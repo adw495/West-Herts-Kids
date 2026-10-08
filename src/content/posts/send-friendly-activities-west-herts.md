@@ -1,5 +1,5 @@
 ---
-title: "SEND-friendly activities for children in Watford and West Herts"
+title: "SEND-friendly activities for kids in Watford & West Herts (2026)"
 description: "Inclusive sport, swimming, sailing, relaxed theatre and holiday clubs for children with SEND around Watford, Rickmansworth and Abbots Langley, checked against organisers' own details."
 date: 2026-09-27
 type: guide

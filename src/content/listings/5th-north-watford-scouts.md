@@ -15,6 +15,15 @@ website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/5th-north-watfo
 source: provider website
 verified: '2026-09-27'
 claimed: false
+schedule:
+- day: mon
+  note: Beavers, ages 6–8
+- day: tue
+  note: Cubs, ages 8–10½
+- day: thu
+  note: Explorers (district unit), ages 14–18
+- day: fri
+  note: Scouts, ages 10½–14
 ---
 5th North Watford meets on the corner of Hamilton Road and Upper Highway in Abbots Langley. **Beavers (6–8)** meet on Mondays, **Cubs (8–10½)** on Tuesdays and **Scouts (10½–14)** on Fridays.
 

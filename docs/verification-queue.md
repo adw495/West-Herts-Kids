@@ -4,7 +4,26 @@ Last worked through: **5 Oct 2026**. Everything below was checked against provid
 
 ## Flagged
 
-Nothing flagged. (The 3 Oct flags were all resolved in the 5 Oct weekly check — see below.)
+### Flagged 7 Oct 2026 (from the guide research; re-check on the provider's own site)
+| Listing | What looked different | Source to check |
+|---|---|---|
+| code-ninjas-watford | One check saw "coming soon" + waitlist; a second check today showed camps on sale. Confirm it's open | codeninjas.co.uk/watford-uk-ldn |
+| rock-up-watford | Add soft play ticket (£8.95, 8 and under) and Toddler Climb (£13.95, under 5) if confirmed; the £12 Wednesday saver price wasn't on the prices page | rock-up.co.uk/locations/watford |
+| flip-out-watford | Hours changed (now in `visit`). Session prices: listing says off-peak 2-hour from £10.50, one check saw 1-hour from £11.45 off-peak and £16.95 standard — confirm on the prices page | flipout.co.uk/locations/watford |
+| airies-gymnastics-abbots-langley | No venue: site gives One YMCA Woodlands Community Hub, Leavesden Country Park | airiesgymnastics.co.uk |
+| little-kickers-watford-rickmansworth | Site also lists Mega Kickers (5–8) and rolling monthly billing; listing says 18m–5 and term time | littlekickers.co.uk (Harrow, Pinner, Watford & Rickmansworth) |
+| dolphina-gymnastics-watford | Also runs pre-school classes from 18 months | dolphinagymnastics.com |
+| baby-sensory-rickmansworth | Site also lists Hello Baby (0–3 months) | babysensory.com/north-harrow |
+| water-babies-bushey-meadow-wood | Pool now also runs Swimvincibles (4+) | waterbabies.co.uk pool page |
+| swimfitz-home-swimming-lessons | Now covers Northwood and WD4/WD5 too | swimfitz.com |
+| zks-martial-arts-watford | Newer Watford page: £60 joining fee, £55 for three classes a week (other site still matches the listing) | zksma.uk |
+| bushey-museum | Visit page says Kemp Place parking is free; accessibility page says chargeable | busheymuseum.org.uk (Hertsmere page) |
+| 1st-chorleywood-scouts | Cubs days (Thu/Fri) not on the group's own Cubs page today | chorleywoodscouts.org |
+| perform-rickmansworth | Rickmansworth page no longer names a venue | perform.org.uk |
+| free-things-to-do-kids-watford (guide) | Says Cassiobury is 250 acres; a council page now says 226 | watford.gov.uk Cassiobury pages |
+| fj-sporting-solutions-kings-langley (draft) | Only a past May camp found; publish once a current camp is listed | ClassForKids booking page |
+
+
 
 ## Done on 5 Oct 2026 (weekly check)
 

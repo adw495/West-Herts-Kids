@@ -15,6 +15,13 @@ website: https://chorleywoodscouts.org/
 source: provider website
 verified: '2026-09-27'
 claimed: false
+schedule:
+- day: wed
+  note: Scouts (Misbourne troop), ages 10½–14
+- day: thu
+  note: Scouts (Chess troop), ages 10½–14
+- day: fri
+  note: Scouts (Thames troop), ages 10½–14
 ---
 1st Chorleywood Scouts runs **Beavers (6–8), Cubs (8–10½) and Scouts (10½–14)** from its HQ on Orchard Drive. Cub packs meet on **Thursdays and Fridays**, and Scout troops on **Wednesdays, Thursdays and Fridays**.
 

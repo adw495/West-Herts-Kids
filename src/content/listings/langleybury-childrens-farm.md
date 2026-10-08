@@ -26,6 +26,11 @@ verified: '2026-10-05'
 lastChanged: '2026-10-05'
 checkEvery: 30
 claimed: false
+visit:
+  hours: 'Pre-booked sessions: morning 11am–1.30pm, afternoon 2.30pm–5pm'
+  toilets: true
+  babyChange: true
+  source: https://www.langleyburychildrensfarm.org.uk/copy-of-about-1 ; https://www.langleyburychildrensfarm.org.uk/about ; https://www.langleyburychildrensfarm.org.uk/general-5
 ---
 
 Langleybury Children's Farm is a family destination for fun and learning with animals, between Sarratt, Kings Langley and Abbots Langley.

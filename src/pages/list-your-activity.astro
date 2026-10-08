@@ -18,16 +18,16 @@ const action = SITE.forms.listingAction;
     <div class="nl-hp" aria-hidden="true"><label>Leave this empty<input name="fax_number" tabindex="-1" autocomplete="off" /></label></div>
     <label>Your name<input name="contact_name" required autocomplete="name" /></label>
     <label>Email<input name="contact_email" type="email" required autocomplete="email" /></label>
-    <label>Business or activity name<input name="business" required /></label>
-    <label>Website<input name="website" type="url" placeholder="https://" /></label>
-    <label>Activity type
+    <label data-tip-hide>Business or activity name<input name="business" required /></label>
+    <label data-tip-hide>Website<input name="website" type="url" placeholder="https://" /></label>
+    <label data-tip-hide>Activity type
       <select name="category">{Object.entries(CATEGORIES).map(([k, c]) => <option value={c.name}>{c.name}</option>)}</select>
     </label>
-    <label>Main town
+    <label data-tip-hide>Main town
       <select name="town">{Object.entries(TOWNS).map(([k, t]) => <option value={t.name}>{t.name}</option>)}</select>
     </label>
-    <label>Ages, days, times and prices<textarea name="details" rows="5" placeholder="e.g. Ages 4–7, Saturdays 9:30–10:15 at Croxley Community Centre, £9 per session, free trial"></textarea></label>
-    <label class="consent"><input type="checkbox" name="consent" required /> I confirm I'm authorised to list this business, and I'm happy for West Herts Kids to email me about this listing.</label>
+    <label><span id="details-label">Ages, days, times and prices</span><textarea name="details" id="details" rows="5" placeholder="e.g. Ages 4–7, Saturdays 9:30–10:15 at Croxley Community Centre, £9 per session, free trial"></textarea></label>
+    <label class="consent"><input type="checkbox" name="consent" required /> <span id="consent-text">I confirm I'm authorised to list this business, and I'm happy for West Herts Kids to email me about this listing.</span></label>
     <button class="btn" type="submit">Send</button>
   </form>
   {SITE.mode !== 'community' && <p class="small muted">Want more visibility? See <a href="/advertise/">featured listings</a>.</p>}
@@ -44,6 +44,20 @@ const action = SITE.forms.listingAction;
     const c = q.get('claim');
     const el = document.getElementById('claim') as HTMLInputElement | null;
     if (c && el) el.value = c;
+    // Parent-tip mode: /list-your-activity/?tip=<listing-id>. Same form and mailer, different wording.
+    const tip = (q.get('tip') || '').replace(/[^a-z0-9-]/g, '').slice(0, 80);
+    if (tip && el) {
+      el.value = `TIP: ${tip}`;
+      const biz = document.querySelector('input[name="business"]') as HTMLInputElement | null;
+      if (biz) biz.value = `Parent tip for ${tip}`;
+      document.querySelectorAll('[data-tip-hide]').forEach((n) => ((n as HTMLElement).hidden = true));
+      const h = document.querySelector('.page-head h1'); if (h) h.innerHTML = 'Share a <em>parent tip</em>';
+      const lead = document.querySelector('.page-head .lead'); if (lead) lead.textContent = 'Been there with your kids? Tell other parents what helped: parking, the best age, what to bring, the quietest times. We read every tip before it goes up, and only show your first name and town.';
+      const dl = document.getElementById('details-label'); if (dl) dl.textContent = 'Your tip (a sentence or two), plus your first name and town as you\'d like them shown';
+      const dt = document.getElementById('details') as HTMLTextAreaElement | null; if (dt) { dt.required = true; dt.placeholder = 'e.g. Park in the Gade Avenue car park and get there before 10 at weekends. Sarah, Croxley Green'; }
+      const ct = document.getElementById('consent-text'); if (ct) ct.textContent = 'This is my own experience, and I\'m happy for West Herts Kids to publish my tip with my first name and town.';
+      document.title = 'Share a parent tip | West Herts Kids';
+    }
     const box = document.getElementById('list-error');
     const email = box?.dataset.email ?? '';
     const text: Record<string, string> = {

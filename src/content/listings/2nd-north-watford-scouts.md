@@ -15,6 +15,15 @@ website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/2nd-north-watfo
 source: provider website
 verified: '2026-09-27'
 claimed: false
+schedule:
+- day: mon
+  note: Scouts, ages 10½–14
+- day: wed
+  note: Explorers (Vespa, district unit), ages 14–18
+- day: thu
+  note: Cubs, ages 8–10½
+- day: fri
+  note: Beavers, ages 6–8
 ---
 2nd North Watford meets at its HQ on The Harebreaks. **Beavers (6–8)** meet on Fridays, **Cubs (8–10½)** on Thursdays and **Scouts (10½–14)** on Mondays.
 

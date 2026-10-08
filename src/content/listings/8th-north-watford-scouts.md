@@ -15,6 +15,13 @@ website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/8th-north-watfo
 source: provider website
 verified: '2026-09-27'
 claimed: false
+schedule:
+- day: wed
+  note: Beavers, ages 6–8
+- day: wed
+  note: Cubs, ages 8–10½
+- day: thu
+  note: Scouts, ages 10½–14
 ---
 8th North Watford meets at All Saints Church on All Saints Crescent. **Beavers (6–8)** and **Cubs (8–10½)** meet on Wednesdays, and **Scouts (10½–14)** on Thursdays.
 

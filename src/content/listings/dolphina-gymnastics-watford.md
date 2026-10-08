@@ -24,6 +24,52 @@ website: https://dolphinagymnastics.com/
 source: provider website
 verified: '2026-09-25'
 claimed: false
+schedule:
+- day: mon
+  start: '11:30'
+  end: '12:15'
+  note: Me & My Shadow, 18 months–3 years
+  price: £9.50
+- day: mon
+  start: '13:30'
+  end: '14:15'
+  note: Little Gymnast, ages 3–4
+  price: £10.00
+- day: wed
+  start: '10:00'
+  end: '10:45'
+  note: Little Gymnast, ages 3–4
+  price: £10.00
+- day: wed
+  start: '11:30'
+  end: '12:15'
+  note: Me & My Shadow, 18 months–3 years
+  price: £9.50
+- day: wed
+  start: '13:00'
+  end: '13:45'
+  note: Little Gymnast, ages 3–4
+  price: £10.00
+- day: fri
+  start: 09:30
+  end: '10:15'
+  note: Me & My Shadow, 18 months–3 years
+  price: £9.50
+- day: fri
+  start: '10:30'
+  end: '11:15'
+  note: Me & My Shadow, 18 months–3 years
+  price: £9.50
+- day: fri
+  start: '11:30'
+  end: '12:15'
+  note: Little Gymnast, ages 3–4
+  price: £10.00
+- day: fri
+  start: '13:30'
+  end: '14:15'
+  note: Little Gymnast, ages 3–4
+  price: £10.00
 ---
 
 Dolphina groups gymnasts by **ability rather than age**, working through badge levels 8 to 1 (aiming for about one level a term):

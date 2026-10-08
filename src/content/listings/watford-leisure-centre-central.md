@@ -22,6 +22,9 @@ verified: '2026-10-05'
 lastChanged: '2026-10-05'
 checkEvery: 30
 claimed: false
+visit:
+  hours: Mon–Fri 6am–10pm; Sat–Sun 8am–10pm (centre hours)
+  source: https://www.watford.gov.uk/sports/watford-gyms-leisure-centres
 ---
 
 Watford Central (Everyone Active) has two pools with **children's swimming lessons** and family swims, including sessions with **inflatable toys**, plus sports-hall activities such as badminton, table tennis and five-a-side.

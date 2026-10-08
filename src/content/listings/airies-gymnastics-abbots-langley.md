@@ -17,6 +17,72 @@ website: https://www.airiesgymnastics.co.uk/
 source: provider website
 verified: '2026-09-25'
 claimed: false
+schedule:
+- day: mon
+  start: 09:40
+  end: '10:20'
+  note: Pre-school gymnastics, ages 2½–4
+  price: £9.50
+- day: mon
+  start: '10:30'
+  end: '11:10'
+  note: Pre-school gymnastics, ages 2½–4
+  price: £9.50
+- day: mon
+  start: '16:00'
+  end: '16:55'
+  note: General gymnastics beginners, 4+
+  price: £11.50
+- day: tue
+  start: '17:30'
+  end: '18:25'
+  note: General gymnastics beginners, 4+
+  price: £11.50
+- day: wed
+  start: '14:50'
+  end: '15:30'
+  note: Pre-school gymnastics, ages 2½–4
+  price: £9.50
+- day: wed
+  start: '15:45'
+  end: '16:25'
+  note: Pre-school gymnastics, ages 2½–4
+  price: £9.50
+- day: wed
+  start: '16:30'
+  end: '17:25'
+  note: General gymnastics beginners, 4+
+  price: £11.50
+- day: thu
+  start: '15:45'
+  end: '16:25'
+  note: Pre-school gymnastics, ages 2½–4
+  price: £9.50
+- day: thu
+  start: '16:30'
+  end: '17:25'
+  note: General gymnastics beginners, 4+
+  price: £11.50
+- day: fri
+  start: 09:30
+  end: '10:30'
+  note: Stay & Play, ages 0–4 (unstructured)
+  price: £3.90 per child, adults free
+- day: fri
+  start: '16:00'
+  end: '16:55'
+  note: General gymnastics beginners, 4+
+  price: £11.50
+- day: sat
+  start: 09:00
+  end: 09:40
+  note: Pre-school gymnastics, ages 2½–4
+  price: £9.50
+- day: sat
+  start: 09:45
+  end: '10:40'
+  note: General gymnastics beginners, 4+
+  price: £11.50
 ---
 
 Airies is a dedicated gymnastics club in Abbots Langley for children of all abilities:

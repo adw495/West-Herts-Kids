@@ -1,5 +1,6 @@
 ---
 name: Monkey Music (Rickmansworth & Kings Langley)
+seoTitle: 'Monkey Music Kings Langley & Rickmansworth: baby music classes'
 summary: Award-winning music classes from newborn to pre-school, with Friday sessions
   at Mill End Community Centre. First class free.
 categories:

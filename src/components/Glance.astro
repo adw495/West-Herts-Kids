@@ -1,6 +1,7 @@
 ---
 // "At a glance" facts and an FAQ for landing pages. All text comes from verified listing fields (see lib/listings.ts).
-import { glance, faqs, formatDate, ageShort, priceFact, type Listing } from '../lib/listings';
+import { glance, faqs, formatDate, type Listing } from '../lib/listings';
+import CompareTable from './CompareTable.astro';
 interface Props { items: Listing[]; q: string; place: string }
 const { items, q, place } = Astro.props;
 const g = glance(items);
@@ -18,28 +19,7 @@ const qa = faqs(items, q, place);
   </dl>
   {g.checked && <p class="small muted">Details last checked {formatDate(g.checked)}, against each provider’s own website.</p>}
 </section>
-{items.length >= 2 && (
-<section class="compare" aria-labelledby="compare-title">
-  <h2 id="compare-title">Compare {q} in {place}</h2>
-  <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison table (scrolls sideways on small screens)">
-    <table>
-      <thead><tr><th scope="col">Provider</th><th scope="col">Ages</th><th scope="col">From</th><th scope="col">Free trial</th><th scope="col">SEND-friendly</th><th scope="col">Last checked</th></tr></thead>
-      <tbody>
-        {items.map((l) => { const p = priceFact(l.data); return (
-          <tr>
-            <th scope="row"><a href={`/activities/${l.id}/`}>{l.data.name}</a></th>
-            <td>{ageShort(l.data.ageMin, l.data.ageMax)}</td>
-            <td>{p && p.label === 'From' ? `${p.value}${p.sub ? ' ' + p.sub.replace(', free trial', '') : ''}` : 'Ask'}</td>
-            <td>{l.data.freeTrial ? 'Yes' : '–'}</td>
-            <td>{l.data.send === 'yes' ? 'Yes' : '–'}</td>
-            <td>{l.data.verified ? formatDate(l.data.verified) : '–'}</td>
-          </tr>
-        ); })}
-      </tbody>
-    </table>
-  </div>
-</section>
-)}
+{items.length >= 2 && <CompareTable items={items} heading={`Compare ${q} in ${place}`} />}
 <section class="faq" aria-labelledby="faq-title">
   <h2 id="faq-title">Questions parents ask about {q} in {place}</h2>
   {qa.map((x) => (<details><summary>{x.q}</summary><p>{x.a}</p></details>))}

@@ -15,6 +15,13 @@ website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/1st-north-watfo
 source: provider website
 verified: '2026-09-27'
 claimed: false
+schedule:
+- day: mon
+  note: Cubs, ages 8–10½
+- day: thu
+  note: Beavers, ages 6–8
+- day: thu
+  note: Scouts, ages 10½–14
 ---
 1st North Watford meets on Leggatts Way. **Beavers (6–8)** meet on Thursdays, **Cubs (8–10½)** on Mondays and **Scouts (10½–14)** on Thursdays.
 

@@ -19,6 +19,15 @@ website: https://www.wbstudiotour.co.uk/
 source: provider website; OpenStreetMap
 verified: '2026-09-25'
 claimed: false
+visit:
+  parking: Free car park directly outside; Blue Badge bays near the entrance; Priority Parking £10 if pre-booked
+  station: Watford Junction, then the free shuttle bus (about 15 minutes, at least every 30 minutes from 9.20am)
+  cafe: true
+  toilets: true
+  babyChange: true
+  buggy: Leave buggies in the free cloakroom where possible, as space on the tour is limited
+  visitLength: Average visit about three and a half hours
+  source: https://www.wbstudiotour.co.uk/plan-your-visit/getting-here/ ; https://www.wbstudiotour.co.uk/plan-your-visit/facilities/ ; https://www.wbstudiotour.co.uk/plan-your-visit/visit-information/ ; https://www.wbstudiotour.co.uk/faqs/tour-experience-faqs/
 ---
 
 Right on the doorstep in Leavesden, the Studio Tour lets you walk through **authentic sets** from the Harry Potter films, including the Great Hall, Diagon Alley and Platform 9¾, and see props, costumes and the creature workshop.

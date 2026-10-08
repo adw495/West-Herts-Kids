@@ -14,6 +14,13 @@ website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/7th-north-watfo
 source: provider website
 verified: '2026-09-27'
 claimed: false
+schedule:
+- day: tue
+  note: Beavers, ages 6–8, every other Tuesday
+- day: tue
+  note: Cubs, ages 8–10½, every other Tuesday
+- day: tue
+  note: Girl Scouts and Boy Scouts, ages 10½–14, every other Tuesday
 ---
 7th North Watford (Al Ghazali) is a **Muslim-led** Scout group that meets at Beechfield School on Gammons Lane.
 
