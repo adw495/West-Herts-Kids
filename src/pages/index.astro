@@ -47,8 +47,8 @@ const jsonLd = [
     '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: SITE.url,
     potentialAction: { '@type': 'SearchAction', target: `${SITE.url}/activities/?q={search_term_string}`, 'query-input': 'required name=search_term_string' },
   },
-  // Tells Google the Facebook Page and the site are the same organisation.
-  { '@context': 'https://schema.org', '@type': 'Organization', name: SITE.name, url: SITE.url, logo: `${SITE.url}/og.png`, sameAs: [SITE.facebook] },
+  // Tells Google who runs the site (and links any social profile, when there is one).
+  { '@context': 'https://schema.org', '@type': 'Organization', name: SITE.name, url: SITE.url, logo: `${SITE.url}/og.png`, ...(SITE.facebook ? { sameAs: [SITE.facebook] } : {}) },
 ];
 ---
 <Base title={`Kids’ activities in Watford & Rickmansworth | ${SITE.name}`} description={SITE.tagline} jsonLd={jsonLd}>

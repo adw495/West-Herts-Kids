@@ -7,8 +7,8 @@ export const SITE = {
   url: 'https://westhertskids.co.uk',
   tagline: "Classes, clubs and things to do for kids across Watford, Rickmansworth, Croxley, Chorleywood and Abbots Langley",
   email: 'hello@westhertskids.co.uk',
-  // The West Herts Kids Facebook Page (no username yet; swap to facebook.com/westhertskids once Facebook allows one).
-  facebook: 'https://www.facebook.com/profile.php?id=61594792004406',
+  // Facebook account permanently disabled by Meta on 9 Oct 2026, so there is no social profile to link. Set a URL here to bring one back.
+  facebook: null as string | null,
 
   // Site-wide alert bar (email capture, as recommended in the video). Set enabled: false to hide.
   alertBar: {
