@@ -261,3 +261,80 @@ export function faqs(items: Listing[], q: string, place: string): { q: string; a
   if (send.length) out.push({ q: `Are there SEND-friendly ${q} in ${place}?`, a: `${joinAnd(send)} ${send.length === 1 ? 'says it welcomes' : 'say they welcome'} children with special educational needs and disabilities. Each listing has notes on what support is available.` });
   return out;
 }
+
+// ---- Town pages: intro facts and FAQs, again built only from listing fields ----------------------------
+
+/** Category counts for a set of listings, biggest first, e.g. [['swimming', 6], ['music', 4]]. */
+export function categoryCounts(items: Listing[]): [CategoryKey, number][] {
+  const m = new Map<CategoryKey, number>();
+  for (const l of items) for (const c of l.data.categories) m.set(c, (m.get(c) ?? 0) + 1);
+  return [...m.entries()].sort((a, b) => b[1] - a[1]);
+}
+
+/** Town counts for a set of listings, biggest first. */
+export function townCounts(items: Listing[]): [TownKey, number][] {
+  const m = new Map<TownKey, number>();
+  for (const l of items) for (const t of l.data.towns) m.set(t, (m.get(t) ?? 0) + 1);
+  return [...m.entries()].sort((a, b) => b[1] - a[1]);
+}
+
+const names = (ls: Listing[], n = 4) => {
+  const xs = ls.slice(0, n).map((l) => l.data.name);
+  return ls.length > n ? `${xs.join(', ')} and ${ls.length - n} more` : joinAnd(xs);
+};
+
+/** One factual sentence summing up what a town has, e.g. "We list 41 … including 6 swimming lessons …". */
+export function townIntro(items: Listing[], place: string): string {
+  const top = categoryCounts(items).slice(0, 5).map(([c, n]) => `${n} ${c === 'tuition' ? 'tutoring and language classes' : CATEGORIES[c].q}`);
+  const free = items.filter((l) => l.data.priceFrom === 0).length;
+  const trials = items.filter((l) => l.data.freeTrial).length;
+  const bits = [
+    `We list ${items.length} ${items.length === 1 ? 'activity' : 'activities'} for children in and around ${place}${top.length > 1 ? `, including ${joinAnd(top)}` : ''}.`,
+    free ? `${free} ${free === 1 ? 'is' : 'are'} free to visit.` : '',
+    trials ? `${trials} ${trials === 1 ? 'offers' : 'offer'} a free trial or taster.` : '',
+    'Every listing shows ages, prices and times taken from the provider’s own website, with the date we last checked.',
+  ];
+  return bits.filter(Boolean).join(' ');
+}
+
+export function townFaqs(items: Listing[], place: string): { q: string; a: string }[] {
+  const out: { q: string; a: string }[] = [];
+  const top = categoryCounts(items).slice(0, 6).map(([c, n]) => `${lc(CATEGORIES[c].name)} (${n})`);
+  out.push({ q: `What is there to do with kids in ${place}?`, a: `Our ${place} listings cover ${joinAnd(top)}. Use the filters above to narrow them down by age, day or price.` });
+  const free = items.filter((l) => l.data.priceFrom === 0);
+  if (free.length) out.push({ q: `Are there free things to do with kids in ${place}?`, a: `Yes. ${names(free)} ${free.length === 1 ? 'is' : 'are'} free to visit, according to ${free.length === 1 ? 'its' : 'their'} own website${free.length === 1 ? '' : 's'}.` });
+  const little = items.filter((l) => l.data.ageMin <= 1).sort((a, b) => Number(b.data.categories.includes('baby-toddler')) - Number(a.data.categories.includes('baby-toddler')));
+  if (little.length) out.push({ q: `What can babies and toddlers do in ${place}?`, a: `${names(little)} ${little.length === 1 ? 'takes' : 'take'} children from ${startAge(Math.min(...little.map((l) => l.data.ageMin)))} or soon after. Each listing shows the exact age range.` });
+  const camps = items.filter((l) => l.data.categories.includes('holiday-camps'));
+  if (camps.length) out.push({ q: `Are there holiday clubs in ${place}?`, a: `${names(camps)} ${camps.length === 1 ? 'runs' : 'run'} school holiday camps or clubs. Dates and day prices are on each listing where the provider publishes them.` });
+  const trials = items.filter((l) => l.data.freeTrial);
+  if (trials.length) out.push({ q: `Which activities in ${place} have a free trial?`, a: `${names(trials, 6)} ${trials.length === 1 ? 'offers' : 'offer'} a free trial or taster session, according to their websites.` });
+  const send = items.filter((l) => l.data.send === 'yes');
+  if (send.length) out.push({ q: `Are there SEND-friendly activities in ${place}?`, a: `${names(send, 6)} ${send.length === 1 ? 'says it welcomes' : 'say they welcome'} children with special educational needs and disabilities.` });
+  return out;
+}
+
+/** schema.org FAQPage from question/answer pairs. */
+export const faqLd = (qa: { q: string; a: string }[]) => ({
+  '@context': 'https://schema.org', '@type': 'FAQPage',
+  mainEntity: qa.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })),
+});
+
+const WEEKLY = /^\d{4}-\d{2}-\d{2}-whats-on$/;
+/** Guides that match a town and/or category, best match first (both > category > town). Weekly round-ups are left out. */
+export function relatedGuides(posts: Post[], opts: { town?: TownKey; cat?: CategoryKey; exclude?: string; n?: number }): Post[] {
+  const { town, cat, exclude, n = 6 } = opts;
+  const score = (p: Post) => {
+    const t = town ? p.data.towns.includes(town) : false;
+    const c = cat ? p.data.categories.includes(cat) : false;
+    if (town && cat) return t && c ? 3 : c ? 2 : 0;
+    return t || c ? 1 : 0;
+  };
+  return posts
+    .filter((p) => !WEEKLY.test(p.id) && p.id !== exclude)
+    .map((p) => ({ p, s: score(p) }))
+    .filter((x) => x.s > 0)
+    .sort((a, b) => b.s - a.s || b.p.data.date.getTime() - a.p.data.date.getTime())
+    .slice(0, n)
+    .map((x) => x.p);
+}
