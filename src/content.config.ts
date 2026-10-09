@@ -95,6 +95,8 @@ const posts = defineCollection({
     categories: z.array(z.enum(CATEGORY_KEYS)).default([]),
     related: z.array(z.string()).default([]), // listing ids to link to
     updated: z.coerce.date().optional(),      // set when a guide is refreshed; shown to readers and to Google
+    // Questions parents ask, answered ONLY from verified facts already in the guide. Shown at the end, with FAQPage markup.
+    faq: z.array(z.object({ q: z.string(), a: z.string().max(600) })).default([]),
     draft: z.boolean().default(false),
   }),
 });

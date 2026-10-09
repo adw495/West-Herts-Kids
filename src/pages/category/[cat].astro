@@ -4,7 +4,8 @@ import ListingCard from '../../components/ListingCard.astro';
 import Filters from '../../components/Filters.astro';
 import CategoryIcon from '../../components/CategoryIcon.astro';
 import Glance from '../../components/Glance.astro';
-import { lc, getListings, byCategory, byTown, MIN_FOR_COMBO_PAGE, breadcrumbLd, itemListLd, glance, type Listing } from '../../lib/listings';
+import RelatedGuides from '../../components/RelatedGuides.astro';
+import { lc, getListings, byCategory, byTown, MIN_FOR_COMBO_PAGE, townCounts, breadcrumbLd, itemListLd, glance, type Listing } from '../../lib/listings';
 import { CATEGORIES, TOWNS, CATEGORY_KEYS, type CategoryKey, type TownKey } from '../../data/taxonomy';
 
 export async function getStaticPaths() {
@@ -24,9 +25,11 @@ const jsonLd = [
 const g = glance(items);
 const title = `${c.search} for kids in Watford, Rickmansworth & West Herts`;
 const description = [`Compare ${items.length} options for ${c.q} across Watford, Rickmansworth, Croxley Green, Chorleywood and nearby`, `ages from ${g.youngest}`, g.priceFrom ? `prices from ${g.priceFrom}` : ''].filter(Boolean).join(', ') + '.';
+const tc = townCounts(items).slice(0, 4).map(([t, n]) => `${n} in ${TOWNS[t].name}`);
+const intro = `We list ${items.length} ${items.length === 1 ? 'option' : 'options'} for ${c.q} across West Herts${tc.length > 1 ? `, including ${tc.slice(0, -1).join(', ')} and ${tc[tc.length - 1]}` : ''}${g.priceFrom ? `, with prices from ${g.priceFrom}` : ''}. Ages, prices and times come from each provider’s own website.`;
 const townLinks = (Object.keys(TOWNS) as TownKey[]).filter((t) => byTown(items, t).length >= MIN_FOR_COMBO_PAGE);
 ---
-<Base title={title} description={description} jsonLd={jsonLd}>
+<Base title={title} description={description} jsonLd={jsonLd} ogImage={`/og/category-${cat}.png`}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/activities/">All activities</a></li><li aria-hidden="true">/</li><li aria-current="page">{c.name}</li></ol>
     <header class="page-head" style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
@@ -35,6 +38,7 @@ const townLinks = (Object.keys(TOWNS) as TownKey[]).filter((t) => byTown(items, 
         <p class="plate">fig. {figNo} — {items.length} {items.length === 1 ? 'listing' : 'listings'}</p>
         <h1>{c.search} <em>for kids</em> in West Herts</h1>
         <p class="lead">{c.blurb}</p>
+        <p class="intro">{intro}</p>
       </div>
     </header>
     {townLinks.length > 0 && (
@@ -45,6 +49,7 @@ const townLinks = (Object.keys(TOWNS) as TownKey[]).filter((t) => byTown(items, 
     <div class="cards" id="results">{items.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
     <p class="empty" id="no-results" hidden>Nothing matches those filters. <a href="/list-your-activity/">Know one we’ve missed?</a></p>
     <Glance items={items} q={c.q} place="West Herts" />
+    <RelatedGuides cat={cat} heading={`Guides to ${lc(c.name)} for kids`} n={5} />
     <div style="height:96px"></div>
   </div>
 </Base>

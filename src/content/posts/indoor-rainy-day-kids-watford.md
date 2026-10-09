@@ -7,6 +7,17 @@ type: guide
 towns: [watford, rickmansworth, croxley-green, abbots-langley, bushey, south-oxhey]
 categories: [play-parties, days-out, swimming, gymnastics-trampolining]
 related: [parents-paradise-bushey, flip-out-watford, ninja-warrior-uk-watford, watford-leisure-centre-central, william-penn-leisure-centre, warner-bros-studio-tour-london]
+faq:
+  - q: "What can kids do indoors in Watford on a rainy day?"
+    a: "Flip Out Watford at atria has 13 attractions for one entry price, including trampolines and laser quest. Rock Up Watford has climbing walls for ages 4 and up, Ninja Warrior UK at Woodside Leisure Park has sessions for ages 5 and up, and there's bowling at Hollywood Bowl at Woodside and at atria."
+  - q: "Are there indoor activities for toddlers in Watford?"
+    a: "Flip Out's Stay & Play for ages 5 and under is from £3.95 on term-time Fridays. Ninja Toddlers at Ninja Warrior UK is for 1 to 4-year-olds at £6.95 per toddler and £2 per adult, and Rock Up has Toddler Climb & Play with soft play. Parents Paradise in Bushey has a baby area."
+  - q: "Do you need to book indoor play in Watford?"
+    a: "Often, yes. Parents Paradise says you must book in advance, Ninja Warrior UK asks you to pre-book all sessions, Rock Up strongly advises booking online because capacity is limited, and Warner Bros. Studio Tour tickets must be booked in advance."
+  - q: "How much are cinema tickets at Vue Watford?"
+    a: "Vue Watford at Woodside Leisure Park has online tickets from £8.99. It runs Mighty Mornings and Big Shorts screenings for kids, as well as autism-friendly screenings."
+  - q: "Where can kids go swimming indoors in Watford?"
+    a: "Watford Leisure Centre Central has two pools and family swims with inflatable toys, and Watford Leisure Centre Woodside also has two pools. William Penn Leisure Centre serves Rickmansworth and Croxley Green, and South Oxhey Leisure Centre has a 25-metre pool and a separate teaching pool."
 ---
 
 When the rain sets in and the park's a washout, there's more to do indoors around Watford than you might think, from soft play and trampolines to climbing walls, ninja courses and a proper night at the theatre. Here's our round-up of the best indoor options across Watford, Rickmansworth, Bushey, South Oxhey and Leavesden, all checked against each venue's own website.

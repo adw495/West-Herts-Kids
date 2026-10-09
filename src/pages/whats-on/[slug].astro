@@ -4,8 +4,9 @@ import ListingCard from '../../components/ListingCard.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 import Postmark from '../../components/art/Postmark.astro';
 import CompareTable from '../../components/CompareTable.astro';
+import RelatedGuides from '../../components/RelatedGuides.astro';
 import { render } from 'astro:content';
-import { getPosts, getListings, formatDate, type Post } from '../../lib/listings';
+import { getPosts, getListings, formatDate, faqLd, type Post } from '../../lib/listings';
 import { SITE } from '../../site.config';
 
 export async function getStaticPaths() {
@@ -21,14 +22,18 @@ const related = listings.filter((l) => post.data.related.includes(l.id));
 const latestWeekly = (await getPosts()).find((p) => p.data.type === 'whats-on' && /^\d{4}-\d{2}-\d{2}-whats-on$/.test(p.id));
 const canonical = latestWeekly?.id === post.id ? '/whats-on/this-weekend/' : undefined;
 const typeLabel: Record<string, string> = { 'whats-on': 'What’s on', guide: 'Guide', comparison: 'Comparison', news: 'News' };
-const ld = {
+const faq = post.data.faq;
+const article = {
   '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description,
   datePublished: post.data.date.toISOString(), dateModified: (post.data.updated ?? post.data.date).toISOString(),
   author: { '@type': 'Organization', name: SITE.name, url: SITE.url }, publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   mainEntityOfPage: `${SITE.url}/whats-on/${post.id}/`,
 };
+const ld = faq.length ? [article, faqLd(faq)] : article;
+// "More guides": same activity first, then same town. Not on weekly round-ups.
+const isWeekly = /^\d{4}-\d{2}-\d{2}-whats-on$/.test(post.id);
 ---
-<Base title={post.data.title} description={post.data.description} jsonLd={ld} canonical={canonical}>
+<Base title={post.data.title} description={post.data.description} jsonLd={ld} canonical={canonical} ogImage={`/og/guide-${post.id}.png`}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/whats-on/">What’s on</a></li><li aria-hidden="true">/</li><li aria-current="page">{typeLabel[post.data.type]}</li></ol>
     <article style="padding:16px 0 64px">
@@ -37,6 +42,13 @@ const ld = {
       <p class="lead" style="margin-top:16px">{post.data.description}</p>
       <div class="prose" style="margin-top:32px"><Content /></div>
       {related.length >= 3 && post.data.type !== 'whats-on' && <CompareTable items={related} heading="Our listings side by side" id="guide-compare" showTown />}
+      {faq.length > 0 && (
+        <section class="faq" aria-labelledby="faq-title">
+          <h2 id="faq-title">Questions parents ask</h2>
+          {faq.map((x) => (<details><summary>{x.q}</summary><p>{x.a}</p></details>))}
+        </section>
+      )}
+      {!isWeekly && <RelatedGuides cat={post.data.categories[0]} exclude={post.id} heading="More guides" n={4} />}
       <p class="follow-note">Like this? <a href={SITE.facebook} rel="noopener">Follow West Herts Kids on Facebook</a> for weekend picks and new guides, or get them by email below.</p>
     </article>
     {related.length > 0 && (

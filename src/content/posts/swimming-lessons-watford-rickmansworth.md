@@ -1,11 +1,21 @@
 ---
-title: "Swimming lessons for kids in Watford & Rickmansworth (2026)"
-description: "Leisure centre lessons, independent swim schools or one-to-one at home? A local guide to children's swimming lessons around Watford, Rickmansworth and Croxley."
+title: "Kids' swimming lessons in Watford & Rickmansworth compared (2026)"
+description: "Every children's swimming lesson option around Watford, Rickmansworth and Croxley: leisure centres, swim schools and one-to-one, with ages, prices and crash courses."
 date: 2026-09-24
+updated: 2026-10-09
 type: guide
 towns: [watford, rickmansworth, croxley-green, chorleywood]
 categories: [swimming]
 related: [aqua-swim-school-watford, watford-swim-school, swimfitz-home-swimming-lessons, william-penn-leisure-centre, watford-leisure-centre-central]
+faq:
+  - q: "What age can children start swimming lessons in Watford?"
+    a: "Aqua Swim School takes beginners from 3½. SwimFitz teaches babies from 6 months and structured lessons from age 3, and Watford Swim School offers private lessons for babies and children."
+  - q: "How much are swimming lessons at Aqua Swim School in Watford?"
+    a: "Aqua Swim School costs £143 for an 11-week term. It teaches at Watford Grammar School for Girls, with lessons Monday to Friday from 4:15pm and on Saturday mornings."
+  - q: "Where can kids have swimming lessons in Rickmansworth?"
+    a: "William Penn Leisure Centre in Mill End runs Everyone Active's children's swimming programme for all abilities. If you have access to a private pool, SwimFitz coaches one-to-one across Rickmansworth, Chorleywood, Croxley and Watford."
+  - q: "Are there holiday swimming crash courses in Watford?"
+    a: "Yes. Watford Swim School runs holiday crash courses alongside its weekly term-time lessons, and they're a good way for school-age children who need to catch up to get a quick boost."
 ---
 
 Waiting lists for children's swimming lessons can be long, so it's worth knowing all the local options. There are three main routes.

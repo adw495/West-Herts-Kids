@@ -22,19 +22,20 @@ venue:
 website: https://www.langleyburychildrensfarm.org.uk/
 bookingUrl: https://www.langleyburychildrensfarm.org.uk/copy-of-about-1
 source: provider website; OpenStreetMap
-verified: '2026-10-05'
+verified: '2026-10-09'
 lastChanged: '2026-10-05'
 checkEvery: 30
 claimed: false
 visit:
-  hours: 'Pre-booked sessions: morning 11am–1.30pm, afternoon 2.30pm–5pm'
+  hours: 'Pre-booked sessions: morning 11am–1.30pm (arrive 10.45–11.15am), afternoon 2.30pm–5pm'
   toilets: true
   babyChange: true
   source: https://www.langleyburychildrensfarm.org.uk/copy-of-about-1 ; https://www.langleyburychildrensfarm.org.uk/about ; https://www.langleyburychildrensfarm.org.uk/general-5
+  parking: Free car parking on site
 ---
 
 Langleybury Children's Farm is a family destination for fun and learning with animals, between Sarratt, Kings Langley and Abbots Langley.
 
-It opens **every day during the summer holidays**. Check the website for dates in the rest of the year, as it doesn't open daily outside the summer.
+It opens **every day during the summer holidays**. Check the website for opening dates in the rest of the year.
 
 Visits are **booked in advance** as a morning or afternoon session. Tickets are **£6.25 per person** for everyone over 1, and animal feed is sold in the farm shop. There's play equipment for under-5s and over-5s, a zip wire on the nature trail and a picnic garden. No dogs.

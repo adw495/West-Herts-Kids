@@ -6,6 +6,17 @@ type: comparison
 towns: [watford, bushey, rickmansworth, croxley-green, chorleywood, south-oxhey]
 categories: [swimming, baby-toddler]
 related: [water-babies-bushey-meadow-wood, watford-swim-school, swimfitz-home-swimming-lessons, watford-leisure-centre-central, watford-leisure-centre-woodside, william-penn-leisure-centre, south-oxhey-leisure-centre]
+faq:
+  - q: "What age can babies start swimming lessons in Watford?"
+    a: "Water Babies in Bushey has classes from newborn. Watford Swim School takes babies from 4 months, and Everyone Active's lessons also start from 4 months. SwimFitz teaches babies from 6 months one-to-one in a private pool, and Swim4Life Watford teaches children aged one and over."
+  - q: "How much are baby swimming lessons in Watford?"
+    a: "Watford Swim School's Parent & Baby lessons cost £17 per parent and baby each week for a 30-minute lesson, in term time. Water Babies and Swim4Life Watford don't publish prices on their pages, and SwimFitz prices are by arrangement and confirmed at booking. Check with the provider before you book."
+  - q: "Are there weekend baby swimming lessons in Watford?"
+    a: "Swim4Life Watford runs a Parent + Toddler class on Saturdays from 11:30am to 12:30pm at Watford Grammar School for Girls. SwimFitz works seven days a week, from 9am at weekends, if you have access to a private pool. Watford Swim School's Parent & Baby lessons are daytime lessons and not at weekends."
+  - q: "Do parents go in the water at baby swimming lessons?"
+    a: "Yes, at most of them. Water Babies lessons have a parent in the water, Everyone Active's adult and child classes for 4 to 36 months have you in the water, and SwimFitz has a parent in the water throughout. At Watford Swim School, parents don't have to be in the water once a child is 3."
+  - q: "Where are Water Babies classes near Watford?"
+    a: "Water Babies teaches at the Meadow Wood School pool on Coldharbour Lane, Bushey. Weekly 30-minute lessons are grouped by age (0 to 1, 1 to 2, 2 to 3 and 3 to 4), with Swimvincibles for children aged 4 and over, and the pool is kept at a minimum of 29°C (32°C for babies under 12 weeks)."
 ---
 
 Babies can start swimming lessons long before they can walk, and there are several ways to do it around Watford, from small private pools to leisure centre classes. We've checked each provider below on its own website. Prices and timetables are only included where the provider publishes them.

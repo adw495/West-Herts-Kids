@@ -1,5 +1,6 @@
 ---
 name: Aqua Swim School
+seoTitle: "Aqua Swim School Watford: kids' swimming lessons, from £143 a term"
 summary: Long-running Watford swim school (since 1990) based at Watford Grammar School
   for Girls. Lessons from 3½ years.
 categories:

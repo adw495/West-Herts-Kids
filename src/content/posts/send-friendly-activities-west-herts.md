@@ -6,6 +6,17 @@ type: guide
 towns: [watford, rickmansworth, abbots-langley]
 categories: [gymnastics-trampolining, swimming, football-sport, outdoor-nature, holiday-camps, days-out]
 related: [dolphina-gymnastics-watford, watford-gymnastics-club, warner-bros-studio-tour-london]
+faq:
+  - q: "Is there SEND swimming in Watford?"
+    a: "Sea Lion Swimming Club has exclusive use of the pool at Watford Leisure Centre Central for disabled swimmers of any age and their families on Saturdays, 3:45pm to 4:45pm. Membership is £45 a year (£90 for a family) with no weekly charge, there's a free trial session, and a hoist is available."
+  - q: "Are there SEND gymnastics sessions in Watford?"
+    a: "Dolphina Gymnastics Club in Garston runs free SEND stay and play sessions on the last Tuesday of every month, 12pm to 1pm, and booking is essential. Watford Gymnastics Club runs SEND gymnastics classes, which had a waiting list when we checked."
+  - q: "Does Watford Palace Theatre have relaxed performances?"
+    a: "Yes. This year's panto, A Christmas Carol, has relaxed performances on Wednesday 9 December and Sunday 13 December at 2:30pm. The lights stay on, loud noises are softened, there's a chill-out space, and there's a free companion ticket for nearly all shows."
+  - q: "When is the next relaxed tour at Warner Bros. Studio Tour London?"
+    a: "The next Relaxed Tour is on Saturday 5 December 2026, from 8am to 10am, with fewer visitors, adjusted lighting and quieter sound. On any day there are two sensory rooms, and one free companion ticket per paying disabled visitor (proof required)."
+  - q: "What are Hertfordshire Short Breaks?"
+    a: "A county council scheme of holiday and Saturday clubs for 5 to 19-year-olds with SEND. You don't need a formal diagnosis, as eligibility is based on DLA, PIP or a letter from a GP, SENCo or other professional, and it's up to 40 hours a year at £3.50 an hour. Some Watford Mencap sessions can be paid for with Short Breaks hours."
 ---
 
 Finding activities where a child with special educational needs or a disability can simply join in, without anyone having to explain or apologise, takes time. This guide brings together what we could confirm locally, and every detail below comes from the organiser's own website. Places are often limited and details change, so **always contact the organiser before you go**.

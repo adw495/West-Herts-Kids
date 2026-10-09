@@ -6,6 +6,17 @@ type: guide
 towns: [watford, rickmansworth, abbots-langley, bushey, south-oxhey]
 categories: [baby-toddler]
 related: []
+faq:
+  - q: "Are there free baby and toddler groups in Watford?"
+    a: "SEND Chat and Play is free on Fridays at Westfield & Littlebury Best Start Family Hub in Watford and on Thursdays at St Lawrence Church, Abbots Langley. Saturdads at Westfield & Littlebury is free, and library Baby Rhyme Time and Storytime are free too."
+  - q: "How much do Family Centre baby groups cost in Watford?"
+    a: "Little Herts sessions are priced per family of up to four people. Baby Groups for pre-walkers are £1.50, and Active Rhyme Time, Peep Learning Through Play and Physical Fun are £2.50. Each extra person beyond four is £1."
+  - q: "Where are baby groups for pre-walkers in Watford?"
+    a: "Family Centre Baby Groups run on Tuesdays at Westfield & Littlebury Best Start Family Hub, Wednesdays at Beechfield Family Centre and Thursdays at Leavesden Family Centre, all from 10am to 11:30am. There's also one on Mondays at The Reddings Family Centre in Bushey, 1:30pm to 3pm. Each is £1.50 per family."
+  - q: "Are there church toddler groups in Watford?"
+    a: "St Luke's Toddlers meets on Thursdays, 9:30am to 11am, on Langley Way, with a donation of £1 per adult and 50p per child asked. St Peter's Tots on Bushey Mill Lane runs on Wednesday and Thursday mornings, 9:30am to 11am, in term time."
+  - q: "Do you need to book Family Centre baby groups in Hertfordshire?"
+    a: "No. Little Herts sessions are drop-in with no booking. Spaces are limited and given on a first come, first served basis, so it helps to arrive on time."
 ---
 
 *Groups change times and take breaks in the holidays, so check the link before you go.*

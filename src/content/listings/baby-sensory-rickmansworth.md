@@ -11,9 +11,22 @@ ageMin: 0
 ageMax: 1
 season:
 - term-time
+schedule:
+- day: fri
+  start: '10:00'
+  end: '11:00'
+  note: Birth to 13 months, St Matthews Church Hall, Bushey (register interest for autumn term)
+  price: £12.50
+priceUnit: session
+priceNote: Drop-in session £12.50 on the North Harrow timetable.
+venue:
+  name: St Matthews Church Hall
+  address: St Matthews Close, Bushey
+  postcode: WD19 4ST
+priceFrom: 12.5
 website: https://www.babysensory.com/north-harrow/
 source: provider website
-verified: '2026-09-25'
+verified: '2026-10-09'
 claimed: false
 ---
 

@@ -6,6 +6,17 @@ type: guide
 towns: [watford, rickmansworth, croxley-green, chorleywood, abbots-langley, kings-langley, bushey, south-oxhey]
 categories: [baby-toddler, play-parties, days-out, outdoor-nature]
 related: [airies-gymnastics-abbots-langley, watford-gymnastics-club, hartbeeps-rickmansworth-chorleywood-croxley, monkey-music-rickmansworth-kings-langley, colours-in-music-watford, little-kickers-watford-rickmansworth, rugbytots-watford-bushey-croxley, water-babies-bushey-meadow-wood, baby-sensory-rickmansworth, flip-out-watford, ninja-warrior-uk-watford, rock-up-watford, cassiobury-park, rickmansworth-aquadrome, langleybury-childrens-farm, watford-miniature-railway]
+faq:
+  - q: "What free things can you do with a toddler in Watford?"
+    a: "Hertfordshire Libraries runs free Baby Rhyme Time and Storytime sessions in Watford, Rickmansworth, Croxley Green and other branches. Cassiobury Park has two children's playgrounds, and its car park is free for up to 2 hours, and Rickmansworth Aquadrome has two play areas and a free car park."
+  - q: "Where can toddlers play indoors in Watford?"
+    a: "Ninja Toddlers at Ninja Warrior UK is for 1 to 4-year-olds on Monday, Tuesday, Wednesday and Friday mornings in term time, at £6.95 per toddler. Flip Out's Stay & Play for ages 5 and under is £7.95 on term-time Fridays, and Rock Up's Toddler Climb for under-5s is £13.95 with adults free."
+  - q: "Are there toddler classes near Watford with a free first session?"
+    a: "Monkey Music offers your first class free, Colours in Music's first lesson is a free trial, Airies Gymnastics has a free taster, and Little Kickers gives one free trial session, subject to availability."
+  - q: "Is there a toddler cinema in Watford?"
+    a: "Yes. Vue Watford at Woodside Leisure Park runs Big Shorts, morning screenings of short films and TV episodes for ages 1 to 4, no longer than 60 minutes, where children can sing, dance and run about. Tickets are from £3.99 online, and under-2s on a lap go free."
+  - q: "How much is Langleybury Children's Farm?"
+    a: "Tickets are £6.25 per person for everyone over 1, booked online for a morning (11am to 1.30pm) or afternoon (2.30pm to 5pm) session. Check the website for open dates."
 ---
 
 Toddlers need somewhere to burn off energy, and West Herts has plenty of it: music and movement classes, soft play mornings, free rhyme times at the library and big parks with playgrounds. We've checked every entry below against the provider's, venue's or council's own website, so you can plan the week with confidence.

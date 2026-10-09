@@ -15,14 +15,14 @@ season:
 - holidays
 priceFrom: 16
 priceUnit: session
-priceNote: "£16 per child for a 30-minute four-to-one lesson (Abbot's Hill School only); Parent & Baby £17 per 30-minute lesson (term-time weekdays); two-to-one from £20; one-to-one from £35."
+priceNote: '£16 per child for a 30-minute four-to-one lesson (Abbot''s Hill School only); Parent & Baby £17 per 30-minute lesson (term-time weekdays); two-to-one from £20; one-to-one from £35. Holiday crash courses (five consecutive days, Mon–Fri, 30 minutes a day): two-to-one £122.50 per child, one-to-one £185 per child.'
 venue:
   name: Watford Swim School pool
   address: 12 Stud Green, Garston, Watford
   postcode: WD25 7EU
 website: https://watfordswimschool.com/
 source: provider website (lessons-prices and FAQ pages)
-verified: '2026-10-07'
+verified: '2026-10-09'
 lastChanged: '2026-10-07'
 claimed: false
 ---

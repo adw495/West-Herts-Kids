@@ -6,6 +6,17 @@ type: comparison
 towns: [watford, bushey]
 categories: [play-parties, baby-toddler]
 related: [parents-paradise-bushey, rock-up-watford, flip-out-watford, ninja-warrior-uk-watford]
+faq:
+  - q: "How much does soft play cost in Watford?"
+    a: "Booked online, Parents Paradise in Bushey is £2 for under-1s, £4 at 1 year, £8 for 2 to 4s and £12 for 5 to 12s, plus £1 or £2 for the first adult. Rock Up Watford's soft play is £8.95 for ages 8 and under, Flip Out's Stay & Play is £7.95, and Ninja Toddlers at Ninja Warrior UK is £6.95 per toddler plus £2 per adult. Check with the venue before you go."
+  - q: "Is there soft play for babies in Watford?"
+    a: "Parents Paradise has a separate sensory area for babies and charges £2 for under-12-months. At Rock Up Watford, babies up to 11 months go free, and Flip Out's Stay & Play is £3.95 for babies aged 6 to 12 months."
+  - q: "Is Gambado in Watford still open?"
+    a: "Gambado at Woodside Leisure Park no longer appears on Gambado's website, which now lists only its Chelsea centre, so don't plan a trip there."
+  - q: "Which soft play near Watford has free parking?"
+    a: "Parents Paradise in Bushey has free on-site parking, and Woodside Leisure Park, home of Ninja Toddlers at Ninja Warrior UK, has free parking on site. For Rock Up at atria Watford, the closest parking is the Kings car park or the Harlequin car parks."
+  - q: "Do you need socks for soft play in Watford?"
+    a: "Yes. Parents Paradise says children and adults must wear socks or tights at all times, Ninja Warrior UK asks toddlers and adults to wear its own safety socks (£2.95, reusable), and Rock Up asks you to bring socks for soft play and climbing."
 ---
 
 Watford doesn't have a long list of soft play centres, but between the town centre, Woodside Leisure Park and Bushey there's a good mix of dedicated soft play and toddler mornings at bigger activity venues. We've checked prices, ages and opening times against each venue's own website, so you can pick the right one for your little ones' age and your budget.

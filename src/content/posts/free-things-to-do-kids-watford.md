@@ -6,6 +6,17 @@ type: guide
 towns: [watford, rickmansworth, croxley-green, chorleywood, abbots-langley, bushey, south-oxhey]
 categories: [outdoor-nature, days-out, play-parties, baby-toddler]
 related: [cassiobury-park, rickmansworth-aquadrome, watford-miniature-railway, langleybury-childrens-farm]
+faq:
+  - q: "What free things are there to do with kids in Watford?"
+    a: "Cassiobury Park has two children's playgrounds, woodland and riverside walks. Oxhey Activity Park has a skate park, a bike pump track, a playground and free outdoor table tennis, and Oxhey Park has a playground and a mini football pitch. Hertfordshire Libraries also runs free Baby Rhyme Time and Storytime."
+  - q: "Is Cassiobury Park car park free?"
+    a: "The council's Cassiobury Park car park on Gade Avenue is free for up to 2 hours. After that it's charged, from £3.10 for up to 3 hours, with a maximum stay of 6 hours."
+  - q: "Are there splash parks near Watford?"
+    a: "The Cassiobury Park paddling pools are free to enter but are closed for the season, and the council says they'll reopen in spring 2027. King George Recreation Ground in Bushey has a seasonal splash park, listed as open daily 10am to 6pm from 1 May to 13 September."
+  - q: "Is there a junior parkrun near Watford?"
+    a: "Yes. Leavesden junior parkrun at Leavesden Country Park, Abbots Langley is a free, timed 2k run for 4 to 14-year-olds every Sunday at 9am."
+  - q: "Are there free museums near Watford?"
+    a: "Bushey Museum and Art Gallery is free and open Thursday to Sunday, 11am to 4pm. Three Rivers Museum in Rickmansworth has free admission and opens Wednesday to Friday 2pm to 4pm and Saturday 10am to 2pm. The Museum of Watford's building is closed while it moves into Watford Town Hall, due in 2027."
 ---
 
 Keeping the kids busy doesn't have to cost a fortune, and West Herts has plenty of big parks, ancient woods, lakes and canal towpaths that are free to explore all year. We've checked every spot below against the council's, venue's or organiser's own website, so you can head out knowing what to expect.

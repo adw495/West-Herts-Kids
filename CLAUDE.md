@@ -39,3 +39,5 @@ This is a **passive, low-stress side project**, but the owner approved a phased 
 - What each re-check changed: `docs/verification-log.md`
 - Side income running total (per tax year): `docs/income-log.md`
 - `npm run check:links` (dead/hijacked links) and `npm run check:due` (listings due a re-check)
+- Social preview images (`/og/*.png`) for guides, towns and activities are drawn at build time (`src/pages/og/[name].png.ts`, `src/lib/og.ts`), so new guides get one automatically.
+- Guides can carry a `faq:` list in front matter (answers only from facts already in the guide); it renders as "Questions parents ask" with FAQPage markup.

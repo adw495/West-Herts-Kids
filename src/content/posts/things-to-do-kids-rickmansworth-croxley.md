@@ -6,6 +6,17 @@ type: guide
 towns: [rickmansworth, croxley-green, chorleywood]
 categories: [days-out, outdoor-nature, swimming, martial-arts]
 related: [rickmansworth-aquadrome, bury-lake-young-mariners, rickmansworth-sailing-club, william-penn-leisure-centre, cassiobury-park, batchworth-sea-scouts, rickmansworth-gymnastics-club, stagecoach-rickmansworth, art-k-croxley-green, rugbytots-watford-bushey-croxley]
+faq:
+  - q: "What is there to do with kids in Rickmansworth?"
+    a: "Rickmansworth Aquadrome has two lakes, two play areas, a café and free parking. You can take a boat trip from Batchworth Lock, visit the free Three Rivers Museum on the High Street, or catch a family show or film at Watersmeet."
+  - q: "How much are boat trips from Batchworth Lock in Rickmansworth?"
+    a: "Rickmansworth Waterways Trust's boat trips to Stockers Lock and back take around 30 to 40 minutes and cost £6 for adults, £3 for under-16s and £15 for a family of two adults and two children. The trust asks you to phone ahead on 01923 778382."
+  - q: "Can you swim at Rickmansworth Aquadrome?"
+    a: "No. Swimming, personal paddleboards and barbecues aren't allowed. Parking is free, from 8am to 6pm between October and March and 8am to 9:30pm between April and September."
+  - q: "Can kids learn to sail in Rickmansworth?"
+    a: "Bury Lake Young Mariners at the Aquadrome runs Junior Days for 7 to 9-year-olds and RYA youth sailing courses from age 9. Rickmansworth Sailing Club on Troy Lake, West Hyde runs Trojans sessions for 4 to 8-year-olds on set Saturdays, mainly for members, and is part of the RYA OnBoard programme for 8 to 18-year-olds."
+  - q: "What's on for kids in Rickmansworth at October half term 2026?"
+    a: "Halloween Story Boats run from Batchworth Lock on 29, 30 and 31 October, hourly from 10am, at £12 for children and £9 for adults. Watersmeet's family events include Disney Junior Cinema Club (25 October), Magic & Mayhem (28 October) and The Utterly Revolting Science Show (29 October)."
 ---
 
 Rickmansworth and Croxley Green sit where the Grand Union Canal meets two big lakes and a nature reserve, so there's a lot to do outdoors, much of it free. We've checked every place below against the council's, venue's or organiser's own website, and added a short list of regular classes and clubs at the end.
@@ -52,7 +63,7 @@ A selection of term-time classes from our listings. See all of them on our [Rick
 - **Little Kickers**, William Penn Leisure Centre, Rickmansworth. Pre-school football from 18 months to 5 years, with a free trial. [Our listing](/activities/little-kickers-watford-rickmansworth/)
 - **Rugbytots**, Harvey Road Primary School, Croxley Green. Sunday-morning rugby play sessions for ages 2 to 5. [Our listing](/activities/rugbytots-watford-bushey-croxley/)
 - **Stagecoach Rickmansworth**, Little Green School, Croxley Green. Singing, dancing and acting on Fridays for ages 4 to 18. [Our listing](/activities/stagecoach-rickmansworth/)
-- **Perform Rickmansworth**, Rickmansworth. Drama, dance and singing for 4 to 7s and 7 to 12s, with a free trial session. [Our listing](/activities/perform-rickmansworth/)
+- **Perform**, Watford and Abbots Langley (no Rickmansworth venue at the moment). Drama, dance and singing for 4 to 7s and 7 to 12s, with a free trial session. [Our listing](/activities/perform-rickmansworth/)
 - **Rise Studios**, Rickmansworth. Ballet, street, jazz, tap, contemporary and musical theatre from age 3, with a £7.50 trial class. [Our listing](/activities/rise-studios-rickmansworth/)
 - **art-K Croxley Green**, Watford Road, Croxley Green. An art studio for ages 5 to 18 with weekly classes and holiday workshops. [Our listing](/activities/art-k-croxley-green/)
 - **Monkey Music**, Mill End Community Centre, Rickmansworth. Music classes from newborn to pre-school on Friday mornings. Your first class is free. [Our listing](/activities/monkey-music-rickmansworth-kings-langley/)

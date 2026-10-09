@@ -6,6 +6,25 @@ type: comparison
 towns: [watford, rickmansworth, croxley-green, chorleywood, kings-langley]
 categories: [holiday-camps, football-sport, gymnastics-trampolining, arts-crafts, dance-drama, stem-coding, outdoor-nature]
 related: [barracudas-watford, xtra-time-watford, we-make-footballers-watford, watford-gymnastics-club, rickmansworth-gymnastics-club, art-k-croxley-green, cygnets-art-school-chorleywood, rise-studios-rickmansworth, perform-rickmansworth, bury-lake-young-mariners]
+faq:
+  - q: "Which camps accept Tax-Free Childcare?"
+    a: "Barracudas, Camp Beaumont, Let's Play, Xtra Time, Perform and art-K all say on their websites that they accept it. Barracudas, Camp Beaumont, Let's Play, Perform and art-K also take childcare vouchers. For other camps, ask the provider before you book."
+  - q: "Which camps cover a full working day?"
+    a: "Barracudas (8am to 6pm with Extended Hours), Camp Beaumont (8am to 6pm with Early Risers and Extra Slice), Xtra Time's Multi Activities camp (8am to 6pm) and Let's Play (8am to 5pm with extended hours) are the longest days we found."
+  - q: "Can my 4-year-old go to a holiday camp?"
+    a: "Camp Beaumont takes children from age 3, and Barracudas and Xtra Time from 4. Watford Gymnastics Club and Rickmansworth Gymnastics Club welcome children in Reception, and Perform's holiday courses start at 4. Let's Play starts from Year 1."
+  - q: "Are there free holiday camps?"
+    a: "Yes, if your child gets benefits-related free school meals. HAPpy camps are free for eligible children in Reception to Year 11, and the next ones run over Christmas 2026. See the HAPpy section above for dates."
+  - q: "How much do holiday camps cost in Watford?"
+    a: "Let's Play at Watford Woodside Leisure Centre is £29.50 for a 9am to 4pm day, Xtra Time's Multi Sports camp is normally £28 a day, and Watford Gymnastics Club charges £35 a day for children aged 5 and over (£25 for Reception). Camp Beaumont in Rickmansworth was showing October half-term days at £57. Prices were last checked on 7 October 2026, so check with the provider before you book."
+  - q: "What holiday camps are on in October half term 2026 near Watford?"
+    a: "We Make Footballers Watford runs a camp from Monday 26 to Thursday 29 October (9.15am to 4pm, ages 4 to 13, £116). FJ Sporting Solutions has a LEGO camp in Kings Langley on 28 and 29 October (£30 a day), and Cygnets Art School has workshops in Chorleywood on 28 and 29 October."
+  - q: "Do holiday camps in Watford offer sibling discounts?"
+    a: "Several do. Barracudas takes £5 a day off per child when you book two or more children for 10 or more days, Let's Play gives siblings 10% off, Perform gives 25% off for siblings, and Xtra Time offers sibling and multi-day discounts."
+  - q: "Which holiday camps near Watford have early drop-off?"
+    a: "Let's Play offers 8am drop-off and 5pm pick-up at £3.50 each, Camp Beaumont has 8am drop-off and 6pm pick-up at £7.50 each, and FJ Sporting Solutions has early drop-off from 8am and late pick-up to 4pm at £5 each. Rickmansworth Gymnastics Club has early drop-off from 8.30am."
+  - q: "Are there sailing courses for kids in Rickmansworth in the holidays?"
+    a: "Bury Lake Young Mariners at the Rickmansworth Aquadrome runs week-long RYA Youth Sailing Courses in the school holidays for 9 to 16-year-olds, from complete beginners upwards, and nine is a firm minimum. Children aged 7 to 9 can try Junior Days instead."
 ---
 
 School holidays come round quickly, and local camps range from full working-day childcare to short creative workshops. We've checked every camp below on the provider's own website and listed only what each one states about ages, hours, prices and payment. We refresh this page before each holiday, and prices and dates were last checked on 7 October 2026.
@@ -59,19 +78,5 @@ School holidays come round quickly, and local camps range from full working-day 
 ## Free and funded places
 
 - **HAPpy (Holiday Activity Programme)**, venues across Hertfordshire. Hertfordshire's Holiday Activities and Food Programme, known locally as HAPpy, offers free camps with physical activity, enrichment, a healthy meal and snacks in the Easter, summer and winter holidays. It's for children in Reception to Year 11 (ages 4–16) who are registered for benefits-related free school meals, and your school sends a booking code up to six weeks before the camps open. Universal infant free school meals don't count on their own. The next programme runs in the Christmas holidays in December 2026, with booking codes due in mid to late November. [Details](https://www.hertfordshire.gov.uk/services/childrens-social-care/news-and-campaigns/happy-holiday-activity-programme.aspx) · [Eligibility and booking](https://sportinherts.org.uk/happy)
-
-## Questions parents ask
-
-**Which camps accept Tax-Free Childcare?**
-Barracudas, Camp Beaumont, Let's Play, Xtra Time, Perform and art-K all say on their websites that they accept it. Barracudas, Camp Beaumont, Let's Play, Perform and art-K also take childcare vouchers. For other camps, ask the provider before you book.
-
-**Which camps cover a full working day?**
-Barracudas (8am to 6pm with Extended Hours), Camp Beaumont (8am to 6pm with Early Risers and Extra Slice), Xtra Time's Multi Activities camp (8am to 6pm) and Let's Play (8am to 5pm with extended hours) are the longest days we found.
-
-**Can my 4-year-old go to a holiday camp?**
-Camp Beaumont takes children from age 3, and Barracudas and Xtra Time from 4. Watford Gymnastics Club and Rickmansworth Gymnastics Club welcome children in Reception, and Perform's holiday courses start at 4. Let's Play starts from Year 1.
-
-**Are there free holiday camps?**
-Yes, if your child gets benefits-related free school meals. HAPpy camps are free for eligible children in Reception to Year 11, and the next ones run over Christmas 2026 (see above).
 
 *Know something we've missed, or run something local? [Tell us, it's free to list](/list-your-activity/).*

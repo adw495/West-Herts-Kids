@@ -6,6 +6,32 @@ towns: [rickmansworth]
 ageMin: 3
 ageMax: 14
 season: [holidays]
+schedule:
+- day: mon
+  start: '08:30'
+  end: '17:30'
+  note: October half term, 26 Oct 2026, ages 3–14 (arrive by 9:15am, collect 4:30–5:30pm)
+  price: £57
+- day: tue
+  start: '08:30'
+  end: '17:30'
+  note: October half term, 27 Oct 2026, ages 3–14
+  price: £57
+- day: wed
+  start: '08:30'
+  end: '17:30'
+  note: October half term, 28 Oct 2026, ages 3–14
+  price: £57
+- day: thu
+  start: '08:30'
+  end: '17:30'
+  note: October half term, 29 Oct 2026, ages 3–14
+  price: £57
+- day: fri
+  start: '08:30'
+  end: '17:30'
+  note: October half term, 30 Oct 2026, ages 3–14
+  price: £57
 priceFrom: 57
 priceUnit: day
 priceNote: October half term 2026 days shown at £57 (reduced from £67.50), £260 a week. Early Risers (8am) and Extra Slice (6pm) £7.50 each or £15 both. Accepts Tax-Free Childcare and childcare vouchers.
@@ -17,7 +43,7 @@ email: rms@campbeaumont.co.uk
 phone: 01603 851 000
 website: https://www.campbeaumont.co.uk/camps/rms-for-girls/
 source: provider website
-verified: '2026-10-07'
+verified: '2026-10-09'
 claimed: false
 draft: false
 ---

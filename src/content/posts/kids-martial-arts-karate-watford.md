@@ -6,6 +6,17 @@ type: comparison
 towns: [watford, bushey, rickmansworth, croxley-green, south-oxhey, abbots-langley]
 categories: [martial-arts]
 related: [freestyle-martial-arts-watford, leon-taekwondo-watford, zks-martial-arts-watford, watford-gracie-jiu-jitsu, shogun-practical-karate, fudoshin-ju-jitsu, san-shou-kuan-watford]
+faq:
+  - q: "How much do kids' karate classes cost in Watford?"
+    a: "At Freestyle Martial Arts, a beginner's month costs £40 including a uniform and belt, after a free taster. ZKS Martial Arts membership starts at £35 a month for one class a week. Shogun Practical Karate doesn't publish prices on its website."
+  - q: "What age can children start martial arts in Watford?"
+    a: "Watford Gracie Jiu-Jitsu's Tiny Titans class takes children from 3, and BJ Academy in Abbots Langley teaches taekwondo from age 4. Leon Taekwondo Academy, Shogun Practical Karate, Fudoshin Ju-Jitsu and San Shou Kuan Little Dragons start at 5, and Freestyle Martial Arts at 7."
+  - q: "Are there free trial martial arts classes for kids in Watford?"
+    a: "Most clubs offer one. Freestyle Martial Arts has a free taster, Watford Gracie Jiu-Jitsu a 10-day free trial, Shogun Practical Karate and Fudoshin Ju-Jitsu a free trial class, and San Shou Kuan Little Dragons a free session. ZKS Martial Arts lets you try up to two sessions first."
+  - q: "Are there kids' martial arts classes in Rickmansworth or Croxley Green?"
+    a: "Shogun Practical Karate teaches at Arnett Hills School, Rickmansworth on Mondays, with ages 5 to 10 at 6pm and 11 to 17 at 7pm. Rusty Taekwondo at Croxley Scout Hut has junior classes on Mondays at 4pm and Fridays at 5pm, plus a teen session on Fridays at 6pm."
+  - q: "Is there a martial art for kids in Watford without punching or kicking?"
+    a: "Watford Gracie Jiu-Jitsu's BullySafe programme teaches leverage-based techniques without punching or kicking, for ages 3 to 12, at £43 a month for one class a week. Iruka Judokwai teaches junior judo for ages 8 to 15 on Tuesdays and Thursdays from 6pm to 7:45pm."
 ---
 
 There are more martial arts clubs for children around Watford than most parents realise, from traditional karate and taekwondo to grappling styles like jiu-jitsu and judo. Most offer a free first session, so it's easy to try a couple before you commit. We've checked every club below on its own website (or, for one judo club, the British Judo club finder) today.

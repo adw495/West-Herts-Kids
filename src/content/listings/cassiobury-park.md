@@ -14,7 +14,7 @@ season:
 - year-round
 website: https://www.watford.gov.uk/cassiobury-park-3/cassiobury-park-activities/3
 source: Watford Borough Council
-verified: '2026-09-25'
+verified: '2026-10-09'
 claimed: false
 visit:
   parking: 'Designated car parks: Cassiobury Park car park, The Gade (Rosslyn Road, WD17 1PL), The Avenue (Hempstead Road, WD17 4NR) and Watford Town Hall car park (WD17 3EX). Spaces may be limited at busy times'
@@ -23,6 +23,7 @@ visit:
   toilets: true
   babyChange: true
   source: https://www.watford.gov.uk/cassiobury-park-3/cassiobury-park ; https://www.watford.gov.uk/cassiobury-park-3/cassiobury-park/2 ; https://www.watford.gov.uk/cassiobury-park-3/cassiobury-park-activities/2 ; https://www.watford.gov.uk/cassiobury-park-3/cassiobury-park-activities/3
+  hours: Park open all year. Cafe in the Park (Tea Pavilion) daily 9am–4pm; Cedar Café (Cassiobury Park Hub) daily 8am–5pm, later in summer. Splash pools closed for the season until spring 2027
 ---
 
 Cassiobury Park is a Green Flag park on the edge of Watford with plenty for families:
