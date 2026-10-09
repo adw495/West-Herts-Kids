@@ -5,6 +5,7 @@ import Base from '../../../layouts/Base.astro';
 import ListingCard from '../../../components/ListingCard.astro';
 import CategoryIcon from '../../../components/CategoryIcon.astro';
 import Glance from '../../../components/Glance.astro';
+import RelatedGuides from '../../../components/RelatedGuides.astro';
 import { lc, getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, nearbyInCategory, ageSpan, breadcrumbLd, itemListLd, glance, type Listing } from '../../../lib/listings';
 import { TOWNS, CATEGORIES, type TownKey, type CategoryKey } from '../../../data/taxonomy';
 
@@ -29,11 +30,11 @@ const jsonLd = [
 ];
 const g = glance(items);
 // Title and description use the phrase parents search for ("swimming lessons", not "swimming").
-const title = `${c.search} for kids in ${t.name}${items.length >= 3 ? ` (${items.length} options)` : ''}`;
+const title = `${c.search} for kids in ${t.name}${items.length >= 3 ? `: ${items.length} compared (2026)` : ''}`;
 const description = [`Compare ${items.length} options for ${c.q} in ${t.name}`, `ages from ${g.youngest}`, g.priceFrom ? `prices from ${g.priceFrom}` : '', g.trials ? `${g.trials} with free trials` : ''].filter(Boolean).join(', ') + '. Checked against each provider’s own website.';
 const nearbyTowns = [...new Set(nearby.flatMap((l) => l.data.towns.filter((x) => x !== town)))].slice(0, 3).map((x) => TOWNS[x].name);
 ---
-<Base title={title} description={description} jsonLd={jsonLd}>
+<Base title={title} description={description} jsonLd={jsonLd} ogImage={`/og/category-${cat}.png`}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href={`/towns/${town}/`}>{t.name}</a></li><li aria-hidden="true">/</li><li aria-current="page">{c.name}</li></ol>
     <header class="page-head" style="display:flex;gap:28px;align-items:center;flex-wrap:wrap">
@@ -54,6 +55,7 @@ const nearbyTowns = [...new Set(nearby.flatMap((l) => l.data.towns.filter((x) =>
       </section>
     )}
     <Glance items={items} q={c.q} place={t.name} />
+    <RelatedGuides town={town} cat={cat} heading={`Guides: ${lc(c.name)} and more in ${t.name}`} n={4} />
     <p class="muted" style="margin:32px 0 96px">Also see all <a href={`/category/${cat}/`}>{lc(c.name)} across West Herts</a>, or <a href={`/towns/${town}/`}>everything in {t.name}</a>.</p>
   </div>
 </Base>

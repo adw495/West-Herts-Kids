@@ -2,7 +2,9 @@
 import Base from '../../../layouts/Base.astro';
 import ListingCard from '../../../components/ListingCard.astro';
 import Filters from '../../../components/Filters.astro';
-import { getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, MIN_TO_INDEX_TOWN, breadcrumbLd, itemListLd, type Listing } from '../../../lib/listings';
+import Glance from '../../../components/Glance.astro';
+import RelatedGuides from '../../../components/RelatedGuides.astro';
+import { getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, MIN_TO_INDEX_TOWN, NEAR, townIntro, townFaqs, breadcrumbLd, itemListLd, type Listing } from '../../../lib/listings';
 import { TOWNS, CATEGORIES, type TownKey, type CategoryKey } from '../../../data/taxonomy';
 
 export async function getStaticPaths() {
@@ -22,21 +24,28 @@ const jsonLd = [
   itemListLd(`Kids' activities in ${t.name}`, items),
   breadcrumbLd([['Home', '/'], ['Towns', '/towns/'], [t.name, `/towns/${town}/`]]),
 ];
+const intro = townIntro(items, t.name);
+const qa = townFaqs(items, t.name);
+const near = NEAR[town].filter((x) => x in TOWNS);
 const catLinks = (Object.keys(CATEGORIES) as CategoryKey[]).filter((c) => byCategory(items, c).length >= MIN_FOR_COMBO_PAGE);
 ---
-<Base title={`Things to do with kids in ${t.name}: ${items.length} activities & classes`} description={`Kids' activities in ${t.name}: ${items.length} local classes, clubs, holiday camps and days out, with ages, prices and timetables checked against each provider's own website.`} jsonLd={jsonLd} noindex={items.length < MIN_TO_INDEX_TOWN}>
+<Base title={`Things to do with kids in ${t.name}: ${items.length} activities & classes`} description={`Kids' activities in ${t.name}: ${items.length} local classes, clubs, holiday camps and days out, with ages, prices and timetables checked against each provider's own website.`} jsonLd={jsonLd} ogImage={`/og/town-${town}.png`} noindex={items.length < MIN_TO_INDEX_TOWN}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/towns/">Towns</a></li><li aria-hidden="true">/</li><li aria-current="page">{t.name}</li></ol>
     <header class="page-head">
       <p class="plate">Stop: {t.name} — {items.length} {items.length === 1 ? 'listing' : 'listings'}</p>
       <h1>Kids’ activities in <em>{t.name}</em></h1>
       <p class="lead">{t.blurb}</p>
+      <p class="intro">{intro}</p>
     </header>
     {catLinks.length > 0 && <nav class="pills" aria-label="By activity">{catLinks.map((c) => <a class="chip" href={`/towns/${town}/${c}/`}>{CATEGORIES[c].name}</a>)}</nav>}
     <Filters hideTown />
     <h2 class="sr-only">Listings</h2>
     <div class="cards" id="results">{items.map((l, i) => <ListingCard listing={l} index={i} />)}</div>
     <p class="empty" id="no-results" hidden>Nothing matches those filters. <a href="/list-your-activity/">Know one we’ve missed?</a></p>
+    <Glance items={items} q="kids’ activities" place={t.name} qa={qa} compare={false} faqTitle={`Things to do with kids in ${t.name}: questions parents ask`} />
+    <RelatedGuides town={town} heading={`Guides for families in ${t.name}`} />
+    <nav class="near-towns" aria-label="Nearby towns"><p class="muted">Nearby: {near.map((x, i) => <>{i > 0 && ' · '}<a href={`/towns/${x}/`}>{TOWNS[x].name}</a></>)}</p></nav>
     <div style="height:96px"></div>
   </div>
 </Base>
