@@ -17,8 +17,11 @@ venue:
   postcode: WD25 7LR
 website: https://www.wbstudiotour.co.uk/
 source: provider website; OpenStreetMap
-verified: '2026-09-25'
+verified: '2026-10-09'
 claimed: false
+priceFrom: 47
+priceUnit: entry
+priceNote: '2026 prices: child (5–15) £47, adult (16+) £58.50, family ticket £188; under-4s and essential carers free. 2027: child £48, adult £61, family £192. All tickets must be booked in advance.'
 visit:
   parking: Free car park directly outside; Blue Badge bays near the entrance; Priority Parking £10 if pre-booked
   station: Watford Junction, then the free shuttle bus (about 15 minutes, at least every 30 minutes from 9.20am)

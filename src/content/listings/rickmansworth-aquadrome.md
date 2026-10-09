@@ -18,11 +18,11 @@ venue:
   postcode: WD3 1NB
 website: https://www.threerivers.gov.uk/services/leisure-parks-culture/parks-open-spaces/rickmansworth-aquadrome
 source: Three Rivers District Council; OpenStreetMap
-verified: '2026-10-07'
+verified: '2026-10-09'
 lastChanged: '2026-10-07'
 claimed: false
 visit:
-  hours: Car park 8am–6pm (1 Oct–31 Mar); 8am–9.30pm (1 Apr–30 Sep); locked after these times
+  hours: Car park 8am–6pm (1 Oct–31 Mar); 8am–9.30pm (1 Apr–30 Sep); locked after these times. Toilets close 30 minutes before the car park and are closed on Christmas Day, Boxing Day and New Year's Day
   parking: Free car park off Frogmoor Lane (WD3 1NB), with Blue Badge bays
   station: Rickmansworth (Chiltern and Metropolitan lines), about 5 minutes' walk
   cafe: true

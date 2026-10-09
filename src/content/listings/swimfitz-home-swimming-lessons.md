@@ -13,9 +13,10 @@ ageMin: 0.5
 ageMax: 18
 season:
 - year-round
+priceNote: Price by arrangement, confirmed at booking. 60-minute sessions, one-to-one, 2:1 or small group, no subscription or contract, and free cancellation with 48 hours' notice. Lessons from 7am on weekdays and 9am at weekends.
 website: https://swimfitz.com/home-swimming-lessons-rickmansworth
 source: provider website
-verified: '2026-09-25'
+verified: '2026-10-09'
 claimed: false
 ---
 
