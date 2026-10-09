@@ -17,8 +17,10 @@ interface Props {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   noindex?: boolean;
   canonical?: string; // absolute path, e.g. '/whats-on/this-weekend/', when this page duplicates another
+  ogImage?: string;   // e.g. '/og/guide-soft-play-watford.png' (drawn at build time by src/pages/og/[name].png.ts); default /og.png
 }
-const { title, description = SITE.tagline, jsonLd, noindex = false, canonical: canonicalPath } = Astro.props;
+const { title, description = SITE.tagline, jsonLd, noindex = false, canonical: canonicalPath, ogImage } = Astro.props;
+const og = ogImage ?? null;
 const fullTitle = title.includes(SITE.name) || title.length + SITE.name.length + 3 > 62 ? title : `${title} | ${SITE.name}`;
 const canonical = new URL(canonicalPath ?? Astro.url.pathname, SITE.url).href;
 const path = Astro.url.pathname;
@@ -54,10 +56,10 @@ const footTowns = ['watford', 'rickmansworth', 'croxley-green', 'chorleywood', '
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="en_GB" />
-    <meta property="og:image" content={`${SITE.url}/og.png`} />
+    <meta property="og:image" content={`${SITE.url}${og ?? '/og.png'}`} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="West Herts Kids: a local field guide to children's activities in Watford, Rickmansworth and West Herts" />
+    <meta property="og:image:alt" content={og ? title : "West Herts Kids: a local field guide to children's activities in Watford, Rickmansworth and West Herts"} />
     <meta name="twitter:card" content="summary_large_image" />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
