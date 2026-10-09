@@ -494,3 +494,7 @@ main, .site-footer { overflow-x: clip; }
 .guide-list a { font-weight: 600; }
 .near-towns { margin-top: 32px; }
 .page-head .intro { max-width: 62ch; margin: 12px 0 0; color: var(--ink-2, inherit); }
+
+/* Early newsletter sign-up near the top of guides */
+.nl-early { margin: 24px 0 0; padding: 16px 18px; background: var(--paper-2); border: 1px solid var(--paper-3); border-radius: 10px; max-width: 70ch; }
+.nl-early p { margin: 0 0 10px; }
