@@ -486,3 +486,11 @@ main, .site-footer { overflow-x: clip; }
 .tip-list blockquote { margin: 0; }
 .tip-list blockquote p { margin: 0; font-size: 17px; }
 .tip-list .small { margin: 6px 0 0; }
+
+/* Related guides on landing pages and articles */
+.guides { margin-top: 48px; }
+.guide-list { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 10px; }
+.guide-list li { border-bottom: 1px solid var(--paper-3); padding-bottom: 10px; }
+.guide-list a { font-weight: 600; }
+.near-towns { margin-top: 32px; }
+.page-head .intro { max-width: 62ch; margin: 12px 0 0; color: var(--ink-2, inherit); }
