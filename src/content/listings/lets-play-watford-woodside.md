@@ -6,6 +6,32 @@ towns: [watford]
 ageMin: 5
 ageMax: 12
 season: [holidays]
+schedule:
+- day: mon
+  start: '09:00'
+  end: '16:00'
+  note: October half term, 26 Oct 2026 (8am–5pm with extended hours)
+  price: £29.50
+- day: tue
+  start: '09:00'
+  end: '16:00'
+  note: October half term, 27 Oct 2026 (8am–5pm with extended hours)
+  price: £29.50
+- day: wed
+  start: '09:00'
+  end: '16:00'
+  note: October half term, 28 Oct 2026 (8am–5pm with extended hours)
+  price: £29.50
+- day: thu
+  start: '09:00'
+  end: '16:00'
+  note: October half term, 29 Oct 2026 (8am–5pm with extended hours)
+  price: £29.50
+- day: fri
+  start: '09:00'
+  end: '16:00'
+  note: October half term, 30 Oct 2026 (8am–5pm with extended hours)
+  price: £29.50
 priceFrom: 29.50
 priceUnit: day
 priceNote: Standard day £29.50, half day £12.50. Early drop-off (8am) and late pick-up (5pm) £3.50 each. 10% sibling discount. Accepts Tax-Free Childcare and childcare vouchers.
@@ -17,7 +43,7 @@ email: info@lets-play.org.uk
 phone: 01344 508008
 website: https://www.lets-play.org.uk/locations/watford-woodside-leisure-centre/
 source: provider website (location page and FAQs)
-verified: '2026-10-07'
+verified: '2026-10-09'
 claimed: false
 draft: false
 ---

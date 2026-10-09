@@ -1,5 +1,6 @@
 ---
 name: Freestyle Martial Arts Watford
+seoTitle: "Freestyle Martial Arts Watford: kids' taekwondo & karate, free taster"
 summary: Taekwondo, karate, kickboxing and kung fu for ages 7 and up. Free taster
   class, then £40 for a beginner month including uniform.
 categories:

@@ -14,9 +14,13 @@ ageMax: 18
 season:
 - term-time
 freeTrial: true
+priceUnit: session
+priceNote: Individual lesson £30 per half hour; half term from £240 (individual lessons include theory classes). Orchestra or ensemble training £10 a session. Kindergarten (17 months to 6 years, under-3s with an adult) from £60 a half term. First lesson free as a trial.
+phone: 07706 957842
+priceFrom: 30
 website: https://www.coloursinmusic.co.uk/
 source: provider website
-verified: '2026-09-25'
+verified: '2026-10-09'
 claimed: false
 ---
 

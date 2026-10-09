@@ -10,12 +10,14 @@ ageMin: 4
 ageMax: 14
 season:
 - holidays
+priceNote: 'Prices not yet published for 2027. Standard hours 8:30am–5:30pm, with Early and Late Clubs from 8am to 6pm. Sibling discount: £5 off per day per child when booking 10 or more individual days for 2 or more children. Accepts Tax-Free Childcare and childcare vouchers.'
 venue:
-  name: Watford Grammar School for Girls
+  name: Watford Grammar School for Girls (Fullerlife Gym entrance)
   address: Watford
+  postcode: WD18 0AE
 website: https://www.barracudas.co.uk/camps/watford
 source: provider website
-verified: '2026-09-25'
+verified: '2026-10-09'
 claimed: false
 ---
 
