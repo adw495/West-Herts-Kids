@@ -70,6 +70,11 @@ Last worked through: **5 Oct 2026**. Everything below was checked against provid
 
 ## Still open
 
+- **Baby Sensory (North Harrow franchise):** 9 Oct 2026 timetable lists only Kenton, Northwood and Bushey (no Rickmansworth venue), all "register interest for autumn". The homepage banner still mentions Rickmansworth. Listing now shows the Bushey class; decide whether to drop Rickmansworth from its towns.
+- **Code Ninjas Watford:** provider page says "location coming soon" with a waitlist (9 Oct 2026). Listing now says so; re-check monthly and make it a draft if it doesn't open.
+- **Watford Leisure Centre Central:** current Everyone Active timetable shows no inflatable session (9 Oct 2026); the summary still mentions inflatable sessions. Re-check in the school holidays.
+- **We Make Footballers Watford:** site gives two age ranges (4–13 and 4–12); listing ages left unchanged.
+- **Rickmansworth Lawn Tennis Club juniors:** rltc.co.uk and ClubSpark block automated checks (403). Needs a manual look in a normal browser.
 - **Oxhey Library (South Oxhey) Rhymetime:** Happity lists a Tuesday Baby Rhyme Time but shows nothing scheduled, and the county library page lists no children's sessions. Re-check the Herts libraries events page before listing.
 
 ## Useful aggregators to mine for more providers (don't copy their text)
