@@ -1,11 +1,11 @@
 ---
 // "At a glance" facts and an FAQ for landing pages. All text comes from verified listing fields (see lib/listings.ts).
-import { glance, faqs, formatDate, type Listing } from '../lib/listings';
+import { glance, faqs, faqLd, formatDate, type Listing } from '../lib/listings';
 import CompareTable from './CompareTable.astro';
-interface Props { items: Listing[]; q: string; place: string }
-const { items, q, place } = Astro.props;
+interface Props { items: Listing[]; q: string; place: string; qa?: { q: string; a: string }[]; compare?: boolean; faqTitle?: string }
+const { items, q, place, qa: given, compare = true, faqTitle } = Astro.props;
 const g = glance(items);
-const qa = faqs(items, q, place);
+const qa = given ?? faqs(items, q, place);
 ---
 <section class="glance" aria-labelledby="glance-title">
   <h2 id="glance-title">At a glance</h2>
@@ -19,8 +19,11 @@ const qa = faqs(items, q, place);
   </dl>
   {g.checked && <p class="small muted">Details last checked {formatDate(g.checked)}, against each provider’s own website.</p>}
 </section>
-{items.length >= 2 && <CompareTable items={items} heading={`Compare ${q} in ${place}`} />}
-<section class="faq" aria-labelledby="faq-title">
-  <h2 id="faq-title">Questions parents ask about {q} in {place}</h2>
-  {qa.map((x) => (<details><summary>{x.q}</summary><p>{x.a}</p></details>))}
-</section>
+{compare && items.length >= 2 && <CompareTable items={items} heading={`Compare ${q} in ${place}`} />}
+{qa.length > 0 && (
+  <section class="faq" aria-labelledby="faq-title">
+    <h2 id="faq-title">{faqTitle ?? `Questions parents ask about ${q} in ${place}`}</h2>
+    {qa.map((x) => (<details><summary>{x.q}</summary><p>{x.a}</p></details>))}
+    <script type="application/ld+json" set:html={JSON.stringify(faqLd(qa))} />
+  </section>
+)}

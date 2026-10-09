@@ -1,0 +1,20 @@
+---
+// Links to our guides that match this page's town and/or activity: internal links help readers and help Google
+// see how the guides and landing pages fit together.
+import { getPosts, relatedGuides, formatDate } from '../lib/listings';
+import type { CategoryKey, TownKey } from '../data/taxonomy';
+interface Props { town?: TownKey; cat?: CategoryKey; exclude?: string; heading?: string; n?: number }
+const { town, cat, exclude, heading = 'Guides for parents', n = 6 } = Astro.props;
+const guides = relatedGuides(await getPosts(), { town, cat, exclude, n });
+const id = `guides-${town ?? ''}-${cat ?? ''}`.replace(/-+$/, '');
+---
+{guides.length > 0 && (
+  <section class="guides" aria-labelledby={id}>
+    <h2 id={id}>{heading}</h2>
+    <ul class="guide-list">
+      {guides.map((p) => (
+        <li><a href={`/whats-on/${p.id}/`}>{p.data.title}</a><span class="small muted"> · {p.data.updated ? `Updated ${formatDate(p.data.updated)}` : formatDate(p.data.date)}</span></li>
+      ))}
+    </ul>
+  </section>
+)}
