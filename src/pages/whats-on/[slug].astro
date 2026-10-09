@@ -49,7 +49,7 @@ const isWeekly = /^\d{4}-\d{2}-\d{2}-whats-on$/.test(post.id);
         </section>
       )}
       {!isWeekly && <RelatedGuides cat={post.data.categories[0]} exclude={post.id} heading="More guides" n={4} />}
-      <p class="follow-note">Like this? <a href={SITE.facebook} rel="noopener">Follow West Herts Kids on Facebook</a> for weekend picks and new guides, or get them by email below.</p>
+      <p class="follow-note">Like this? Get weekend picks and new guides free by email below.</p>
     </article>
     {related.length > 0 && (
       <section style="padding-bottom:88px">
