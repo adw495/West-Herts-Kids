@@ -40,6 +40,10 @@ const isWeekly = /^\d{4}-\d{2}-\d{2}-whats-on$/.test(post.id);
       <p class="kicker" style="margin-top:0">{typeLabel[post.data.type]} · By {SITE.name} · {post.data.updated ? <>Updated <time datetime={post.data.updated.toISOString().slice(0, 10)}>{formatDate(post.data.updated)}</time></> : <time datetime={post.data.date.toISOString().slice(0, 10)}>{formatDate(post.data.date)}</time>}</p>
       <h1 style="max-width:18em">{post.data.title}</h1>
       <p class="lead" style="margin-top:16px">{post.data.description}</p>
+      <aside class="nl-early" aria-label="Newsletter">
+        <p><strong>Free weekly email:</strong> what’s on for kids this weekend, plus new guides. No spam, unsubscribe any time.</p>
+        <NewsletterForm source="article-top" compact />
+      </aside>
       <div class="prose" style="margin-top:32px"><Content /></div>
       {related.length >= 3 && post.data.type !== 'whats-on' && <CompareTable items={related} heading="Our listings side by side" id="guide-compare" showTown />}
       {faq.length > 0 && (
