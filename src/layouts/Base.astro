@@ -42,6 +42,7 @@ const footTowns = ['watford', 'rickmansworth', 'croxley-green', 'chorleywood', '
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE.name}: guides and what’s on`} href="/rss.xml" />
     {noindex && <meta name="robots" content="noindex" />}
     <meta name="theme-color" content="#F6F1E6" />
     <!-- Preload the fonts used above the fold so the headline doesn't wait for, or jump on, a late font swap. -->
