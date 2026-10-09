@@ -124,7 +124,7 @@ const footTowns = ['watford', 'rickmansworth', 'croxley-green', 'chorleywood', '
               <li><a href="/list-your-activity/">Add or claim a listing</a></li>
               {SITE.mode !== 'community' && <li><a href="/advertise/">Featured listings</a></li>}
               <li><a href="/newsletter/">Newsletter</a></li>
-              <li><a href={SITE.facebook} rel="me noopener">Facebook</a></li>
+              {SITE.facebook && <li><a href={SITE.facebook} rel="me noopener">Facebook</a></li>}
               <li><a href="/privacy/">Privacy &amp; removals</a></li>
             </ul>
           </nav>
