@@ -9,6 +9,7 @@ towns:
 - chorleywood
 - croxley-green
 - watford
+- kings-langley
 ageMin: 0.5
 ageMax: 18
 season:
@@ -16,7 +17,9 @@ season:
 priceNote: Price by arrangement, confirmed at booking. 60-minute sessions, one-to-one, 2:1 or small group, no subscription or contract, and free cancellation with 48 hours' notice. Lessons from 7am on weekdays and 9am at weekends.
 website: https://swimfitz.com/home-swimming-lessons-rickmansworth
 source: provider website
-verified: '2026-10-09'
+verified: '2026-10-12'
+checkEvery: 30
+lastChanged: '2026-10-12'
 claimed: false
 ---
 
@@ -26,4 +29,4 @@ If you have a private pool, SwimFitz comes to you. The coach has more than 30 ye
 - **Children's lessons** from age 3, following the STA Learn to Swim programme
 - Lessons run **seven days a week**
 
-It covers the WD3, WD18 and HA6 postcodes, including Rickmansworth, Chorleywood, Loudwater, Croxley Green, Moor Park and Watford.
+It covers the WD3, WD18 and HA6 postcodes, plus WD4 for the Kings Langley side, including Rickmansworth, Chorleywood, Loudwater, Croxley Green, Moor Park, Northwood and Watford.

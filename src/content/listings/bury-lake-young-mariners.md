@@ -25,7 +25,8 @@ venue:
 website: https://blym.org.uk/
 bookingUrl: https://blym.org.uk/courses/rya-youth-sailing-courses-9-16-years-old
 source: provider website (home, courses, general sailing FAQ and finding us pages)
-verified: '2026-09-28'
+verified: '2026-10-12'
+checkEvery: 60
 claimed: false
 ---
 

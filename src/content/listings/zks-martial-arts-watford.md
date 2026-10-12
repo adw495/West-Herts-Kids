@@ -34,7 +34,8 @@ venue:
   postcode: WD17 4YS
 website: https://www.zksma.uk/
 source: provider website
-verified: '2026-09-27'
+verified: '2026-10-12'
+checkEvery: 135
 claimed: false
 ---
 

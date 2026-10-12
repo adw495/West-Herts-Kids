@@ -13,9 +13,10 @@ venue:
   postcode: WD3 7NG
 website: https://www.rltc.co.uk/Coaching/Junior
 email: coaching@rltc.co.uk
+phone: 07845 039715
 source: provider website
-verified: '2026-10-05'
-lastChanged: '2026-10-05'
+verified: '2026-10-12'
+lastChanged: '2026-10-12'
 checkEvery: 30
 claimed: false
 ---

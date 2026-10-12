@@ -13,9 +13,17 @@ season:
 - term-time
 - holidays
 freeTrial: true
+venue:
+  name: YMCA Chiltern Group Woodlands Community Hub
+  address: Leavesden Country Park, off College Road, Abbots Langley
+  postcode: WD5 0GN
+phone: 07415 758680
+email: airiesgymnastics@gmail.com
 website: https://www.airiesgymnastics.co.uk/
 source: provider website
-verified: '2026-09-25'
+verified: '2026-10-12'
+checkEvery: 30
+lastChanged: '2026-10-12'
 claimed: false
 schedule:
 - day: mon
@@ -66,7 +74,7 @@ schedule:
 - day: fri
   start: 09:30
   end: '10:30'
-  note: Stay & Play, ages 0–4 (unstructured)
+  note: Stay & Play, ages 0–4 (unstructured), two Fridays a month
   price: £3.90 per child, adults free
 - day: fri
   start: '16:00'
@@ -92,4 +100,4 @@ Airies is a dedicated gymnastics club in Abbots Langley for children of all abil
 - **General gym:** 4–13 years
 - **Private lessons** and **holiday crash courses**
 
-You can **book a free taster lesson** before signing up.
+You can **book a free taster lesson** before signing up. Classes are at the YMCA Woodlands Community Hub in Leavesden Country Park, next to the Woodlands Cafe, playground and free car park. The October half-term crash course is on Friday 30 October (£25, or £45 for two siblings).

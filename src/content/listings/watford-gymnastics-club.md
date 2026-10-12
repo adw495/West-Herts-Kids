@@ -48,7 +48,8 @@ venue:
   postcode: WD18 8PH
 website: https://www.watfordgymnastics.co.uk/
 source: provider website and booking portal
-verified: '2026-09-27'
+verified: '2026-10-12'
+checkEvery: 60
 claimed: false
 ---
 

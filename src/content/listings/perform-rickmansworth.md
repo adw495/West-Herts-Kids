@@ -32,7 +32,8 @@ venue:
   postcode: WD17 4QB
 website: https://www.perform.org.uk/drama-classes/watford
 source: provider website
-verified: '2026-10-09'
+verified: '2026-10-12'
+checkEvery: 135
 claimed: false
 ---
 

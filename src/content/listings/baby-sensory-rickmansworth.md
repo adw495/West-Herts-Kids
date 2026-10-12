@@ -26,10 +26,12 @@ venue:
 priceFrom: 12.5
 website: https://www.babysensory.com/north-harrow/
 source: provider website
-verified: '2026-10-09'
+verified: '2026-10-12'
+checkEvery: 30
+lastChanged: '2026-10-12'
 claimed: false
 ---
 
 Baby Sensory classes are built around early development for babies aged **0 to 13 months**. Each session mixes baby signing, songs, light shows, bubbles, puppets and sensory play, and is designed to follow your baby's rhythm.
 
-The North Harrow franchise runs weekly classes in Rickmansworth and Bushey, as well as Northwood, Harrow and Stanmore. Book through the Baby Sensory site to see this term's venues and times.
+The North Harrow franchise's current timetable lists weekly classes at St Matthews Church Hall in Bushey, as well as Kenton and Northwood. Book through the Baby Sensory site to see this term's venues and times.

@@ -1,19 +1,19 @@
 ---
 name: Dolphina Gymnastics Club
-summary: Afterschool and weekend gymnastics in Garston, Watford, grouped by ability,
-  with dedicated SEND sessions.
+summary: Pre-school, afterschool and weekend gymnastics in Garston, Watford, from 18 months, with dedicated SEND sessions.
 categories:
 - gymnastics-trampolining
+- baby-toddler
 towns:
 - watford
 - abbots-langley
-ageMin: 4
+ageMin: 1.5
 ageMax: 18
 season:
 - term-time
-priceFrom: 11.9
+priceFrom: 9.5
 priceUnit: session
-priceNote: Paid termly, plus joining fee and British Gymnastics insurance
+priceNote: Pre-school classes £9.50–£10 a session, booked half termly; recreational classes from £11.90 a session, paid termly; plus a £15.50 joining fee and British Gymnastics insurance
 send: 'yes'
 sendNotes: Dedicated SEND sessions are listed on the club website.
 venue:
@@ -22,7 +22,9 @@ venue:
   postcode: WD25 7QU
 website: https://dolphinagymnastics.com/
 source: provider website
-verified: '2026-09-25'
+verified: '2026-10-12'
+checkEvery: 30
+lastChanged: '2026-10-12'
 claimed: false
 schedule:
 - day: mon
@@ -78,4 +80,6 @@ Dolphina groups gymnasts by **ability rather than age**, working through badge l
 - **Intermediate:** usually 8 years and up
 - **Advanced:** usually 11 and up
 
-Recreational classes start from **£11.90 a session**, paid termly, plus a joining fee and British Gymnastics insurance. The club also runs **SEND sessions** and allows up to three catch-up classes a term.
+Recreational classes start from **£11.90 a session**, paid termly, plus a joining fee and British Gymnastics insurance. Pre-school classes run on weekdays: **Me & My Shadow** (18 months–3, with a parent) and **Little Gymnast** (3–4), booked half termly.
+
+The club also runs **SEND sessions** and allows up to three catch-up classes a term.
