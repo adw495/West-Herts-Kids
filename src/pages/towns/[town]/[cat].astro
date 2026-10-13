@@ -6,7 +6,7 @@ import ListingCard from '../../../components/ListingCard.astro';
 import CategoryIcon from '../../../components/CategoryIcon.astro';
 import Glance from '../../../components/Glance.astro';
 import RelatedGuides from '../../../components/RelatedGuides.astro';
-import { lc, getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, nearbyInCategory, ageSpan, breadcrumbLd, itemListLd, glance, type Listing } from '../../../lib/listings';
+import { lc, getPosts, primaryGuide, getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, nearbyInCategory, ageSpan, breadcrumbLd, itemListLd, glance, type Listing } from '../../../lib/listings';
 import { TOWNS, CATEGORIES, type TownKey, type CategoryKey } from '../../../data/taxonomy';
 
 export async function getStaticPaths() {
@@ -32,6 +32,8 @@ const g = glance(items);
 // Title and description use the phrase parents search for ("swimming lessons", not "swimming").
 const title = `${c.search} for kids in ${t.name}${items.length >= 3 ? `: ${items.length} compared (2026)` : ''}`;
 const description = [`Compare ${items.length} options for ${c.q} in ${t.name}`, `ages from ${g.youngest}`, g.priceFrom ? `prices from ${g.priceFrom}` : '', g.trials ? `${g.trials} with free trials` : ''].filter(Boolean).join(', ') + '. Checked against each provider’s own website.';
+// The best-matching guide (same town AND activity), linked near the top so readers and Google find it.
+const topGuide = primaryGuide(await getPosts(), cat, town);
 const nearbyTowns = [...new Set(nearby.flatMap((l) => l.data.towns.filter((x) => x !== town)))].slice(0, 3).map((x) => TOWNS[x].name);
 ---
 <Base title={title} description={description} jsonLd={jsonLd} ogImage={`/og/category-${cat}.png`}>
@@ -43,6 +45,7 @@ const nearbyTowns = [...new Set(nearby.flatMap((l) => l.data.towns.filter((x) =>
         <p class="plate">Stop: {t.name} — {items.length} options</p>
         <h1>{c.search} for kids in <em>{t.name}</em></h1>
         <p class="lead">{c.blurb} Here are {items.length} options in and around {t.name}{ageSpan(items) === 'all ages' ? '' : ` (${ageSpan(items)})`}.</p>
+        {topGuide && <p class="guide-callout">Our guide: <a href={`/whats-on/${topGuide.id}/`}>{topGuide.data.title}</a></p>}
       </div>
     </header>
     <h2 class="sr-only">Listings</h2>
