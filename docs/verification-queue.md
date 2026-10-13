@@ -1,29 +1,35 @@
 # Verification queue
 
-Last worked through: **5 Oct 2026**. Everything below was checked against providers' own websites or official class finders.
+Last worked through: **12 Oct 2026**. Everything below was checked against providers' own websites or official class finders.
 
 ## Flagged
 
-### Flagged 7 Oct 2026 (from the guide research; re-check on the provider's own site)
-| Listing | What looked different | Source to check |
+### Still flagged (12 Oct 2026)
+| Listing | What's open | Source to check |
 |---|---|---|
-| code-ninjas-watford | One check saw "coming soon" + waitlist; a second check today showed camps on sale. Confirm it's open | codeninjas.co.uk/watford-uk-ldn |
-| rock-up-watford | Add soft play ticket (£8.95, 8 and under) and Toddler Climb (£13.95, under 5) if confirmed; the £12 Wednesday saver price wasn't on the prices page | rock-up.co.uk/locations/watford |
-| flip-out-watford | Hours changed (now in `visit`). Session prices: listing says off-peak 2-hour from £10.50, one check saw 1-hour from £11.45 off-peak and £16.95 standard — confirm on the prices page | flipout.co.uk/locations/watford |
-| airies-gymnastics-abbots-langley | No venue: site gives One YMCA Woodlands Community Hub, Leavesden Country Park | airiesgymnastics.co.uk |
-| little-kickers-watford-rickmansworth | Site also lists Mega Kickers (5–8) and rolling monthly billing; listing says 18m–5 and term time | littlekickers.co.uk (Harrow, Pinner, Watford & Rickmansworth) |
-| dolphina-gymnastics-watford | Also runs pre-school classes from 18 months | dolphinagymnastics.com |
-| baby-sensory-rickmansworth | Site also lists Hello Baby (0–3 months) | babysensory.com/north-harrow |
-| water-babies-bushey-meadow-wood | Pool now also runs Swimvincibles (4+) | waterbabies.co.uk pool page |
-| swimfitz-home-swimming-lessons | Now covers Northwood and WD4/WD5 too | swimfitz.com |
-| zks-martial-arts-watford | Newer Watford page: £60 joining fee, £55 for three classes a week (other site still matches the listing) | zksma.uk |
-| bushey-museum | Visit page says Kemp Place parking is free; accessibility page says chargeable | busheymuseum.org.uk (Hertsmere page) |
-| 1st-chorleywood-scouts | Cubs days (Thu/Fri) not on the group's own Cubs page today | chorleywoodscouts.org |
-| perform-rickmansworth | Rickmansworth page no longer names a venue | perform.org.uk |
-| free-things-to-do-kids-watford (guide) | Says Cassiobury is 250 acres; a council page now says 226 | watford.gov.uk Cassiobury pages |
+| water-babies-bushey-meadow-wood | Swimvincibles (4+) block on the pool page is template text shared by other pools; whether it runs here is only in the JS class finder. Unconfirmed once | waterbabies.co.uk class finder (Meadow Wood School pool) |
+| code-ninjas-watford | Still "location coming soon" + waitlist (12 Oct). Re-check monthly; make it a draft if it hasn't opened by the next check | codeninjas.co.uk/watford-uk-ldn |
 | fj-sporting-solutions-kings-langley (draft) | Only a past May camp found; publish once a current camp is listed | ClassForKids booking page |
+| croxley-green-baptist-boys-girls-brigade | New 12 Oct; church pages are footer-dated 2024, so confirm both groups still run at the next check | croxleybaptist.co.uk |
 
 
+## Done on 12 Oct 2026 (weekly check)
+
+| Listing | Outcome |
+|---|---|
+| flip-out-watford | **Updated:** Stay & Play £7.95 (£3.95 is the 6–12 months price); 1-hour and off-peak 2-hour prices |
+| rock-up-watford | **Updated:** soft play £8.95, Toddler Climb £13.95; £12 Wednesday saver is on the products page |
+| airies-gymnastics-abbots-langley | **Updated:** venue YMCA Woodlands Community Hub, WD5 0GN |
+| little-kickers-watford-rickmansworth | **Updated:** 18 months–8 (Mega Kickers), rolling monthly billing |
+| dolphina-gymnastics-watford | **Updated:** pre-school classes from 18 months |
+| baby-sensory-rickmansworth | **Updated body:** timetable is Bushey, Kenton, Northwood; no Hello Baby class on it |
+| swimfitz-home-swimming-lessons | **Updated:** adds WD4 (Kings Langley side) and Northwood |
+| zks-martial-arts-watford | **Confirmed:** zksma.uk is current (£50 joining fee); no £60/£55 page exists |
+| bushey-museum | **Updated:** Kemp Place parking is paid (Hertsmere tariff) |
+| 1st-chorleywood-scouts | **Updated:** Cubs Thu (Falcons) and Fri (Eagles) are on the Cubs page |
+| perform-rickmansworth | **Confirmed:** listing doesn't claim a Rickmansworth venue |
+| free-things-to-do-kids-watford (guide) | **Confirmed:** Watford council's Cassiobury activities page still says 250 acres |
+| Watford Leisure Centre Central | **Resolved open item:** operator page mentions inflatable toys in swim sessions and an inflatable pool party |
 
 ## Done on 5 Oct 2026 (weekly check)
 
@@ -71,11 +77,21 @@ Last worked through: **5 Oct 2026**. Everything below was checked against provid
 ## Still open
 
 - **Baby Sensory (North Harrow franchise):** 9 Oct 2026 timetable lists only Kenton, Northwood and Bushey (no Rickmansworth venue), all "register interest for autumn". The homepage banner still mentions Rickmansworth. Listing now shows the Bushey class; decide whether to drop Rickmansworth from its towns.
-- **Code Ninjas Watford:** provider page says "location coming soon" with a waitlist (9 Oct 2026). Listing now says so; re-check monthly and make it a draft if it doesn't open.
-- **Watford Leisure Centre Central:** current Everyone Active timetable shows no inflatable session (9 Oct 2026); the summary still mentions inflatable sessions. Re-check in the school holidays.
 - **We Make Footballers Watford:** site gives two age ranges (4–13 and 4–12); listing ages left unchanged.
-- **Rickmansworth Lawn Tennis Club juniors:** rltc.co.uk and ClubSpark block automated checks (403). Needs a manual look in a normal browser.
+- **Rickmansworth Lawn Tennis Club juniors:** rltc.co.uk blocks automated checks (403); check it in Chrome each time (done 12 Oct, fine).
 - **Oxhey Library (South Oxhey) Rhymetime:** Happity lists a Tuesday Baby Rhyme Time but shows nothing scheduled, and the county library page lists no children's sessions. Re-check the Herts libraries events page before listing.
+
+## New leads (12 Oct 2026, not yet verified)
+
+- **Croxley Green Library** Rhyme Time (Tue 10.30am) and Story Time (Fri 10.30am) per the parish page; **Oxhey Library** Baby Rhyme Time. The Herts events catalogue (herts.spydus.co.uk) shows a CAPTCHA, so check in a normal browser.
+- **Charlotte Amelia School of Dance** (Watford, 18 months–16, Cassiobury Infant and Junior Schools): timetable is in a ClassForKids widget.
+- **Celtic Hearts Irish Dance** (Abbots Langley Community Centre WD5 0AP; Leavesden): site blocked to automated fetches; open in Chrome.
+- **CLH Football** and **Loko Dance Cheer** (St Meryl School, Carpenders Park WD19 5BT): South Oxhey leads; no usable own site yet.
+- **Abbots Langley Cricket Club juniors** (Manor House Ground WD5 0BX): only 2024 junior info online; draft until current dates appear.
+- **Kings Langley FC juniors** and **Kings Langley Cricket Club juniors**: only on the parish directory; need the clubs' own sites.
+- **Little Kickers Saturday class at Canopy Frogmore House Nursery** (WD17 2HU): check whether it's open to non-nursery children.
+- **Perform Abbots Langley** second slot (Thu 5.05–6.05pm): age group not stated.
+- Dropped: Street Dance Academy Croxley Green (site now lists only Barnet and Wimbledon).
 
 ## Useful aggregators to mine for more providers (don't copy their text)
 - Happity (baby and toddler): happity.co.uk/watford-rickmansworth

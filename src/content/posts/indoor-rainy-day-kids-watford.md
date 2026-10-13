@@ -11,7 +11,7 @@ faq:
   - q: "What can kids do indoors in Watford on a rainy day?"
     a: "Flip Out Watford at atria has 13 attractions for one entry price, including trampolines and laser quest. Rock Up Watford has climbing walls for ages 4 and up, Ninja Warrior UK at Woodside Leisure Park has sessions for ages 5 and up, and there's bowling at Hollywood Bowl at Woodside and at atria."
   - q: "Are there indoor activities for toddlers in Watford?"
-    a: "Flip Out's Stay & Play for ages 5 and under is from £3.95 on term-time Fridays. Ninja Toddlers at Ninja Warrior UK is for 1 to 4-year-olds at £6.95 per toddler and £2 per adult, and Rock Up has Toddler Climb & Play with soft play. Parents Paradise in Bushey has a baby area."
+    a: "Flip Out's Stay & Play for ages 5 and under is £7.95 (£3.95 for babies 6–12 months) on term-time Fridays. Ninja Toddlers at Ninja Warrior UK is for 1 to 4-year-olds at £6.95 per toddler and £2 per adult, and Rock Up has Toddler Climb & Play with soft play. Parents Paradise in Bushey has a baby area."
   - q: "Do you need to book indoor play in Watford?"
     a: "Often, yes. Parents Paradise says you must book in advance, Ninja Warrior UK asks you to pre-book all sessions, Rock Up strongly advises booking online because capacity is limited, and Warner Bros. Studio Tour tickets must be booked in advance."
   - q: "How much are cinema tickets at Vue Watford?"
@@ -25,7 +25,7 @@ When the rain sets in and the park's a washout, there's more to do indoors aroun
 ## Soft play and trampolines
 
 - **Parents Paradise**, Greatham Road, Bushey. Soft play for children up to 12, open Tuesday to Sunday from 9.30am, with two-hour play sessions. A soft play centre with climbing frames, slides and a baby area, and you must book your visit in advance. [Details](https://parentsparadise.co.uk/) · [Our listing](/activities/parents-paradise-bushey/)
-- **Flip Out Watford**, atria Watford (lower mall). Stay & Play for ages 5 and under from £3.95 (Fridays in term time), plus timed sessions for older children every day it's open. An indoor adventure park with 13 attractions for one entry price, including trampolines, dodgems, laser quest and drift trikes. [Details](https://www.flipout.co.uk/locations/watford) · [Our listing](/activities/flip-out-watford/)
+- **Flip Out Watford**, atria Watford (lower mall). Stay & Play for ages 5 and under at £7.95, or £3.95 for babies 6–12 months (Fridays in term time), plus timed sessions for older children every day it's open. An indoor adventure park with 13 attractions for one entry price, including trampolines, dodgems, laser quest and drift trikes. [Details](https://www.flipout.co.uk/locations/watford) · [Our listing](/activities/flip-out-watford/)
 
 ## Active and adventurous
 

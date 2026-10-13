@@ -14,7 +14,8 @@ season:
 - holidays
 website: https://www.codeninjas.co.uk/watford-uk-ldn
 source: provider website
-verified: '2026-09-25'
+verified: '2026-10-12'
+checkEvery: 30
 claimed: false
 ---
 

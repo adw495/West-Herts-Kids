@@ -13,9 +13,15 @@ venue:
   postcode: WD3 5QN
 website: https://chorleywoodscouts.org/
 source: provider website
-verified: '2026-09-27'
+verified: '2026-10-12'
+checkEvery: 30
+lastChanged: '2026-10-12'
 claimed: false
 schedule:
+- day: thu
+  note: Cubs (Falcons pack), ages 8–10½
+- day: fri
+  note: Cubs (Eagles pack), ages 8–10½
 - day: wed
   note: Scouts (Misbourne troop), ages 10½–14
 - day: thu

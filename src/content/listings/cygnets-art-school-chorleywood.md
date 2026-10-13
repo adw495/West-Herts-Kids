@@ -1,7 +1,7 @@
 ---
 name: Cygnets Art School (Chorleywood)
 summary: Weekly art classes for 5–12 year olds on Wednesdays at Chorleywood Community
-  Arts Centre, plus summer workshops.
+  Arts Centre, plus half-term and holiday workshops.
 categories:
 - arts-crafts
 - holiday-camps
@@ -29,10 +29,12 @@ phone: 07392 847325
 email: rickmansworth@cygnetsartschool.com
 website: https://cygnetsartschool.com/branch/rickmansworth/
 source: provider website
-verified: '2026-09-25'
+verified: '2026-10-12'
+checkEvery: 30
+lastChanged: '2026-10-12'
 claimed: false
 ---
 
 Cygnets runs an all-abilities art class for **5–12 year olds** on **Wednesdays, 4–5pm**, at Chorleywood Community Arts Centre.
 
-It costs **£55 a month**, with a **£22 trial class**. In August there are themed **summer holiday workshops**, for example exploring cities around the world.
+It costs **£55 a month**, with a **£22 trial class**. It also runs one-off **workshops every half-term and school holiday**, where children complete a full art project in a single session.

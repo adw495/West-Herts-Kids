@@ -29,11 +29,11 @@ schedule:
 - day: sun
   start: '09:30'
   end: '19:30'
-priceFrom: 12
+priceFrom: 8.95
 priceUnit: session
-priceNote: Climbing from £12 on term-time Wednesdays (saver price); other times cost more. One adult needed in the arena for every four children aged 12 and under
+priceNote: Soft play £8.95 (ages 8 and under, unlimited play Monday to Friday; under-1s free); Toddler Climb £13.95 (up to 5, mornings); climbing from £12 on term-time Wednesdays (saver price), Starter Climb £19.95 at other times. One adult needed in the arena for every four children aged 12 and under
 send: 'yes'
-sendNotes: Runs dedicated SEND and autism climbing sessions
+sendNotes: Calm Climbing (SEND) sessions on the first Monday of each month, £11.95 for an hour
 venue:
   name: Rock Up Watford
   address: Unit 106/108, atria Watford (Harlequin Shopping Centre), Watford
@@ -42,8 +42,9 @@ phone: 01923 521000
 email: info.watford@rock-up.co.uk
 website: https://www.rock-up.co.uk/locations/watford
 source: provider website (location page and FAQs)
-verified: '2026-10-05'
-checkEvery: 90
+verified: '2026-10-12'
+lastChanged: '2026-10-12'
+checkEvery: 30
 claimed: false
 visit:
   hours: 'Term time: Mon–Wed 10am–7.30pm; Thu closed; Fri 10am–7.30pm; Sat 9.30am–8pm; Sun 9.30am–7.30pm'
