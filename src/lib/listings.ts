@@ -320,6 +320,22 @@ export const faqLd = (qa: { q: string; a: string }[]) => ({
   mainEntity: qa.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })),
 });
 
+/** The one guide that is mainly ABOUT this activity, optionally in this town: its title must name the activity
+ *  (e.g. "swimming", "karate"), so seasonal or themed guides that merely mention it aren't promoted.
+ *  The most focused guide (fewest activity types) wins. Used for the "Our guide" link near the top of landing pages. */
+const TITLE_WORDS: Partial<Record<CategoryKey, RegExp>> = {
+  'baby-toddler': /baby|toddler/i, swimming: /swim/i, 'martial-arts': /martial|karate/i, 'holiday-camps': /holiday camp/i,
+  'play-parties': /party|soft play/i, 'days-out': /farm|days out/i, 'outdoor-nature': /playground|park/i,
+  'gymnastics-trampolining': /gymnast|trampolin/i, 'dance-drama': /dance|drama/i, music: /music/i, 'football-sport': /football|sport/i,
+};
+export function primaryGuide(posts: Post[], cat: CategoryKey, town?: TownKey): Post | undefined {
+  const re = TITLE_WORDS[cat];
+  if (!re) return undefined;
+  return posts
+    .filter((p) => p.data.type !== 'whats-on' && re.test(p.data.title) && p.data.categories.includes(cat) && (!town || p.data.towns.includes(town)) && !/^\d{4}-\d{2}-\d{2}-whats-on$/.test(p.id))
+    .sort((a, b) => a.data.categories.length - b.data.categories.length || b.data.date.getTime() - a.data.date.getTime())[0];
+}
+
 const WEEKLY = /^\d{4}-\d{2}-\d{2}-whats-on$/;
 /** Guides that match a town and/or category, best match first (both > category > town). Weekly round-ups are left out. */
 export function relatedGuides(posts: Post[], opts: { town?: TownKey; cat?: CategoryKey; exclude?: string; n?: number }): Post[] {
@@ -334,7 +350,8 @@ export function relatedGuides(posts: Post[], opts: { town?: TownKey; cat?: Categ
     .filter((p) => !WEEKLY.test(p.id) && p.id !== exclude)
     .map((p) => ({ p, s: score(p) }))
     .filter((x) => x.s > 0)
-    .sort((a, b) => b.s - a.s || b.p.data.date.getTime() - a.p.data.date.getTime())
+    // Ties: the more focused guide first (fewer activity types), then the newest.
+    .sort((a, b) => b.s - a.s || a.p.data.categories.length - b.p.data.categories.length || b.p.data.date.getTime() - a.p.data.date.getTime())
     .slice(0, n)
     .map((x) => x.p);
 }

@@ -1,12 +1,15 @@
 ---
-title: "Kids' karate & martial arts classes in Watford compared (2026)"
-description: "Karate, taekwondo, jiu-jitsu, ju-jitsu, judo and kickboxing for children in Watford, Bushey, Rickmansworth, Croxley Green, South Oxhey and Abbots Langley, with ages, prices and times."
+title: "Kids' karate classes in Watford: martial arts clubs compared (2026)"
+description: "Kids' karate classes in Watford, plus taekwondo, jiu-jitsu, judo and kickboxing clubs in Watford, Bushey, Rickmansworth and South Oxhey, with ages, prices, times and free trials."
 date: 2026-10-07
+updated: 2026-10-13
 type: comparison
 towns: [watford, bushey, rickmansworth, croxley-green, south-oxhey, abbots-langley]
 categories: [martial-arts]
 related: [freestyle-martial-arts-watford, leon-taekwondo-watford, zks-martial-arts-watford, watford-gracie-jiu-jitsu, shogun-practical-karate, fudoshin-ju-jitsu, san-shou-kuan-watford]
 faq:
+  - q: "Where can my child do karate in Watford?"
+    a: "Shogun Practical Karate teaches children aged 5 to 17 at Bromet School, Oxhey Road on Wednesdays at 7pm. Shotokan Karate JKA runs a Tiny Tigers class for ages 6 to 12 at Watford Woodside Leisure Centre. Freestyle Martial Arts mixes karate with taekwondo, kickboxing and kung fu for ages 7 and up at Westfield Academy on Fridays. All three offer a free trial or taster."
   - q: "How much do kids' karate classes cost in Watford?"
     a: "At Freestyle Martial Arts, a beginner's month costs £40 including a uniform and belt, after a free taster. ZKS Martial Arts membership starts at £35 a month for one class a week. Shogun Practical Karate doesn't publish prices on its website."
   - q: "What age can children start martial arts in Watford?"
@@ -37,7 +40,9 @@ There are more martial arts clubs for children around Watford than most parents 
 | Rusty Taekwondo | Croxley Green | – | – | Mon 4pm, Fri 5pm | Free session |
 | BJ Academy | Abbots Langley | 4+ | – | – | Taekwondo. First session free |
 
-## Karate and mixed martial arts
+## Karate classes in Watford
+
+Three clubs teach karate to children in Watford: Shogun Practical Karate (Bromet School, Wednesdays, ages 5–17), Shotokan Karate JKA (Watford Woodside Leisure Centre, Tiny Tigers for ages 6–12) and Freestyle Martial Arts (karate mixed with other styles, ages 7+). ZKS Martial Arts also runs classes by school year in Watford.
 
 - **Freestyle Martial Arts**, Westfield Academy, Tolpits Lane, Watford. A blend of karate, taekwondo, kickboxing and kung fu for ages 7 and up, with a beginners' class on Fridays from 6pm to 6:40pm. After a free taster, a beginner's month costs £40 including a uniform and belt, and there are family discounts. [Details](https://www.freestylemartialarts.com/watford) · [Our listing](/activities/freestyle-martial-arts-watford/)
 - **ZKS Martial Arts**, Nascot Wood Junior School, Nascot Wood Road, Watford. Classes by school year: Mini Ninjas (Reception to Year 2), Junior Martial Arts (Years 3 to 6) and Teen Martial Arts (Years 7 to 11), plus Little Dragons for younger children. Membership starts at £35 a month for one class a week, and you can try up to two sessions first. The class timetable is on the club's website. [Details](https://www.zksmartialarts.co.uk/martial-arts-watford/) · [Our listing](/activities/zks-martial-arts-watford/)
@@ -62,6 +67,10 @@ There are more martial arts clubs for children around Watford than most parents 
 ## Kickboxing
 
 - **San Shou Kuan Little Dragons**, The Dan Tien Centre, Harebreaks, Watford. A kickboxing class for 5 to 10-year-olds on Sundays from 4:30pm to 5:15pm, with a free car park at the rear. You can try a session for free. [Details](https://sanshoukuan.com/watford-sun-kids/) · [Our listing](/activities/san-shou-kuan-watford/)
+
+## More martial arts near you
+
+Our town pages list every martial arts club we know about, with a side-by-side comparison: [martial arts classes in Watford](/towns/watford/martial-arts/), [Bushey](/towns/bushey/martial-arts/) and [South Oxhey](/towns/south-oxhey/martial-arts/). For other after-school ideas, see [kids' activities in Watford](/towns/watford/).
 
 ## Choosing a club
 

@@ -5,7 +5,7 @@ import Filters from '../../components/Filters.astro';
 import CategoryIcon from '../../components/CategoryIcon.astro';
 import Glance from '../../components/Glance.astro';
 import RelatedGuides from '../../components/RelatedGuides.astro';
-import { lc, getListings, byCategory, byTown, MIN_FOR_COMBO_PAGE, townCounts, breadcrumbLd, itemListLd, glance, type Listing } from '../../lib/listings';
+import { lc, getListings, byCategory, byTown, MIN_FOR_COMBO_PAGE, townCounts, getPosts, primaryGuide, breadcrumbLd, itemListLd, glance, type Listing } from '../../lib/listings';
 import { CATEGORIES, TOWNS, CATEGORY_KEYS, type CategoryKey, type TownKey } from '../../data/taxonomy';
 
 export async function getStaticPaths() {
@@ -27,6 +27,7 @@ const title = `${c.search} for kids in Watford, Rickmansworth & West Herts`;
 const description = [`Compare ${items.length} options for ${c.q} across Watford, Rickmansworth, Croxley Green, Chorleywood and nearby`, `ages from ${g.youngest}`, g.priceFrom ? `prices from ${g.priceFrom}` : ''].filter(Boolean).join(', ') + '.';
 const tc = townCounts(items).slice(0, 4).map(([t, n]) => `${n} in ${TOWNS[t].name}`);
 const intro = `We list ${items.length} ${items.length === 1 ? 'option' : 'options'} for ${c.q} across West Herts${tc.length > 1 ? `, including ${tc.slice(0, -1).join(', ')} and ${tc[tc.length - 1]}` : ''}${g.priceFrom ? `, with prices from ${g.priceFrom}` : ''}. Ages, prices and times come from each provider’s own website.`;
+const topGuide = primaryGuide(await getPosts(), cat);
 const townLinks = (Object.keys(TOWNS) as TownKey[]).filter((t) => byTown(items, t).length >= MIN_FOR_COMBO_PAGE);
 ---
 <Base title={title} description={description} jsonLd={jsonLd} ogImage={`/og/category-${cat}.png`}>
@@ -39,6 +40,7 @@ const townLinks = (Object.keys(TOWNS) as TownKey[]).filter((t) => byTown(items, 
         <h1>{c.search} <em>for kids</em> in West Herts</h1>
         <p class="lead">{c.blurb}</p>
         <p class="intro">{intro}</p>
+        {topGuide && <p class="guide-callout">Our guide: <a href={`/whats-on/${topGuide.id}/`}>{topGuide.data.title}</a></p>}
       </div>
     </header>
     {townLinks.length > 0 && (
