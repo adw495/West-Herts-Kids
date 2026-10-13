@@ -1,12 +1,37 @@
 ---
-title: "Hertfordshire school term dates 2026/27 and 2027/28"
-description: "Hertfordshire County Council's school term and holiday dates for 2026/27 and 2027/28, with links to what's on for kids in West Herts each holiday."
+title: "Hertfordshire term dates 2026/27 & 2027/28: half terms and holidays"
+description: "October half term 2026 in Hertfordshire is 26–30 October. Every Herts school term, half term and holiday date for 2026/27 and 2027/28, from the county council."
 date: 2026-10-07
+updated: 2026-10-13
 type: guide
 towns: [rickmansworth, croxley-green, chorleywood, watford, abbots-langley, kings-langley, bushey, south-oxhey]
 categories: [holiday-camps]
 related: []
+faq:
+  - q: "When is October half term 2026 in Hertfordshire?"
+    a: "Monday 26 to Friday 30 October 2026, according to Hertfordshire County Council. Children go back on Monday 2 November."
+  - q: "When are the Christmas holidays 2026 in Hertfordshire?"
+    a: "Monday 21 December 2026 to Friday 1 January 2027. The autumn term ends on Friday 18 December and the spring term starts on Monday 4 January 2027."
+  - q: "When is February half term 2027 in Hertfordshire?"
+    a: "Monday 15 to Friday 19 February 2027."
+  - q: "When are the Easter holidays 2027 in Hertfordshire?"
+    a: "Friday 26 March to Friday 9 April 2027, with the summer term starting on Monday 12 April 2027."
+  - q: "When do Hertfordshire schools break up for summer 2027?"
+    a: "The council's summer holiday runs from Friday 23 July to Tuesday 31 August 2027, so the last day of the summer term is Thursday 22 July 2027. May half term is Monday 31 May to Friday 4 June 2027."
+  - q: "Do all Hertfordshire schools use these term dates?"
+    a: "No. Community and voluntary-controlled schools must use them, adding 5 INSET days and 1 occasional day chosen by each school. Academies, free, voluntary-aided and foundation schools don't have to follow them, so check your own school's calendar."
 ---
+
+## 2026/27 school holidays at a glance
+
+- **October half term 2026:** Monday 26 – Friday 30 October 2026
+- **Christmas holidays:** Monday 21 December 2026 – Friday 1 January 2027
+- **February half term 2027:** Monday 15 – Friday 19 February 2027
+- **Easter holidays 2027:** Friday 26 March – Friday 9 April 2027
+- **May half term 2027:** Monday 31 May – Friday 4 June 2027
+- **Summer holidays 2027:** Friday 23 July – Tuesday 31 August 2027
+
+These are Hertfordshire County Council's dates. INSET days are added by each school, so your child may have a few extra days off.
 
 Here are the school term and holiday dates Hertfordshire County Council has set for 2026/27 and 2027/28, taken straight from its [official term dates page](https://www.hertfordshire.gov.uk/services/schools-and-education/at-school/school-term-dates/school-term-dates.aspx). Your child's school may not follow them exactly, so read the notes below the tables before you book anything.
 
@@ -43,7 +68,7 @@ The council publishes the first day of each autumn term and the dates of every h
 ## Check your own school's dates
 
 - **INSET days are set by each school.** Community and voluntary-controlled schools must follow the dates above, plus 5 INSET (staff training) days and 1 occasional day, which each school chooses. That means your child may start a term later, or finish earlier, than the table shows.
-- **Academies, free, voluntary-aided and foundation schools can set their own dates.** The council says they don't have to follow its term dates, Independent schools set their own dates too. If your child is at a secondary school such as one of the Watford Grammar Schools, or at any academy or independent school, go by the school's own calendar rather than this table.
+- **Academies, free, voluntary-aided and foundation schools can set their own dates.** The council says they don't have to follow its term dates. Independent schools set their own dates too. If your child is at a secondary school such as one of the Watford Grammar Schools, or at any academy or independent school, go by the school's own calendar rather than this table.
 - The safest check is your school's website or newsletter, especially before booking a holiday camp or a trip.
 
 ## What's on each holiday
