@@ -6,7 +6,7 @@ import Stamp from '../../components/Stamp.astro';
 import Wave from '../../components/art/Wave.astro';
 import SendIcon from '../../components/art/SendIcon.astro';
 import { render } from 'astro:content';
-import { lc, getListings, getPosts, ageLabel, ageShort, priceLabel, priceFact, whenLabel, dayName, formatDate, isOverdue, listingJsonLd, isFeaturedNow, byTown, MIN_FOR_COMBO_PAGE, type Listing } from '../../lib/listings';
+import { lc, getListings, getPosts, ageLabel, ageShort, priceLabel, priceFact, whenLabel, dayName, formatDate, isOverdue, listingJsonLd, isFeaturedNow, byTown, MIN_FOR_COMBO_PAGE, relatedGuides, type Listing } from '../../lib/listings';
 import { TOWNS, CATEGORIES } from '../../data/taxonomy';
 import { SITE } from '../../site.config';
 
@@ -28,7 +28,10 @@ const similar = all
 // Internal links up to the town + activity landing pages this listing appears on (only pages that exist).
 const comboLinks = d.categories.flatMap((c) => d.towns.map((t) => ({ c, t, n: all.filter((l) => l.data.categories.includes(c) && l.data.towns.includes(t)).length })))
   .filter((x) => x.n >= MIN_FOR_COMBO_PAGE).slice(0, 6);
-const posts = (await getPosts()).filter((p) => p.data.related.includes(listing.id)).slice(0, 3);
+// Guides that feature this listing first, then the best guides for its activity and town.
+const allPosts = await getPosts();
+const featuring = allPosts.filter((p) => p.data.related.includes(listing.id));
+const posts = [...featuring, ...relatedGuides(allPosts, { town: mainTown, cat: mainCat, n: 4 }).filter((p) => !featuring.includes(p))].slice(0, 3);
 const seasonText: Record<string, string> = { 'term-time': 'Term time', holidays: 'School holidays', 'year-round': 'All year' };
 const when = d.season.map((s) => seasonText[s]).join(', ');
 const domain = d.website ? new URL(d.website).hostname.replace(/^www\./, '') : null;
@@ -160,7 +163,7 @@ const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
 
         {posts.length > 0 && (
           <div class="where">
-            <h2 style="font-size:1.9rem">Mentioned in</h2>
+            <h2 style="font-size:1.9rem">{featuring.length ? 'Mentioned in' : 'Useful guides'}</h2>
             <ul>{posts.map((p) => <li><a href={`/whats-on/${p.id}/`}>{p.data.title}</a></li>)}</ul>
           </div>
         )}
