@@ -1,6 +1,6 @@
 ---
-title: "Hertfordshire term dates 2026/27 & 2027/28: half terms and holidays"
-description: "October half term 2026 in Hertfordshire is 26–30 October. Every Herts school term, half term and holiday date for 2026/27 and 2027/28, from the county council."
+title: "Hertfordshire term dates 2026/27: every holiday, plus a phone calendar"
+description: "Herts October half term 2026 is 26–30 Oct. All Hertfordshire term and holiday dates for 2026/27 and 2027/28, with a free calendar you can add to your phone in one tap."
 date: 2026-10-07
 updated: 2026-10-15
 type: guide
