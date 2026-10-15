@@ -37,8 +37,21 @@ const listings = defineCollection({
       babyChange: z.boolean().optional(),
       buggy: z.string().optional(),        // "Buggy-friendly paths"
       visitLength: z.string().optional(),  // "Allow 2–3 hours"
+      notes: z.string().optional(),        // entrance, viewing, parents-stay rules etc.
       source: z.string().optional(),       // where the visit info came from
     }).default({}),
+
+    // Photo of the place. Only freely licensed (e.g. Geograph CC BY-SA 2.0, credited), the owner's own, or used with written permission.
+    photo: z.object({
+      src: z.string(),                     // /images/listings/<slug>.webp
+      width: z.number(),
+      height: z.number(),
+      alt: z.string(),
+      credit: z.string(),                  // photographer's name
+      creditUrl: z.url().optional(),       // original photo page
+      licence: z.string(),                 // "CC BY-SA 2.0" or "Own photo" or "Used with permission"
+      taken: z.string().optional(),        // "June 2026"
+    }).optional(),
 
     // First-party tips from parents, sent in through the site and approved by the owner. Never copied from elsewhere.
     tips: z.array(z.object({
