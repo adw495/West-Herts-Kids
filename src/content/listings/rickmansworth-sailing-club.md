@@ -30,6 +30,7 @@ photo:
   alt: "Troy Lake, home of Rickmansworth Sailing Club, on a sunny day"
   credit: "Philip Jeffrey"
   creditUrl: https://www.geograph.org.uk/photo/8007662
+  sourceImage: https://s0.geograph.org.uk/geophotos/08/00/76/8007662_6469fafb.jpg
   licence: CC BY-SA 2.0
   taken: "March 2025"
 ---

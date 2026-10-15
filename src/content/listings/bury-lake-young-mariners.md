@@ -46,6 +46,7 @@ photo:
   alt: "Dinghies moored on Bury Lake at the Aquadrome, with a safety boat on the water"
   credit: "Mark Percy"
   creditUrl: https://www.geograph.org.uk/photo/6798326
+  sourceImage: https://s0.geograph.org.uk/geophotos/06/79/83/6798326_f9fad71f.jpg
   licence: CC BY-SA 2.0
   taken: "March 2021"
 ---

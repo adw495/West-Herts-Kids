@@ -42,6 +42,7 @@ photo:
   alt: "The red-brick Bushey Museum and Art Gallery building on Rudolph Road"
   credit: "Bryn Holmes"
   creditUrl: https://www.geograph.org.uk/photo/7613093
+  sourceImage: https://s0.geograph.org.uk/geophotos/07/61/30/7613093_267d7277.jpg
   licence: CC BY-SA 2.0
   taken: "September 2023"
 visit:

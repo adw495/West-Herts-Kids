@@ -35,6 +35,7 @@ photo:
   alt: "A small train waiting at the Watford Miniature Railway station in Cassiobury Park, with the turntable in front"
   credit: "Stephen McKay"
   creditUrl: https://www.geograph.org.uk/photo/8353236
+  sourceImage: https://s0.geograph.org.uk/geophotos/08/35/32/8353236_91e0d83d.jpg
   licence: CC BY-SA 2.0
   taken: "June 2026"
 ---

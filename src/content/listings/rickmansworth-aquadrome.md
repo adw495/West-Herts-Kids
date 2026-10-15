@@ -38,6 +38,7 @@ photo:
   alt: "Batchworth Lake at Rickmansworth Aquadrome, with trees along the bank"
   credit: "Marathon"
   creditUrl: https://www.geograph.org.uk/photo/6165104
+  sourceImage: https://s0.geograph.org.uk/geophotos/06/16/51/6165104_c2cb3d07.jpg
   licence: CC BY-SA 2.0
   taken: "May 2019"
 ---

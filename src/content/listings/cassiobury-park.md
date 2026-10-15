@@ -31,6 +31,7 @@ photo:
   alt: "Wooden footbridge over the River Gade in Cassiobury Park, surrounded by trees"
   credit: "N Chadwick"
   creditUrl: https://www.geograph.org.uk/photo/6442167
+  sourceImage: https://s0.geograph.org.uk/geophotos/06/44/21/6442167_a3ae77de.jpg
   licence: CC BY-SA 2.0
   taken: "October 2019"
 ---
