@@ -49,6 +49,7 @@ const listings = defineCollection({
       alt: z.string(),
       credit: z.string(),                  // photographer's name
       creditUrl: z.url().optional(),       // original photo page
+      sourceImage: z.url().optional(),     // freely licensed original (e.g. Geograph JPG), fetched and converted to WebP at build time
       licence: z.string(),                 // "CC BY-SA 2.0" or "Own photo" or "Used with permission"
       taken: z.string().optional(),        // "June 2026"
     }).optional(),
