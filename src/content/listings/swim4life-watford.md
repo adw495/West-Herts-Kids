@@ -30,6 +30,8 @@ venue:
   name: Watford Grammar School for Girls (Fullerlife Fitness Centre)
   address: Lady's Close, Watford
   postcode: WD18 0AE
+  lat: 51.65146
+  lon: -0.39617
 website: https://swim4lifewatford.co.uk/
 bookingUrl: https://morleisure.co.uk/MyLessons/MSL_Registration.asp?oid=384
 email: swim4lifewatford@gmail.com
@@ -39,6 +41,10 @@ source: provider website
 verified: '2026-10-07'
 claimed: false
 draft: false
+visit:
+  visitLength: "30- or 45-minute lessons"
+  notes: "At Watford Grammar School for Girls the pool entrance is the blue gate on Vicarage Road, not Lady's Close"
+  source: "https://swim4lifewatford.co.uk/ (checked 15 Oct 2026)"
 ---
 
 Swim4Life Watford is a family-run swim school that opened in January 2022. It teaches small classes for children aged one and over, in 30 and 45-minute lessons that follow the Swim England stages, and most of its teachers are also school teachers.

@@ -15,6 +15,8 @@ venue:
   name: Batchworth Sea Scouts HQ
   address: Riverside Drive, Rickmansworth
   postcode: WD3 1FS
+  lat: 51.63506
+  lon: -0.4688
 website: https://www.batchworth.org/
 source: provider website; OpenStreetMap
 verified: '2026-09-25'
@@ -44,6 +46,10 @@ schedule:
   start: '14:00'
   end: '17:00'
   note: Scouts (Discovery Troop), ages 10–14
+visit:
+  visitLength: Beavers 1 hour 15 minutes; Cubs 1 hour 30 minutes; Scouts 3 hours
+  notes: Off Batchworth roundabout, down the lane from Riverside Drive towards the household waste centre. There is a waiting list
+  source: https://www.batchworth.org/contact/; https://www.batchworth.org/beavers/ (checked 15 Oct 2026)
 ---
 
 Batchworth Sea Scouts is part of The Scout Association, with active **Beavers, Cubs, Scouts and Explorers** sections for ages **6 to 18**.

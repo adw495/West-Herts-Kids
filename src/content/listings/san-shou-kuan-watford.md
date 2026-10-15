@@ -17,6 +17,8 @@ venue:
   name: The Dan Tien Centre
   address: Harebreaks, Watford
   postcode: WD24 6NJ
+  lat: 51.67546
+  lon: -0.4019
 website: https://sanshoukuan.com/watford-sun-kids/
 email: membership@sanshoukuan.com
 phone: 07968 282085

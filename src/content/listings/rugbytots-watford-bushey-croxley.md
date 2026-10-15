@@ -28,6 +28,10 @@ website: https://www.rugbytots.co.uk/Class/Find
 source: provider website
 verified: '2026-09-27'
 claimed: false
+visit:
+  visitLength: 30 minutes (ages 2–3½); 45 minutes (3½–7)
+  notes: Parents take part with the youngest group. Bring a drink and wear comfortable clothes and shoes. Some classes are full with waiting lists
+  source: https://www.rugbytots.co.uk/FAQs (checked 15 Oct 2026)
 ---
 
 Rugbytots runs rugby-based play sessions in three age groups: **2–3½** (30 minutes), **3½–5** and **5–7** (45 minutes each).

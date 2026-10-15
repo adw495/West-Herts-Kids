@@ -21,6 +21,8 @@ schedule:
   end: '18:40'
 venue:
   postcode: WD18 6NS
+  lat: 51.64791
+  lon: -0.41863
 website: https://www.freestylemartialarts.com/watford
 source: provider website
 verified: '2026-09-25'

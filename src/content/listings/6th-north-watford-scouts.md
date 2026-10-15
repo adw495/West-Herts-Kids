@@ -16,6 +16,8 @@ venue:
   name: "6th North Watford Scout HQ"
   address: "East Drive, Watford"
   postcode: WD25 0AH
+  lat: 51.68312
+  lon: -0.39848
 website: https://www.6thnorthwatfordscouts.org.uk/
 source: provider website
 verified: '2026-09-27'

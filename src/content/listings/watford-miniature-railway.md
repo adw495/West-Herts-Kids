@@ -28,6 +28,15 @@ visit:
   station: Watford (Metropolitan line), 10–15 minutes' walk; Watford Junction 1.4 miles (about 30 minutes' walk)
   visitLength: Each ride takes about 6 minutes
   source: https://watfordrailway.co.uk/pages/opening-times-and-prices ; https://watfordrailway.co.uk/pages/find-us ; https://watfordrailway.co.uk/pages/about-us
+photo:
+  src: /images/listings/watford-miniature-railway.webp
+  width: 640
+  height: 427
+  alt: "A small train waiting at the Watford Miniature Railway station in Cassiobury Park, with the turntable in front"
+  credit: "Stephen McKay"
+  creditUrl: https://www.geograph.org.uk/photo/8353236
+  licence: CC BY-SA 2.0
+  taken: "June 2026"
 ---
 
 A Cassiobury Park favourite, the miniature railway runs next to the paddling pools, playground and Hub café, and runs trains **at weekends and in school holidays through most of the year**, weather permitting. Check the railway's colour-coded calendar for open days and times (usually from 11am).

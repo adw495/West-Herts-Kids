@@ -10,11 +10,17 @@ venue:
   name: Meadow Wood School pool
   address: Coldharbour Lane, Bushey
   postcode: WD23 4NN
+  lat: 51.64837
+  lon: -0.35054
 website: https://www.waterbabies.co.uk/baby-swimming/hertfordshire/meadow-wood-school-pool/
 bookingUrl: https://www.waterbabies.co.uk/baby-swimming/hertfordshire/meadow-wood-school-pool/#location-search
 source: provider website (pool page and lesson pages)
 verified: '2026-09-28'
 claimed: false
+visit:
+  visitLength: 30-minute lessons
+  notes: You swim with your baby. Babies wear the Water Babies double nappy system. Bring a towel, a warm hat and a small roll-up changing mat
+  source: https://www.waterbabies.co.uk/baby-swimming/hertfordshire/meadow-wood-school-pool/ (checked 15 Oct 2026)
 ---
 
 Water Babies runs weekly baby and toddler swimming lessons at **Meadow Wood School's pool in Bushey**. Lessons are **30 minutes** long, taught through songs, play and repetition, with a parent or carer in the water alongside the teacher.

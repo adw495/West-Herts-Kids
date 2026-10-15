@@ -35,6 +35,11 @@ website: https://theaquaswimschool.co.uk/
 source: provider website
 verified: '2026-09-25'
 claimed: false
+visit:
+  parking: 'School car park: enter off Vicarage Road, not Lady''s Close, and follow the one-way system'
+  visitLength: 30-minute lessons
+  notes: Parents aren't allowed poolside, so wait outside or in reception. Swim hats are compulsory. Arrive no more than 10 minutes before the lesson
+  source: https://theaquaswimschool.co.uk/contact/; https://theaquaswimschool.co.uk/lessons/ (checked 15 Oct 2026)
 ---
 
 Aqua Swim School has been teaching in Hertfordshire since 1990. Lessons run **Monday to Friday from 4:15pm** and on **Saturday mornings** during term time, with extra courses in the holidays.

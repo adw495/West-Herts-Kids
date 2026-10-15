@@ -13,10 +13,25 @@ venue:
   name: Rickmansworth Sailing Club, Troy Lake
   address: West Hyde, Rickmansworth (vehicle access from the A412 only)
   postcode: WD3 9YB
+  lat: 51.60336
+  lon: -0.50489
 website: https://rscsailing.org/ng/youth-schemes/
 source: provider website (youth schemes, training, membership and contact pages)
 verified: '2026-09-28'
 claimed: false
+visit:
+  parking: "On-site car park at the end of a long dirt track over a bridge. Vehicle access from the A412 only"
+  visitLength: "Trojans youth sessions run from about 11am to 4.30pm, with a lunch break"
+  source: "https://rscsailing.org/ng/contact-us/; https://rscsailing.org/ng/youth-schemes/ (checked 15 Oct 2026)"
+photo:
+  src: /images/listings/rickmansworth-sailing-club.webp
+  width: 640
+  height: 426
+  alt: "Troy Lake, home of Rickmansworth Sailing Club, on a sunny day"
+  credit: "Philip Jeffrey"
+  creditUrl: https://www.geograph.org.uk/photo/8007662
+  licence: CC BY-SA 2.0
+  taken: "March 2025"
 ---
 
 Rickmansworth Sailing Club is a volunteer-run **RYA Training Centre** on Troy Lake in West Hyde. The club sails all year round, and runs training for juniors as well as adults using the RYA Youth Sailing Scheme. A stage usually takes two days.

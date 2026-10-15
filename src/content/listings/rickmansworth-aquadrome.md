@@ -16,6 +16,8 @@ venue:
   name: Rickmansworth Aquadrome
   address: Frogmoor Lane (off Harefield Road), Rickmansworth
   postcode: WD3 1NB
+  lat: 51.63309
+  lon: -0.47217
 website: https://www.threerivers.gov.uk/services/leisure-parks-culture/parks-open-spaces/rickmansworth-aquadrome
 source: Three Rivers District Council; OpenStreetMap
 verified: '2026-10-09'
@@ -29,6 +31,15 @@ visit:
   toilets: true
   buggy: Accessible paths around the lakes; Bury Lake circular path is largely solid, level and wide
   source: https://www.threerivers.gov.uk/services/leisure-parks-culture/parks-open-spaces/rickmansworth-aquadrome
+photo:
+  src: /images/listings/rickmansworth-aquadrome.webp
+  width: 640
+  height: 480
+  alt: "Batchworth Lake at Rickmansworth Aquadrome, with trees along the bank"
+  credit: "Marathon"
+  creditUrl: https://www.geograph.org.uk/photo/6165104
+  licence: CC BY-SA 2.0
+  taken: "May 2019"
 ---
 
 The Aquadrome is a **local nature reserve** run by Three Rivers District Council, with lakes, woodland and paths along the River Colne and the Grand Union Canal.

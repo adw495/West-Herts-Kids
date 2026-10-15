@@ -59,6 +59,8 @@ venue:
   name: Watford Leisure Centre Central
   address: Peace Prospect, Watford
   postcode: WD17 3HA
+  lat: 51.66025
+  lon: -0.40485
 phone: 01923 296750
 website: https://www.everyoneactive.com/centre/watford-leisure-centre-central/
 source: provider website; OpenStreetMap

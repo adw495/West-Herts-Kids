@@ -46,11 +46,17 @@ venue:
   name: Watford Gymnastics Club
   address: Unit F, Gate 3, Greenhill Crescent, Watford Business Park, Watford
   postcode: WD18 8PH
+  lat: 51.64461
+  lon: -0.42481
 website: https://www.watfordgymnastics.co.uk/
 source: provider website and booking portal
 verified: '2026-10-12'
 checkEvery: 60
 claimed: false
+visit:
+  parking: "Limited. Only park in bays marked Watford Gymnastics Club, Flexspace, or with no business named"
+  notes: "The postcode stops short of the entrance: Gate 3 is on the left along Greenhill Crescent, so search for the club's name in your map app. Soft play drop-in on Tuesdays 10.30am–12pm, term time only"
+  source: "https://www.watfordgymnastics.co.uk/findus; https://www.watfordgymnastics.co.uk/watford-site (checked 15 Oct 2026)"
 ---
 
 Watford Gymnastics Club is a family-run British Gymnastics club at **Watford Business Park**, with a foam pit. For under-5s there's a **parent-and-toddler soft play** drop-in on Tuesday mornings in term time, **Leaping Lions** (from 2½, with a grown-up) and **Tumbling Tigers** (3–4, coach-led).

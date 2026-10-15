@@ -81,6 +81,8 @@ venue:
   name: William Penn Leisure Centre
   address: Mill End, Rickmansworth
   postcode: WD3 8JN
+  lat: 51.63917
+  lon: -0.49844
 website: https://www.everyoneactive.com/centre/william-penn-leisure-centre/
 source: provider website; OpenStreetMap
 verified: '2026-10-09'

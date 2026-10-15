@@ -30,6 +30,8 @@ venue:
   name: Watford Quaker Meeting House
   address: 150 Church Road, Watford
   postcode: WD17 4QB
+  lat: 51.66825
+  lon: -0.40428
 website: https://www.perform.org.uk/drama-classes/watford
 source: provider website
 verified: '2026-10-12'

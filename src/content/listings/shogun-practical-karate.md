@@ -32,6 +32,8 @@ venue:
   name: Arnett Hills JMI School
   address: Berry Lane, Rickmansworth
   postcode: WD3 4BT
+  lat: 51.6458
+  lon: -0.49526
 website: https://shogunpracticalkarate.com/karate-classes/karate-classes-in-herts-middlesex/
 phone: 07886 084250
 source: provider website (Herts/Middlesex, Rickmansworth, South Oxhey and Bushey pages)

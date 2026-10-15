@@ -31,6 +31,8 @@ venue:
   name: Mill End Community Centre
   address: Church Lane, Mill End, Rickmansworth
   postcode: WD3 8HD
+  lat: 51.63578
+  lon: -0.48974
 phone: 01753 889481
 email: berkhamsted.rickmansworth@monkeymusic.co.uk
 website: https://www.monkeymusic.co.uk/area/berkhamsted-chesham-hemel-hempstead-kings-langley-rickmansworth

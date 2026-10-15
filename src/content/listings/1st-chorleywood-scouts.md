@@ -11,6 +11,8 @@ venue:
   name: "1st Chorleywood Scout HQ"
   address: "Orchard Drive, Chorleywood"
   postcode: WD3 5QN
+  lat: 51.6584
+  lon: -0.51985
 website: https://chorleywoodscouts.org/
 source: provider website
 verified: '2026-10-12'

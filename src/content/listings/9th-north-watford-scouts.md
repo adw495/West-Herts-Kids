@@ -11,6 +11,8 @@ venue:
   name: "9th North Watford Scout HQ"
   address: "Hope Green, Watford"
   postcode: WD25 7HQ
+  lat: 51.69618
+  lon: -0.40376
 website: https://www.9thnorthwatford.co.uk/
 source: provider website
 verified: '2026-09-27'

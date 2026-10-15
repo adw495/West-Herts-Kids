@@ -32,6 +32,8 @@ venue:
   name: Nascot Wood Junior School
   address: Nascot Wood Road, Watford
   postcode: WD17 4YS
+  lat: 51.6703
+  lon: -0.41059
 website: https://www.zksma.uk/
 source: provider website
 verified: '2026-10-12'

@@ -20,6 +20,8 @@ venue:
   name: YMCA Orbital Community Hub
   address: Haines Way, Watford
   postcode: WD25 7QU
+  lat: 51.69208
+  lon: -0.40007
 website: https://dolphinagymnastics.com/
 source: provider website
 verified: '2026-10-12'

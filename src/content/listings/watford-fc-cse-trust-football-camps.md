@@ -40,6 +40,8 @@ venue:
   name: Westfield Academy (3G AstroTurf pitch)
   address: Tolpits Lane, Watford
   postcode: WD18 6NS
+  lat: 51.64791
+  lon: -0.41863
 website: https://www.watfordfccsetrust.com/project/football-camps/
 bookingUrl: https://bookings.watfordfccsetrust.com/project/85013
 email: community@watfordfc.com

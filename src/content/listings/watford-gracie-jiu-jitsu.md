@@ -35,6 +35,8 @@ venue:
   name: Watford Gracie Jiu-Jitsu Academy
   address: 1A Garnett Close, Watford
   postcode: WD24 7GL
+  lat: 51.67873
+  lon: -0.38719
 website: https://www.watfordgjj.co.uk/bullyproof/
 bookingUrl: https://www.watfordgjj.co.uk/10-day-free-trial/
 phone: 0203 633 1333

@@ -11,6 +11,8 @@ venue:
   name: "3rd North Watford Scout HQ"
   address: "Langley Road, Abbots Langley"
   postcode: WD5 0EH
+  lat: 51.70497
+  lon: -0.41654
 website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/3rd-north-watford/
 source: provider website
 verified: '2026-09-27'

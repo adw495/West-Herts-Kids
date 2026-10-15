@@ -24,6 +24,15 @@ visit:
   babyChange: true
   source: https://www.watford.gov.uk/cassiobury-park-3/cassiobury-park ; https://www.watford.gov.uk/cassiobury-park-3/cassiobury-park/2 ; https://www.watford.gov.uk/cassiobury-park-3/cassiobury-park-activities/2 ; https://www.watford.gov.uk/cassiobury-park-3/cassiobury-park-activities/3
   hours: Park open all year. Cafe in the Park (Tea Pavilion) daily 9am–4pm; Cedar Café (Cassiobury Park Hub) daily 8am–5pm, later in summer. Splash pools closed for the season until spring 2027
+photo:
+  src: /images/listings/cassiobury-park.webp
+  width: 640
+  height: 428
+  alt: "Wooden footbridge over the River Gade in Cassiobury Park, surrounded by trees"
+  credit: "N Chadwick"
+  creditUrl: https://www.geograph.org.uk/photo/6442167
+  licence: CC BY-SA 2.0
+  taken: "October 2019"
 ---
 
 Cassiobury Park is a Green Flag park on the edge of Watford with plenty for families:

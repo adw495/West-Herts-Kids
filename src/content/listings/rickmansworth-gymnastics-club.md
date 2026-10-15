@@ -54,6 +54,8 @@ venue:
   name: The Reach (sports hall)
   address: Rickmansworth
   postcode: WD3 8AB
+  lat: 51.63109
+  lon: -0.50364
 website: https://rickmansworth-gymnastics.classforkids.io/
 source: provider booking site
 verified: '2026-10-09'
