@@ -1,0 +1,68 @@
+---
+// "How we check" (editorial policy): how listings are sourced, checked and corrected.
+// Keep it in step with docs/verification-process.md and CLAUDE.md. Plain facts only.
+import Base from '../layouts/Base.astro';
+import { getListings, breadcrumbLd } from '../lib/listings';
+import { SITE } from '../site.config';
+
+const all = await getListings();
+const checked = all.filter((l) => l.data.verified);
+const latest = checked.map((l) => l.data.verified!.getTime()).sort((a, b) => b - a)[0];
+const latestStr = latest ? new Date(latest).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : null;
+const title = 'How we check our listings';
+const description = 'How West Herts Kids finds, checks and corrects its listings of children’s activities: provider websites only, dated checks, and no paid placements.';
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'AboutPage', name: title, description, url: `${SITE.url}/how-we-check/`, publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url } },
+  breadcrumbLd([['Home', '/'], ['About', '/about/'], ['How we check', '/how-we-check/']]),
+];
+---
+<Base title={title} description={description} jsonLd={ld}>
+  <div class="container" style="padding-bottom:96px">
+    <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/about/">About</a></li><li aria-hidden="true">/</li><li aria-current="page">How we check</li></ol>
+    <header class="page-head"><p class="plate">Our standards</p><h1>How we <em>check</em></h1>
+      <p class="lead">Every listing on this site says when it was last checked. Here’s what that means.</p>
+    </header>
+    <div class="prose" style="margin-top:24px">
+      <h2>Where the details come from</h2>
+      <ul>
+        <li><strong>The provider’s own website</strong>, or an official source such as Watford Borough Council, Three Rivers District Council or Hertfordshire County Council. Ages, days, times, prices and venues all come from there.</li>
+        <li>If a detail isn’t published, we leave it out rather than guess. That’s why some listings say “Ask” for price.</li>
+        <li>We use other directories and maps only to find activities we might be missing, then check everything on the provider’s own site. We don’t copy their text, and we don’t use Google Maps data.</li>
+        <li>Venue locations come from the provider or from <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap</a>. Distances from local stations are worked out from the venue’s postcode, as the crow flies, so the walk or drive will be a bit further. Postcode locations: contains OS data © Crown copyright and database right, Royal Mail data © Royal Mail copyright and database right, and National Statistics data © Crown copyright and database right, via <a href="https://postcodes.io/" rel="noopener" target="_blank">postcodes.io</a>.</li>
+      </ul>
+
+      <h2>How often we check</h2>
+      <ul>
+        <li>Every listing shows a <strong>“last checked” date</strong>{latestStr && <> (the most recent check was on {latestStr})</>}.</li>
+        <li>We re-check listings on a rolling schedule: every month for ones that change often, up to every six months for ones that don’t. Holiday camps are re-checked in the two weeks before each school holiday.</li>
+        <li>Automated checks flag broken or redirected website links and listings that are due a check, so nothing is forgotten.</li>
+        <li>If a listing goes too long without a check, the page shows a warning so you know to confirm with the provider.</li>
+      </ul>
+
+      <h2>When something changes</h2>
+      <ul>
+        <li>If a detail has changed, we update it from the provider’s page and log what changed.</li>
+        <li>If an activity has closed, moved away or its website has gone, we take the listing down.</li>
+        <li>Events in our weekly round-ups and seasonal guides are only included with a date, venue and a link to the organiser’s own page.</li>
+      </ul>
+
+      <h2>Money and fairness</h2>
+      <ul>
+        <li>Listing is free for every provider, and nobody can pay to be listed.</li>
+        {SITE.mode === 'community'
+          ? <li>There are no paid placements or adverts. The order of listings isn’t for sale.</li>
+          : <li>Featured listings are paid, always clearly labelled, and never change what we say about a provider.</li>}
+        <li>We’re independent and not connected to any provider we list.</li>
+      </ul>
+
+      <h2>Photos</h2>
+      <p>Photos show the actual place. They’re either freely licensed (mostly from <a href="https://www.geograph.org.uk/" rel="noopener" target="_blank">Geograph</a>, with the photographer credited under each one), our own, or used with permission.</p>
+
+      <h2>Parent tips</h2>
+      <p>Tips on listing pages come from local parents through our form. We read each one before it goes up, and only publish practical, first-hand tips, never reviews copied from elsewhere.</p>
+
+      <h2>Spotted something wrong?</h2>
+      <p>Tell us through the <a href="/list-your-activity/">update form</a> and we’ll check it against the provider’s website. Providers can also <a href="/list-your-activity/">claim their listing</a> to keep it up to date.</p>
+    </div>
+  </div>
+</Base>
