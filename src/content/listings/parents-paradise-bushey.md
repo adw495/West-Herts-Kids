@@ -33,6 +33,8 @@ venue:
   name: Parents Paradise
   address: Unit C, Greatham Road Industrial Estate, Greatham Road, Bushey
   postcode: WD23 2NZ
+  lat: 51.65628
+  lon: -0.38497
 phone: 01923 248747
 website: https://parentsparadise.co.uk/
 source: provider website
@@ -45,7 +47,8 @@ visit:
   parking: Free parking on site
   cafe: true
   visitLength: Play sessions are 2 hours
-  source: https://parentsparadise.co.uk/ ; https://parentsparadise.co.uk/baby-and-toddler-classes/
+  source: https://parentsparadise.co.uk/ ; https://parentsparadise.co.uk/baby-and-toddler-classes/; https://www.parentsparadise.co.uk/; https://parentsparadise.co.uk/play/rules-of-play/; https://parentsparadise.co.uk/booking/ (checked 15 Oct 2026)
+  notes: Socks or tights for children and adults at all times. Adults supervise their children throughout. No outside food or drink. Separate baby and sensory area. Booking online is cheaper than paying on the door
 ---
 
 Parents Paradise is an indoor soft play centre with climbing frames, slides, tunnels, go-karts and a baby sensory area. Play sessions are two hours and **must be booked in advance** (it's cheaper online than on the door). It caters for babies up to 12-year-olds.

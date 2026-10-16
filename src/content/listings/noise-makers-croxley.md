@@ -16,6 +16,8 @@ schedule:
 venue:
   name: The Hub Croxley
   postcode: WD3 3PJ
+  lat: 51.65044
+  lon: -0.44736
 website: https://www.noise-makers.co.uk/croxley-rickmansworth/
 source: provider website
 verified: '2026-09-25'

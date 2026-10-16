@@ -56,6 +56,22 @@ const descBits = [
 ].filter(Boolean).join(' · ');
 const description = `${d.summary.replace(/\.?$/, '.')} ${descBits}.${d.verified ? ` Checked ${formatDate(d.verified)}.` : ''}`.slice(0, 300);
 const hasPrice = d.schedule.some((x) => x.price);
+// Straight-line distance from three local stations (venue coordinates from the postcode; ONS data via postcodes.io).
+const REF: [string, number, number][] = [['Watford Junction', 51.6635, -0.3966], ['Rickmansworth station', 51.6403, -0.4734], ['Croxley station', 51.6470, -0.4413]];
+const miles = (a: number, b: number, c: number, e: number) => {
+  const R = 3958.8, r = Math.PI / 180, dLat = (c - a) * r, dLon = (e - b) * r;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a * r) * Math.cos(c * r) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+};
+const fmtMiles = (m: number) => {
+  const h = Math.round(m * 2) / 2;
+  if (m < 0.4) return 'under ½ mile';
+  if (h <= 0.5) return '½ mile';
+  return `${String(h).replace('.5', '½')} miles`;
+};
+const distance = d.venue.lat && d.venue.lon
+  ? REF.map(([n, la, lo]) => [n, miles(la, lo, d.venue.lat!, d.venue.lon!)] as const).sort((a, b) => a[1] - b[1]).map(([n, m]) => `${fmtMiles(m)} from ${n}`).join(' · ') + ' (as the crow flies)'
+  : null;
 const v = d.visit;
 const visitRows = [
   v.hours && ['Opening hours', v.hours],
@@ -63,9 +79,12 @@ const visitRows = [
   v.station && ['Nearest station', v.station],
   v.visitLength && ['How long to allow', v.visitLength],
   v.buggy && ['Buggies', v.buggy],
+  v.notes && ['Good to know', v.notes],
+  distance && ['How far', distance],
   (v.cafe !== undefined || v.toilets !== undefined || v.babyChange !== undefined) && ['Facilities', [v.cafe === true && 'Café', v.cafe === false && 'No café', v.toilets === true && 'Toilets', v.toilets === false && 'No toilets', v.babyChange === true && 'Baby changing'].filter(Boolean).join(' · ')],
 ].filter(Boolean) as [string, string][];
 const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
+
 ---
 <Base title={title} description={description} jsonLd={[listingJsonLd(listing), breadcrumbLd]}>
   <div class="container">
@@ -97,7 +116,14 @@ const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
           {domain && <span class="ldomain">{domain}</span>}
         </div>
       </div>
-      <div class="lhead-art" aria-hidden="true"><span class="blob"></span><CategoryIcon cat={mainCat} class="cat" /></div>
+      {d.photo ? (
+        <figure class="lphoto">
+          <img src={d.photo.src} width={d.photo.width} height={d.photo.height} alt={d.photo.alt} fetchpriority="high" decoding="async" />
+          <figcaption>Photo{d.photo.taken && `, ${d.photo.taken}`}: {d.photo.creditUrl ? <a href={d.photo.creditUrl} rel="noopener" target="_blank">{d.photo.credit}</a> : d.photo.credit}{d.photo.licence.startsWith('CC BY-SA') ? <>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="license noopener" target="_blank">{d.photo.licence}</a></> : <>, {d.photo.licence}</>}</figcaption>
+        </figure>
+      ) : (
+        <div class="lhead-art" aria-hidden="true"><span class="blob"></span><CategoryIcon cat={mainCat} class="cat" /></div>
+      )}
     </div>
   </section>
 
@@ -125,7 +151,7 @@ const townCount = (t: keyof typeof TOWNS) => byTown(all, t).length;
             <dl class="visit-list">
               {visitRows.map(([k, val]) => <div><dt>{k}</dt><dd>{val}</dd></div>)}
             </dl>
-            <p class="small muted" style="margin-top:8px">From {domain ?? 'the venue’s own website'}. Hours change in the holidays, so it’s worth checking on the day.</p>
+            {visitRows.length > (distance ? 1 : 0) && <p class="small muted" style="margin-top:8px">From the provider’s own website{v.source?.includes('.gov.uk') ? ' and the council’s' : ''}. Hours change in the holidays, so it’s worth checking on the day.</p>}
           </div>
         )}
 

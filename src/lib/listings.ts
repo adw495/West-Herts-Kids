@@ -181,6 +181,7 @@ export function listingJsonLd(l: Listing) {
     url: d.website ?? url,
     areaServed: townNames(d.towns).map((name) => ({ '@type': 'Place', name })),
   };
+  if (d.photo) ld.image = `${SITE.url}${d.photo.src}`;
   if (d.phone) ld.telephone = d.phone;
   if (d.email) ld.email = d.email;
   if (d.venue.address || d.venue.postcode) {

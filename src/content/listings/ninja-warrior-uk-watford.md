@@ -31,6 +31,8 @@ venue:
   name: Ninja Warrior UK Watford
   address: Woodside Leisure Park, Watford
   postcode: WD25 7JZ
+  lat: 51.69221
+  lon: -0.3946
 website: https://ninjawarrioruk.co.uk/watford/
 source: provider website
 verified: '2026-10-05'

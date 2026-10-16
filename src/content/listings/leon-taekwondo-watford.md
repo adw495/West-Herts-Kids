@@ -19,6 +19,8 @@ venue:
   name: Woodside Community Centre (Brow Club)
   address: The Brow, Watford
   postcode: WD25 7ET
+  lat: 51.69634
+  lon: -0.39969
 website: https://leontaekwondo.co.uk/watford/
 source: provider website (classes and prices pages)
 verified: '2026-09-28'

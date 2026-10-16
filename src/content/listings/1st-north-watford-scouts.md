@@ -11,6 +11,8 @@ venue:
   name: "1st North Watford Scout HQ"
   address: "Leggatts Way, Watford"
   postcode: WD24 5NQ
+  lat: 51.68188
+  lon: -0.41079
 website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/1st-north-watford/
 source: provider website
 verified: '2026-09-27'

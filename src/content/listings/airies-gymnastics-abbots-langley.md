@@ -17,6 +17,8 @@ venue:
   name: YMCA Chiltern Group Woodlands Community Hub
   address: Leavesden Country Park, off College Road, Abbots Langley
   postcode: WD5 0GN
+  lat: 51.70468
+  lon: -0.4053
 phone: 07415 758680
 email: airiesgymnastics@gmail.com
 website: https://www.airiesgymnastics.co.uk/

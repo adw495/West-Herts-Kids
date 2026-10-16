@@ -39,6 +39,8 @@ venue:
   name: RMS for Girls, Sports Centre
   address: Rickmansworth Park, Rickmansworth
   postcode: WD3 4HF
+  lat: 51.648
+  lon: -0.47361
 email: rms@campbeaumont.co.uk
 phone: 01603 851 000
 website: https://www.campbeaumont.co.uk/camps/rms-for-girls/

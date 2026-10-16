@@ -11,6 +11,8 @@ venue:
   name: "5th North Watford Scout HQ"
   address: "Corner of Hamilton Road and Upper Highway, Abbots Langley"
   postcode: WD4 8PJ
+  lat: 51.69758
+  lon: -0.433
 website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/5th-north-watford/
 source: provider website
 verified: '2026-09-27'

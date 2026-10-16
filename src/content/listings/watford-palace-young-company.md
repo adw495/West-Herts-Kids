@@ -22,6 +22,8 @@ venue:
   name: Watford Palace Theatre
   address: Clarendon Road, Watford
   postcode: WD17 1JZ
+  lat: 51.65719
+  lon: -0.39717
 website: https://watfordpalacetheatre.co.uk/take-part/young-company/
 source: provider website
 verified: '2026-09-25'

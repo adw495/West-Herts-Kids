@@ -71,6 +71,8 @@ venue:
   name: South Oxhey Leisure Centre
   address: Gosforth Lane, South Oxhey, Watford
   postcode: WD19 7AX
+  lat: 51.6278
+  lon: -0.39261
 phone: 020 8428 4954
 website: https://www.everyoneactive.com/centre/south-oxhey-leisure-centre/
 source: provider website (Everyone Active centre page)

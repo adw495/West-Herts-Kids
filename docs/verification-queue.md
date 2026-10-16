@@ -91,6 +91,13 @@ Last worked through: **12 Oct 2026**. Everything below was checked against provi
 - **Kings Langley FC juniors** and **Kings Langley Cricket Club juniors**: only on the parish directory; need the clubs' own sites.
 - **Little Kickers Saturday class at Canopy Frogmore House Nursery** (WD17 2HU): check whether it's open to non-nursery children.
 - **Perform Abbots Langley** second slot (Thu 5.05–6.05pm): age group not stated.
+- **Dolphina Gymnastics**: its own site says its "current permanent home" is a converted warehouse (Dolphina Gymnastics Centre), but the FAQ still mentions parking at the YMCA Orbital Community Hub. Contact page blocks automated fetches; check the address in a normal browser before changing the venue (15 Oct 2026).
+- **Airies Gymnastics**: site shows two postcodes, WD5 0GN (Stay & Play page) and WD5 0GU (homepage). Listing keeps WD5 0GN (15 Oct 2026).
+- **Swim4Life Watford**: site gives WGGS as both WD18 0AE and "WD18 ODE"; also teaches at Cassio Metro Leisure Centre, Linden Ave WD18 7AX (Wed/Thu after school), which isn't on the listing yet (15 Oct 2026).
+- **Watford Gymnastics Club**: site mentions a "Watford and Croxley site" and South Oxhey Leisure Centre; check for a second venue (15 Oct 2026).
+- **Bushey Museum**: homepage says the museum may be relocated from Rudolph Road; watch for a move date (15 Oct 2026).
+- **Parents Paradise**: homepage says "all ages up to 12", meta description says up to 11 (15 Oct 2026).
+- **Fudoshin Ju-Jitsu**: also teaches at Queens Dojo, Queens School WD23 2TY (Wednesdays); not on the listing yet (15 Oct 2026).
 - Dropped: Street Dance Academy Croxley Green (site now lists only Barnet and Wimbledon).
 
 ## Useful aggregators to mine for more providers (don't copy their text)

@@ -11,6 +11,8 @@ venue:
   name: Rickmansworth Lawn Tennis Club
   address: 10 Meadow Way, Rickmansworth
   postcode: WD3 7NG
+  lat: 51.63981
+  lon: -0.48108
 website: https://www.rltc.co.uk/Coaching/Junior
 email: coaching@rltc.co.uk
 phone: 07845 039715

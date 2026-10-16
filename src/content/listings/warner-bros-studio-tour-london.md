@@ -15,6 +15,8 @@ venue:
   name: Warner Bros. Studio Tour London
   address: Studio Tour Drive, Leavesden
   postcode: WD25 7LR
+  lat: 51.69057
+  lon: -0.41846
 website: https://www.wbstudiotour.co.uk/
 source: provider website; OpenStreetMap
 verified: '2026-10-09'

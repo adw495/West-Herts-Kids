@@ -20,6 +20,8 @@ venue:
   name: Flip Out Watford
   address: atria Watford (Harlequin Shopping Centre), lower level, next to B&M, Watford
   postcode: WD17 2UB
+  lat: 51.65412
+  lon: -0.39284
 phone: 01923 923036
 email: watford@flipout.co.uk
 website: https://www.flipout.co.uk/locations/watford

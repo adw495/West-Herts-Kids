@@ -15,10 +15,17 @@ venue:
   name: Watford Grammar School for Girls (Fullerlife Gym entrance)
   address: Watford
   postcode: WD18 0AE
+  lat: 51.65146
+  lon: -0.39617
 website: https://www.barracudas.co.uk/camps/watford
 source: provider website
 verified: '2026-10-09'
 claimed: false
+visit:
+  hours: "8.30am–5.30pm (drop-off 8.30–9.30am, collection 4.30–5.30pm); early and late clubs extend this to 8am–6pm"
+  station: "Watford (Metropolitan line), about 0.4 miles"
+  notes: "Use the Fullerlife Gym entrance at Watford Grammar School for Girls"
+  source: "https://www.barracudas.co.uk/camps/watford; https://www.barracudas.co.uk/blog/your-questions-about-camp (checked 15 Oct 2026)"
 ---
 
 Barracudas runs its Watford camp in the **Easter and summer holidays** for **4–14 year olds**. The venue has an **indoor swimming pool**, so the full activity programme is on offer, including sports and arts.

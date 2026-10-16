@@ -1,0 +1,161 @@
+---
+// School holiday planner: every Herts school holiday for the next two years, with the next one highlighted,
+// plus local holiday camps, rainy-day and free options and the matching guides. Rebuilt on every deploy,
+// so "next holiday" moves on by itself. Dates come from src/data/term-dates.ts (Hertfordshire County Council).
+import Base from '../../layouts/Base.astro';
+import CompareTable from '../../components/CompareTable.astro';
+import { getListings, getPosts, byCategory, ageShort, priceFact, faqLd, breadcrumbLd } from '../../lib/listings';
+import { HOLIDAYS, TERM_DATES_SOURCE } from '../../data/term-dates';
+import { SITE } from '../../site.config';
+
+const all = await getListings();
+const posts = await getPosts();
+const postIds = new Set(posts.map((p) => p.id));
+const today = new Date().toISOString().slice(0, 10);
+const upcoming = HOLIDAYS.filter((h) => h.end >= today);
+const next = upcoming[0];
+
+const fmt = (iso: string, withYear = true) =>
+  new Date(`${iso}T12:00:00Z`).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'long', ...(withYear ? { year: 'numeric' } : {}), timeZone: 'UTC' });
+const weekdaysOff = (h: { start: string; end: string }) => {
+  let n = 0;
+  for (let t = Date.parse(`${h.start}T12:00:00Z`); t <= Date.parse(`${h.end}T12:00:00Z`); t += 86400000) {
+    const wd = new Date(t).getUTCDay();
+    if (wd !== 0 && wd !== 6) n++;
+  }
+  return n;
+};
+const yearOf = (iso: string) => iso.slice(0, 4);
+
+// Seasonal guides for a holiday, only if that guide exists on the site.
+const seasonal: Record<string, { href: string; label: string }[]> = {
+  '2026-oct-half-term': [
+    { href: 'october-half-term-2026-holiday-camps', label: 'October half term 2026 holiday camps' },
+    { href: 'halloween-half-term-2026-watford', label: 'Halloween and half term events' },
+  ],
+  '2026-christmas': [{ href: 'christmas-2026-west-herts', label: 'Christmas 2026: pantos, grottos and lights' }],
+};
+const always = [
+  { href: 'holiday-camps-watford', label: 'Holiday camps and clubs in Watford' },
+  { href: 'indoor-rainy-day-kids-watford', label: 'Indoor and rainy-day ideas' },
+  { href: 'free-things-to-do-kids-watford', label: 'Free things to do with kids' },
+  { href: 'playgrounds-parks-watford-rickmansworth', label: 'Playgrounds and parks' },
+  { href: 'farms-animal-days-out-watford', label: 'Farms and animal days out' },
+].filter((g) => postIds.has(g.href));
+const guidesFor = (id: string) => (seasonal[id] ?? []).filter((g) => postIds.has(g.href));
+
+const camps = byCategory(all, 'holiday-camps').sort((a, b) => a.data.name.localeCompare(b.data.name));
+const indoor = byCategory(all, 'play-parties').slice(0, 8);
+// Free to visit: listings priced at £0, plus public parks and nature reserves that are free to enter.
+const FREE_PLACES = ['cassiobury-park', 'rickmansworth-aquadrome'];
+const free = all.filter((l) => FREE_PLACES.includes(l.id) || (l.data.priceFrom === 0 && (l.data.categories.includes('days-out') || l.data.categories.includes('outdoor-nature')))).slice(0, 8);
+
+const title = 'School holiday planner for Watford & West Herts families';
+const description = next
+  ? `Next Herts school holiday: ${next.name.toLowerCase()}, ${fmt(next.start, false)} to ${fmt(next.end)}. Every holiday to ${yearOf(HOLIDAYS[HOLIDAYS.length - 1].end)}, with local camps, rainy-day and free ideas.`
+  : 'Every Hertfordshire school holiday, with local holiday camps, rainy-day and free ideas.';
+
+const faq = [
+  next && { q: 'When is the next school holiday in Hertfordshire?', a: `${next.name}: ${fmt(next.start)} to ${fmt(next.end)}, according to Hertfordshire County Council. Your school may add INSET days either side.` },
+  { q: 'Which holiday camps run near Watford?', a: `We list ${camps.length} local holiday camps and clubs, with ages and prices from each provider's own website. Not every camp runs in every holiday, so check its dates before booking.` },
+  { q: 'Can I add the school holidays to my phone?', a: 'Yes. Our free Herts school holidays calendar works with iPhone, Google Calendar and Outlook, and updates itself when new dates are added.' },
+].filter(Boolean) as { q: string; a: string }[];
+
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: `${SITE.url}/whats-on/school-holiday-planner/` },
+  faqLd(faq),
+  breadcrumbLd([['Home', '/'], ["What's on", '/whats-on/'], ['School holiday planner', '/whats-on/school-holiday-planner/']]),
+];
+const price = (l: (typeof all)[number]) => { const p = priceFact(l.data); return p && p.label === 'From' ? `${p.value}${p.sub ? ` ${p.sub}` : ''}` : null; };
+---
+<Base title={title} description={description} jsonLd={ld}>
+  <div class="container">
+    <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/whats-on/">What’s on</a></li><li aria-hidden="true">/</li><li aria-current="page">School holiday planner</li></ol>
+    <header class="page-head">
+      <p class="plate">Plan ahead</p>
+      <h1>School holiday <em>planner</em></h1>
+      <p class="lead">Every Hertfordshire school holiday to {yearOf(HOLIDAYS[HOLIDAYS.length - 1].end)}, with local holiday camps, rainy-day plans and free days out for Watford, Rickmansworth, Croxley Green and nearby.</p>
+    </header>
+
+    {next && (
+      <section class="planner-next" aria-labelledby="next-title" data-end={next.end}>
+        <p class="kicker" style="margin-top:0" data-start={next.start}>{next.start > today ? 'Next up' : 'On now'}</p>
+        <h2 id="next-title">{next.name} {yearOf(next.start)}</h2>
+        <p class="lead" style="margin-top:8px">{fmt(next.start)} – {fmt(next.end)} · {weekdaysOff(next)} weekdays off</p>
+        {(guidesFor(next.id).length > 0) && (
+          <ul class="planner-links">{guidesFor(next.id).map((g) => <li><a href={`/whats-on/${g.href}/`}>{g.label}</a></li>)}</ul>
+        )}
+        <p class="small muted"><a href="/whats-on/herts-school-term-dates-2026-27/">Full term dates</a>, including when each term starts and ends.</p>
+      </section>
+    )}
+
+    <section aria-labelledby="all-title" style="margin-top:48px">
+      <h2 id="all-title">Every holiday at a glance</h2>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="School holidays (scrolls sideways on small screens)">
+        <table>
+          <thead><tr><th scope="col">Holiday</th><th scope="col">First day off</th><th scope="col">Last day off</th><th scope="col">Weekdays</th><th scope="col">Our guides</th></tr></thead>
+          <tbody>
+            {upcoming.map((h) => (
+              <tr data-end={h.end}>
+                <th scope="row">{h.name} {yearOf(h.start)}</th>
+                <td>{fmt(h.start)}</td>
+                <td>{fmt(h.end)}</td>
+                <td>{weekdaysOff(h)}</td>
+                <td>{guidesFor(h.id).length ? guidesFor(h.id).map((g, i) => <>{i > 0 && ', '}<a href={`/whats-on/${g.href}/`}>{g.label}</a></>) : <a href="/whats-on/holiday-camps-watford/">Holiday camps</a>}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="small muted" style="margin-top:8px">Hertfordshire County Council dates (<a href={TERM_DATES_SOURCE} rel="noopener" target="_blank">source</a>). Academies, free schools and independent schools can set their own, and every school adds INSET days, so check your school’s calendar.</p>
+      <p class="btn-row" style="margin-top:16px">
+        <a class="btn" href="webcal://westhertskids.co.uk/calendar/herts-school-holidays.ics">Add to iPhone or Mac calendar</a>
+        <a class="btn ghost" href="https://calendar.google.com/calendar/r?cid=webcal://westhertskids.co.uk/calendar/herts-school-holidays.ics" rel="noopener" target="_blank">Add to Google Calendar</a>
+        <a class="btn link" href="/calendar/herts-school-holidays.ics">Download (.ics)</a>
+      </p>
+    </section>
+
+    <div style="margin-top:56px">
+      <CompareTable items={camps} heading="Holiday camps and clubs" id="camps-title" showTown />
+      <p class="small muted">Not every camp runs in every holiday. Each provider’s page has its dates.</p>
+    </div>
+
+    <section aria-labelledby="rain-title" style="margin-top:56px">
+      <h2 id="rain-title">If it rains</h2>
+      <ul class="planner-picks">
+        {indoor.map((l) => <li><a href={`/activities/${l.id}/`}>{l.data.name}</a> <span class="muted">· {ageShort(l.data.ageMin, l.data.ageMax)}{price(l) && ` · ${price(l)}`}</span></li>)}
+      </ul>
+      <p><a href="/whats-on/indoor-rainy-day-kids-watford/">More indoor and rainy-day ideas</a></p>
+    </section>
+
+    {free.length > 0 && (
+      <section aria-labelledby="free-title" style="margin-top:48px">
+        <h2 id="free-title">Days out that cost nothing</h2>
+        <ul class="planner-picks">
+          {free.map((l) => <li><a href={`/activities/${l.id}/`}>{l.data.name}</a> <span class="muted">· {l.data.summary}</span></li>)}
+        </ul>
+        <p><a href="/whats-on/free-things-to-do-kids-watford/">All our free ideas</a></p>
+      </section>
+    )}
+
+    <section aria-labelledby="more-title" style="margin-top:48px">
+      <h2 id="more-title">Guides for any holiday</h2>
+      <ul class="planner-links">{always.map((g) => <li><a href={`/whats-on/${g.href}/`}>{g.label}</a></li>)}</ul>
+    </section>
+
+    <script is:inline>
+      // The page is rebuilt on every deploy; this keeps it right in between: hide holidays that have ended.
+      (function () {
+        var t = new Date(); var today = t.getFullYear() + '-' + String(t.getMonth() + 1).padStart(2, '0') + '-' + String(t.getDate()).padStart(2, '0');
+        document.querySelectorAll('[data-end]').forEach(function (el) { if (el.getAttribute('data-end') < today) el.hidden = true; });
+        var k = document.querySelector('[data-start]');
+        if (k && k.getAttribute('data-start') <= today) k.textContent = 'On now';
+      })();
+    </script>
+
+    <section class="faq" aria-labelledby="faq-title" style="margin:48px 0 96px">
+      <h2 id="faq-title">Questions parents ask</h2>
+      {faq.map((x) => (<details><summary>{x.q}</summary><p>{x.a}</p></details>))}
+    </section>
+  </div>
+</Base>

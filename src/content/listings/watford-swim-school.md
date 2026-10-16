@@ -20,11 +20,20 @@ venue:
   name: Watford Swim School pool
   address: 12 Stud Green, Garston, Watford
   postcode: WD25 7EU
+  lat: 51.69752
+  lon: -0.40177
 website: https://watfordswimschool.com/
 source: provider website (lessons-prices and FAQ pages)
 verified: '2026-10-09'
 lastChanged: '2026-10-07'
 claimed: false
+visit:
+  parking: "Free: two spaces on the driveway, public spaces opposite, and the church car park at the entrance to Stud Green"
+  toilets: true
+  visitLength: "30-minute lessons"
+  buggy: "No buggies poolside, as space is limited"
+  notes: "A small private pool. Go in via the alleyway on the left of the driveway. Parents stay poolside, in the viewing area, during lessons. Three changing cubicles"
+  source: "https://watfordswimschool.com/faq/; https://watfordswimschool.com/car-parking-at-watford-swim-school/; https://wildfishswimschool.com/stud-green/ (checked 15 Oct 2026)"
 ---
 
 Watford Swim School offers private lessons for babies, children and adults across Watford and Hemel Hempstead. It takes **babies from 4 months**, and its own pool is at Stud Green in Garston.

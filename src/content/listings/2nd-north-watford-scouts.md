@@ -11,6 +11,8 @@ venue:
   name: "2nd North Watford Scout HQ"
   address: "The Harebreaks, Watford"
   postcode: WD24 6HU
+  lat: 51.67803
+  lon: -0.40563
 website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/2nd-north-watford/
 source: provider website
 verified: '2026-09-27'

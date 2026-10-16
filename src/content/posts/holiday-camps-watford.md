@@ -79,4 +79,6 @@ School holidays come round quickly, and local camps range from full working-day 
 
 - **HAPpy (Holiday Activity Programme)**, venues across Hertfordshire. Hertfordshire's Holiday Activities and Food Programme, known locally as HAPpy, offers free camps with physical activity, enrichment, a healthy meal and snacks in the Easter, summer and winter holidays. It's for children in Reception to Year 11 (ages 4–16) who are registered for benefits-related free school meals, and your school sends a booking code up to six weeks before the camps open. Universal infant free school meals don't count on their own. The next programme runs in the Christmas holidays in December 2026, with booking codes due in mid to late November. [Details](https://www.hertfordshire.gov.uk/services/childrens-social-care/news-and-campaigns/happy-holiday-activity-programme.aspx) · [Eligibility and booking](https://sportinherts.org.uk/happy)
 
+Planning around the dates? Our [school holiday planner](/whats-on/school-holiday-planner/) lists every Herts holiday to 2028, with rainy-day and free ideas alongside the camps.
+
 *Know something we've missed, or run something local? [Tell us, it's free to list](/list-your-activity/).*

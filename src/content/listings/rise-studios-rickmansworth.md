@@ -57,6 +57,8 @@ venue:
   name: Rickmansworth School
   address: Scots Hill, Rickmansworth
   postcode: WD3 3AQ
+  lat: 51.64493
+  lon: -0.45538
 priceFrom: 7.5
 website: https://www.rise-studios.com/
 source: provider website

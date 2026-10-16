@@ -32,6 +32,10 @@ source: provider website (home, classes and locations pages)
 verified: '2026-10-07'
 claimed: false
 draft: false
+visit:
+  visitLength: Infants (5–7) 45 minutes; Juniors and Teens 1 hour
+  notes: Wear light, breathable clothes for a first class; a gi is needed later
+  source: https://www.fudoshin.co.uk/Classes (checked 15 Oct 2026)
 ---
 
 Fudoshin Ju-Jitsu teaches ju-jitsu as practical self-defence rather than a competition sport. Children train in three groups: **infants (5–7)**, **juniors (8–12)** and **intermediates (13–16)**, and the minimum age is 5. Gradings take place two or three times a year.

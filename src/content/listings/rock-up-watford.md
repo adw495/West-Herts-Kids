@@ -38,6 +38,8 @@ venue:
   name: Rock Up Watford
   address: Unit 106/108, atria Watford (Harlequin Shopping Centre), Watford
   postcode: WD17 2UB
+  lat: 51.65412
+  lon: -0.39284
 phone: 01923 521000
 email: info.watford@rock-up.co.uk
 website: https://www.rock-up.co.uk/locations/watford

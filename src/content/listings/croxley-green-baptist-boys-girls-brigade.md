@@ -20,6 +20,8 @@ venue:
   name: Croxley Green Baptist Church
   address: 225 Baldwins Lane, Croxley Green
   postcode: WD3 3LH
+  lat: 51.6532
+  lon: -0.44491
 website: https://www.croxleybaptist.co.uk/girls-brigade.html
 email: office@croxleybaptist.co.uk
 phone: 07525 060149

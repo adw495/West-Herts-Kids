@@ -23,6 +23,9 @@ This is a **passive, low-stress side project**, but the owner approved a phased 
 - **Built to be ignored:** nothing may break or become urgent if the owner doesn't touch the site for a month. Scheduled tasks produce drafts that simply wait; featured listings expire automatically.
 - The owner's time budget is **about an hour a week, optional**. Prefer automation plus a quick "approve" over anything that needs his ongoing attention.
 
+## Photos
+- Listing photos (`photo:` in front matter; `sourceImage` is the original's URL, fetched and converted to `/images/listings/<slug>.webp` at build time by `src/pages/images/listings/[slug].webp.ts`, so no image files live in git) must show the actual place and be freely licensed: Geograph or Wikimedia Commons (CC BY-SA, credit photographer + link, shown in the caption), the owner's own photos, or used with written permission. Never copy photos from providers' websites, Google or social media without permission. No close-up identifiable children.
+
 ## Commands
 - `npm run dev`: local server
 - `npm run build`: must pass before committing (the schema validates every listing)

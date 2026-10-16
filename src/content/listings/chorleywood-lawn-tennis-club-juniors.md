@@ -39,6 +39,8 @@ venue:
   name: Chorleywood Lawn Tennis Club
   address: The Walled Garden, Lady Ela Drive, Chorleywood
   postcode: WD3 5SL
+  lat: 51.65999
+  lon: -0.50597
 website: https://www.chorleywoodtennis.com/Coaching
 source: provider website (ClubSpark coaching page)
 verified: '2026-10-05'

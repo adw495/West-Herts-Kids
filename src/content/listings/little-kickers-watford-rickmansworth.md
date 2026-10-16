@@ -17,6 +17,8 @@ venue:
   name: William Penn Leisure Centre
   address: Rickmansworth
   postcode: WD3 8JN
+  lat: 51.63917
+  lon: -0.49844
 website: https://www.littlekickers.co.uk/en-gb/locations/harrow-pinner-watford-rickmansworth/
 source: provider website
 verified: '2026-10-12'
@@ -48,6 +50,10 @@ schedule:
   start: '10:35'
   end: '11:20'
   note: Mighty Kickers 3½–5 and Mega Kickers 5–8, Watford Grammar School for Boys
+visit:
+  visitLength: 45-minute classes
+  notes: Parents join in with the youngest groups and watch from the side for older ones. Wear comfortable clothes and trainers
+  source: https://www.littlekickers.co.uk/en-gb/locations/harrow-pinner-watford-rickmansworth/ (checked 15 Oct 2026)
 ---
 
 Little Kickers teaches football to pre-schoolers through play, with age-based programmes:

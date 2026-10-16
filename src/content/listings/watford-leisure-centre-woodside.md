@@ -57,6 +57,8 @@ venue:
   name: Watford Leisure Centre Woodside
   address: Horseshoe Lane, Garston, Watford
   postcode: WD25 7HH
+  lat: 51.69495
+  lon: -0.39282
 phone: 01923 892710
 website: https://www.everyoneactive.com/centre/watford-leisure-centre-woodside/
 source: provider website (Everyone Active centre page)

@@ -19,6 +19,8 @@ venue:
   name: Langleybury Children's Farm
   address: Langleybury Lane, Kings Langley
   postcode: WD4 8RN
+  lat: 51.69089
+  lon: -0.44459
 website: https://www.langleyburychildrensfarm.org.uk/
 bookingUrl: https://www.langleyburychildrensfarm.org.uk/copy-of-about-1
 source: provider website; OpenStreetMap

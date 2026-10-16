@@ -36,6 +36,8 @@ venue:
   name: Explore Learning, Harlequin Watford shopping centre
   address: Unit 13, Queens Road, Watford
   postcode: WD17 2LH
+  lat: 51.6551
+  lon: -0.39352
 website: https://www.explorelearning.co.uk/tuition-centre/watford/
 phone: 01923 723953
 source: provider website (https://www.explorelearning.co.uk/tuition-centre/watford/ and https://www.explorelearning.co.uk/pricing/)

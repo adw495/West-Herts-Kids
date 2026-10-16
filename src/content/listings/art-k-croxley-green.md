@@ -50,6 +50,8 @@ venue:
   name: art-K Croxley Green
   address: 160–162 Watford Road, Croxley Green
   postcode: WD3 3BZ
+  lat: 51.64675
+  lon: -0.44349
 phone: 020 8149 5898
 email: croxleygreen@art-k.co.uk
 website: https://www.art-k.co.uk/class-croxley-green/

@@ -39,6 +39,8 @@ venue:
   name: Watford Woodside Leisure Centre
   address: Horseshoe Lane, Garston, Watford
   postcode: WD25 7HH
+  lat: 51.69495
+  lon: -0.39282
 email: info@lets-play.org.uk
 phone: 01344 508008
 website: https://www.lets-play.org.uk/locations/watford-woodside-leisure-centre/

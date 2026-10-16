@@ -23,6 +23,8 @@ venue:
   name: St Matthews Church Hall
   address: St Matthews Close, Bushey
   postcode: WD19 4ST
+  lat: 51.6452
+  lon: -0.38584
 priceFrom: 12.5
 website: https://www.babysensory.com/north-harrow/
 source: provider website

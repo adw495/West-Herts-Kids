@@ -25,6 +25,8 @@ venue:
   name: Chorleywood Community Arts Centre
   address: Colley Land, Chorleywood
   postcode: WD3 5LL
+  lat: 51.65559
+  lon: -0.5184
 phone: 07392 847325
 email: rickmansworth@cygnetsartschool.com
 website: https://cygnetsartschool.com/branch/rickmansworth/

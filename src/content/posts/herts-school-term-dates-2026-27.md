@@ -1,8 +1,8 @@
 ---
-title: "Hertfordshire term dates 2026/27 & 2027/28: half terms and holidays"
-description: "October half term 2026 in Hertfordshire is 26–30 October. Every Herts school term, half term and holiday date for 2026/27 and 2027/28, from the county council."
+title: "Hertfordshire term dates 2026/27: every holiday, plus a phone calendar"
+description: "Herts October half term 2026 is 26–30 Oct. All Hertfordshire term and holiday dates for 2026/27 and 2027/28, with a free calendar you can add to your phone in one tap."
 date: 2026-10-07
-updated: 2026-10-13
+updated: 2026-10-15
 type: guide
 towns: [rickmansworth, croxley-green, chorleywood, watford, abbots-langley, kings-langley, bushey, south-oxhey]
 categories: [holiday-camps]
@@ -32,6 +32,18 @@ faq:
 - **Summer holidays 2027:** Friday 23 July – Tuesday 31 August 2027
 
 These are Hertfordshire County Council's dates. INSET days are added by each school, so your child may have a few extra days off.
+
+## Add the holidays to your phone's calendar
+
+Add every Herts school holiday for 2026/27 and 2027/28 to your calendar in one go. If you subscribe, your calendar updates itself when we add new dates.
+
+- **iPhone, iPad or Mac:** [subscribe to the Herts school holidays calendar](webcal://westhertskids.co.uk/calendar/herts-school-holidays.ics)
+- **Google Calendar (Android):** [add it to Google Calendar](https://calendar.google.com/calendar/r?cid=webcal://westhertskids.co.uk/calendar/herts-school-holidays.ics)
+- **Outlook or anything else:** [download the calendar file (.ics)](/calendar/herts-school-holidays.ics)
+
+It has the council's holiday dates only, not your school's INSET days.
+
+Planning what to do? Our [school holiday planner](/whats-on/school-holiday-planner/) puts the next holiday, local camps, rainy-day and free ideas on one page.
 
 Here are the school term and holiday dates Hertfordshire County Council has set for 2026/27 and 2027/28, taken straight from its [official term dates page](https://www.hertfordshire.gov.uk/services/schools-and-education/at-school/school-term-dates/school-term-dates.aspx). Your child's school may not follow them exactly, so read the notes below the tables before you book anything.
 

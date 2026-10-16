@@ -10,6 +10,8 @@ venue:
   name: TeamSport Watford
   address: Greatham Road Industrial Estate, Greatham Road, Bushey
   postcode: WD23 2NZ
+  lat: 51.65628
+  lon: -0.38497
 phone: 01252 732300
 website: https://www.team-sport.co.uk/go-kart-tracks/watford
 source: provider website

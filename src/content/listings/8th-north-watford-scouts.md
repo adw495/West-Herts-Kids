@@ -11,6 +11,8 @@ venue:
   name: "All Saints Church"
   address: "All Saints Crescent, Watford"
   postcode: WD25 7NJ
+  lat: 51.69522
+  lon: -0.38915
 website: https://www.watfordnorthscouts.org.uk/who-are-we/groups/8th-north-watford/
 source: provider website
 verified: '2026-09-27'

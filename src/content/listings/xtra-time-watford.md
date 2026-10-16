@@ -37,6 +37,8 @@ venue:
   name: Willow Tree Primary School (formerly Holywell Primary School)
   address: Tolpits Lane (main office entrance via High View), Watford
   postcode: WD18 6LL
+  lat: 51.64428
+  lon: -0.4183
 priceFrom: 28
 website: https://www.xtratime.co.uk/holiday-camps-watford/
 source: provider website

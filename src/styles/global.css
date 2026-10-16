@@ -397,6 +397,10 @@ main, .site-footer { overflow-x: clip; }
 .keyfacts dd { margin: 4px 0 0; }
 .keyfacts .fig { font-size: 26px; display: block; }
 .keyfacts .fsub { font-size: 13px; }
+.lphoto { margin: 0; justify-self: stretch; }
+.lphoto img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: cover; border-radius: 18px; box-shadow: 0 10px 30px rgb(0 0 0 / 0.12); }
+.lphoto figcaption { margin-top: 8px; font-size: 13px; color: var(--ink-2); }
+.lphoto figcaption a { color: inherit; }
 .lhead .btn-row { margin-top: 28px; align-items: center; }
 .ldomain { font-size: 14px; color: var(--ink-2); }
 @media (max-width: 960px) {
@@ -500,3 +504,10 @@ main, .site-footer { overflow-x: clip; }
 .nl-early p { margin: 0 0 10px; }
 
 .guide-callout { margin: 12px 0 0; font-weight: 600; }
+
+/* School holiday planner */
+.planner-next { margin-top: 32px; padding: 24px 28px; border: 1px solid var(--ink-2); border-radius: 18px; background: rgb(255 255 255 / 0.45); }
+.planner-next h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); margin: 4px 0 0; }
+.planner-links, .planner-picks { padding-left: 1.2em; margin: 12px 0; }
+.planner-links li, .planner-picks li { margin: 6px 0; }
+@media (max-width: 600px) { .planner-next { padding: 18px; } }
