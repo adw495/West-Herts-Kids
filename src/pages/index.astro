@@ -36,6 +36,18 @@ for (const l of [...listings.filter(isFeaturedNow), ...byChecked]) {
 }
 
 const whatsOn = posts.find((p) => p.data.type === 'whats-on');
+// "Right now" links to the seasonal guides people are searching for. Each one drops off after its end date,
+// so the homepage never points at a past event even if nobody touches it.
+const todayIso = new Date().toISOString().slice(0, 10);
+const SEASONAL = [
+  { id: 'october-half-term-2026-holiday-camps', label: 'Half-term camps', until: '2026-10-30' },
+  { id: 'halloween-half-term-2026-watford', label: 'Halloween & half term', until: '2026-11-01' },
+  { id: 'christmas-2026-west-herts', label: 'Christmas 2026', until: '2026-12-31' },
+  { id: 'herts-school-term-dates-2026-27', label: 'Term dates', until: '2028-08-31' },
+  { id: 'school-holiday-planner', label: 'Holiday planner', until: '2028-08-31', page: '/whats-on/school-holiday-planner/' },
+];
+const postIdsHome = new Set(posts.map((p) => p.id));
+const seasonalNow = SEASONAL.filter((x) => x.until >= todayIso && (x.page || postIdsHome.has(x.id))).slice(0, 4);
 const guide = posts.find((p) => p.data.type !== 'whats-on');
 const relatedOf = (ids: string[]) => ids.map((id) => listings.find((l) => l.id === id)).filter(Boolean) as Listing[];
 const woRows = whatsOn ? relatedOf(whatsOn.data.related).slice(0, 4) : [];
@@ -95,6 +107,12 @@ const jsonLd = [
           <a class="chip" href="/activities/?age=0-4">Under 5s</a>
           <a class="chip" href="/category/holiday-camps/">Holiday camps</a>
         </div>
+        {seasonalNow.length > 0 && (
+          <div class="popular">
+            <span>Right now:</span>
+            {seasonalNow.map((x) => <a class="chip" href={x.page ?? `/whats-on/${x.id}/`}>{x.label}</a>)}
+          </div>
+        )}
       </div>
       <HeroArt />
     </div>
