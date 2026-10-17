@@ -21,7 +21,8 @@ interface Props {
 }
 const { title, description = SITE.tagline, jsonLd, noindex = false, canonical: canonicalPath, ogImage } = Astro.props;
 const og = ogImage ?? null;
-const fullTitle = title.includes(SITE.name) || title.length + SITE.name.length + 3 > 62 ? title : `${title} | ${SITE.name}`;
+// Bare titles everywhere (Google shows the site name separately, from the homepage WebSite schema); the homepage title already names the site.
+const fullTitle = title;
 const canonical = new URL(canonicalPath ?? Astro.url.pathname, SITE.url).href;
 const path = Astro.url.pathname;
 const nav = [
