@@ -511,3 +511,10 @@ main, .site-footer { overflow-x: clip; }
 .planner-links, .planner-picks { padding-left: 1.2em; margin: 12px 0; }
 .planner-links li, .planner-picks li { margin: 6px 0; }
 @media (max-width: 600px) { .planner-next { padding: 18px; } }
+
+/* Markdown tables in guides: scroll sideways on phones instead of being clipped */
+.prose table { display: block; overflow-x: auto; border-collapse: collapse; font-size: 15px; max-width: 100%; margin: 16px 0; }
+.prose th, .prose td { padding: 8px 10px; border-bottom: 1px solid var(--paper-3); text-align: left; vertical-align: top; }
+.prose thead th { border-bottom: 2px solid var(--ink-2); white-space: nowrap; }
+/* The direct answer searchers came for, at the top of a guide */
+.answer-box { margin: 20px 0 0; padding: 14px 18px; border-left: 4px solid var(--brick); background: var(--paper-2); border-radius: 0 10px 10px 0; font-size: 1.05rem; line-height: 1.5; max-width: 70ch; }

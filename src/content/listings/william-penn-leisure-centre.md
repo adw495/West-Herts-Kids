@@ -1,6 +1,7 @@
 ---
 name: William Penn Leisure Centre
-seoTitle: "William Penn Leisure Centre Rickmansworth: swimming lessons & times"
+seoTitle: "William Penn Leisure Centre: kids' swimming lessons & prices"
+seoDescription: "Kids' swimming lessons (£37.29 a month), family swims from £3.35 and junior gym at William Penn Leisure Centre, Mill End, Rickmansworth. Times and parking."
 summary: Rickmansworth's leisure centre, with children's swimming lessons, junior
   gym sessions and a pool for family swims.
 categories:

@@ -1,7 +1,10 @@
 ---
 title: "Kids' party venues in Watford & West Herts compared (2026)"
-description: "Children's party packages in Watford, Bushey and Croxley Green compared: trampolining, ninja courses, climbing, soft play, bowling, karting, art and library parties."
+seoTitle: "Kids' party venues in Watford: prices per child (2026)"
+answer: "Cheapest per child: Hollywood Bowl from £11 (ages 5–10, 6+ guests), Parents Paradise £18 (Tue–Thu), Rock Up Soft Play £19.95, Flip Out £21.99 (term-time weekdays), Ninja Warrior £22.95. Library parties from £72 in total."
+description: "Party prices per child at Watford venues: bowling from £11, soft play from £18, climbing from £19.95, Flip Out from £21.99. Ages, minimums and food."
 date: 2026-10-07
+updated: 2026-10-17
 type: comparison
 towns: [watford, bushey, croxley-green]
 categories: [play-parties]
@@ -36,6 +39,35 @@ Whether your child wants to bounce, climb, bowl or paint, there's a good choice 
 | Hertfordshire Libraries | Croxley Green, Watford | – | – | Library opening hours | Private space; bring your own food. Optional packages from £72 |
 | We Make Footballers | Your venue | 4–12 | – | – | Coaches come to you. 1 hour; venue not included |
 | Xtra Time | Watford | Reception+ | £220 for up to 16 | – | 2 hours. Sports, magic and other themes |
+
+## Every package, priced per child
+
+Prices from each venue's own party page, checked 17 October 2026. Several venues charge less on term-time weekdays.
+
+| Venue and package | Ages | Minimum | Time | Price per child | Food | Party bags |
+|---|---|---|---|---|---|---|
+| Hollywood Bowl Kids (Woodside, Harlequin) | 5–10 | 6 | 1h bowling | From £11 | Kids' meal and squash | – |
+| Hollywood Bowl Kid+ | 5–10 | 6 | 1h bowling | From £15.50 | Kids' meal, drink, balloons | – |
+| Hollywood Bowl Premium Kids (Woodside) | 5–10 | 10 (max 12) | 90 min | From £25 | Kids' meal, drink, prize tickets | – |
+| Parents Paradise Paradise Play | 1–12 | 12 | 2h | £18 Tue–Thu, £24.50 Fri–Sun and holidays | Hot food | – |
+| Parents Paradise themed (Unicorn, Slime, Bear) | 3+ or 5+ | 12 | 2h | £25.50 Tue–Thu, £32 Fri–Sun and holidays | Hot food | Take-home craft |
+| Rock Up Soft Play | 8 and under | 8 | – | £19.95 | Pizza, refreshments | – |
+| Rock Up Toddler (mornings) | 4 and under | 8 | – | £20.95 | Pizza, refreshments | – |
+| Rock Up Saver | 4+ | 6 | 1h climbing | £21.95 | Slush only | No |
+| Rock Up Summit | 4+ | 8 | 2h | £24.95 (£22.95 term-time weekdays) | Pizza, refreshments | No |
+| Rock Up Ultimate Climbing | 4+ | 8 | 2h | £30.95 (£28.95 term-time weekdays) | Pizza, refreshments | Yes |
+| Flip Out Weekday Classic (Wed–Fri, term time) | – | 10 | 1h30 arena + 30 min room | £21.99 | Pizza, crisps, squash | No |
+| Flip Out Classic | – | 10 | 1h arena + 30 min room | £24.99 | Pizza, crisps, squash | No |
+| Flip Out Little Flippers | 5 and under | 10 | 1h + 30 min room | £24.99 (child and 1 adult) | Pizza, crisps | Yes |
+| Flip Out Premium | – | 10 | 1h + 30 min room | £29.99 | Pizza, crisps, slush | Yes |
+| Flip Out Ultimate | – | 10 | 1h30 arena + 30 min room | £39.99 | As Premium, plus ice lolly and nachos or chips | Yes |
+| Ninja Warrior UK Ninja (Mon–Thu, term time) | Over 5 | 10 | 1h | £22.95 | Pizza, ice lolly, squash | – |
+| Ninja Warrior UK Hero | Over 5 | 10 | 1h, own room and host | £28.95 | Pizza, ice lolly, squash | – |
+| Ninja Warrior UK Ultimate | Over 5 | 10 | 1h plus Ninja TAG, host | £32.95 | As Hero, plus slush | – |
+| art-K | Turning 6+ | 10 | 2h45 | £30 | Bring your own | – |
+| Hertfordshire Libraries (Watford, Croxley Green) | – | – | – | From £72 per party | Bring your own | Bring your own |
+
+**For 10 children**, that works out at roughly £110 for kids' bowling, £220 for Flip Out's Weekday Classic, £230 for Ninja Warrior's Ninja Party and £250 for Flip Out's Classic, before any adult or extra charges. A library party starts from £72 for the room and package.
 
 ## Trampolining, ninja and climbing
 

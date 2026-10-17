@@ -1,7 +1,10 @@
 ---
-title: "Holiday camps & clubs in Watford and West Herts"
-description: "Holiday camps and clubs for kids in Watford, Rickmansworth, Croxley, Chorleywood and Kings Langley compared: ages, hours, day prices, early drop-off and Tax-Free Childcare."
+title: "Holiday camps & clubs in Watford and West Herts (2026)"
+seoTitle: "Holiday camps in Watford 2026: prices, ages & hours"
+answer: "October half term is 26–30 October 2026. Day camps near Watford run from about £25 to £57 a day: Xtra Time from £28, Let's Play £29.50, FJ Sporting LEGO camp £30, Watford Gymnastics £35 and Camp Beaumont £57. Several take Tax-Free Childcare."
+description: "October half term and holiday camps in Watford, Rickmansworth and Croxley from £25 a day: ages, hours, early drop-off, sibling discounts and Tax-Free Childcare."
 date: 2026-10-07
+updated: 2026-10-17
 type: comparison
 towns: [watford, rickmansworth, croxley-green, chorleywood, kings-langley]
 categories: [holiday-camps, football-sport, gymnastics-trampolining, arts-crafts, dance-drama, stem-coding, outdoor-nature]
