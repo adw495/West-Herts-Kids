@@ -10,7 +10,8 @@ const listings = defineCollection({
   schema: z.object({
     name: z.string(),
     summary: z.string().max(200),
-    seoTitle: z.string().max(70).optional(), // hand-tuned <title> for pages close to page 1 (matches what people search)           // one-line summary used on cards and in meta descriptions
+    seoTitle: z.string().max(70).optional(), // hand-tuned <title> for pages close to page 1 (matches what people search)
+    seoDescription: z.string().max(160).optional(), // hand-written meta description for pages that rank but don't get clicks
     categories: z.array(z.enum(CATEGORY_KEYS)).min(1),
     towns: z.array(z.enum(TOWN_KEYS)).min(1),
 
@@ -109,6 +110,8 @@ const posts = defineCollection({
     categories: z.array(z.enum(CATEGORY_KEYS)).default([]),
     related: z.array(z.string()).default([]), // listing ids to link to
     updated: z.coerce.date().optional(),      // set when a guide is refreshed; shown to readers and to Google
+    seoTitle: z.string().max(60).optional(), // shorter <title> for search results when the H1 is longer
+    answer: z.string().max(400).optional(),  // the one-line answer searchers want, shown in a box at the top (e.g. the next holiday's dates)
     // Questions parents ask, answered ONLY from verified facts already in the guide. Shown at the end, with FAQPage markup.
     faq: z.array(z.object({ q: z.string(), a: z.string().max(600) })).default([]),
     draft: z.boolean().default(false),
