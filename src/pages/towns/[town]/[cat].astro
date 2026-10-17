@@ -30,7 +30,7 @@ const jsonLd = [
 ];
 const g = glance(items);
 // Title and description use the phrase parents search for ("swimming lessons", not "swimming").
-const title = `${c.search} for kids in ${t.name}${items.length >= 3 ? `: ${items.length} compared (2026)` : ''}`;
+const title = `${c.search} for kids in ${t.name}${items.length >= 3 ? `: ${items.length} compared` : ''}`;
 const description = [`Compare ${items.length} options for ${c.q} in ${t.name}`, `ages from ${g.youngest}`, g.priceFrom ? `prices from ${g.priceFrom}` : '', g.trials ? `${g.trials} with free trials` : ''].filter(Boolean).join(', ') + '. Checked against each provider’s own website.';
 // The best-matching guide (same town AND activity), linked near the top so readers and Google find it.
 const topGuide = primaryGuide(await getPosts(), cat, town);
