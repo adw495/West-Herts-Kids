@@ -54,7 +54,11 @@ const descBits = [
   d.schedule.length ? whenLabel(d) : null,
   d.freeTrial ? 'free taster' : null,
 ].filter(Boolean).join(' · ');
-const description = `${d.summary.replace(/\.?$/, '.')} ${descBits}.${d.verified ? ` Checked ${formatDate(d.verified)}.` : ''}`.slice(0, 300);
+// Meta description: hand-written if set, else summary + key facts, trimmed at a word boundary to ~155 characters so it isn't cut off.
+const fitDesc = (s: string, max = 155) => (s.length <= max ? s : s.slice(0, s.lastIndexOf(' ', max - 1)).replace(/[,;:·\s]+$/, '') + '…');
+const checked = d.verified ? ` Checked ${formatDate(d.verified)}.` : '';
+const summary = d.summary.replace(/\.?$/, '.');
+const description = d.seoDescription ?? (`${summary} ${descBits}.${checked}`.length <= 160 ? `${summary} ${descBits}.${checked}` : fitDesc(`${summary} ${descBits}.`));
 const hasPrice = d.schedule.some((x) => x.price);
 // Straight-line distance from three local stations (venue coordinates from the postcode; ONS data via postcodes.io).
 const REF: [string, number, number][] = [['Watford Junction', 51.6635, -0.3966], ['Rickmansworth station', 51.6403, -0.4734], ['Croxley station', 51.6470, -0.4413]];
