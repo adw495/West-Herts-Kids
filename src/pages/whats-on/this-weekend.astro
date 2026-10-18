@@ -4,7 +4,7 @@
 import Base from '../../layouts/Base.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 import { render } from 'astro:content';
-import { getPosts, formatDate } from '../../lib/listings';
+import { getPosts, formatDate, eventsLd } from '../../lib/listings';
 import { SITE } from '../../site.config';
 
 const posts = await getPosts();
@@ -24,7 +24,7 @@ const ld = latest && {
   mainEntityOfPage: `${SITE.url}/whats-on/this-weekend/`,
 };
 ---
-<Base title={title} description={description} jsonLd={ld}>
+<Base title={title} description={description} jsonLd={latest ? [ld, ...eventsLd(latest, `${SITE.url}/og.png`)] : undefined}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/whats-on/">What’s on</a></li><li aria-hidden="true">/</li><li aria-current="page">This weekend</li></ol>
     <article style="padding:16px 0 64px">

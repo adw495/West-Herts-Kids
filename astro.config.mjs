@@ -26,7 +26,25 @@ function thinTownPaths() {
   }
   return Object.entries(counts).filter(([, n]) => n < MIN_TO_INDEX_TOWN).map(([t]) => `/towns/${t}/`);
 }
-const EXCLUDE = new Set([...NOINDEX_PATHS, ...thinTownPaths()]);
+// Town x activity pages with 2 listings exist but are noindex (MIN_TO_INDEX_COMBO = 3 in src/lib/listings.ts).
+const MIN_TO_INDEX_COMBO = 3;
+function thinComboPaths() {
+  const dir = new URL('./src/content/listings/', import.meta.url);
+  const list = (fm, key) => {
+    const inline = fm.match(new RegExp(`^${key}:\\s*\\[([^\\]]*)\\]`, 'm'));
+    const block = fm.match(new RegExp(`^${key}:\\s*\\n((?:\\s*-\\s*.+\\n?)+)`, 'm'));
+    const raw = inline ? inline[1].split(',') : block ? block[1].split('\n').map((l) => l.replace(/^\s*-\s*/, '')) : [];
+    return raw.map((x) => x.trim().replace(/['"]/g, '')).filter(Boolean);
+  };
+  const counts = {};
+  for (const f of fs.readdirSync(dir).filter((n) => n.endsWith('.md'))) {
+    const fm = fs.readFileSync(new URL(f, dir), 'utf8').split(/^---$/m)[1] || '';
+    if (/^draft:\s*true\s*$/m.test(fm)) continue;
+    for (const t of list(fm, 'towns')) for (const c of list(fm, 'categories')) counts[`/towns/${t}/${c}/`] = (counts[`/towns/${t}/${c}/`] || 0) + 1;
+  }
+  return Object.entries(counts).filter(([, n]) => n < MIN_TO_INDEX_COMBO).map(([p]) => p);
+}
+const EXCLUDE = new Set([...NOINDEX_PATHS, ...thinTownPaths(), ...thinComboPaths()]);
 
 // <lastmod> for guides (updated ?? date) and listings (verified): real content dates, never the build time.
 function lastmods() {

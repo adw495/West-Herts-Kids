@@ -30,6 +30,9 @@ export { isFeaturedNow };
 
 // Minimum listings before a town or category landing page is generated, to avoid thin pages.
 export const MIN_FOR_COMBO_PAGE = 2;
+// Town x activity pages with fewer listings than this are kept for visitors but marked noindex (and left out of the
+// sitemap in astro.config.mjs), so thin pages don't drag down how Google rates the rest of the site.
+export const MIN_TO_INDEX_COMBO = 3;
 
 // Town pages with fewer listings than this are kept out of search engines (noindex + left out of the sitemap).
 export const MIN_TO_INDEX_TOWN = 2;
@@ -355,4 +358,36 @@ export function relatedGuides(posts: Post[], opts: { town?: TownKey; cat?: Categ
     .sort((a, b) => b.s - a.s || a.p.data.categories.length - b.p.data.categories.length || b.p.data.date.getTime() - a.p.data.date.getTime())
     .slice(0, n)
     .map((x) => x.p);
+}
+
+// Event structured data for a guide's dated events (see `events` in the posts schema).
+// Dates without a time are all-day; times are UK local, so add the right offset (BST until 25 Oct 2026, then GMT).
+function ukDateTime(v: string) {
+  if (!/T/.test(v)) return v;
+  const d = new Date(`${v}:00Z`);
+  // BST runs from the last Sunday in March to the last Sunday in October (01:00 UTC).
+  const y = d.getUTCFullYear();
+  const lastSun = (m: number) => { const x = new Date(Date.UTC(y, m + 1, 0, 1)); x.setUTCDate(x.getUTCDate() - x.getUTCDay()); return x; };
+  const bst = d >= lastSun(2) && d < lastSun(9);
+  return `${v}:00${bst ? '+01:00' : '+00:00'}`;
+}
+export function eventsLd(post: Post, image?: string) {
+  return post.data.events.map((e) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: e.name,
+    startDate: ukDateTime(e.start),
+    ...(e.end ? { endDate: ukDateTime(e.end) } : {}),
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    location: {
+      '@type': 'Place',
+      name: e.venue,
+      address: { '@type': 'PostalAddress', ...(e.street ? { streetAddress: e.street } : {}), addressLocality: e.town, ...(e.postcode ? { postalCode: e.postcode } : {}), addressCountry: 'GB' },
+    },
+    ...(e.description ? { description: e.description } : {}),
+    ...(image ? { image: [image] } : {}),
+    url: e.url,
+    ...(e.price !== undefined ? { offers: { '@type': 'Offer', price: e.price, priceCurrency: 'GBP', url: e.url } } : {}),
+  }));
 }
