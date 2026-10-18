@@ -6,7 +6,7 @@ import Postmark from '../../components/art/Postmark.astro';
 import CompareTable from '../../components/CompareTable.astro';
 import RelatedGuides from '../../components/RelatedGuides.astro';
 import { render } from 'astro:content';
-import { getPosts, getListings, formatDate, faqLd, breadcrumbLd, type Post } from '../../lib/listings';
+import { getPosts, getListings, formatDate, faqLd, breadcrumbLd, eventsLd, type Post } from '../../lib/listings';
 import { nextHoliday } from '../../data/term-dates';
 import { SITE } from '../../site.config';
 
@@ -37,7 +37,7 @@ const article = {
   ...(isWeeklyId(post.id) ? {} : { image: `${SITE.url}/og/guide-${post.id}.png` }),
 };
 const crumbsLd = breadcrumbLd([['Home', '/'], ['What’s on', '/whats-on/'], [post.data.title, `/whats-on/${post.id}/`]]);
-const ld = faq.length ? [article, faqLd(faq), crumbsLd] : [article, crumbsLd];
+const ld = [article, ...(faq.length ? [faqLd(faq)] : []), crumbsLd, ...eventsLd(post, `${SITE.url}/og/guide-${post.id}.png`)];
 // "More guides": same activity first, then same town. Not on weekly round-ups.
 const isWeekly = /^\d{4}-\d{2}-\d{2}-whats-on$/.test(post.id);
 ---
