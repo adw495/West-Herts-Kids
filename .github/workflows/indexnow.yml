@@ -1,0 +1,35 @@
+# After each merge to main, tells IndexNow search engines which pages changed (see scripts/indexnow.mjs).
+# To resubmit every page: Actions tab → IndexNow → Run workflow → tick "all".
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: Submit every page in the sitemap
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Submit changed pages
+        if: github.event_name == 'push'
+        run: node scripts/indexnow.mjs "${{ github.event.before }}" "${{ github.sha }}"
+      - name: Submit pages (manual run)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          if [ "${{ inputs.all }}" = "true" ]; then node scripts/indexnow.mjs --all; else node scripts/indexnow.mjs "${{ github.sha }}~1" "${{ github.sha }}"; fi

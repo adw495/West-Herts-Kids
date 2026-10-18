@@ -1,6 +1,7 @@
 ---
 title: "Baby swimming lessons in Watford & Rickmansworth compared (2026)"
 description: "Water Babies, Watford Swim School, Swim4Life, Everyone Active and SwimFitz compared: start ages, lesson lengths, prices and pools for baby and toddler swimming near Watford."
+answer: "Water Babies in Bushey has classes from newborn. Watford Swim School and Everyone Active start at 4 months, SwimFitz at 6 months (one-to-one, private pool). Only Watford Swim School publishes a price: £17 for a 30-minute Parent & Baby lesson."
 date: 2026-10-07
 type: comparison
 towns: [watford, bushey, rickmansworth, croxley-green, chorleywood, south-oxhey]

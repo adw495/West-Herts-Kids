@@ -1,6 +1,7 @@
 ---
 title: "Soft play in Watford & West Herts: every centre compared (2026)"
 description: "Parents Paradise, Rock Up, Flip Out and Ninja Warrior UK compared: ages, prices, opening times, toddler sessions, cafés and parking for soft play around Watford and Bushey."
+answer: "Parents Paradise in Bushey: £2 for under-1s, £8 for 2–4s, with a baby area (book ahead). Rock Up Watford: £8.95 for ages 8 and under, under-1s free. Toddler sessions: Ninja Toddlers £6.95 (ages 1–4), Flip Out Stay & Play £7.95 (term-time Fridays)."
 date: 2026-10-07
 type: comparison
 towns: [watford, bushey]

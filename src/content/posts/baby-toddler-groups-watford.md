@@ -1,6 +1,7 @@
 ---
 title: "Baby & toddler groups in Watford & West Herts: 2026 timetable"
 description: "A day-by-day timetable of low-cost baby groups, rhyme times, stay-and-play sessions and church toddler groups in Watford, Rickmansworth, Abbots Langley, Bushey and South Oxhey."
+answer: "Free: SEND Chat and Play (Fridays in Watford, Thursdays in Abbots Langley), Saturdads, and library Baby Rhyme Time. Pre-walker Baby Groups are £1.50 per family, Tuesday to Thursday at 10am in Watford. Little Herts sessions are drop-in, no booking."
 date: 2026-10-07
 type: guide
 towns: [watford, rickmansworth, abbots-langley, bushey, south-oxhey]

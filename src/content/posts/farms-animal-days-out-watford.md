@@ -1,6 +1,7 @@
 ---
 title: "Farms and petting zoos near Watford & Rickmansworth (2026)"
 description: "Children's farms and farm parks near Watford and Rickmansworth compared: autumn 2026 opening, prices, booking, parking and cafés, plus Halloween and Christmas events."
+answer: "Nearest: Langleybury Children's Farm, Kings Langley, £6.25 per person over 1 (booked sessions). Aldenham Country Park's Farm Pass is from £6.95. Free parking: Willows Activity Farm and Odds Farm Park, where under-1s are free."
 date: 2026-10-09
 type: comparison
 towns: [watford, rickmansworth, kings-langley, abbots-langley, croxley-green, chorleywood]

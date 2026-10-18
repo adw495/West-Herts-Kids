@@ -1,6 +1,7 @@
 ---
 title: "Things to do with kids in Rickmansworth & Croxley Green (2026)"
 description: "Lakes, sailing, canal boat trips, nature reserves, a local museum, family theatre, libraries and regular clubs for children in Rickmansworth, Mill End and Croxley Green."
+answer: "Rickmansworth Aquadrome has two lakes, two play areas, a café and free parking. Free Three Rivers Museum: Wednesday to Friday 2–4pm, Saturday 10am–2pm. Boat trips from Batchworth Lock: £6 adults, £3 under-16s, £15 family (phone ahead)."
 date: 2026-10-07
 type: guide
 towns: [rickmansworth, croxley-green, chorleywood]
