@@ -1,6 +1,7 @@
 ---
 title: "Free things to do with kids in Watford & West Herts (2026)"
 description: "Free parks, playgrounds, nature reserves, canal walks, museums, library rhyme times and junior parkrun across Watford, Rickmansworth, Croxley Green, Chorleywood and nearby."
+answer: "Free: Cassiobury Park (two playgrounds, woodland, car park free for 2 hours), Oxhey Activity Park (skate park, bike pump track), Rickmansworth Aquadrome (free parking) and Bushey Museum (Thursday to Sunday). Leavesden junior parkrun: Sundays 9am, ages 4–14."
 date: 2026-10-03
 type: guide
 towns: [watford, rickmansworth, croxley-green, chorleywood, abbots-langley, bushey, south-oxhey]

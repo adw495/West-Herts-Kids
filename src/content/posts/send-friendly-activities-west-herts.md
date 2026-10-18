@@ -1,6 +1,7 @@
 ---
 title: "SEND-friendly activities for kids in Watford & West Herts (2026)"
 description: "Inclusive sport, swimming, sailing, relaxed theatre and holiday clubs for children with SEND around Watford, Rickmansworth and Abbots Langley, checked against organisers' own details."
+answer: "Weekly SEND swimming: Sea Lion Swimming Club, Saturdays 3:45–4:45pm at Watford Leisure Centre Central (£45 a year, free trial). Free: Dolphina Gymnastics SEND stay and play, last Tuesday monthly, 12–1pm (booking essential). Next Relaxed Tour at Warner Bros. Studio Tour: 5 December 2026."
 date: 2026-09-27
 type: guide
 towns: [watford, rickmansworth, abbots-langley]

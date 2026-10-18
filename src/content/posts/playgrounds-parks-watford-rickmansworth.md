@@ -1,6 +1,7 @@
 ---
 title: "Best playgrounds and parks in Watford & Rickmansworth (2026)"
 description: "Playgrounds, splash parks and family parks in Watford, Rickmansworth, Croxley Green, Chorleywood, South Oxhey, Abbots Langley, Kings Langley and Bushey, checked with the councils."
+answer: "Cassiobury Park has two playgrounds, cafés and toilets (splash pools closed until spring 2027). King George Recreation Ground, Bushey, has a splash park (1 May to 13 September) and a free car park."
 date: 2026-10-09
 type: guide
 towns: [watford, rickmansworth, croxley-green, chorleywood, south-oxhey, abbots-langley, kings-langley, bushey]

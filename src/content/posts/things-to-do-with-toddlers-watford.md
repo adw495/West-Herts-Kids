@@ -1,6 +1,7 @@
 ---
 title: "Things to do with toddlers in Watford & West Herts (2026)"
 description: "Toddler classes, soft play mornings, free library rhyme times, parks, farms and toddler cinema around Watford, Rickmansworth, Croxley Green, Abbots Langley and Bushey."
+answer: "Free: library Baby Rhyme Time and Storytime, plus Cassiobury Park playgrounds. Indoors: Ninja Toddlers £6.95 (ages 1–4), Flip Out Stay & Play £7.95 (term-time Fridays), Big Shorts at Vue Watford from £3.99. Langleybury Children's Farm: £6.25 per person over 1."
 date: 2026-10-07
 type: guide
 towns: [watford, rickmansworth, croxley-green, chorleywood, abbots-langley, kings-langley, bushey, south-oxhey]

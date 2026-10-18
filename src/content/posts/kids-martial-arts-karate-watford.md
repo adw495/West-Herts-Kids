@@ -1,6 +1,7 @@
 ---
 title: "Kids' karate classes in Watford: martial arts clubs compared (2026)"
 description: "Kids' karate classes in Watford, plus taekwondo, jiu-jitsu, judo and kickboxing clubs in Watford, Bushey, Rickmansworth and South Oxhey, with ages, prices, times and free trials."
+answer: "Karate for children in Watford: Shogun Practical Karate (ages 5–17), Shotokan Karate JKA (Tiny Tigers, ages 6–12) and Freestyle Martial Arts (ages 7+, £40 first month). Youngest start: Watford Gracie Jiu-Jitsu from age 3, £43 a month. Most clubs offer a free trial."
 date: 2026-10-07
 updated: 2026-10-13
 type: comparison

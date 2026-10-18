@@ -1,6 +1,7 @@
 ---
 title: "Indoor & rainy-day things to do with kids in Watford (2026)"
 description: "Soft play, trampolines, climbing, ninja courses, bowling, pools, cinema, theatre and libraries: indoor things to do with kids in Watford and West Herts when it rains."
+answer: "Flip Out Watford has 13 attractions for one entry price. Rock Up has climbing walls for ages 4+, and Parents Paradise in Bushey has soft play for up to 12s (book ahead). Toddlers: Ninja Toddlers £6.95 (ages 1–4). Cinema: Vue Watford from £8.99."
 date: 2026-10-03
 updated: 2026-10-07
 type: guide
