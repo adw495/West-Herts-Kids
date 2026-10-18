@@ -112,6 +112,20 @@ const posts = defineCollection({
     updated: z.coerce.date().optional(),      // set when a guide is refreshed; shown to readers and to Google
     seoTitle: z.string().max(60).optional(), // shorter <title> for search results when the H1 is longer
     answer: z.string().max(400).optional(),  // the one-line answer searchers want, shown in a box at the top (e.g. the next holiday's dates)
+    // Dated events in the guide, for Event structured data (Google can show the dates under our result).
+    // Only events already described in the body, with a confirmed date and venue. Times are UK local.
+    events: z.array(z.object({
+      name: z.string(),
+      start: z.string(),                 // '2026-12-04' or '2026-12-04T14:00'
+      end: z.string().optional(),
+      venue: z.string(),
+      street: z.string().optional(),
+      town: z.string(),
+      postcode: z.string().optional(),
+      url: z.url(),                      // organiser's page
+      price: z.number().optional(),      // lowest stated price in £ (0 = free)
+      description: z.string().max(300).optional(),
+    })).default([]),
     // Questions parents ask, answered ONLY from verified facts already in the guide. Shown at the end, with FAQPage markup.
     faq: z.array(z.object({ q: z.string(), a: z.string().max(600) })).default([]),
     draft: z.boolean().default(false),
