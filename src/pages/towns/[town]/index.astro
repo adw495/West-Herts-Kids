@@ -4,7 +4,7 @@ import ListingCard from '../../../components/ListingCard.astro';
 import Filters from '../../../components/Filters.astro';
 import Glance from '../../../components/Glance.astro';
 import RelatedGuides from '../../../components/RelatedGuides.astro';
-import { getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, MIN_TO_INDEX_TOWN, NEAR, townIntro, townFaqs, breadcrumbLd, itemListLd, type Listing } from '../../../lib/listings';
+import { getPosts, getListings, byTown, byCategory, MIN_FOR_COMBO_PAGE, MIN_TO_INDEX_TOWN, NEAR, townIntro, townFaqs, breadcrumbLd, itemListLd, type Listing } from '../../../lib/listings';
 import { TOWNS, CATEGORIES, type TownKey, type CategoryKey } from '../../../data/taxonomy';
 
 export async function getStaticPaths() {
@@ -27,9 +27,11 @@ const jsonLd = [
 const intro = townIntro(items, t.name);
 const qa = townFaqs(items, t.name);
 const near = NEAR[town].filter((x) => x in TOWNS);
+// A "things to do" guide for this town (e.g. things-to-do-kids-rickmansworth-croxley), linked at the top so the guide, not this directory page, is the one that targets days-out searches.
+const daysOut = (await getPosts()).find((p) => p.id.startsWith('things-to-do-kids-') && p.id.includes(town.split('-')[0]));
 const catLinks = (Object.keys(CATEGORIES) as CategoryKey[]).filter((c) => byCategory(items, c).length >= MIN_FOR_COMBO_PAGE);
 ---
-<Base title={`Things to do with kids in ${t.name}: ${items.length} activities & classes`} description={`Kids' activities in ${t.name}: ${items.length} local classes, clubs, holiday camps and days out, with ages, prices and timetables checked against each provider's own website.`} jsonLd={jsonLd} ogImage={`/og/town-${town}.png`} noindex={items.length < MIN_TO_INDEX_TOWN}>
+<Base title={`Kids' activities in ${t.name}: ${items.length} classes & clubs`} description={`${items.length} kids' classes, clubs, holiday camps and days out in ${t.name}, with ages, prices and timetables checked against each provider's own website.`} jsonLd={jsonLd} ogImage={`/og/town-${town}.png`} noindex={items.length < MIN_TO_INDEX_TOWN}>
   <div class="container">
     <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/towns/">Towns</a></li><li aria-hidden="true">/</li><li aria-current="page">{t.name}</li></ol>
     <header class="page-head">
@@ -37,6 +39,7 @@ const catLinks = (Object.keys(CATEGORIES) as CategoryKey[]).filter((c) => byCate
       <h1>Kids’ activities in <em>{t.name}</em></h1>
       <p class="lead">{t.blurb}</p>
       <p class="intro">{intro}</p>
+      {daysOut && <p class="guide-callout"><a href={`/whats-on/${daysOut.id}/`}>Days out and things to do in {t.name}: our guide →</a></p>}
     </header>
     {catLinks.length > 0 && <nav class="pills" aria-label="By activity">{catLinks.map((c) => <a class="chip" href={`/towns/${town}/${c}/`}>{CATEGORIES[c].name}</a>)}</nav>}
     <Filters hideTown />

@@ -21,3 +21,31 @@ export const HOLIDAYS: Holiday[] = [
   { id: '2028-may-half-term', name: 'May half term', start: '2028-05-29', end: '2028-06-02' },
   { id: '2028-summer', name: 'Summer holidays', start: '2028-07-25', end: '2028-09-01' },
 ];
+
+// The next (or current) holiday relative to `today`, with the last school day before it and the day children go back.
+// Used to keep the term dates guide's search title and answer box current on every build.
+const addDays = (iso: string, n: number) => { const d = new Date(`${iso}T12:00:00Z`); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
+const weekday = (iso: string) => new Date(`${iso}T12:00:00Z`).getUTCDay();
+const prevSchoolDay = (iso: string) => { let d = addDays(iso, -1); while (weekday(d) === 0 || weekday(d) === 6) d = addDays(d, -1); return d; };
+const nextSchoolDay = (iso: string) => { let d = addDays(iso, 1); while (weekday(d) === 0 || weekday(d) === 6) d = addDays(d, 1); return d; };
+const fmt = (iso: string, opts: Intl.DateTimeFormatOptions) => new Date(`${iso}T12:00:00Z`).toLocaleDateString('en-GB', { timeZone: 'UTC', ...opts });
+
+export function nextHoliday(today = new Date().toISOString().slice(0, 10)) {
+  const h = HOLIDAYS.find((x) => x.end >= today);
+  if (!h) return null;
+  const sameYear = h.start.slice(0, 4) === h.end.slice(0, 4);
+  const sameMonth = sameYear && h.start.slice(0, 7) === h.end.slice(0, 7);
+  const range = sameMonth
+    ? `${fmt(h.start, { day: 'numeric' })}–${fmt(h.end, { day: 'numeric', month: 'short', year: 'numeric' })}`
+    : sameYear
+      ? `${fmt(h.start, { day: 'numeric', month: 'short' })}–${fmt(h.end, { day: 'numeric', month: 'short', year: 'numeric' })}`
+      : `${fmt(h.start, { day: 'numeric', month: 'short', year: 'numeric' })}–${fmt(h.end, { day: 'numeric', month: 'short', year: 'numeric' })}`;
+  const long = (iso: string) => fmt(iso, { weekday: 'long', day: 'numeric', month: 'long' });
+  const year = h.start.slice(0, 4);
+  const onNow = h.start <= today;
+  return {
+    ...h,
+    title: `${h.name} ${range}: Herts term dates`,
+    answer: `${onNow ? 'On now' : 'Next Herts school holiday'}: ${h.name} ${year}, ${long(h.start)} to ${long(h.end)}${sameYear ? '' : ` ${h.end.slice(0, 4)}`}. The last day of term is ${long(prevSchoolDay(h.start))} and children go back on ${long(nextSchoolDay(h.end))}.`,
+  };
+}

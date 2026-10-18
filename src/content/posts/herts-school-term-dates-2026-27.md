@@ -1,8 +1,10 @@
 ---
-title: "Hertfordshire term dates 2026/27: every holiday, plus a phone calendar"
-description: "Herts October half term 2026 is 26–30 Oct. All Hertfordshire term and holiday dates for 2026/27 and 2027/28, with a free calendar you can add to your phone in one tap."
+title: "Hertfordshire term dates 2026/27 & 2027/28: every school holiday"
+seoTitle: "auto:next-holiday"
+answer: "auto:next-holiday"
+description: "Every Hertfordshire school holiday for 2026/27 and 2027/28 at a glance, which local secondaries differ, and a free phone calendar that updates itself."
 date: 2026-10-07
-updated: 2026-10-15
+updated: 2026-10-17
 type: guide
 towns: [rickmansworth, croxley-green, chorleywood, watford, abbots-langley, kings-langley, bushey, south-oxhey]
 categories: [holiday-camps]
@@ -81,6 +83,7 @@ The council publishes the first day of each autumn term and the dates of every h
 
 - **INSET days are set by each school.** Community and voluntary-controlled schools must follow the dates above, plus 5 INSET (staff training) days and 1 occasional day, which each school chooses. That means your child may start a term later, or finish earlier, than the table shows.
 - **Academies, free, voluntary-aided and foundation schools can set their own dates.** The council says they don't have to follow its term dates. Independent schools set their own dates too. If your child is at a secondary school such as one of the Watford Grammar Schools, or at any academy or independent school, go by the school's own calendar rather than this table.
+- **Local secondaries compared:** we've checked nine Watford, Rickmansworth and Three Rivers secondary schools against their own sites. See [which local schools differ from the county dates](/whats-on/secondary-school-term-dates-watford-rickmansworth/), including INSET days and summer end dates.
 - The safest check is your school's website or newsletter, especially before booking a holiday camp or a trip.
 
 ## What's on each holiday

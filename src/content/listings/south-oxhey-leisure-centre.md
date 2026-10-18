@@ -1,5 +1,7 @@
 ---
 name: South Oxhey Leisure Centre
+seoTitle: "South Oxhey Leisure Centre: kids' swimming lessons & parties"
+seoDescription: "25m pool and teaching pool at South Oxhey Leisure Centre: children's swimming lessons (£37.29 a month), fun swims from £3.35 and birthday parties."
 summary: South Oxhey's leisure centre, with a 25m pool and teaching pool for children's swimming lessons and fun swims, plus children's birthday parties.
 categories: [swimming, play-parties]
 towns: [south-oxhey]

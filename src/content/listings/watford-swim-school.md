@@ -1,6 +1,7 @@
 ---
 name: Watford Swim School
-seoTitle: "Watford Swim School: baby & children's swimming lessons, Garston"
+seoTitle: "Watford Swim School (Stud Green): prices & crash courses"
+seoDescription: "Private swimming lessons in Garston from 4 months: one-to-one from £35, two-to-one from £20 per 30 minutes, and 5-day holiday crash courses from £122.50."
 summary: Private swimming lessons for babies, children and adults in Watford, with
   weekly term-time lessons and holiday crash courses.
 categories:
