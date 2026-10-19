@@ -45,7 +45,8 @@ email: info@lets-play.org.uk
 phone: 01344 508008
 website: https://www.lets-play.org.uk/locations/watford-woodside-leisure-centre/
 source: provider website (location page and FAQs)
-verified: '2026-10-09'
+verified: '2026-10-19'
+checkEvery: 60
 claimed: false
 draft: false
 ---

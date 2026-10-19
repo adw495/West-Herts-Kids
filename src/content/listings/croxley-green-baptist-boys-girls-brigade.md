@@ -26,8 +26,8 @@ website: https://www.croxleybaptist.co.uk/girls-brigade.html
 email: office@croxleybaptist.co.uk
 phone: 07525 060149
 source: provider website (https://www.croxleybaptist.co.uk/girls-brigade.html, /boys-brigade.html, /contact.html)
-verified: '2026-10-12'
-checkEvery: 90
+verified: '2026-10-19'
+checkEvery: 135
 claimed: false
 ---
 

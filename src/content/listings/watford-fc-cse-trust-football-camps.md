@@ -47,7 +47,7 @@ bookingUrl: https://bookings.watfordfccsetrust.com/project/85013
 email: community@watfordfc.com
 phone: 01923 496000
 source: provider website (Watford FC CSE Trust booking page, https://bookings.watfordfccsetrust.com/project/85013)
-verified: '2026-10-12'
+verified: '2026-10-19'
 checkEvery: 60
 claimed: false
 ---

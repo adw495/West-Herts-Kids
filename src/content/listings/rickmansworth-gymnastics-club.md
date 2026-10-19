@@ -9,7 +9,7 @@ towns:
 - rickmansworth
 - croxley-green
 ageMin: 0
-ageMax: 14
+ageMax: 16
 season:
 - term-time
 - holidays
@@ -49,7 +49,15 @@ schedule:
   end: '15:30'
   note: October half-term camp, 29 Oct 2026, ages 5–14 (badge testing and Halloween party)
   price: £42
-priceNote: October half-term camp £42 a day or £120 for all three days, early drop-off £5. Half-term play gym for 0–4s (9:15–10:30am) £6.50 a session, and 90-minute gymnastics workshops £18. Trial classes £5–£6. Term fees shown at booking.
+- day: tue
+  start: '10:00'
+  end: '14:00'
+  note: Christmas Holiday Fun Session, 22 Dec 2026, ages 4–16 (Reception up; no pre-school 4-year-olds)
+- day: wed
+  start: '10:00'
+  end: '14:00'
+  note: Christmas Holiday Fun Session, 23 Dec 2026, ages 4–16 (Reception up; no pre-school 4-year-olds)
+priceNote: October half-term camp £42 a day or £120 for all three days, early drop-off £5. Half-term play gym for 0–4s (9:15–10:30am) £6.50 a session, and 90-minute gymnastics workshops £18. Trial classes £5–£6. Christmas Holiday Fun Sessions (22–23 Dec, 10am–2pm) and a Christmas Play Gym for 0–4s (10–11.45am) are on the booking page; prices shown at booking. Term fees shown at booking.
 venue:
   name: The Reach (sports hall)
   address: Rickmansworth
@@ -58,7 +66,9 @@ venue:
   lon: -0.50364
 website: https://rickmansworth-gymnastics.classforkids.io/
 source: provider booking site
-verified: '2026-10-09'
+verified: '2026-10-19'
+lastChanged: '2026-10-19'
+checkEvery: 30
 claimed: false
 ---
 
@@ -67,5 +77,6 @@ Rickmansworth Gymnastics Club (RGC) runs:
 - **Gymnastics classes** for children aged 5–14
 - **RGC Mini Gym** for 0–4 year olds (booked separately)
 - **Holiday camps** for 5–14 year olds (Reception children welcome) at The Reach sports hall, with badge testing and themed days such as a Halloween party
+- **Christmas Holiday Fun Sessions** on 22 and 23 December (10am–2pm, ages 4–16, Reception up) with gymnastics, Christmas games and crafts, plus a Christmas Play Gym for 0–4s
 
 Bookings are made through the club's ClassForKids page.

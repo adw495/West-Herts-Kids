@@ -50,7 +50,7 @@ venue:
   lon: -0.42481
 website: https://www.watfordgymnastics.co.uk/
 source: provider website and booking portal
-verified: '2026-10-12'
+verified: '2026-10-19'
 checkEvery: 60
 claimed: false
 visit:
