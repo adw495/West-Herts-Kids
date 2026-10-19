@@ -1,17 +1,28 @@
 # Verification queue
 
-Last worked through: **12 Oct 2026**. Everything below was checked against providers' own websites or official class finders.
+Last worked through: **19 Oct 2026**. Everything below was checked against providers' own websites or official class finders.
 
 ## Flagged
 
-### Still flagged (12 Oct 2026)
+### Still flagged (19 Oct 2026)
 | Listing | What's open | Source to check |
 |---|---|---|
-| water-babies-bushey-meadow-wood | Swimvincibles (4+) block on the pool page is template text shared by other pools; whether it runs here is only in the JS class finder. Unconfirmed once | waterbabies.co.uk class finder (Meadow Wood School pool) |
-| code-ninjas-watford | Still "location coming soon" + waitlist (12 Oct). Re-check monthly; make it a draft if it hasn't opened by the next check | codeninjas.co.uk/watford-uk-ldn |
-| fj-sporting-solutions-kings-langley (draft) | Only a past May camp found; publish once a current camp is listed | ClassForKids booking page |
-| croxley-green-baptist-boys-girls-brigade | New 12 Oct; church pages are footer-dated 2024, so confirm both groups still run at the next check | croxleybaptist.co.uk |
+| water-babies-bushey-meadow-wood | **Needs the owner's eyes (unconfirmed twice).** Swimvincibles (4+) text on the pool page is still template copy; whether it runs here is only in the JS class finder, which asks for a child's date of birth | waterbabies.co.uk class finder (Meadow Wood School pool) |
+| rise-studios-rickmansworth | Timetable image on rise-studios.com/timetable shows a Monday 5.15–6pm Inters contemporary class and a Thursday 4–5pm Juniors jazz & tap class that aren't on the listing; the per-age class widgets are embedded and hard to read automatically (Juniors widget shows Street Tue 5.30pm, £9 a class, £63 for the rest of term). Not refreshed; check in a normal browser | rise-studios.com/timetable and the class pages |
+| code-ninjas-watford | Still "location coming soon" + waitlist (19 Oct). Monthly check due ~12 Nov: make it a draft then if it still hasn't opened | codeninjas.co.uk/watford-uk-ldn |
 
+## Done on 19 Oct 2026 (weekly check)
+
+| Listing | Outcome |
+|---|---|
+| camp-beaumont-rickmansworth | **Updated:** October half term £60 a day (was £57), £275 a week |
+| rickmansworth-gymnastics-club | **Updated:** Christmas Holiday Fun Sessions 22–23 Dec (4–16) and Christmas Play Gym |
+| fj-sporting-solutions-kings-langley | **Published:** current LEGO Camp 28–29 Oct on the ClassForKids camps page |
+| croxley-green-baptist-boys-girls-brigade | **Confirmed:** pages unchanged and church site active (Oct 2026 sermon); unflagged |
+| art-K, Barracudas, Let's Play, We Make Footballers, Xtra Time, Cygnets Chorleywood, Watford Gymnastics, Watford FC CSE Trust | **Confirmed** unchanged |
+| Charlotte Amelia School of Dance | **Published** (lead from 12 Oct; timetable on its ClassForKids page) |
+| CLH Football | **Published** (South Oxhey lead; ClassForKids page gives venue, times, price) |
+| Jigsaw Arts Watford, Cygnets Art School Watford | **Published** (new) |
 
 ## Done on 12 Oct 2026 (weekly check)
 
@@ -84,9 +95,8 @@ Last worked through: **12 Oct 2026**. Everything below was checked against provi
 ## New leads (12 Oct 2026, not yet verified)
 
 - **Croxley Green Library** Rhyme Time (Tue 10.30am) and Story Time (Fri 10.30am) per the parish page; **Oxhey Library** Baby Rhyme Time. The Herts events catalogue (herts.spydus.co.uk) shows a CAPTCHA, so check in a normal browser.
-- **Charlotte Amelia School of Dance** (Watford, 18 months–16, Cassiobury Infant and Junior Schools): timetable is in a ClassForKids widget.
 - **Celtic Hearts Irish Dance** (Abbots Langley Community Centre WD5 0AP; Leavesden): site blocked to automated fetches; open in Chrome.
-- **CLH Football** and **Loko Dance Cheer** (St Meryl School, Carpenders Park WD19 5BT): South Oxhey leads; no usable own site yet.
+- **Loko Dance Cheer** (St Meryl School, Carpenders Park WD19 5BT): South Oxhey lead; check its ClassForKids page (CLH Football at the same school was published 19 Oct).
 - **Abbots Langley Cricket Club juniors** (Manor House Ground WD5 0BX): only 2024 junior info online; draft until current dates appear.
 - **Kings Langley FC juniors** and **Kings Langley Cricket Club juniors**: only on the parish directory; need the clubs' own sites.
 - **Little Kickers Saturday class at Canopy Frogmore House Nursery** (WD17 2HU): check whether it's open to non-nursery children.
@@ -99,6 +109,13 @@ Last worked through: **12 Oct 2026**. Everything below was checked against provi
 - **Parents Paradise**: homepage says "all ages up to 12", meta description says up to 11 (15 Oct 2026).
 - **Fudoshin Ju-Jitsu**: also teaches at Queens Dojo, Queens School WD23 2TY (Wednesdays); not on the listing yet (15 Oct 2026).
 - Dropped: Street Dance Academy Croxley Green (site now lists only Barnet and Wimbledon).
+
+## New leads (19 Oct 2026)
+
+- **Step2Step Bollywood, Watford** (step2step-bollywood.classforkids.io): Pre-teens 7–12 Sun 11.15am–12.15pm at the FullerLife Centre, WGGS WD18 0AE (enter via FullerLife main gate), trial £13; term price shown as £140 for 4 remaining sessions, so confirm the term fee before listing. Held back to keep this week at 5 new.
+- **Be On Pointe Dance School** (beonpointe.classforkids.io): street dance at St Margaret's School, Bushey WD23 1DT; check ages and whether it's open to non-pupils.
+- **Croxley Green Library Baby Rhyme Time**: Happity lists it ("booking required"); the county library page still lists no session details.
+- **Celtic Hearts Irish Dance**: no own site found by search this week.
 
 ## Useful aggregators to mine for more providers (don't copy their text)
 - Happity (baby and toddler): happity.co.uk/watford-rickmansworth
