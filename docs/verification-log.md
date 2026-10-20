@@ -5,6 +5,23 @@ the schedule can learn which providers change often. Format: date · listing · 
 
 | Date | Listing | Change | Source |
 | --- | --- | --- | --- |
+| 2026-10-19 | camp-beaumont-rickmansworth | October half-term days now £60 (were £57; full price £67.50), week £275 (was £260) | https://www.campbeaumont.co.uk/camps/rms-for-girls/ |
+| 2026-10-19 | rickmansworth-gymnastics-club | Christmas Holiday Fun Sessions added (22–23 Dec, 10am–2pm, ages 4–16) plus Christmas Play Gym for 0–4s; ageMax now 16 | https://rickmansworth-gymnastics.classforkids.io/ |
+| 2026-10-19 | art-k-croxley-green | No change: Autumn 2026 timetable (Tue–Sat) matches; address, phone, Ofsted unchanged | https://portal.art-k.co.uk/public/timetable?centerId=228 |
+| 2026-10-19 | barracudas-watford | No change: still Easter and summer only, 4–14, 8.30am–5.30pm, WGGS | https://www.barracudas.co.uk/camps/watford |
+| 2026-10-19 | lets-play-watford-woodside | No change: £29.50 day, £12.50 half day, extras £3.50; October 26–30 and Christmas 21–23 Dec dates listed | https://www.lets-play.org.uk/locations/watford-woodside-leisure-centre/ |
+| 2026-10-19 | we-make-footballers-watford | No change: half-term camp 26–29 Oct, 9.15am–4pm, Watford Power League, £116 | https://wemakefootballers.com/uk/watford/events/holiday-camps |
+| 2026-10-19 | xtra-time-watford | No change: October Multi Sports (9am–4pm) and Multi Activity / Arts & Crafts (8am–6pm) camps at Willow Tree Primary | https://www.xtratime.co.uk/holiday-camps-all/ |
+| 2026-10-19 | code-ninjas-watford | No change: still 'location coming soon' with a waitlist | https://www.codeninjas.co.uk/watford-uk-ldn |
+| 2026-10-19 | cygnets-art-school-chorleywood | No change: Wed 4–5pm, £55/month, £22 trial; October workshops 28–29 Oct | https://cygnetsartschool.com/branch/rickmansworth/ |
+| 2026-10-19 | watford-gymnastics-club | No change: holiday sessions £35 (5+, 9am–3pm) / £25 (Reception, 10am–2pm) | https://www.watfordgymnastics.co.uk/holidaysessions |
+| 2026-10-19 | watford-fc-cse-trust-football-camps | No change: 26–30 Oct, Westfield Academy, 9am–4pm, £30 a day, ages 6–13 | https://bookings.watfordfccsetrust.com/project/85013 |
+| 2026-10-19 | croxley-green-baptist-boys-girls-brigade | No change: both group pages unchanged; church site is active (sermon posted 11 Oct 2026) | https://www.croxleybaptist.co.uk/girls-brigade.html |
+| 2026-10-19 | fj-sporting-solutions-kings-langley | Published: LEGO Camp 28–29 Oct 2026, ages 4–16, 9am–3pm, £30 a day, Langleybury Cricket Club WD4 8RJ | https://fj-sporting-solutions.classforkids.io/camp/13 |
+| 2026-10-19 | jigsaw-arts-watford | New: Saturday performing arts 3–18 at WGGS and WGGB, from £180 a term, two-week trial, half-term camp 27 Oct | https://www.jigsaw-arts.co.uk/franchise/jigsaw-arts-watford/classes |
+| 2026-10-19 | cygnets-art-school-watford | New: art classes 5–13, Beechen Grove Baptist Church WD17 1JJ, Mon and Sat, from £49.50/month | https://cygnetsartschool.com/branch/watford/ |
+| 2026-10-19 | charlotte-amelia-school-of-dance-watford | New: ballet, jazz, lyrical and acro from 18 months to 16 at Cassiobury Junior School WD17 3BJ, free trial | https://charlotte-amelia-school-of-dance.classforkids.io/ |
+| 2026-10-19 | clh-football-carpenders-park | New: football Reception–Year 7 at St Meryl School WD19 5BT, Wed and Sat, £55/month, free trial | https://clh-football.classforkids.io/info/19 |
 | 2026-10-12 | flip-out-watford | Stay & Play is £7.95 (£3.95 is the 6–12 months price); 1-hour from £16.95 (£11.45 under 1.2m); off-peak 2-hour £15.95 (£10.50 under 1.2m) | https://www.flipout.co.uk/locations/watford/prices |
 | 2026-10-12 | rock-up-watford | Soft play £8.95 (8 and under, under-1s free) and Toddler Climb £13.95 added; £12 Wednesday saver confirmed on the products page; Calm Climbing (SEND) first Monday monthly £11.95 | https://www.rock-up.co.uk/products?center=watford |
 | 2026-10-12 | airies-gymnastics-abbots-langley | Venue added: YMCA Chiltern Group Woodlands Community Hub, Leavesden Country Park, WD5 0GN; phone and email; Stay & Play is two Fridays a month; half-term crash course Fri 30 Oct £25 | https://www.airiesgymnastics.co.uk/contactus |

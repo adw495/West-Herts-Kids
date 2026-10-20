@@ -56,7 +56,8 @@ phone: 020 8149 5898
 email: croxleygreen@art-k.co.uk
 website: https://www.art-k.co.uk/class-croxley-green/
 source: provider website
-verified: '2026-10-09'
+verified: '2026-10-19'
+checkEvery: 60
 claimed: false
 ---
 

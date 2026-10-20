@@ -35,7 +35,8 @@ venue:
 priceFrom: 116
 website: https://wemakefootballers.com/uk/watford/events/holiday-camps
 source: provider website
-verified: '2026-10-09'
+verified: '2026-10-19'
+checkEvery: 60
 claimed: false
 ---
 

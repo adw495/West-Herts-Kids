@@ -31,8 +31,8 @@ phone: 07392 847325
 email: rickmansworth@cygnetsartschool.com
 website: https://cygnetsartschool.com/branch/rickmansworth/
 source: provider website
-verified: '2026-10-12'
-checkEvery: 30
+verified: '2026-10-19'
+checkEvery: 45
 lastChanged: '2026-10-12'
 claimed: false
 ---

@@ -42,7 +42,8 @@ venue:
 priceFrom: 28
 website: https://www.xtratime.co.uk/holiday-camps-watford/
 source: provider website
-verified: '2026-10-09'
+verified: '2026-10-19'
+checkEvery: 60
 claimed: false
 ---
 

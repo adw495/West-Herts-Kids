@@ -19,7 +19,8 @@ venue:
   lon: -0.39617
 website: https://www.barracudas.co.uk/camps/watford
 source: provider website
-verified: '2026-10-09'
+verified: '2026-10-19'
+checkEvery: 60
 claimed: false
 visit:
   hours: "8.30am–5.30pm (drop-off 8.30–9.30am, collection 4.30–5.30pm); early and late clubs extend this to 8am–6pm"
