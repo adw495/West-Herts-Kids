@@ -5,6 +5,13 @@ the schedule can learn which providers change often. Format: date · listing · 
 
 | Date | Listing | Change | Source |
 | --- | --- | --- | --- |
+| 2026-10-26 | code-ninjas-watford | Now open: St Luke's Church, Langley Way, Watford WD17 3EG, phone 0330 133 7966; weekly CREATE 8–14; October half-term camps 26, 27, 29 Oct, 10am–3pm, £59 a day; "coming soon"/waitlist removed; JR (5–7) no longer shown for Watford | https://www.codeninjas.co.uk/watford-uk-ldn |
+| 2026-10-26 | rise-studios-rickmansworth | No change: the autumn 2026 class list in the booking system matches the listing exactly; the timetable image (uploaded Oct 2025) is last year's, which explains the extra Mon Inters / Thu Juniors classes; £7.50 trial confirmed | https://www.thinksmartsoftwareuk.com/ocr/single_class_listings_view.php?c=69DCBDE722134&p_id=8&t=dancebiz&set=yes |
+| 2026-10-26 | water-babies-bushey-meadow-wood | Still unconfirmed: Swimvincibles (4+) only on the template page; class finder needs a child's date of birth | https://www.waterbabies.co.uk/baby-swimming/hertfordshire/meadow-wood-school-pool/ |
+| 2026-10-26 | step2step-bollywood-watford | New: Sunday pre-teens (7–12) 11.15am–12.15pm, FullerLife Centre, WGGS WD18 0AE, £13 trial | https://step2step-bollywood.classforkids.io/info/11 |
+| 2026-10-26 | watersmeet-theatre-rickmansworth | New: theatre and cinema, half-term family shows, Peter Pan panto 4–31 Dec (from £13), relaxed performance 16 Dec, party package £10 a child | https://www.watersmeet.co.uk/peter-pan |
+| 2026-10-26 | tiny-tots-all-saints-kings-langley | New: stay and play 0–3, Wednesdays 10–11.30am in term time, All Saints Church WD4 8JS | https://www.achurchnearyou.com/church/7586/service-and-events/events-all/ |
+| 2026-10-26 | pro-elite-football-watford | New: football 18 months–7 at St Joan of Arc (Rickmansworth), Nascot Wood, Stanborough and Thomas Parmiter (Watford) at weekends, £43/month + £40 membership; U6–U8 Mondays at Powerleague Watford £50/month | https://proelite-watford.classforkids.io/ |
 | 2026-10-19 | camp-beaumont-rickmansworth | October half-term days now £60 (were £57; full price £67.50), week £275 (was £260) | https://www.campbeaumont.co.uk/camps/rms-for-girls/ |
 | 2026-10-19 | rickmansworth-gymnastics-club | Christmas Holiday Fun Sessions added (22–23 Dec, 10am–2pm, ages 4–16) plus Christmas Play Gym for 0–4s; ageMax now 16 | https://rickmansworth-gymnastics.classforkids.io/ |
 | 2026-10-19 | art-k-croxley-green | No change: Autumn 2026 timetable (Tue–Sat) matches; address, phone, Ofsted unchanged | https://portal.art-k.co.uk/public/timetable?centerId=228 |
