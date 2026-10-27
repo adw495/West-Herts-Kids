@@ -5,7 +5,7 @@
 import Base from '../../layouts/Base.astro';
 import CompareTable from '../../components/CompareTable.astro';
 import { getListings, getPosts, byCategory, ageShort, priceFact, faqLd, breadcrumbLd } from '../../lib/listings';
-import { HOLIDAYS, TERM_DATES_SOURCE } from '../../data/term-dates';
+import { HOLIDAYS, TERM_DATES_SOURCE, SEASONAL_GUIDES } from '../../data/term-dates';
 import { SITE } from '../../site.config';
 
 const all = await getListings();
@@ -28,13 +28,7 @@ const weekdaysOff = (h: { start: string; end: string }) => {
 const yearOf = (iso: string) => iso.slice(0, 4);
 
 // Seasonal guides for a holiday, only if that guide exists on the site.
-const seasonal: Record<string, { href: string; label: string }[]> = {
-  '2026-oct-half-term': [
-    { href: 'october-half-term-2026-holiday-camps', label: 'October half term 2026 holiday camps' },
-    { href: 'halloween-half-term-2026-watford', label: 'Halloween and half term events' },
-  ],
-  '2026-christmas': [{ href: 'christmas-2026-west-herts', label: 'Christmas 2026: pantos, grottos and lights' }],
-};
+const seasonal = SEASONAL_GUIDES;
 const always = [
   { href: 'holiday-camps-watford', label: 'Holiday camps and clubs in Watford' },
   { href: 'indoor-rainy-day-kids-watford', label: 'Indoor and rainy-day ideas' },
@@ -85,7 +79,7 @@ const price = (l: (typeof all)[number]) => { const p = priceFact(l.data); return
         {(guidesFor(next.id).length > 0) && (
           <ul class="planner-links">{guidesFor(next.id).map((g) => <li><a href={`/whats-on/${g.href}/`}>{g.label}</a></li>)}</ul>
         )}
-        <p class="small muted"><a href="/whats-on/herts-school-term-dates-2026-27/">Full term dates</a>, including when each term starts and ends.</p>
+        <p class="small muted"><a href="/whats-on/herts-school-term-dates-2026-27/">Full term dates</a>, including when each term starts and ends, and <a href="/whats-on/half-term/">what’s on next half term</a>.</p>
       </section>
     )}
 
