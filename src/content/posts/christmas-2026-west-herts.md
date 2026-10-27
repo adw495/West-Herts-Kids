@@ -2,7 +2,8 @@
 title: "Christmas 2026 with kids in Watford: pantos, grottos and lights"
 description: "Christmas 2026 in Watford, Rickmansworth and West Herts: family pantos, Santa's grottos, lights switch-ons, markets and light trails, with dates, prices and booking."
 date: 2026-10-03
-updated: 2026-10-14
+updated: 2026-10-22
+answer: "Watford's Christmas lights switch-on is on Saturday 21 November 2026 at Pondside (4–6pm, tree lit at 5pm). Watford Palace Theatre's panto runs 29 November to 3 January, and Watersmeet's Peter Pan 4 to 31 December."
 type: guide
 towns: [watford, rickmansworth, croxley-green, abbots-langley, kings-langley]
 categories: [dance-drama, music, days-out, outdoor-nature]
@@ -15,7 +16,7 @@ faq:
   - q: "Where can kids meet Santa near Watford?"
     a: "Chenies Garden Centre near Rickmansworth has a grotto at £16.99 per child, Burston Garden Centre in St Albans from £15 per child (with SEN sessions), and Aldenham Country Park runs Santa's Magical Grotto at weekends from 28 November and daily from 21 to 24 December. Willows Activity Farm and Odds Farm Park have full Santa days. All need booking."
   - q: "When are the Christmas lights switched on near Watford in 2026?"
-    a: "Kings Langley's Christmas Lights Festival is on Saturday 21 November and Abbots Langley's carols and lights switch-on is on Thursday 3 December from 6pm. Watford's Winterfest and the Croxley Green switch-on haven't announced 2026 dates yet."
+    a: "Watford's Christmas lights switch-on is on Saturday 21 November at Pondside, from 4pm to 6pm, with the tree lit at 5pm. Kings Langley's Christmas Lights Festival is the same day, and Abbots Langley's carols and lights switch-on is on Thursday 3 December from 6pm. The Croxley Green switch-on hasn't announced a 2026 date yet."
   - q: "Are there relaxed or SEN-friendly Christmas events near Watford?"
     a: "Yes. Watersmeet's Peter Pan has a relaxed performance on 16 December, the Alban Arena's Beauty and the Beast has one on 12 December, and the Old Town Hall in Hemel has relaxed shows on 13 and 18 December. Burston Garden Centre has SEN grotto sessions on four Sunday mornings, and Odds Farm Park has SEN-only Christmas Cracker dates."
 events:
@@ -30,6 +31,7 @@ events:
   - { name: "Santa's Grotto at Dobbies Beaconsfield", start: "2026-11-22", end: "2026-12-24", venue: "Dobbies Garden Centre", town: "Beaconsfield", url: "https://events.dobbies.com/event-detail/?e=4442&r=v", price: 15 }
   - { name: "Christmas Cracker at Odds Farm Park", start: "2026-11-27", end: "2026-12-24", venue: "Odds Farm Park", town: "Beaconsfield", url: "https://www.oddsfarm.co.uk/christmas-cracker/", price: 35 }
   - { name: "Festive Weekend at Chiltern Open Air Museum", start: "2026-12-05T10:00", end: "2026-12-06T16:00", venue: "Chiltern Open Air Museum", street: "Newland Park", town: "Chalfont St Giles", url: "https://www.coam.org.uk/festive-weekend" }
+  - { name: "Watford Christmas Lights Switch-on", start: "2026-11-21T16:00", end: "2026-11-21T18:00", venue: "Pondside", street: "The Parade", town: "Watford", url: "https://watfordtowncentre.com/event/upcoming-events-calendar-autumn/", description: "Live Christmas performances, then Watford's Christmas tree is switched on at 5pm." }
   - { name: "Kings Langley Christmas Lights Festival", start: "2026-11-21", venue: "Kings Langley High Street", street: "High Street", town: "Kings Langley", url: "https://kingslangley-pc.gov.uk/event/christmas-lights-festival/" }
   - { name: "Abbots Langley Carol Concert and Christmas Lights Switch-on", start: "2026-12-03T18:00", venue: "St Lawrence Church", street: "High Street", town: "Abbots Langley", url: "https://www.abbotslangley-pc.gov.uk/council_events/abbots-langley-carol-concert-christmas-lights/", price: 0 }
   - { name: "Croxley Green Christmas Market", start: "2026-12-05T14:30", end: "2026-12-05T18:00", venue: "Croxley Green Library", street: "Barton Way", town: "Croxley Green", url: "https://croxleygreen-pc.gov.uk/event/christmas-market-3/" }
@@ -75,11 +77,11 @@ Christmas in West Herts can be as big or as small as you like, from a proper pan
 ## Christmas lights switch-ons
 
 - **Kings Langley Christmas Lights Festival**, High Street, Kings Langley. Saturday 21 November 2026; the parish council says timings and other activities will be confirmed nearer the date. The village centre lights are back for 2026, and this evening starts the season. [Details](https://kingslangley-pc.gov.uk/event/christmas-lights-festival/)
+- **Watford Christmas Lights Switch-on**, Pondside, The Parade, Watford. Saturday 21 November 2026, 4pm to 6pm. Run by Watford Town Centre BID: live Christmas performances on stage, then Watford's Christmas tree is switched on at 5pm, with new town centre lights for 2026. [Details](https://watfordtowncentre.com/event/upcoming-events-calendar-autumn/)
 - **Abbots Langley Carol Concert and Christmas Lights Switch-on**, St Lawrence Church, High Street, Abbots Langley. Thursday 3 December 2026, carols from 6pm with the lights switched on at about 6.30pm. Free and open to all, run by the parish council and St Lawrence Church. [Details](https://www.abbotslangley-pc.gov.uk/council_events/abbots-langley-carol-concert-christmas-lights/)
 
 ### Usually runs, 2026 dates to be confirmed
 
-- **Watford Town Centre Winterfest and lights switch-on**, The Parade and High Street, Watford. A free yearly event funded by Watford Town Centre BID; the 2026 date hasn't been announced. Last year it was on a Saturday afternoon in mid-November, with free funfair rides, a Christmas market, a parade with Santa and the lights switch-on. [Details](https://www.watford.gov.uk/news/article/878/watford-town-centre-christmas-lights-switched-on-at-spectacular-winterfest-event)
 - **Croxley Green carols and lights switch-on**, Croxley Green Library forecourt, Barton Way, Croxley Green. A parish council evening of carols and the Christmas tree lights, usually in late November. Not yet listed for 2026. [Details](https://croxleygreen-pc.gov.uk/events/)
 
 ## Christmas markets and fairs

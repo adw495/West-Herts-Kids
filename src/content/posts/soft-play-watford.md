@@ -3,6 +3,7 @@ title: "Soft play in Watford & West Herts: every centre compared (2026)"
 description: "Parents Paradise, Rock Up, Flip Out and Ninja Warrior UK compared: ages, prices, opening times, toddler sessions, cafés and parking for soft play around Watford and Bushey."
 answer: "Parents Paradise in Bushey: £2 for under-1s, £8 for 2–4s, with a baby area (book ahead). Rock Up Watford: £8.95 for ages 8 and under, under-1s free. Toddler sessions: Ninja Toddlers £6.95 (ages 1–4), Flip Out Stay & Play £7.95 (term-time Fridays)."
 date: 2026-10-07
+updated: 2026-10-23
 type: comparison
 towns: [watford, bushey]
 categories: [play-parties, baby-toddler]
@@ -12,6 +13,8 @@ faq:
     a: "Booked online, Parents Paradise in Bushey is £2 for under-1s, £4 at 1 year, £8 for 2 to 4s and £12 for 5 to 12s, plus £1 or £2 for the first adult. Rock Up Watford's soft play is £8.95 for ages 8 and under, Flip Out's Stay & Play is £7.95, and Ninja Toddlers at Ninja Warrior UK is £6.95 per toddler plus £2 per adult. Check with the venue before you go."
   - q: "Is there soft play for babies in Watford?"
     a: "Parents Paradise has a separate sensory area for babies and charges £2 for under-12-months. At Rock Up Watford, babies up to 11 months go free, and Flip Out's Stay & Play is £3.95 for babies aged 6 to 12 months."
+  - q: "How much is a soft play party in Watford?"
+    a: "Rock Up Watford's Soft Play Party is £19.95 per person for ages 8 and under (minimum 8), and its Toddler Party for ages 4 and under is £20.95 per person. Flip Out's Little Flippers Party for ages 5 and under is £24.99 per person including one adult, with a minimum of 10, at weekends and in school holidays."
   - q: "Is Gambado in Watford still open?"
     a: "Gambado at Woodside Leisure Park no longer appears on Gambado's website, which now lists only its Chelsea centre, so don't plan a trip there."
   - q: "Which soft play near Watford has free parking?"
@@ -33,13 +36,21 @@ Watford doesn't have a long list of soft play centres, but between the town cent
 ## Dedicated soft play centres
 
 - **Parents Paradise**, Greatham Road, Bushey. A soft play centre for children up to 12, with a separate sensory area for babies, a toddler area with slides and tunnels, and climbing frames, go-karts and a football penalty area for older children. It's open Tuesday to Sunday from 9.30am (6pm close on weekdays, 6.15pm at weekends, and closed 2pm to 3.30pm on term-time weekdays), and sessions last 2 hours. Booked online, children cost £2 under 12 months, £4 at 1 year, £8 for 2–4s and £12 for 5–12s; the first adult pays £1 on weekdays or £2 at weekends and peak times, with additional adults £2 or £4. There's a £1 booking fee, and paying on the door costs £1 more per person. You must book in advance. There's the Paradise Café, free Wi-Fi and free on-site parking. [Details](https://parentsparadise.co.uk/booking/) · [Our listing](/activities/parents-paradise-bushey/)
-- **Rock Up Watford soft play**, atria Watford (Harlequin), Watford town centre. Alongside its climbing walls, Rock Up has a multi-storey soft play. Soft play tickets are £8.95 for children aged 8 and under, and babies up to 11 months go free; a bundle of 10 passes is £49. In term time it opens Monday to Wednesday and Friday 10am to 7.30pm, and weekends 9.30am to 8pm, and it's closed on Thursdays. There's an on-site café, and the closest parking is the Kings car park or the Harlequin car parks. [Details](https://www.rock-up.co.uk/products?center=watford) · [Opening times](https://www.rock-up.co.uk/locations/watford) · [Our listing](/activities/rock-up-watford/)
+- **Rock Up Watford soft play**, atria Watford (Harlequin), Watford town centre. Alongside its climbing walls, Rock Up has a multi-storey soft play. Soft play tickets are £8.95 for children aged 8 and under, and babies up to 11 months go free; a bundle of 10 passes is £49. In term time it opens Monday to Wednesday and Friday 10am to 7.30pm, Saturdays 9.30am to 8pm and Sundays 9.30am to 7.30pm, and it's closed on Thursdays. Weekend and school-holiday soft play sessions typically last 2 hours. There's an on-site café, and the closest parking is the Kings car park or the Harlequin car parks. [Details](https://www.rock-up.co.uk/products?center=watford) · [Opening times](https://www.rock-up.co.uk/locations/watford) · [Our listing](/activities/rock-up-watford/)
 
 ## Toddler sessions at activity venues
 
 - **Rock Up Toddler Climb**, atria Watford (Harlequin), Watford town centre. Morning sessions for under-5s that combine climbing and soft play, at £13.95 per child with accompanying adults free. [Details](https://www.rock-up.co.uk/products?center=watford#mini-climbers) · [Our listing](/activities/rock-up-watford/)
 - **Flip Out Watford Stay & Play**, atria Watford, lower level, Watford town centre. For children aged 5 and under on term-time Fridays: play as long as you like until 3pm, with access to the soft play, ninja course, inflatable, drift carts, trampolines and sports zone. It's £7.95, or £3.95 for babies aged 6 to 12 months. Grown-ups who aren't playing need a £3.50 spectator ticket, which you can spend in The Diner café. In term time, Flip Out is closed on Mondays and Tuesdays. [Details](https://www.flipout.co.uk/locations/watford/prices) · [Our listing](/activities/flip-out-watford/)
 - **Ninja Toddlers at Ninja Warrior UK**, Woodside Leisure Park, Garston, Watford. Ninja fun for 1 to 4-year-olds every Monday, Tuesday, Wednesday and Friday from 9.30am to 11.30am in term time. Tickets are £6.95 per toddler and £2 per adult, and a 30-day membership with unlimited toddler sessions is £19.95. Each adult can bring up to two toddlers and must stay with them throughout. Woodside Leisure Park has free parking on site. [Details](https://ninjawarrioruk.co.uk/watford/ninja-toddlers/) · [Our listing](/activities/ninja-warrior-uk-watford/)
+
+## Soft play birthday parties
+
+- **Rock Up Watford**, atria Watford. A **Soft Play Party** is £19.95 per person for ages 8 and under, with a minimum of 8 guests, refreshments and pizza, and under-1s play free. The **Toddler Party** (ages 4 and under, mornings only) combines soft play and climbing at £20.95 per person, minimum 8. Parties last 2 hours in total: 30 minutes to arrive, an hour of play and 30 minutes in the party area. [Details](https://www.rock-up.co.uk/locations/watford/climbing-parties-in-watford)
+- **Flip Out Watford**, atria Watford. The **Little Flippers Party** is strictly for ages 5 and under: £24.99 per person (which covers one adult and one child), minimum 10 guests, with an hour in the arena and 30 minutes in a private party room. It includes socks, squash and water, pizza and crisps, digital invitations, a party bag per child and a free return pass for the birthday child, and runs at weekends and in school holidays only. [Details](https://www.flipout.co.uk/locations/watford/birthday-parties)
+- **Ninja Warrior UK Watford**, Woodside Leisure Park. Parties are for over-5s only, so it's an option for older brothers and sisters rather than toddlers: from £22.95 per person (Monday to Thursday in term time), minimum 10, with an hour of ninja action. [Details](https://ninjawarrioruk.co.uk/watford/parties/)
+
+For more party options, including halls and venues for older children, see our [kids' party venues guide](/whats-on/kids-party-venues-watford/).
 
 ## Good to know
 

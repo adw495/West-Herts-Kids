@@ -2,6 +2,7 @@
 title: "October half term 2026: holiday camps and activities in West Herts"
 description: "Holiday camps, workshops and days out for kids in Watford, Rickmansworth, Croxley and Chorleywood over October half term (26–30 October 2026)."
 date: 2026-09-25
+answer: "Most Hertfordshire children are off for October half term from Monday 26 to Friday 30 October 2026. Local camps that week include Rickmansworth Gymnastics Club (ages 4–14), We Make Footballers Watford (ages 4–12) and Xtra Time Watford (ages 4+). Check your own school's dates."
 type: whats-on
 towns: [watford, rickmansworth, croxley-green, chorleywood]
 categories: [holiday-camps]
