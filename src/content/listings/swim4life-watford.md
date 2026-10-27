@@ -21,11 +21,11 @@ schedule:
   - day: sat
     start: '11:30'
     end: '12:30'
-    note: Parent + Toddler and Stages 1-3, Watford Girls
+    note: Parent + Toddler and Stages 1-3, Watford Grammar School for Girls
   - day: sat
     start: '12:30'
     end: '13:15'
-    note: Stages 4-7, Watford Girls
+    note: Stages 4-7, Watford Grammar School for Girls
 venue:
   name: Watford Grammar School for Girls (Fullerlife Fitness Centre)
   address: Lady's Close, Watford

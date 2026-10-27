@@ -1,6 +1,6 @@
 ---
 name: Watford Swim School
-seoTitle: "Watford Swim School (Stud Green): prices & crash courses"
+seoTitle: "Watford Swim School, Stud Green: prices, crash courses & booking"
 seoDescription: "Private swimming lessons in Garston from 4 months: one-to-one from £35, two-to-one from £20 per 30 minutes, and 5-day holiday crash courses from £122.50."
 summary: Private swimming lessons for babies, children and adults in Watford, with
   weekly term-time lessons and holiday crash courses.
@@ -25,7 +25,7 @@ venue:
   lon: -0.40177
 website: https://watfordswimschool.com/
 source: provider website (lessons-prices and FAQ pages)
-verified: '2026-10-09'
+verified: '2026-10-23'
 lastChanged: '2026-10-07'
 claimed: false
 visit:
@@ -42,3 +42,7 @@ Watford Swim School offers private lessons for babies, children and adults acros
 **Parent & Baby** lessons run in term time on weekday daytimes, at £17 for a 30-minute lesson. Children's lessons come as one-to-one, two-to-one or small groups of up to four (the groups run at Abbot's Hill School).
 
 Lessons run **weekly in line with school terms**, with **crash courses in the school holidays**, which suit children who need a confidence boost before a holiday or school swimming.
+
+**Booking and joining.** New swimmers register online or by phone. If the classes are full you join a waiting list, and the school contacts you to offer a space when one comes up ([how joining works](https://watfordswimschool.com/weekly-term-dates/)). Bookings are managed through the school's online portal (Member Hub), and Stud Green lessons are paid by bank transfer rather than Direct Debit. Weekly lessons run for 11 to 16 consecutive weeks, depending on school term dates. Holiday crash course dates are published on the school's website when they're set.
+
+**Good to know.** Babies need correctly fitting swim nappies, long hair should be tied back or under a cap, goggles are allowed, and shoes come off poolside. From age 3, parents don't need to be in the water. There are no refunds or catch-up lessons for general sickness or missed lessons once a course has started. Ask the school about long-term illness. [Booking and FAQ](https://watfordswimschool.com/faq/) · [Terms](https://watfordswimschool.com/terms-and-conditions/)
