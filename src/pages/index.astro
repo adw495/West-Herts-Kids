@@ -40,8 +40,9 @@ const whatsOn = posts.find((p) => p.data.type === 'whats-on');
 // so the homepage never points at a past event even if nobody touches it.
 const todayIso = new Date().toISOString().slice(0, 10);
 const SEASONAL = [
-  { id: 'october-half-term-2026-holiday-camps', label: 'Half-term camps', until: '2026-10-30' },
+  { id: 'half-term', label: 'Half term', until: '2028-08-31', page: '/whats-on/half-term/' },
   { id: 'halloween-half-term-2026-watford', label: 'Halloween & half term', until: '2026-11-01' },
+  { id: 'bonfire-night-fireworks-2026-watford', label: 'Fireworks 2026', until: '2026-11-07' },
   { id: 'christmas-2026-west-herts', label: 'Christmas 2026', until: '2026-12-31' },
   { id: 'herts-school-term-dates-2026-27', label: 'Term dates', until: '2028-08-31' },
   { id: 'school-holiday-planner', label: 'Holiday planner', until: '2028-08-31', page: '/whats-on/school-holiday-planner/' },

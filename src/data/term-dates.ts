@@ -22,6 +22,17 @@ export const HOLIDAYS: Holiday[] = [
   { id: '2028-summer', name: 'Summer holidays', start: '2028-07-25', end: '2028-09-01' },
 ];
 
+// Dated guides for each holiday (post ids). Pages only link the ones that exist, so a missing guide is skipped.
+// Used by the school holiday planner and the stable /whats-on/half-term/ page.
+export const SEASONAL_GUIDES: Record<string, { href: string; label: string }[]> = {
+  '2026-oct-half-term': [
+    { href: 'october-half-term-2026-holiday-camps', label: 'October half term 2026 holiday camps' },
+    { href: 'halloween-half-term-2026-watford', label: 'Halloween and half term events' },
+    { href: 'bonfire-night-fireworks-2026-watford', label: 'Bonfire night fireworks 2026' },
+  ],
+  '2026-christmas': [{ href: 'christmas-2026-west-herts', label: 'Christmas 2026: pantos, grottos and lights' }],
+};
+
 // The next (or current) holiday relative to `today`, with the last school day before it and the day children go back.
 // Used to keep the term dates guide's search title and answer box current on every build.
 const addDays = (iso: string, n: number) => { const d = new Date(`${iso}T12:00:00Z`); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };

@@ -1,7 +1,7 @@
 ---
 name: South Oxhey Leisure Centre
-seoTitle: "South Oxhey Leisure Centre: kids' swimming lessons & parties"
-seoDescription: "25m pool and teaching pool at South Oxhey Leisure Centre: children's swimming lessons (£37.29 a month), fun swims from £3.35 and birthday parties."
+seoTitle: "South Oxhey Leisure Centre swimming pool: swim times, prices & lessons"
+seoDescription: "South Oxhey swimming pool at South Oxhey Leisure Centre: a 25m four-lane pool and teaching pool, with family swim times, kids' lessons and parties."
 summary: South Oxhey's leisure centre, with a 25m pool and teaching pool for children's swimming lessons and fun swims, plus children's birthday parties.
 categories: [swimming, play-parties]
 towns: [south-oxhey]
@@ -83,6 +83,6 @@ checkEvery: 90
 claimed: false
 ---
 
-Run by Everyone Active in partnership with Three Rivers District Council, South Oxhey Leisure Centre has a **25-metre, four-lane pool and a separate teaching pool**. The pools host the centre's **children's swimming lessons**, as well as fitness and fun swim sessions.
+South Oxhey's public swimming pool is at **South Oxhey Leisure Centre** on Gosforth Lane. Run by Everyone Active in partnership with Three Rivers District Council, it has a **25-metre, four-lane swimming pool and a separate teaching pool**, and the family swim times are listed on this page. The pools host the centre's **children's swimming lessons**, as well as fitness and fun swim sessions.
 
 The centre also runs **children's birthday parties** and has a café. It opens 06:30–22:00 on weekdays and 08:00–19:00 at weekends. Lesson levels, swim times and prices are on the Everyone Active website and app.

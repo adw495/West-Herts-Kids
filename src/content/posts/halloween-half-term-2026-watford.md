@@ -2,6 +2,7 @@
 title: "Halloween and half term with kids in Watford & West Herts 2026"
 description: "Trick or treat trails, spooky walks, family shows, pumpkin picking and Halloween days out in Watford, Rickmansworth, Chorleywood and Croxley Green, 17 October to 1 November 2026."
 date: 2026-10-07
+answer: "Hertfordshire's October half term runs Monday 26 to Friday 30 October 2026. Watford's free Trick or Treat Trail is on the High Street and The Parade all week (10am to 4pm), and the free Trick or Treat Show is at Pondside on Saturday 31 October, 5pm to 6pm."
 type: guide
 towns: [watford, rickmansworth, chorleywood, croxley-green, abbots-langley]
 categories: [days-out, outdoor-nature]
@@ -53,5 +54,7 @@ You can see everything Watersmeet has on over the holiday on its [October half t
 - Hertfordshire Libraries says Zoolab is coming back to its libraries over October half term with Halloween animal sessions, but the dates and branches weren't visible to us. Check the [library events page](https://www.hertfordshire.gov.uk/services/libraries-and-archives/events-and-things-to-do/library-events.aspx) for your nearest branch.
 - The shows, story boats and timed trails have limited spaces, so book ahead if you can. The town centre trail and Trick or Treat Show in Watford are free and you don't need to book.
 - Woodland trails and pumpkin fields get muddy in late October, so wellies are a good idea.
+
+Next up: [bonfire night fireworks near Watford in 2026](/whats-on/bonfire-night-fireworks-2026-watford/), including the free Cassiobury Park display on 7 November.
 
 *Know something we've missed, or run something local? [Tell us, it's free to list](/list-your-activity/).*

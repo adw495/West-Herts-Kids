@@ -33,7 +33,7 @@ Waiting lists for children's swimming lessons can be long, so it's worth knowing
 | [Watford Leisure Centre Central](/activities/watford-leisure-centre-central/) | Central Watford | Adult & Child, then stages | £48.96 a month | Group |
 | [Watford Leisure Centre Woodside](/activities/watford-leisure-centre-woodside/) | Garston | Adult & Child, then stages | £48.96 a month | Group |
 | [Aqua Swim School](/activities/aqua-swim-school-watford/) | Watford Grammar School for Girls | From 3½ | £143 for an 11-week term | Up to 6 beginners |
-| [Swim4Life](/activities/swim4life-watford/) | Watford Girls (Sat) and Cassio Metro (Tue–Thu) | From 1 | Not published | Small groups, 1:1 and 2:1 |
+| [Swim4Life](/activities/swim4life-watford/) | Watford Grammar School for Girls (Sat) and Cassio Metro (Tue–Thu) | From 1 | Not published | Small groups, 1:1 and 2:1 |
 | [Watford Swim School](/activities/watford-swim-school/) | Stud Green, Garston | From 4 months | £16–£37 per 30 min | 1:1, 2:1, 4:1 |
 | [Active Swim School](/activities/active-swim-school-rickmansworth/) | Rickmansworth School, RMS, York House | From 6 months | Not published (free trial) | Up to 4 beginners, 1:1, SEN |
 | [Water Babies](/activities/water-babies-bushey-meadow-wood/) | Meadow Wood School, Bushey | Newborn to pre-school | See website | Parent and baby |
@@ -51,7 +51,7 @@ All four leisure centres run Everyone Active's children's programme, starting wi
 ## Swim schools in Watford
 
 - **[Aqua Swim School](/activities/aqua-swim-school-watford/)** has taught in Watford since 1990, at Watford Grammar School for Girls. Beginners start from 3½, lessons run Monday to Friday from 4.15pm and on Saturday mornings, and it costs **£143 for an 11-week term**. Parents wait outside rather than poolside.
-- **[Swim4Life](/activities/swim4life-watford/)** is a family-run school with small classes from age one: a **Saturday Parent + Toddler class** at Watford Girls (11.30am), stages 1–7 after school at Cassio Metro Leisure Centre on Wednesdays and Thursdays, and one-to-one and two-to-one lessons on Tuesdays.
+- **[Swim4Life](/activities/swim4life-watford/)** is a family-run school with small classes from age one: a **Saturday Parent + Toddler class** at Watford Grammar School for Girls (11.30am), stages 1–7 after school at Cassio Metro Leisure Centre on Wednesdays and Thursdays, and one-to-one and two-to-one lessons on Tuesdays.
 - **[Watford Swim School](/activities/watford-swim-school/)** teaches in a small private pool at Stud Green, Garston, with parents poolside. A 30-minute lesson is **£35 one-to-one** (£37 after 3.30pm and at weekends), **from £20 two-to-one**, and **£17 for Parent & Baby**. Its £16 four-to-one lessons run at Abbot's Hill School in Hemel Hempstead.
 
 ## Swimming lessons in Rickmansworth and Croxley Green

@@ -90,6 +90,7 @@ The council publishes the first day of each autumn term and the dates of every h
 
 - **October half term 2026 (26–30 October):** [our half-term holiday camps guide](/whats-on/october-half-term-2026-holiday-camps/) and [Halloween and half term events](/whats-on/halloween-half-term-2026-watford/).
 - **Christmas 2026:** pantos, Santa visits and markets in [our Christmas guide](/whats-on/christmas-2026-west-herts/).
+- **Every half term:** [what's on next half term](/whats-on/half-term/), with the dates, local camps and events in one place.
 - **Any school holiday:** our [holiday camps hub](/whats-on/holiday-camps-watford/) lists the local clubs that run camps through the year.
 - **Days that won't cost much:** [free things to do with kids](/whats-on/free-things-to-do-kids-watford/) and, for wet weather, [indoor and rainy-day ideas](/whats-on/indoor-rainy-day-kids-watford/).
 
