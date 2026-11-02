@@ -1,6 +1,6 @@
 # Verification queue
 
-Last worked through: **26 Oct 2026**. Everything below was checked against providers' own websites or official class finders.
+Last worked through: **2 Nov 2026**. Everything below was checked against providers' own websites or official class finders.
 
 ## Flagged
 
@@ -8,6 +8,24 @@ Last worked through: **26 Oct 2026**. Everything below was checked against provi
 | Listing | What's open | Source to check |
 |---|---|---|
 | water-babies-bushey-meadow-wood | **Needs the owner's eyes (unconfirmed three times).** Swimvincibles (4+) text on the pool page is still template copy; whether it runs here is only in the JS class finder, which asks for a child's date of birth (the weekly check won't enter one) | waterbabies.co.uk class finder (Meadow Wood School pool) |
+
+## Done on 2 Nov 2026 (weekly check)
+
+No listings were due on their own schedule, so this run cleared October half-term details that had gone stale, worked the link-watch findings and added three new listings.
+
+| Listing | Outcome |
+|---|---|
+| watford-fc-cse-trust-football-camps | **Updated:** October booking page gone (404); no next camp yet; booking link now the event list; email community@watfordfctrust.com |
+| fj-sporting-solutions, we-make-footballers, xtra-time, camp-beaumont, airies | **Updated:** past October dates removed; no new holiday dates published yet (Camp Beaumont RMS isn't a winter venue) |
+| noise-makers-croxley | **Updated:** class times and venue (checked in Chrome) |
+| Youngs Football Academy, Performance Plus Academy (both Powerleague Watford), Mother Nature Science Camps (Merchant Taylors' Prep, Rickmansworth) | **Published** (new) |
+| Mad Science Hertfordshire | **Not listed:** camps page shows no camps right now |
+| 1st Chorleywood Scouts, Cygnets Art School | **Link watch:** 502s were temporary (200 on retry) |
+
+## New leads (2 Nov 2026)
+
+- **South Oxhey Drama Centre** (All Saints Church, Gosforth Lane): drama for 4–14 on Mondays per Creative Hertfordshire; only a Facebook page, so confirm it's current before listing.
+- **Sports2inspire** holiday camps at Chambersbury Primary (HP3, Hemel side of Kings Langley): check whether it's within our towns.
 
 ## Done on 26 Oct 2026 (weekly check)
 
