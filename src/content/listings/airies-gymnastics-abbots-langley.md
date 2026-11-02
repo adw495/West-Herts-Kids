@@ -23,9 +23,9 @@ phone: 07415 758680
 email: airiesgymnastics@gmail.com
 website: https://www.airiesgymnastics.co.uk/
 source: provider website
-verified: '2026-10-12'
+verified: '2026-11-02'
 checkEvery: 30
-lastChanged: '2026-10-12'
+lastChanged: '2026-11-02'
 claimed: false
 schedule:
 - day: mon
@@ -102,4 +102,4 @@ Airies is a dedicated gymnastics club in Abbots Langley for children of all abil
 - **General gym:** 4–13 years
 - **Private lessons** and **holiday crash courses**
 
-You can **book a free taster lesson** before signing up. Classes are at the YMCA Woodlands Community Hub in Leavesden Country Park, next to the Woodlands Cafe, playground and free car park. The October half-term crash course is on Friday 30 October (£25, or £45 for two siblings).
+You can **book a free taster lesson** before signing up. Classes are at the YMCA Woodlands Community Hub in Leavesden Country Park, next to the Woodlands Cafe, playground and free car park. In school holidays it also runs 3-hour crash courses and cartwheel and handstand workshops (the October 2026 crash course was £25, or £45 for two siblings).

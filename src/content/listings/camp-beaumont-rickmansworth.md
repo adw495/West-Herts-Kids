@@ -6,35 +6,9 @@ towns: [rickmansworth]
 ageMin: 3
 ageMax: 14
 season: [holidays]
-schedule:
-- day: mon
-  start: '08:30'
-  end: '17:30'
-  note: October half term, 26 Oct 2026, ages 3–14 (arrive by 9:15am, collect 4:30–5:30pm)
-  price: £60
-- day: tue
-  start: '08:30'
-  end: '17:30'
-  note: October half term, 27 Oct 2026, ages 3–14
-  price: £60
-- day: wed
-  start: '08:30'
-  end: '17:30'
-  note: October half term, 28 Oct 2026, ages 3–14
-  price: £60
-- day: thu
-  start: '08:30'
-  end: '17:30'
-  note: October half term, 29 Oct 2026, ages 3–14
-  price: £60
-- day: fri
-  start: '08:30'
-  end: '17:30'
-  note: October half term, 30 Oct 2026, ages 3–14
-  price: £60
 priceFrom: 60
 priceUnit: day
-priceNote: October half term 2026 days shown at £60 (reduced from £67.50), £275 a week (reduced from £312.50). Early Risers (8am) and Extra Slice (6pm) £7.50 each or £15 both. Accepts Tax-Free Childcare and childcare vouchers.
+priceNote: October half term 2026 days were £60 (reduced from £67.50), £275 a week (reduced from £312.50). Early Risers (8am) and Extra Slice (6pm) £7.50 each or £15 both. Accepts Tax-Free Childcare and childcare vouchers.
 venue:
   name: RMS for Girls, Sports Centre
   address: Rickmansworth Park, Rickmansworth
@@ -45,8 +19,8 @@ email: rms@campbeaumont.co.uk
 phone: 01603 851 000
 website: https://www.campbeaumont.co.uk/camps/rms-for-girls/
 source: provider website
-verified: '2026-10-19'
-lastChanged: '2026-10-19'
+verified: '2026-11-02'
+lastChanged: '2026-11-02'
 checkEvery: 30
 claimed: false
 draft: false
@@ -55,3 +29,5 @@ draft: false
 Camp Beaumont runs a holiday day camp at the RMS for Girls sports centre in Rickmansworth Park for children aged **3 to 14**, in age groups (3–4, 5–7, 8–11 and 12–14). Facilities include swimming (from age 5), forest school, a sports hall, astroturf, tennis and a dance and drama studio.
 
 Camp opens at 8.30am (arrive by 9.15am) and collection is 4.30pm to 5.30pm, with an 8am drop-off and 6pm pick-up available for £7.50 each. Camp Beaumont is Ofsted registered and accepts Tax-Free Childcare and childcare vouchers.
+
+RMS for Girls isn't among the venues on Camp Beaumont's Winter Camps page (checked 2 November 2026), so the next camp here is likely to be February half term; check the camp page for dates.
