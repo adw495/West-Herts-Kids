@@ -62,7 +62,8 @@ venue:
 priceFrom: 7.5
 website: https://www.rise-studios.com/
 source: provider website
-verified: '2026-10-09'
+verified: '2026-10-26'
+checkEvery: 60
 claimed: false
 ---
 

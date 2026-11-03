@@ -11,33 +11,17 @@ ageMin: 4
 ageMax: 12
 season:
 - holidays
-schedule:
-- day: mon
-  start: '09:15'
-  end: '16:00'
-  note: Half-term camp 26–29 Oct 2026, Watford Power League
-- day: tue
-  start: '09:15'
-  end: '16:00'
-  note: Half-term camp 26–29 Oct 2026, Watford Power League
-- day: wed
-  start: '09:15'
-  end: '16:00'
-  note: Half-term camp 26–29 Oct 2026, Watford Power League
-- day: thu
-  start: '09:15'
-  end: '16:00'
-  note: Half-term camp 26–29 Oct 2026, Watford Power League
 priceUnit: week
-priceNote: 'October half-term camp, Mon 26–Thu 29 October 2026 (four days): £116 for the full camp.'
+priceNote: 'The October 2026 half-term camp (four days) was £116. No upcoming Watford camps were listed on 2 Nov 2026; new dates are added each term.'
 venue:
   name: Watford Power League
 priceFrom: 116
 website: https://wemakefootballers.com/uk/watford/events/holiday-camps
 source: provider website
-verified: '2026-10-19'
-checkEvery: 60
+verified: '2026-11-02'
+checkEvery: 30
 claimed: false
+lastChanged: '2026-11-02'
 ---
 
 We Make Footballers runs school-holiday football camps for **4–12 year olds**, from complete beginners to confident players.

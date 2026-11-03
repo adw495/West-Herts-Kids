@@ -1,15 +1,53 @@
 # Verification queue
 
-Last worked through: **19 Oct 2026**. Everything below was checked against providers' own websites or official class finders.
+Last worked through: **2 Nov 2026**. Everything below was checked against providers' own websites or official class finders.
 
 ## Flagged
 
-### Still flagged (19 Oct 2026)
+### Still flagged (26 Oct 2026)
 | Listing | What's open | Source to check |
 |---|---|---|
-| water-babies-bushey-meadow-wood | **Needs the owner's eyes (unconfirmed twice).** Swimvincibles (4+) text on the pool page is still template copy; whether it runs here is only in the JS class finder, which asks for a child's date of birth | waterbabies.co.uk class finder (Meadow Wood School pool) |
-| rise-studios-rickmansworth | Timetable image on rise-studios.com/timetable shows a Monday 5.15–6pm Inters contemporary class and a Thursday 4–5pm Juniors jazz & tap class that aren't on the listing; the per-age class widgets are embedded and hard to read automatically (Juniors widget shows Street Tue 5.30pm, £9 a class, £63 for the rest of term). Not refreshed; check in a normal browser | rise-studios.com/timetable and the class pages |
-| code-ninjas-watford | Still "location coming soon" + waitlist (19 Oct). Monthly check due ~12 Nov: make it a draft then if it still hasn't opened | codeninjas.co.uk/watford-uk-ldn |
+| water-babies-bushey-meadow-wood | **Needs the owner's eyes (unconfirmed three times).** Swimvincibles (4+) text on the pool page is still template copy; whether it runs here is only in the JS class finder, which asks for a child's date of birth (the weekly check won't enter one) | waterbabies.co.uk class finder (Meadow Wood School pool) |
+
+## Done on 2 Nov 2026 (weekly check)
+
+No listings were due on their own schedule, so this run cleared October half-term details that had gone stale, worked the link-watch findings and added three new listings.
+
+| Listing | Outcome |
+|---|---|
+| watford-fc-cse-trust-football-camps | **Updated:** October booking page gone (404); no next camp yet; booking link now the event list; email community@watfordfctrust.com |
+| fj-sporting-solutions, we-make-footballers, xtra-time, camp-beaumont, airies | **Updated:** past October dates removed; no new holiday dates published yet (Camp Beaumont RMS isn't a winter venue) |
+| noise-makers-croxley | **Updated:** class times and venue (checked in Chrome) |
+| Youngs Football Academy, Performance Plus Academy (both Powerleague Watford), Mother Nature Science Camps (Merchant Taylors' Prep, Rickmansworth) | **Published** (new) |
+| Mad Science Hertfordshire | **Not listed:** camps page shows no camps right now |
+| 1st Chorleywood Scouts, Cygnets Art School | **Link watch:** 502s were temporary (200 on retry) |
+
+## New leads (2 Nov 2026)
+
+- **South Oxhey Drama Centre** (All Saints Church, Gosforth Lane): drama for 4–14 on Mondays per Creative Hertfordshire; only a Facebook page, so confirm it's current before listing.
+- **Sports2inspire** holiday camps at Chambersbury Primary (HP3, Hemel side of Kings Langley): check whether it's within our towns.
+
+## Done on 26 Oct 2026 (weekly check)
+
+No listings were due on their own schedule (all holiday camps were re-checked on 19 Oct), so this run worked the flagged items and growth.
+
+| Listing | Outcome |
+|---|---|
+| code-ninjas-watford | **Updated:** now open at St Luke's Church, Langley Way, WD17 3EG; half-term camps £59 a day; unflagged |
+| rise-studios-rickmansworth | **Confirmed:** booking-system class list for autumn 2026 matches the listing; the timetable image is last year's (uploaded Oct 2025); unflagged |
+| Step2Step Bollywood, Pro Elite Football, Watersmeet Theatre, Tiny Tots (Kings Langley) | **Published** (new) |
+| Loko Dance Cheer | **Dropped lead:** all classes are school clubs at named schools (St Meryl, Eastbury Farm etc.); the half-term camp is outside our towns |
+| Be On Pointe | **Dropped lead:** venues are mostly Barnet/Borehamwood; the only Bushey slot is at St Margaret's School |
+| Celtic Hearts Irish Dance | **Dropped lead:** still no own website found |
+| Rickmansworth Aikido Club | **Not listed:** ages 14+ only (rickyaikido.com); could be added later as a teens option |
+
+## New leads (26 Oct 2026)
+
+- **Sing and Sign Rickmansworth** (Mill End Community Centre, WD3 8HE): the official class finder needs a postcode typed into a search form; check by hand.
+- **Youngs Football Academy** at Powerleague Watford (Bushey, WD23 2TY): youngs-football-academy.classforkids.io.
+- **Mad Science Hertfordshire** holiday camps at Beechfield School, Watford (WD24 5TY): check for Christmas/February dates.
+- **Abbots Langley Parent & Toddler Group** (Abbots Langley Community Centre, WD5 0AP; Wed and Fri 9.30–11.30am per the Family Centre Service's parent & toddler list): registered charity 1041590, no own website found.
+- **Watford Gymnastics Club** at Warren Dell Primary (South Oxhey): pupils-only after-school club, so not a second public venue (resolves the 15 Oct lead).
 
 ## Done on 19 Oct 2026 (weekly check)
 
