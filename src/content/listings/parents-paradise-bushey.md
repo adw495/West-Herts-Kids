@@ -28,7 +28,7 @@ schedule:
   start: 09:30
 priceFrom: 2
 priceUnit: entry
-priceNote: 'Booked online for 2 hours: under-1s £2, 1-year-olds £4, 2–4s £8, 5–12s £12. First adult £1 on weekdays or £2 at weekends and peak times; extra adults £2 or £4. £1 booking fee; paying on the door is £1 more per person.'
+priceNote: 'Booked online for 2 hours. Off-peak (Tue–Thu, term time): under-1s £2, 1-year-olds £4, 2–4s £8, 5–12s £12.50, adults £2. Peak (weekends and school holidays): £3, £5.50, £10.95, £14.50, adults £4.50. £1.50 booking fee; paying on the door is £1.50 more per person.'
 venue:
   name: Parents Paradise
   address: Unit C, Greatham Road Industrial Estate, Greatham Road, Bushey
@@ -38,12 +38,12 @@ venue:
 phone: 01923 248747
 website: https://parentsparadise.co.uk/
 source: provider website
-verified: '2026-10-07'
-lastChanged: '2026-10-07'
+verified: '2026-11-09'
+lastChanged: '2026-11-09'
 checkEvery: 30
 claimed: false
 visit:
-  hours: Tue–Sun from 9.30am
+  hours: Tue–Fri 9.30am–6pm; Sat–Sun 9.30am–6.15pm; closed Mondays, and closed 2–3.30pm on term-time weekdays
   parking: Free parking on site
   cafe: true
   visitLength: Play sessions are 2 hours

@@ -43,9 +43,9 @@ venue:
   lon: -0.50597
 website: https://www.chorleywoodtennis.com/Coaching
 source: provider website (ClubSpark coaching page)
-verified: '2026-10-05'
+verified: '2026-11-09'
 lastChanged: '2026-10-05'
-checkEvery: 30
+checkEvery: 45
 claimed: false
 ---
 
