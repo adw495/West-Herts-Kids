@@ -1,6 +1,6 @@
 # Verification queue
 
-Last worked through: **2 Nov 2026**. Everything below was checked against providers' own websites or official class finders.
+Last worked through: **9 Nov 2026**. Everything below was checked against providers' own websites or official class finders.
 
 ## Flagged
 
@@ -8,6 +8,23 @@ Last worked through: **2 Nov 2026**. Everything below was checked against provid
 | Listing | What's open | Source to check |
 |---|---|---|
 | water-babies-bushey-meadow-wood | **Needs the owner's eyes (unconfirmed three times).** Swimvincibles (4+) text on the pool page is still template copy; whether it runs here is only in the JS class finder, which asks for a child's date of birth (the weekly check won't enter one) | waterbabies.co.uk class finder (Meadow Wood School pool) |
+
+## Done on 9 Nov 2026 (weekly check)
+
+Five listings were due; link watch found one dead page; growth added the county library programme (free, every town except Kings Langley).
+
+| Listing | Outcome |
+|---|---|
+| parents-paradise-bushey | **Updated:** new off-peak/peak prices, £1.50 booking fee and door surcharge, opening hours |
+| robolabx-after-school-robotics | **Updated:** old page 404; ages now 7–11; local partner schools named |
+| chorleywood-lawn-tennis-club-juniors, watford-miniature-railway, langleybury-childrens-farm | **Confirmed** unchanged |
+| watford-leisure-centre-central | **Not re-verified:** lesson times and swim prices are only in the Everyone Active booking widget; check by hand if it is unconfirmable again next time |
+| Baby Rhyme Time, Storytime, LEGO club (Hertfordshire Libraries) | **Published** (new) |
+
+## New leads (9 Nov 2026)
+
+- **Oxhey Jets FC** (Boundary Stadium, Altham Way, South Oxhey): club site's newest pages are old; no current youth teams confirmed. Look for a current youth section before listing.
+- **Kings Langley Library**: no rhyme time/storytime/LEGO found in the events listing; check again in the new year.
 
 ## Done on 2 Nov 2026 (weekly check)
 

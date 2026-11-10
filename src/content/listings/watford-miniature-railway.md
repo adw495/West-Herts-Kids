@@ -18,9 +18,9 @@ venue:
   address: Watford
 website: https://watfordrailway.co.uk/pages/opening-times-and-prices
 source: provider website
-verified: '2026-10-05'
+verified: '2026-11-09'
 lastChanged: '2026-10-05'
-checkEvery: 30
+checkEvery: 45
 claimed: false
 visit:
   hours: Open 11am–5pm, 11am–4pm or 11am–3pm depending on the date (colour-coded calendar); weather permitting

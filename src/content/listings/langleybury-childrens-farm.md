@@ -24,9 +24,9 @@ venue:
 website: https://www.langleyburychildrensfarm.org.uk/
 bookingUrl: https://www.langleyburychildrensfarm.org.uk/copy-of-about-1
 source: provider website; OpenStreetMap
-verified: '2026-10-09'
+verified: '2026-11-09'
 lastChanged: '2026-10-05'
-checkEvery: 30
+checkEvery: 45
 claimed: false
 visit:
   hours: 'Pre-booked sessions: morning 11am–1.30pm (arrive 10.45–11.15am), afternoon 2.30pm–5pm'
