@@ -18,7 +18,7 @@ Five listings were due; link watch found one dead page; growth added the county 
 | parents-paradise-bushey | **Updated:** new off-peak/peak prices, £1.50 booking fee and door surcharge, opening hours |
 | robolabx-after-school-robotics | **Updated:** old page 404; ages now 7–11; local partner schools named |
 | chorleywood-lawn-tennis-club-juniors, watford-miniature-railway, langleybury-childrens-farm | **Confirmed** unchanged |
-| watford-leisure-centre-central | **Not re-verified:** lesson times and swim prices are only in the Everyone Active booking widget; check by hand if it is unconfirmable again next time |
+| watford-leisure-centre-central | **Confirmed on 10 Nov** (activity cards open in Chrome without booking); extra Adult & Child days and the £8.25 inflatable session added |
 | Baby Rhyme Time, Storytime, LEGO club (Hertfordshire Libraries) | **Published** (new) |
 
 ## New leads (9 Nov 2026)

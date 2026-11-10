@@ -31,7 +31,7 @@ schedule:
 - day: sat
   start: '08:30'
   end: '10:00'
-  note: Adult & Child swimming lessons, 4–18 months (08:30 and 09:30 classes)
+  note: Adult & Child swimming lessons, 4–18 months (08:30 and 09:30 classes). Also Mon 13:00, Tue 09:30, Wed 11:30, Thu 12:30 and Sun 08:30
 - day: sat
   start: '08:30'
   end: '12:30'
@@ -55,6 +55,11 @@ schedule:
   end: '15:55'
   note: Public swimming
   price: £4.60 junior, £7.60 adult
+- day: sun
+  start: '16:00'
+  end: '16:55'
+  note: Family swimming with inflatable (over-5s; buoyancy jackets mandatory)
+  price: £8.25 per person
 venue:
   name: Watford Leisure Centre Central
   address: Peace Prospect, Watford
@@ -64,13 +69,13 @@ venue:
 phone: 01923 296750
 website: https://www.everyoneactive.com/centre/watford-leisure-centre-central/
 source: provider website; OpenStreetMap
-verified: '2026-10-09'
-lastChanged: '2026-10-05'
+verified: '2026-11-10'
+lastChanged: '2026-11-10'
 checkEvery: 30
 claimed: false
 priceFrom: 4.6
 priceUnit: session
-priceNote: 'Family or public swim: junior £4.60, adult £7.60. Children''s swimming lessons (e.g. Stage 1, Adult & Child) £48.96 a month by Direct Debit, priced on a 50-week course.'
+priceNote: 'Family or public swim: junior £4.60, adult £7.60. Family swim with inflatable £8.25 per person. Children''s swimming lessons (e.g. Stage 1, Adult & Child) £48.96 a month by Direct Debit, priced on a 50-week course; joining fees apply.'
 visit:
   hours: Mon–Fri 6am–10pm; Sat–Sun 8am–6pm (centre hours)
   source: https://www.everyoneactive.com/centre/watford-leisure-centre-central/

@@ -5,6 +5,7 @@ the schedule can learn which providers change often. Format: date · listing · 
 
 | Date | Listing | Change | Source |
 | --- | --- | --- | --- |
+| 2026-11-10 | watford-leisure-centre-central | Re-verified in Chrome (activity cards on the centre page): Stage 1 times, weekend public/family swims, £4.60/£7.60 swim prices, £48.96 lesson price and centre hours all confirmed. Added: Adult & Child (4–18 months) lessons also run Mon, Tue, Wed, Thu and Sun; Sunday 16:00 family swim with inflatable is £8.25 per person, over-5s; joining fees apply to lessons | https://www.everyoneactive.com/centre/watford-leisure-centre-central/ |
 | 2026-11-09 | parents-paradise-bushey | Prices now split off-peak/peak: 5–12s £12.50/£14.50, adults £2/£4.50, peak 3–4 tier £10.95; booking fee and on-the-door surcharge now £1.50 (were £1); opening hours added (Tue–Fri 9.30am–6pm, weekends to 6.15pm, closed 2–3.30pm term-time weekdays) | https://parentsparadise.co.uk/booking/ |
 | 2026-11-09 | robolabx-after-school-robotics | Old /afterschoolclub page now 404s; new page /after-school-club. Ages now 7–11 (Years 3–6), was 5–14; local partner schools named (Lanchester, The Orchard, Field Junior, Little Green Junior); email info@robolabx.com | https://www.robolabx.com/after-school-club |
 | 2026-11-09 | chorleywood-lawn-tennis-club-juniors | No change: Mon–Sun groups, ages and BR Tennis still as listed (checked in Chrome; mid-term prices shown pro rata) | https://www.chorleywoodtennis.com/Coaching |
