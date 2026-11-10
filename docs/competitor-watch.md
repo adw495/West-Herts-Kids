@@ -46,3 +46,30 @@ Weekly log from the Thursday growth review. We look, learn and adapt formats; we
 2. Same guide: corrected Odds Farm SEN dates and Dobbies start date, removed Willows prices not shown for 2026, and replaced the expired panto "£20 until October" line with the current flat £25.
 
 **Did it work?** (filled in by the review 3–4 weeks later): Christmas guide position and CTR on 3 Nov baseline: 28 clicks, 435 impressions, CTR 6.4%, position 6.5 (28 days to 31 Oct).
+
+## 5 November 2026 (pushed 10 November)
+
+| Search | Top domains (in order) | Us |
+|---|---|---|
+| half term activities watford | thebestof, vibe1076, eventbrite, thegrove, redkitedays | not seen |
+| christmas events watford 2026 | discoverireland (Waterford), vibe1076, ents24, watfordcolosseum, skiddle | not seen |
+| what's on watford this weekend kids | roundupweb (USA), vibe1076, tickettailor, thebestof, eventbrite | not seen |
+| kids party venues watford | tagvenue, chooseyourvenue, flipout, yhangry, hirespace | not seen |
+| holiday camps watford | pitchup, campbeaumont, classforkids.io, watford.gov.uk, redkitedays | not seen |
+| toddler groups watford | happity, achurchnearyou, eventbrite, clubhubuk, redkitedays | not seen |
+| soft play watford (monthly) | addtoevent, rock-up, lovetovisit, happity, cademy | not seen |
+| christmas holiday camps watford 2026 (seasonal) | classforkids.io, harlequinwatford, letsgowiththechildren, thebestof, vibe1076 | not seen |
+| santa grotto watford 2026 (seasonal) | travelextra.ie, wlrfm (Waterford), vibe1076, discoverireland, eventbrite | not seen |
+
+**Movement since 29 Oct:** none on the six tracked searches; no new domains and nothing moved 3+ places. The search backend looks cached and still returns no westhertskids.co.uk pages even for `site:`, so treat "not seen" as an index gap in this tool, not a Google ranking.
+
+**Seasonal pages:** nobody has a Christmas 2026 holiday camps round-up for Watford; single provider pages (classforkids camp pages, Harlequin, Flip Out) rank on their own. Santa grotto results are still 2024–25 posts and Irish Waterford pages. No dated February half term 2027 page yet; redkitedays has an undated evergreen one.
+
+**Formats:** evergreen URLs with the year only in the title (redkitedays, primarytimes /santa) keep ranking year after year. Our guides already use stable URLs for camps; the grotto round-up should too.
+
+**Actions taken:**
+1. Holiday camps guide refreshed for Christmas 2026: new "Christmas 2026 camps" section (Let's Play 21–23 Dec, Rickmansworth Gymnastics fun session and Play Gym 22–23 Dec, HAPpy codes), Christmas answer box, FAQ and title "Christmas holiday camps Watford 2026: dates & prices". Facts re-checked on the providers' pages on 10 Nov before pushing.
+2. October half term and Halloween guides: "has finished" note pointing to the Christmas guides.
+3. Xtra Time line in the guide corrected to the venues its own page names (Fullerians in summer, Willow Tree Primary in October half term) and Friday Fun Day price £16.
+
+**Did it work?** (filled in by the review 3–4 weeks later): baseline for /whats-on/holiday-camps-watford/ before the change: 12 clicks, 270 impressions, position 14.5 (Search Console, 28 days to 7 Nov).
