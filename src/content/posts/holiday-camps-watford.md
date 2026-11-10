@@ -1,10 +1,10 @@
 ---
 title: "Holiday camps & clubs in Watford and West Herts (2026)"
-seoTitle: "Holiday camps in Watford 2026: prices, ages & hours"
-answer: "October half term is 26–30 October 2026. Day camps near Watford run from about £25 to £57 a day: Xtra Time from £28, Let's Play £29.50, FJ Sporting LEGO camp £30, Watford Gymnastics £35 and Camp Beaumont £57. Several take Tax-Free Childcare."
-description: "October half term and holiday camps in Watford, Rickmansworth and Croxley from £25 a day: ages, hours, early drop-off, sibling discounts and Tax-Free Childcare."
+seoTitle: "Christmas holiday camps Watford 2026: dates & prices"
+answer: "Hertfordshire's Christmas holidays run from Monday 21 December 2026 to Friday 1 January 2027. Let's Play in Garston runs Christmas Fun Days on 21–23 December (£29.50, 9am to 4pm), and Rickmansworth Gymnastics Club has sessions on 22 and 23 December. More camps are added as providers publish dates."
+description: "Christmas 2026 and school holiday camps in Watford, Rickmansworth and Croxley from £25 a day: ages, hours, early drop-off, sibling discounts and Tax-Free Childcare."
 date: 2026-10-07
-updated: 2026-10-17
+updated: 2026-11-10
 type: comparison
 towns: [watford, rickmansworth, croxley-green, chorleywood, kings-langley]
 categories: [holiday-camps, football-sport, gymnastics-trampolining, arts-crafts, dance-drama, stem-coding, outdoor-nature]
@@ -20,8 +20,8 @@ faq:
     a: "Yes, if your child gets benefits-related free school meals. HAPpy camps are free for eligible children in Reception to Year 11, and the next ones run over Christmas 2026. See the HAPpy section above for dates."
   - q: "How much do holiday camps cost in Watford?"
     a: "Let's Play at Watford Woodside Leisure Centre is £29.50 for a 9am to 4pm day, Xtra Time's Multi Sports camp is normally £28 a day, and Watford Gymnastics Club charges £35 a day for children aged 5 and over (£25 for Reception). Camp Beaumont in Rickmansworth was showing October half-term days at £57. Prices were last checked on 7 October 2026, so check with the provider before you book."
-  - q: "What holiday camps are on in October half term 2026 near Watford?"
-    a: "We Make Footballers Watford runs a camp from Monday 26 to Thursday 29 October (9.15am to 4pm, ages 4 to 13, £116). FJ Sporting Solutions has a LEGO camp in Kings Langley on 28 and 29 October (£30 a day), and Cygnets Art School has workshops in Chorleywood on 28 and 29 October."
+  - q: "What holiday camps are on over Christmas 2026 near Watford?"
+    a: "Let's Play at Watford Woodside Leisure Centre runs Christmas Fun Days from Monday 21 to Wednesday 23 December 2026 (£29.50 a day, 9am to 4pm). Rickmansworth Gymnastics Club has a Christmas fun session (10am to 2pm, ages 4–16) and a Play Gym for 0 to 4-year-olds on 22 and 23 December. Most other local camps hadn't published Christmas dates when we checked on 10 November 2026."
   - q: "Do holiday camps in Watford offer sibling discounts?"
     a: "Several do. Barracudas takes £5 a day off per child when you book two or more children for 10 or more days, Let's Play gives siblings 10% off, Perform gives 25% off for siblings, and Xtra Time offers sibling and multi-day discounts."
   - q: "Which holiday camps near Watford have early drop-off?"
@@ -30,9 +30,19 @@ faq:
     a: "Bury Lake Young Mariners at the Rickmansworth Aquadrome runs week-long RYA Youth Sailing Courses in the school holidays for 9 to 16-year-olds, from complete beginners upwards, and nine is a firm minimum. Children aged 7 to 9 can try Junior Days instead."
 ---
 
-School holidays come round quickly, and local camps range from full working-day childcare to short creative workshops. We've checked every camp below on the provider's own website and listed only what each one states about ages, hours, prices and payment. We refresh this page before each holiday, and prices and dates were last checked on 7 October 2026.
+School holidays come round quickly, and local camps range from full working-day childcare to short creative workshops. We've checked every camp below on the provider's own website and listed only what each one states about ages, hours, prices and payment. We refresh this page before each holiday. Christmas dates were checked on 10 November 2026; other prices were last checked on 7 October 2026.
 
-**This holiday:** see what's on locally in [October half term 2026: holiday camps and activities](/whats-on/october-half-term-2026-holiday-camps/), and check the dates in [Herts school term dates 2026–27](/whats-on/herts-school-term-dates-2026-27/).
+**This holiday:** Hertfordshire schools break up on Friday 18 December and the Christmas holidays run from **Monday 21 December 2026 to Friday 1 January 2027** (see [Herts school term dates 2026–27](/whats-on/herts-school-term-dates-2026-27/)). For pantos, Santa and lights, see [our Christmas 2026 guide](/whats-on/christmas-2026-west-herts/).
+
+## Christmas 2026 camps
+
+Confirmed on the providers' own websites on 10 November 2026:
+
+- **Let's Play, Watford Woodside Leisure Centre**: Christmas Fun Days from **Monday 21 to Wednesday 23 December 2026**. A standard day is 9am to 4pm for £29.50, and early drop-off from 8am or late pick-up to 5pm cost £3.50 each. [Details](https://www.lets-play.org.uk/locations/watford-woodside-leisure-centre/)
+- **Rickmansworth Gymnastics Club, The Reach sports hall**: a Christmas Holiday Fun Session for 4 to 16-year-olds (10am to 2pm) and a Christmas Play Gym for 0 to 4-year-olds (10am to 11.45am), both on **Tuesday 22 and Wednesday 23 December 2026**, plus an afternoon Play Gym (12.30pm to 1.45pm) on the Tuesday only. You must book and pay in advance; babies under 6 months don't need booking. Prices are shown when you book. [Details](https://rickmansworth-gymnastics.classforkids.io/camps)
+- **HAPpy (for children on benefits-related free school meals, Reception to Year 11)**: the next programme runs in the Christmas holidays, with booking codes due in mid to late November. [Details](https://sportinherts.org.uk/happy)
+
+We Make Footballers, Watford Gymnastics Club, Xtra Time and the art workshops below hadn't published Christmas dates yet when we checked, and Camp Beaumont's Rickmansworth site isn't among its winter camp venues. Barracudas runs in the Easter and summer holidays only.
 
 ## Holiday camps compared
 
@@ -41,7 +51,7 @@ School holidays come round quickly, and local camps range from full working-day 
 | Barracudas Watford | Watford | 4–14 | – | Easter, summer | 8.30am–5.30pm, extended hours 8am–6pm. Takes Tax-Free Childcare and childcare vouchers |
 | Camp Beaumont, RMS for Girls | Rickmansworth | 3–14 | £57 a day | Half terms, Easter, Christmas, summer | Open 8.30am, collect 4.30–5.30pm. 8am drop-off and 6pm pick-up £7.50 each. Takes Tax-Free Childcare and childcare vouchers |
 | Let's Play, Watford Woodside Leisure Centre | Watford (Garston) | 5 (Year 1)–12 | £29.50 a day | School holidays | 9am–4pm. 8am drop-off and 5pm pick-up £3.50 each. Takes Tax-Free Childcare and childcare vouchers |
-| Xtra Time | Watford (Cassiobury) | 4+ | £28 a day | Half terms, Easter, Christmas, summer | Multi Sports 9am–4pm; Multi Activities 8am–6pm (£35). Takes Tax-Free Childcare |
+| Xtra Time | Watford | 4+ | £28 a day | Half terms, Easter, Christmas, summer | Multi Sports 9am–4pm; Multi Activities 8am–6pm (£35). Takes Tax-Free Childcare |
 | FJ Sporting Solutions | Kings Langley | 4–16 | £30 a day | October half term (LEGO camp) | 9am–3pm. Early drop-off from 8am and late pick-up to 4pm, £5 each |
 | We Make Footballers Watford | Watford | 4–13 | £116 for 4 days | School holidays | 9.15am–4pm |
 | Watford Gymnastics Club | Watford | Reception+ | £25 a day | School holidays | Reception 10am–2pm (£25); age 5+ 9am–3pm (£35). 10% off a full week |
@@ -55,12 +65,12 @@ School holidays come round quickly, and local camps range from full working-day 
 ## Sports & multi-activity
 
 - **Barracudas Watford**, Watford Grammar School for Girls, Watford. An Ofsted-registered multi-activity camp for 4 to 14-year-olds in the Easter and summer holidays, with an indoor pool on site. Standard hours are 8.30am to 5.30pm, with Extended Hours from 8am and until 6pm. It accepts Tax-Free Childcare and childcare vouchers, and has a sibling discount of £5 a day per child when you book two or more children for 10 or more individual days. [Details](https://www.barracudas.co.uk/camps/watford) · [Our listing](/activities/barracudas-watford/)
-- **Camp Beaumont**, RMS for Girls Sports Centre, Rickmansworth Park, Rickmansworth. A new Camp Beaumont day camp for ages 3 to 14, split into age groups (3–4, 5–7, 8–11 and 12–14), with swimming from age 5, forest school, a sports hall and tennis. Camp opens at 8.30am (arrive by 9.15am) and collection is 4.30pm to 5.30pm. An 8am drop-off and 6pm pick-up cost £7.50 each, or £15 for both. For the October half-term week, days were showing at £57 (reduced from £67.50) or £260 for the week. Camp Beaumont says it accepts Tax-Free Childcare and childcare vouchers from parents who joined a scheme before it closed in October 2018. [Details](https://www.campbeaumont.co.uk/camps/rms-for-girls/) · [Payment](https://www.campbeaumont.co.uk/parents)
-- **Let's Play**, Watford Woodside Leisure Centre, Garston, Watford. School-holiday Fun Days for children from 5 (Year 1) to 12. A standard day runs 9am to 4pm for £29.50, with a half-day option at £12.50, and early drop-off from 8am or late pick-up to 5pm cost £3.50 each. Siblings get 10% off. Let's Play is Ofsted registered and takes card, Tax-Free Childcare and childcare vouchers. [Details](https://www.lets-play.org.uk/locations/watford-woodside-leisure-centre/) · [Payment](https://www.lets-play.org.uk/faqs/)
-- **Xtra Time**, Fullerians Rugby Club, Cassiobury, Watford. Ofsted-registered camps for children aged 4 and up in the summer, half-term, Easter and Christmas holidays. Multi Sports runs 9am to 4pm (normally £28 a day) and Multi Activities 8am to 6pm (normally £35), with discounted Friday Fun Days from £15. It accepts Tax-Free Childcare and offers sibling and multi-day discounts. [Details](https://www.xtratime.co.uk/holiday-camps/) · [Our listing](/activities/xtra-time-watford/)
+- **Camp Beaumont**, RMS for Girls Sports Centre, Rickmansworth Park, Rickmansworth. A new Camp Beaumont day camp for ages 3 to 14, split into age groups (3–4, 5–7, 8–11 and 12–14), with swimming from age 5, forest school, a sports hall and tennis. Camp opens at 8.30am (arrive by 9.15am) and collection is 4.30pm to 5.30pm. An 8am drop-off and 6pm pick-up cost £7.50 each, or £15 for both. For October half term 2026, days were showing at £57 (reduced from £67.50) or £260 for the week. Camp Beaumont says it accepts Tax-Free Childcare and childcare vouchers from parents who joined a scheme before it closed in October 2018. [Details](https://www.campbeaumont.co.uk/camps/rms-for-girls/) · [Payment](https://www.campbeaumont.co.uk/parents)
+- **Let's Play**, Watford Woodside Leisure Centre, Garston, Watford. School-holiday Fun Days for children from 5 (Year 1) to 12, including Christmas Fun Days on 21–23 December 2026. A standard day runs 9am to 4pm for £29.50, with a half-day option at £12.50, and early drop-off from 8am or late pick-up to 5pm cost £3.50 each. Siblings get 10% off. Let's Play is Ofsted registered and takes card, Tax-Free Childcare and childcare vouchers. [Details](https://www.lets-play.org.uk/locations/watford-woodside-leisure-centre/) · [Payment](https://www.lets-play.org.uk/faqs/)
+- **Xtra Time**, Watford (Fullerians Rugby Club in summer 2026; Willow Tree Primary School in October half term). Ofsted-registered camps for children aged 4 and up in the summer, half-term, Easter and Christmas holidays. Multi Sports runs 9am to 4pm (normally £28 a day) and Multi Activities 8am to 6pm (normally £35), with discounted Friday Fun Days from £16. It accepts Tax-Free Childcare and offers sibling and multi-day discounts. [Details](https://www.xtratime.co.uk/holiday-camps/) · [Our listing](/activities/xtra-time-watford/)
 - **We Make Footballers Watford**, Watford Power League, Watford. Football camps for complete beginners to confident players. The October camp (Monday 26 to Thursday 29 October 2026) runs 9.15am to 4pm for ages 4 to 13 and costs £116 for the four days. [Details](https://wemakefootballers.com/watford/holiday-camps) · [Our listing](/activities/we-make-footballers-watford/)
 - **Watford Gymnastics Club**, Watford Business Park, Watford. Holiday sessions open to members and non-members from Reception. Children aged 5 and over do 9am to 3pm for £35 a day, and Reception children 10am to 2pm for £25 a day, with 10% off a full week. Days mix gymnastics, games and free play; bring a light lunch. [Details](https://www.watfordgymnastics.co.uk/holidaysessions) · [Our listing](/activities/watford-gymnastics-club/)
-- **Rickmansworth Gymnastics Club**, The Reach sports hall, Rickmansworth. Gymnastics holiday camps for 5 to 14-year-olds (Reception children welcome) run 9.30am to 3.30pm, with early drop-off from 8.30am. There's also a 90-minute workshop option (11am to 12.30pm, ages 4–14), a Play Gym for 0 to 4-year-olds, and a Christmas fun session (10am to 2pm, ages 4–16) on 22 and 23 December. Prices are shown when you book. [Details](https://rickmansworth-gymnastics.classforkids.io/camps) · [Our listing](/activities/rickmansworth-gymnastics-club/)
+- **Rickmansworth Gymnastics Club**, The Reach sports hall, Rickmansworth. Gymnastics holiday camps for 5 to 14-year-olds (Reception children welcome) run 9.30am to 3.30pm, with early drop-off from 8.30am. There's also a 90-minute workshop option (11am to 12.30pm, ages 4–14). Over Christmas there's a fun session (10am to 2pm, ages 4–16) and a Christmas Play Gym for 0 to 4-year-olds (10am to 11.45am), both on 22 and 23 December. Prices are shown when you book. [Details](https://rickmansworth-gymnastics.classforkids.io/camps) · [Our listing](/activities/rickmansworth-gymnastics-club/)
 
 ## Arts, drama & dance
 
